@@ -16,7 +16,7 @@ Although the author has run QRSS Plus on his website for several years and inten
 
 **Configuration file:** Grabber information (image URL, website, operator call sign, etc) is stored in [grabbers.csv](grabbers.csv). This format was chosen because it is simple to edit on any computer, including through GitHub's web interface.
 
-**Folder structure:** A download folder contains all downloaded files. Every file has a timestamp in epoch format. Every time [QRSSplusUpdate.py](QRSSplusUpdate.py) is run, all files with timestamps older than a certain amount (typically 3 hours) are deleted, and new grabber files are downloaded. If a grabber download fails, an empty file with a ".fail" extension is added to the download folder.
+**Folder structure:** A download folder contains all downloaded files. Every file has a timestamp in epoch format and also an image hash code. New images are detected as new because its MD5 hash will be different. Every time [QRSSplusUpdate.py](QRSSplusUpdate.py) is run, all files with timestamps older than a certain amount (typically 3 hours) are deleted, and new grabber files are downloaded. If a grabber download fails, an empty file with a ".fail" extension is added to the download folder.
 
 **Web interface:** The web interface is provided by [index.php](index.php) which simply displays all the grabbers listed in the configuration file next to all the relevant images found in the downloads folder. If no images are found in the downloads folder for a certain grabber, that grabber is marked as inactive.
 
