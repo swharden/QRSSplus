@@ -12,7 +12,7 @@ Although the author has run QRSS Plus on his website for several years and inten
 
 ## Technical Details
 
-**Requirements:** This project is intended to be light, as it is run on headless web servers and at best manually controlled through a SSH console. It was developed to require Python 2.7 (Python 3 is often not available on inexpensive web hosting plans), and any modern version of PHP will suffice. 
+**Requirements:** This project is intended to be light, as it is run on headless web servers and at best manually controlled through a SSH console. It was developed to require Python 2.7 (Python 3 is often not available on inexpensive web hosting plans), and any modern version of PHP will suffice. ImageMagick's [convert utility](https://www.imagemagick.org/script/convert.php) is assumed to be present (used for making thumbnails).
 
 **Configuration file:** Grabber information (image URL, website, operator call sign, etc) is stored in [grabbers.csv](grabbers.csv). This format was chosen because it is simple to edit on any computer, including through GitHub's web interface.
 
