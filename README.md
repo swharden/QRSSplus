@@ -3,7 +3,7 @@
 
 **QRSS Plus is an automatically-updating QRSS grabber website designed to fully operate on a web server.** The core of this project is a configuration file (containing the names and URLs of all grabbers), a python file (which downloads all the latest grabs), and a PHP script (which displays the recent grabs via a web interface). As long as the python script runs every 10 minutes, the website will always display the latest grabs from all grabbers, categorizing each as active or inactive respectively.
 
-![](screenshot.png)
+![](QRSSplus.png)
 
 **QRSS Plus running on the author's website:**\
 http://www.swharden.com/qrss/plus/
