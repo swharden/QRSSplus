@@ -14,7 +14,9 @@ Although the author has run QRSS Plus on his website for several years and inten
 
 **Requirements:** This project is intended to be light, as it is run on headless web servers and at best manually controlled through a SSH console. It was developed to require Python 2.7 (Python 3 is often not available on inexpensive web hosting plans), and any modern version of PHP will suffice. ImageMagick's [convert utility](https://www.imagemagick.org/script/convert.php) is assumed to be present (used for making thumbnails).
 
-**Configuration file:** Grabber information (image URL, website, operator call sign, etc) is stored in [grabbers.csv](grabbers.csv). This format was chosen because it is simple to edit on any computer, including through GitHub's web interface.
+**Grabber list:** Grabber information (image URL, website, operator call sign, etc) is stored in [grabbers.csv](grabbers.csv). This format was chosen because it is simple to edit on any computer, including through GitHub's web interface.
+
+**Automatic update of grabber list:** When the python script is run, the first thing it does is download the latest [grabbers.csv](grabbers.csv) from this GitHub page. It then uses this list of grabbers to download new images for each grabber, and saves the file so [index.php](index.php) always uses the latest call signs, names, and URLs data for each grabber. This also means that updating this 1 file on GitHub will immediately update everybody's grabber website that gets its grabber list from this file (not just QRSS Plus).
 
 **Folder structure:** A download folder contains all downloaded files. Every file has a timestamp in epoch format and also an image hash code. New images are detected as new because its MD5 hash will be different. Every time [QRSSplusUpdate.py](QRSSplusUpdate.py) is run, all files with timestamps older than a certain amount (typically 3 hours) are deleted, and new grabber files are downloaded. If a grabber download fails, an empty file with a ".fail" extension is added to the download folder.
 
