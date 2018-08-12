@@ -6,7 +6,7 @@
 **QRSS Plus running on the author's website:**\
 http://www.swharden.com/qrss/plus/
 
-![](screenshot.jpg)
+![](screenshot.png)
 
 Although the author has run QRSS Plus on his website for several years and intends to continue doing so, **anybody can set-up their own QRSS Plus webpage!** Just copy this folder to your web server and call [QRSSplusUpdate.py](QRSSplusUpdate.py) every 10 minutes. Those who decide to independently set-up their own QRSS Plus page are encouraged to improve the code, add new features to the web interface, or incorporating new functionality, as these improvements enhance the QRSS community at large. 
 
