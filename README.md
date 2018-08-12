@@ -6,11 +6,11 @@
 **View QRSS Plus in action:**\
 http://www.SWHarden.com/qrss/plus/
 
-![](QRSSplus.png)
+![](/misc/QRSSplus.png)
 
 Although the author has run QRSS Plus on his website for several years and intends to continue doing so, **anybody can set-up their own QRSS Plus webpage** using the tools in this repository. Just copy this folder to your web server and call [QRSSplusUpdate.py](QRSSplusUpdate.py) every 10 minutes. Those who decide to independently set-up their own QRSS Plus page are encouraged to improve the code, add new features to the web interface, or incorporating new functionality, as these improvements enhance the QRSS community at large.
 
-A separate page is provided reviewing [technical details](technical.md) of operation,  configuration, and design considerations.
+A separate page is provided reviewing [technical details](/misc/technical.md) of operation,  configuration, and design considerations.
 
 ## QRSS Grabber List
 

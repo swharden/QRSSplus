@@ -1,8 +1,13 @@
 """
-QRSS Plus - Automatic QRSS Grabber by Scott Harden
+QRSS Plus - Automatically-Updated List of Active QRSS Grabbers
+by Scott Harden (www.SWHarden.com)
+
 This script is intended to be run on a web server every 10 minutes.
 It was developed for Python 2.7 (on Linux through a SSH terminal)
-It was last tested/verified to work on Python-2.7.10 (WinPython)
+It was last tested/verified to work on Python-2.7.10 (WinPython).
+
+This script fills the data folder with a collection of images (with filenames
+containing timestamp and MD5-hashed codes) so that index.php can display them.
 """
 
 import sys

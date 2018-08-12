@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * QRSS Plus - Automatically-Updated List of Active QRSS Grabbers
+ * 
+ * by Scott Harden (www.SWHarden.com)
+ * 
+ * After the QRSS Plus python script downloads the latest grabs and places
+ * them in the data folder, this PHP script can read the contents and compare
+ * it to the grabber file and display a nice webpage indicating which grabs
+ * are active and which are inactive.
+ * 
+ */
+
 class QrssPlus {
     // This standalone class provides all active QRSS Plus functionality.
 
@@ -276,7 +288,7 @@ a:hover {color: blue;text-decoration: underline;}
     echo "</span>";
     echo "<div style='color: #CCC; padding: 10px; float: right; top: 0; position: absolute; right: 0; text-align: center;'>$contributeMsg</div>";
 
-    $warn_if_outdated_data = false;
+    $warn_if_outdated_data = true;
     if ($warn_if_outdated_data && !strpos($qp->getUpdateMessage(),"minutes")){
         echo "<div style='border: 2px solid #000; background-color: #EFEFEF; margin: 0px 5px 10px 5px; padding: 5px; background-color: red; color: white;'>";
         echo "<b>ERROR!:</b> The server is set to update this page every 10 minutes, but the last update was ".$qp->getUpdateMessage();
