@@ -145,8 +145,13 @@ def updateGrabberListFromGitHub():
     headers={'User-Agent': 'Wget/1.12 (linux-gnu)'}
     req = urllib2.Request(url,headers=headers)
     r = urllib2.urlopen(req, timeout=3)
+    raw = r.read()
+    raw = raw.split("\n")
+    raw = [x.strip() for x in raw]
+    raw = [x for x in raw if len(x)]
+    raw = "\n".join(raw)
     f = open("grabbers.csv",'w')
-    f.write(r.read())
+    f.write(raw)
     f.close()
     print "Downloaded the latest grabbers.csv"
 
