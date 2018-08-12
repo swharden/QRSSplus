@@ -18,3 +18,10 @@ The web interface is provided by [index.php](index.php) which simply displays al
 
 ## Detecting Problems
 What if QRSS Plus stops downloading new grabs? Every time QRSS Plus is updated, the total duration the script took to download all grabs is saved in a text file (containing only the number of seconds as a floating point number). The PHP script can display how long the last download took by reading the content of this file, and it can determine if QRSS Plus stopped running by looking at the modification time of the file. If an issue is detected, PHP will raise an alarm message at the top of the page indicating the author should be contacted to resolve the issue.
+
+## Configuring a Cron Job
+I have QRSS Plus run every 10 minutes using cron (set up through a web interface my hosting company gives me access to). The cron command I find most useful is:
+
+```bash
+cd /home/swharden/public_html/qrss/plus/; python2.7 QRSSplusUpdate.py
+```
