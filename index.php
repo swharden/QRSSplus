@@ -214,6 +214,94 @@ class QrssPlus {
         echo "<div style='clear: left;'></div>";
     }
 }
+
+
+function validate_grabber_list($fname, $verbose=false){
+    // this function verifies that a grabber file is properly formatted.
+
+    function display_message($msg, $class, $verbose){
+        if ($verbose==false and $class!="lineBad") {
+            return;
+        } else {
+            echo "<div class='$class'>$msg</div>";
+        }
+    }
+
+    $totalErrors=0;
+    $row=0;
+    $f = fopen($fname, "r");
+    
+    if ($verbose){
+        echo "<div style='font-size: 150%; font-weight: bold'>Grabber List File Analysis</div>";
+        echo "<div style='font-family: monospace;'>$fname</div>";
+        echo "<div>&nbsp</div>";
+    }
+
+    $uniqueIDs = [];
+
+    while (($dataRow = fgetcsv($f, 1000, ",")) !== FALSE) {
+        $row++;
+        $line=$dataRow;
+        $lineText = implode(", ", $line);
+        $lineItemCount = count($line);
+    
+        if ($verbose){
+            echo "<div class='lineBlock'>";
+            echo "<div class='lineNumber'>Line #$row</div>";
+            echo "<div class='lineCode'>$lineText</div>";
+        }
+
+        // check for empty lines
+        $lineLength = strlen($lineText);
+        if ($lineLength<3){
+            display_message("GRABBER FILE ERROR (LINE $row):<br><code>$lineText</code><br>Blank lines are NOT allowed.", "lineBad", $verbose);
+            $totalErrors+=1;
+        } else {
+            display_message("Line length: $lineLength characters", "lineOK", $verbose);
+        }
+
+        // check each line has 7 items
+        if ($lineItemCount==7){
+            display_message("Number of items: $lineItemCount", "lineOK", $verbose);
+        } else {
+            display_message("GRABBER FILE ERROR (LINE $row):<br><code>$lineText</code><br>Each line must contain 7 items. This line contains $lineItemCount.", "lineBad", $verbose);
+            $totalErrors+=1;
+        }
+        
+        if ($row==1){
+            // check the first row is exactly what is needed
+            $firstLineFormat = "#ID, callsign, title, name, location, website, file";
+            if ($lineText==$firstLineFormat){
+                display_message("First line format: OK", "lineOK", $verbose);
+            } else {
+                display_message("GRABBER FILE ERROR (LINE $row):<br><code>$lineText</code><br>First line must contain this exact text:<br>$firstLineFormat", "lineBad", $verbose);
+                $totalErrors+=1;
+            }
+        } else {
+            // ensure URLs are present for every grabber file and link
+            if (strstr($line[5], "://") && strstr($line[6], "://")){
+                display_message("URL format: OK", "lineOK", $verbose);
+            } else {
+                display_message("GRABBER FILE ERROR (LINE $row):<br><code>$lineText</code><br>URL format is bad!", "lineBad", $verbose);
+                $totalErrors+=1;
+            }
+        }
+        
+        
+        if (in_array($line[0],$uniqueIDs)){
+            display_message("GRABBER FILE ERROR (LINE $row):<br><code>$lineText</code><br>Grabber IDs (the first element) must be unique!", "lineBad", $verbose);           
+            $totalErrors+=1;
+        } else {
+            display_message("Unique grabber ID: OK", "lineOK", $verbose);
+        }
+        $uniqueIDs[]=$line[0];
+        
+        echo "</div>";
+    } 
+
+    return $totalErrors;
+}
+
 $contributeMsg = "QRSS Plus is community maintained.<br>Update grabber information, add your grabber,<br>or improve this page by contributing to ";
 $contributeMsg .= "<a target='_blank' href='https://github.com/swharden/QRSSplus'>QRSS Plus on GitHub</a>";
 $contributeMsgFlat = str_replace("<br>"," ",$contributeMsg);
@@ -277,6 +365,30 @@ a:hover {color: blue;text-decoration: underline;}
     font-weight: bold;
     text-shadow: 3px 3px 5px #AAA;
 }
+.lineNumber{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.lineCode{
+    font-family: monospace;
+}
+.lineOK{
+    color: #CCC;
+}
+.lineBad{
+    line-height: 150%;
+    font-family: sans-serif;
+    background-color: #FFFFDD;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.lineBlock{
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: #EEE;
+}
 </style>
 </head>
 <body>
@@ -287,6 +399,18 @@ a:hover {color: blue;text-decoration: underline;}
     echo "<span style='font-size: 50%;'>by <a target='_blank' href='http://www.SWHarden.com/'>Scott Harden</a></span>";
     echo "</span>";
     echo "<div style='color: #CCC; padding: 10px; float: right; top: 0; position: absolute; right: 0; text-align: center;'>$contributeMsg</div>";
+
+    $totalErrors = validate_grabber_list("grabbers.csv");
+    if ($totalErrors==0){
+        //echo "<div style='border: 2px solid #DDD; background-color: #EFEFEF; margin: 0px 5px 10px 5px; padding: 5px;'>";
+        //echo "<div>Grabber list file validated.</div>";
+        //echo "</div>";
+    } else {
+        echo "<div style='border: 2px solid #000; background-color: #EFEFEF; margin: 0px 5px 10px 5px; padding: 5px; background-color: #FFFFCC; font-weight: bold;'>";
+        echo "<div>Grabber list file contained $totalErrors errors.</div>";
+        echo "<div>Correct these errors by modifying <a href='https://github.com/swharden/QRSSplus/blob/master/grabbers.csv'>grabbers.csv on GitHub</a></div>";
+        echo "</div>";    
+    }
 
     $warn_if_outdated_data = true;
     if ($warn_if_outdated_data && !strpos($qp->getUpdateMessage(),"minutes")){
