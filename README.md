@@ -28,7 +28,7 @@ This master grabber list is downloaded every 10 minutes by QRSS Plus, so updatin
   * _collaborators can add their own email addresses here!_
 * Create an issue on the [QRSS Plus issues page](https://github.com/swharden/QRSSplus/issues) and someone will get it it shortly
 * Post a message to the [Knights QRSS Mailing List](https://groups.io/g/qrssknights) and ask that QRSS Plus be updated with your new information
-* Make the change yourself to [grabbers.csv](grabbers.csv) and issue a pull request (understandably intimidating for first-time git users)
+* Make the change yourself to [grabbers.csv](grabbers.csv) and issue a pull request (understandably intimidating for first-time git users, but try it! You won't mess anything up.)
 * **Become a collaborator for this repository so you can make direct changes to [grabbers.csv](grabbers.csv) which take effect immediately! You can also help make changes on behalf of others (e.g., monitoring a QRSS mailing and adding new grabbers as you learn of them). I encourage any tech-savvy QRSS enthusiast to consider becoming a QRSS Plus curator!**
 
 ## Additional Resources
