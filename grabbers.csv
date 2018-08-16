@@ -1,6 +1,6 @@
 #ID,callsign,title,name,location,website,file
 7L1RLL,7L1RLL,,Rick,Japan,http://www1.u-netsurf.ne.jp/~7l1rll/Grabber_7L1RLL.html,http://www1.u-netsurf.ne.jp/~7l1rll/argo_capture.jpg
-# DF2JP,DF2JP,479.180 KHz,Joe,"Meerbusch, Germany",http://www.df2jp.dxx.eu/mwgrabber.html,http://www.df2jp.dxx.eu/630m.jpg
+DF2JP,DF2JP,479.180 KHz,Joe,"Meerbusch, Germany",http://www.df2jp.dxx.eu/mwgrabber.html,http://www.df2jp.dxx.eu/630m.jpg
 CT2IWW,CT2IWW,Usually 10m,Paulo,Portugal,http://qsl.net/ct2iww/CT2IWW_QRSS.html,http://qsl.net/ct2iww/CT2IWW_QRSS_files/hf1.jpg
 DL4DTL,DL4DTL,30m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/qrss.jpg
 EA8BVP1,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
@@ -17,7 +17,8 @@ G3VYZ2,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.holywell44.
 G3VYZ3,G3VYZ,Grabber 3,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_3.jpg
 #G3ZJO,G3ZJO,,Eddie,"Northampton, England",http://dl.dropboxusercontent.com/u/23312120/qrssgrabber.html,http://dl.dropbox.com/u/23312120/zjo_qrss_grab.jpg
 #G4HSK,G4HSK,,Steve,"Essex, England",http://grabber.g4hsk.co.uk,http://dl.dropboxusercontent.com/u/45053907/G4HSK_QRSS_Captures.jpg
-G4IOG,G4IOG,,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/hf9.jpg
+G4IOG-1,G4IOG,,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/hf5.jpg
+G4IOG-2,G4IOG,,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/hf9.jpg
 G4JVF,G4JVF,,Philip,"North Derbyshire, UK",http://www.qsl.net/g/g4jvf/,http://www.qsl.net/g/g4jvf/hf4.jpg
 G6AVK,G6AVK,,Colin,"Essex, England",http://www.qsl.net/g6avk/,http://www.qsl.net/g6avk/hf6.jpg
 G6NHU,G6NHU,,Keith,England,http://g6nhu.co.uk,http://g6nhu.co.uk/images/capture.jpg
