@@ -1,16 +1,13 @@
 
 # QRSS Plus
 
-**QRSS Plus is an automatically-updating QRSS grabber website designed to fully operate on a web server.** QRSS Plus watches a list of image URLs (stored in [grabbers.csv](grabbers.csv)), downloading them every 10 minutes, and marking them as "active" if their content changes regularly. QRSS Plus displays a list of active grabbers on a web page making them easy to browse at a glance. To add or modify grabber information in the grabber list, simply edit [grabbers.csv](grabbers.csv).
+**QRSS Plus is an automatically-updating QRSS grabber website designed to fully operate on a web server.** QRSS Plus watches a list of image URLs (stored in [grabbers.csv](grabbers.csv)), downloading them every 10 minutes, and marking them as "active" if their content changes regularly. QRSS Plus displays a list of active grabbers on a web page making them easy to browse at a glance. 
 
 **View QRSS Plus in action:**\
 http://www.SWHarden.com/qrss/plus/
 
 ![](/misc/QRSSplus.png)
 
-Although the author has run QRSS Plus on his website for several years and intends to continue doing so, **anybody can set-up their own QRSS Plus webpage** using the tools in this repository. Just copy this folder to your web server and call [QRSSplusUpdate.py](QRSSplusUpdate.py) every 10 minutes. Those who decide to independently set-up their own QRSS Plus page are encouraged to improve the code, add new features to the web interface, or incorporating new functionality, as these improvements enhance the QRSS community at large.
-
-A separate page is provided reviewing [technical details](/misc/technical.md) of operation,  configuration, and design considerations.
 
 ## QRSS Grabber List
 
@@ -23,13 +20,16 @@ This master grabber list is downloaded every 10 minutes by QRSS Plus, so updatin
 
 **If you would like to update a grabber listing, take one of these actions:**
 
-* E-mail one of the primary authors of this repository:
-  * Scott Harden SWHarden@gmail.com
-  * _collaborators can add their own email addresses here!_
-* Create an issue on the [QRSS Plus issues page](https://github.com/swharden/QRSSplus/issues) and someone will get it it shortly
-* Post a message to the [Knights QRSS Mailing List](https://groups.io/g/qrssknights) and ask that QRSS Plus be updated with your new information
-* Make the change yourself to [grabbers.csv](grabbers.csv) and issue a pull request (understandably intimidating for first-time git users, but try it! You won't mess anything up.)
-* **Become a collaborator for this repository so you can make direct changes to [grabbers.csv](grabbers.csv) which take effect immediately! You can also help make changes on behalf of others (e.g., monitoring a QRSS mailing lists and adding new grabbers as you learn of them). I encourage any tech-savvy QRSS enthusiast to consider becoming a QRSS Plus curator!**
+* E-mail Andy (G0FTD) punkbiscuit@googlemail.com with information about the grabber
+* Post a message to the [Knights QRSS Mailing List](https://groups.io/g/qrssknights) requesting the change
+
+_If you are a dedicated supporter of the QRSS community, consider becoming a collaborator so you can make direct changes to [grabbers.csv](grabbers.csv) which take effect immediately! You can then also make changes on behalf of others (e.g., monitoring a QRSS mailing lists and adding new grabbers as you learn of them). I encourage any tech-savvy QRSS enthusiast to consider becoming a QRSS Plus curator!_
+
+## Creating Your Own QRSS Plus Website
+
+Although the author has run QRSS Plus on his website for several years and intends to continue doing so, **anybody can set-up their own QRSS Plus webpage** using the tools in this repository. Just copy this folder to your web server and call [QRSSplusUpdate.py](QRSSplusUpdate.py) every 10 minutes. Those who decide to independently set-up their own QRSS Plus page are encouraged to improve the code, add new features to the web interface, or incorporating new functionality, as these improvements enhance the QRSS community at large.
+
+A separate page is provided reviewing [technical details](/misc/technical.md) of operation,  configuration, and design considerations.
 
 ## Additional Resources
 * [Knights QRSS Mailing List](https://groups.io/g/qrssknights) - The QRSS Knights is an extremely active community of QRSS enthusiasts. Join their mailing list to get in on discussions about new grabbers, radio spots, equipment, reception techniques, cosmic and atmospheric anomalies, and efforts in the QRSS world.
