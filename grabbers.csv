@@ -18,8 +18,8 @@ G3VYZ2,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.holywell44.
 G3VYZ3,G3VYZ,Grabber 3,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_3.jpg
 #G3ZJO,G3ZJO,,Eddie,"Northampton, England",http://dl.dropboxusercontent.com/u/23312120/qrssgrabber.html,http://dl.dropbox.com/u/23312120/zjo_qrss_grab.jpg
 #G4HSK,G4HSK,,Steve,"Essex, England",http://grabber.g4hsk.co.uk,http://dl.dropboxusercontent.com/u/45053907/G4HSK_QRSS_Captures.jpg
-G4IOG-1,G4IOG,,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/qrsspig/hf5.jpg
-G4IOG-2,G4IOG,,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/hf9.jpg
+G4IOG-1,G4IOG,28MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/qrsspig/hf5.jpg
+G4IOG-2,G4IOG,7MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/hf9.jpg
 G4JVF,G4JVF,Various bands,Philip,"North Derbyshire, UK",http://www.qsl.net/g/g4jvf/,http://www.qsl.net/g/g4jvf/hf4.jpg
 G6AVK,G6AVK,Various bands,Colin,"Essex, England",http://www.qsl.net/g6avk/,http://www.qsl.net/g6avk/hf6.jpg
 G6NHU,G6NHU,Various bands,Keith,England,http://g6nhu.co.uk,http://g6nhu.co.uk/images/capture.jpg
@@ -32,7 +32,7 @@ GJ7RWT,GJ7RWT,,Andy,"Jersey, England",http://www.qsl.net/gj7rwt/gj7rwthomepage.h
 #IZ1KXQ,IZ1KXQ,,Paolo,Italy,http://www.qsl.net/iz1kxq,http://www.qsl.net/iz1kxq/SL1.jpg
 #IZ3NVR,IZ3NVR,,Stefano,"Roncade, Italy",http://www.qsl.net/iz3nvr/,http://www.qsl.net/iz3nvr/IZ3NVR_30m.jpg
 #KK7CC,KK7CC,,Jerry,"Las Vegas, Nevada",http://www.qsl.net/kk7cc/kk7ccgrabber.html,http://www.qsl.net/kk7cc/argo.jpg
-KL7L,KL7L,,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/Alaska00000.jpg
+KL7L,KL7L,Various bands,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/Alaska00000.jpg
 LA5GOA,LA5GOA,30m,Steen,Norway,http://la5goa.manglet.net/grabber,http://la5goa.manglet.net/grabber/lopshot1.jpg
 #MW0UZO1,MW0UZO,Site change no QRSS!,Daniel,Wales,http://www.mw0uzo.co.uk,http://www.mw0uzo.co.uk/30mgrabber/lopshot1.jpg
 #MW0UZO2,MW0UZO,Site change no QRSS!,Daniel,Wales,http://www.mw0uzo.co.uk,http://www.mw0uzo.co.uk/30mgrabber/lopshot2.jpg
@@ -56,7 +56,7 @@ SA6BSS2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/
 SA6BSS3,SA6BSS,14 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf3.jpg
 VA3ROM,VA3ROM,Maybe QRT?,Robert,"Ontario, Canada",http://va3rom.com/QRSS/QRSS.html,http://va3rom.com/QRSS/image1.jpg
 VE1VDM,VE1VDM,,Vernon,"Nova Scotia, Canada",http://users.eastlink.ca/~ve1vdm/argocaptures/grabber.htm,http://users.eastlink.ca/~ve1vdm/argocaptures/argo.jpg
-VE3GTC,VE3GTC,primary,Graham,"Ontario, Canada",http://users.aei.ca/~planophore/grabber,http://dl.dropboxusercontent.com/s/j2srkb0kz3814qx/picture.jpg
+VE3GTC,VE3GTC,Primary,Graham,"Ontario, Canada",http://users.aei.ca/~planophore/grabber,http://dl.dropboxusercontent.com/s/j2srkb0kz3814qx/picture.jpg
 #VK2DDI,VK2DDI,,David,New South Wales,http://www.users.on.net/~davroz/vk6di/argocaptures/argocaptures.html,http://www.users.on.net/~davroz/vk6di/argocaptures/argo.jpg
 #VK7ZL,VK7ZL,,Bob,Southern Tasmania,http://www.users.on.net/~bobw/lf/,http://www.users.on.net/~bobw/lf/argo1.jpg
 VE7IGH,VE7IGH,,Gregory,"British Columbia, Canada",http://www.qsl.net/ve7igh/Grabber.htm,http://www.qsl.net/ve7igh/capt.jpg
