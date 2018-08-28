@@ -18,12 +18,20 @@ This master grabber list is downloaded every 10 minutes by QRSS Plus, so updatin
 
 ## Updating the Grabber List
 
+### Request a Change
 **If you would like to update a grabber listing, take one of these actions:**
 
 * E-mail Andy (G0FTD) punkbiscuit@googlemail.com with information about the grabber
 * Post a message to the [Knights QRSS Mailing List](https://groups.io/g/qrssknights) requesting the change
 
-_If you are a dedicated supporter of the QRSS community, consider becoming a collaborator so you can make direct changes to [grabbers.csv](grabbers.csv) which take effect immediately! You can then also make changes on behalf of others (e.g., monitoring a QRSS mailing lists and adding new grabbers as you learn of them). I encourage any tech-savvy QRSS enthusiast to consider becoming a QRSS Plus curator!_
+### A Note for DropBox Users
+Many people upload grabs automatically using a DropBox account. The URLs used to access these files require special attention. If the URL is incorrectly formatted, it will return a _web page_ displaying a file. When the URL is properly formatted, it will return the _file_ itself. It is critically important that the URL given to QRSS Plus is the URL for the file, not for the webpage. To do this, simply replace `www.dropbox.com` with `dl.dropboxusercontent.com` in the URL:
+
+* `https://www.dropbox.com/s/35m4m8wn4w5hi7r/HF.jpg` **<- bad**
+* `http://dl.dropboxusercontent.com/s/35m4m8wn4w5hi7r/HF.jpg` **<- good**
+
+### Become a Collaborator
+If you are a dedicated supporter of the QRSS community, consider becoming a collaborator so you can make direct changes to [grabbers.csv](grabbers.csv) which take effect immediately! You can then also make changes on behalf of others (e.g., monitoring a QRSS mailing lists and adding new grabbers as you learn of them). I encourage any tech-savvy QRSS enthusiast to consider becoming a QRSS Plus curator!
 
 ## Creating Your Own QRSS Plus Website
 
