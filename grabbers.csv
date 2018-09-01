@@ -8,7 +8,7 @@ DL4DTL,DL4DTL,30m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.
 EA8BVP1,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
 EA8BVP2,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
 F6BAZ,F6BAZ,Part time,Henri,France,http://www.f6baz.com/qrss,http://www.f6baz.com/qrss/lopshot1.jpg
-#G0FTD,G0FTD,R&D only,Andy,JO01MI,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
+#G0FTD,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
 G0MQW1,G0MQW,1 (30m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf1.jpg
 G0MQW2,G0MQW,2 (30m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf2.jpg
 G0MQW3,G0MQW,3 (10m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf3.jpg
@@ -35,17 +35,17 @@ KL7L,KL7L,Various bands,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,h
 LA5GOA,LA5GOA,30m,Steen,Norway,http://la5goa.manglet.net/grabber,http://la5goa.manglet.net/grabber/lopshot1.jpg
 N2NXZ,N2NXZ,Band hopper & balloons,Jim,New York (USA),http://www.qsl.net/n2nxz/,http://www.qsl.net/n2nxz/hf1.jpg
 #N9JL,N9JL,Currently inactive,John,"Shorewood, IL",http://qsl.net/n9jl/grabber.htm,http://qsl.net/n9jl/capt.jpg
-#NL9222,NL9222,,NL9222,Netherlands,http://nl9222.home.xs4all.nl,http://nl9222.home.xs4all.nl/capt.jpg
+#NL9222,NL9222,Inactive FTP issue,NL9222,Netherlands,http://nl9222.home.xs4all.nl,http://nl9222.home.xs4all.nl/capt.jpg
 OK1FCX,OK1FCX,Usually 40m,Radovan,"Kamenny Privoz, Czech Republic",http://www.qsl.net/ok1fcx/,http://www.qsl.net/ok1fcx/hf1.jpg
 ON4CDJ,ON4CDJ,Various,Patrick,Belgium,http://qsl.net/on4cdj/qrss,http://qsl.net/on4cdj/qrss/hf1.jpg
-#OZ9QV,OZ9QV,,Jan,Denmark,http://jgander.home.xs4all.nl/qrss-p/,http://jgander.home.xs4all.nl/qrss-p/qrss.jpg
-#PA0TAB,PA0TAB,,HJ,Netherlands,http://pa0tab.nl/grabber.html,http://pa0tab.nl/argo.jpg
-#PA1GSJ,PA1GSJ,,HJ,Netherlands,http://www.qsl.net/dl1gsj/qrss/,https://dl.dropbox.com/u/80070437/pa1gsj.jpg
-#PA1SDB,PA1SDB,,Peter,Netherlands,http://home.deds.nl/~knol/QRS-PA1SDB.jpg,http://home.deds.nl/~knol/QRS-PA1SDB.jpg
+#OZ9QV,OZ9QV,Inactive,Jan,Denmark,http://jgander.home.xs4all.nl/qrss-p/,http://jgander.home.xs4all.nl/qrss-p/qrss.jpg
+#PA0TAB,PA0TAB,Inactive,HJ,Netherlands,http://pa0tab.nl/grabber.html,http://pa0tab.nl/argo.jpg
+#PA1GSJ,PA1GSJ,Inactive,HJ,Netherlands,http://www.qsl.net/dl1gsj/qrss/,https://dl.dropbox.com/u/80070437/pa1gsj.jpg
+#PA1SDB,PA1SDB,Inactive,Peter,Netherlands,http://home.deds.nl/~knol/QRS-PA1SDB.jpg,http://home.deds.nl/~knol/QRS-PA1SDB.jpg
 PA2OHH-30m,PA2OHH,Homebrew RX,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,http://www.qsl.net/pa2ohh/hf1.jpg
 PA2OHH-40m,PA2OHH,RTL dongle and wire,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,http://www.qsl.net/pa2ohh/hf2.jpg
-#PA3FYM,PA3FYM,,Remco,Netherlands,http://remco.org/grabber,http://www.qsl.net/pa3fym/grabber/lopshot1.jpg
-#PA9QV,PA9QV,,Jan,Netherlands,http://jgander.home.xs4all.nl/qrss/,http://jgander.home.xs4all.nl/qrss/qrss.jpg
+#PA3FYM,PA3FYM,Inactive,Remco,Netherlands,http://remco.org/grabber,http://www.qsl.net/pa3fym/grabber/lopshot1.jpg
+#PA9QV,PA9QV,Inactive,Jan,Netherlands,http://jgander.home.xs4all.nl/qrss/,http://jgander.home.xs4all.nl/qrss/qrss.jpg
 S52AS,S52AS,30m Part time,Roman,"Novo Mesto, Slovenia",http://novomesto.zevs.si/graber.htm,http://novomesto.zevs.si/podatki/test.gif
 SA6BSS1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf1.jpg
 SA6BSS2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
@@ -56,11 +56,11 @@ VE3GTC,VE3GTC,Primary,Graham,"Ontario, Canada",http://users.aei.ca/~planophore/g
 VK3EDW,VK3EDW,Primary,John,Kallista - Victoria,http://www.qsl.net/vk3edw,http://www.qsl.net/vk3edw/QRSS/assets/images/hf1.jpg
 VE7IGH,VE7IGH,10Mhz & attic antenna,Gregory,"British Columbia, Canada",http://www.qsl.net/ve7igh/Grabber.htm,http://www.qsl.net/ve7igh/capt.jpg
 WD4AH,WD4AH,Testing,Alfred,Florida,http://www.qsl.net/wd4ah,http://www.qsl.net/wd4ah/hf1.jpg
-WD4ELG-20,WD4ELG,20 M grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/gba72cz0au66032/WD4ELG%2020M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-30,WD4ELG,30 M grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/7djby65cbfh6hv7/WD4ELG%2030M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-40,WD4ELG,40 M grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/ajhc4t640k7k67u/WD4ELG%2040M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-80,WD4ELG,80 M grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/59ktcp48iie5i1m/WD4ELG%2080M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-160,WD4ELG,160 M grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/qi6jp3ictzqd0iq/WD4ELG%20160M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-20,WD4ELG,20m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/gba72cz0au66032/WD4ELG%2020M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-30,WD4ELG,30m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/7djby65cbfh6hv7/WD4ELG%2030M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-40,WD4ELG,40m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/ajhc4t640k7k67u/WD4ELG%2040M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-80,WD4ELG,80m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/59ktcp48iie5i1m/WD4ELG%2080M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-160,WD4ELG,160m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/qi6jp3ictzqd0iq/WD4ELG%20160M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
 W4HBK1,W4HBK,10min,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf1.jpg
 W4HBK2,W4HBK,6hr,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf2.jpg
 WA5DJJ-10m,WA5DJJ,10m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/hf8.jpg
