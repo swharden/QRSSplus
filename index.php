@@ -438,5 +438,11 @@ a:hover {color: blue;text-decoration: underline;}
     echo "<div style='color: #AAA; margin: 20px 5px 10px 5px; padding: 5px; font-size: 150%; font-style: italic;'>$contributeMsgFlat</div>";
     $qp->showDatabase();
 ?>
+
+<div style='font-family: monospace; font-size: 80%; color: #CCC;'>
+<b>PROGRAM OUTPUT - USEFUL FOR DEBUGGING:</b><br>
+<?php include("data/status.txt");?>
+</div>
+
 </body>
 </html>
