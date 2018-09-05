@@ -1,13 +1,8 @@
 """
-QRSS Plus - Automatically-Updated List of Active QRSS Grabbers
-by Scott Harden (www.SWHarden.com)
-
+QRSS Plus - Automatic QRSS Grabber by Scott Harden
 This script is intended to be run on a web server every 10 minutes.
 It was developed for Python 2.7 (on Linux through a SSH terminal)
-It was last tested/verified to work on Python-2.7.10 (WinPython).
-
-This script fills the data folder with a collection of images (with filenames
-containing timestamp and MD5-hashed codes) so that index.php can display them.
+It was last tested/verified to work on Python-2.7.10 (WinPython)
 """
 
 import sys
@@ -21,6 +16,7 @@ import time
 import glob
 import subprocess
 import urllib2
+import traceback
 
 def loadGrabbers(fname="grabbers.csv"):
     """
@@ -82,7 +78,36 @@ class QrssPlus:
         if self.seenTimes==[]: return 0
         latestTime = max(self.seenTimes)
         return int(self.timeCode())-int(latestTime)
+
+    def hashOfTempFile(self):
+        """return the md5 hash of a file."""
+        if os.path.exists("temp.dat"):
+            with open("temp.dat",'r') as f:
+                data = f.read()
+            return hashlib.md5(data).hexdigest()
+        else:
+            return "noTempFile"
+
+    def downloadTempGrab(self,url):
+        """download a url to temp.dat using wget"""
+        if os.path.exists("temp.dat"):
+            os.remove("temp.dat")
+        cmd = "wget -q -T 3 -t 1" # 1 attempt (no retries)
+        cmd += " -O %s %s"%("temp.dat",url)
+        print(cmd)
+        process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+        process.wait()
         
+    def renameTempGrab(self,url,tag):
+        """rename temp.dat based on the url, date, tag, and hash."""
+        hsh = self.hashOfTempFile()
+        ext=url.split(".")[-1]
+        fname="%s.%s.%s.%s"%(tag,self.timeCode(),hsh[:10],ext)
+        if os.path.exists("temp.dat"):
+            print("renaming temp file to: "+fname)
+            os.rename("temp.dat","data/"+fname)
+        return fname, hsh, ext
+
     def downloadGrab(self,url,tag):
         """
         Download an image and save it with time and hash in the filename.
@@ -90,24 +115,16 @@ class QrssPlus:
         """
         print "downloading",url,"... "
         try:
-            headers={'User-Agent': 'Wget/1.12 (linux-gnu)'}
-            req = urllib2.Request(url,headers=headers)
-            r = urllib2.urlopen(req, timeout=3)
-            data = r.read()
-            hsh=hashlib.md5(data).hexdigest()
-            ext=url.split(".")[-1]
-            fname="%s.%s.%s.%s"%(tag,self.timeCode(),hsh[:10],ext)
+            self.downloadTempGrab(url)
+            fname, hsh, ext = self.renameTempGrab(url,tag)
             if hsh in self.seenHashes:
                 print("DUPLICATE!")
                 return "DUP"
             else:
-                with open(self.downloadFolder+fname,'wb') as f:
-                    f.write(data)
-                #print "OK"
                 self.thumbnail(fname,fname.replace("."+ext,".thumb."+ext))
                 return "OK"
         except Exception as e:
-            print "FAIL", e
+            traceback.print_exc()
             fname="%s.%s.fail.fail"%(tag,self.timeCode())
             with open(self.downloadFolder+fname,'w') as f:
                 f.write("fail")
@@ -139,8 +156,8 @@ class QrssPlus:
         cmd+='"%s" '%os.path.join(self.downloadFolder,fnameIn)
         cmd+="-auto-orient -thumbnail 250x150 "
         cmd+='"%s" '%os.path.join(self.downloadFolder,fnameOut)
-        #print(cmd)
         print("creating thumbnail ...")
+        print(cmd)
         process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
         process.wait()
 
