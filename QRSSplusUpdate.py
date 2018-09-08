@@ -6,8 +6,9 @@ It was last tested/verified to work on Python-2.7.10 (WinPython)
 """
 
 import sys
-PYTHON_VERSION = sys.version_info[0]
-assert PYTHON_VERSION == 2
+PYTHON_VERSION = sys.version_info
+assert PYTHON_VERSION[0] == 2
+assert PYTHON_VERSION[1] == 7
 
 import os
 import csv
@@ -17,7 +18,7 @@ import glob
 import subprocess
 import urllib2
 import traceback
-
+import datetime
 
 def loadGrabbers(fname="grabbers.csv"):
     """
@@ -44,6 +45,7 @@ class QrssPlus:
     def __init__(self, configFile="grabbers.csv", downloadFolder="data/"):
         self.timeStart = time.time()
         self.logLines = []
+        self.logLinesStats = []
         assert os.path.exists(configFile)
         self.configFile = configFile
         assert os.path.exists(downloadFolder)
@@ -59,6 +61,10 @@ class QrssPlus:
             msg = "[%.03fs] %s" % (time.time()-self.timeStart, msg)
         print(msg)
         self.logLines.append(msg)
+
+    def logStats(self, msg):
+        """log a line for data mining later."""
+        self.logLinesStats.append(msg)
 
     def timeCode(self):
         """return YYMMDDHHMM timecode of now."""
@@ -130,10 +136,14 @@ class QrssPlus:
         try:
             self.downloadTempGrab(url)
             fname, hsh, ext = self.renameTempGrab(url, tag)
+            self.logStats(tag+" "+hsh[:10])
             if hsh in self.seenHashes:
-                self.log("DUPLICATE!")
+                self.log("Downloaded image is old")
+                #self.logStats(tag+" dup")
                 return "DUP"
             else:
+                self.log("Downloaded image is new")
+                #self.logStats(tag+" new")
                 self.thumbnail(fname, fname.replace("."+ext, ".thumb."+ext))
                 return "OK"
         except Exception as e:
@@ -141,6 +151,8 @@ class QrssPlus:
             fname = "%s.%s.fail.fail" % (tag, self.timeCode())
             with open(self.downloadFolder+fname, 'w') as f:
                 f.write("fail")
+            self.log("Download failed")
+            self.logStats(tag+" fail")
             return "FAIL (%s)" % str(e)
 
     def downloadAll(self, force=False):
@@ -160,7 +172,7 @@ class QrssPlus:
                 continue
             age = int(self.timeCode())-int(bn[1])
             if age > maxAgeMinutes:
-                self.log("deleting old", fname)
+                self.log("deleting old:"+fname)
                 os.remove(fname)
 
     def thumbnail(self, fnameIn, fnameOut):
@@ -190,11 +202,33 @@ class QrssPlus:
         f.close()
         self.log("Downloaded the latest grabbers.csv")
 
+    def saveLogFile(self, fname = "data/status.txt"):
+        """Save the log file to disk."""
+        with open(fname, 'w') as f:
+            f.write("<br>\n".join(self.logLines))
+        self.log("wrote "+fname)
+
+    def saveStatsFile(self):
+        """Save the stats file to disk."""
+        if not os.path.exists("stats"):
+            os.mkdir("stats")
+        now = datetime.datetime.now()
+        parts = [now.year, now.month, now.day]
+        parts = ["%02d"%x for x in parts]
+        todaysFileName = "-".join(parts)+".txt"        
+        timeStamp = time.strftime("%y%m%d%H%M", time.localtime())
+        log = ",".join(self.logLinesStats)
+        fname = "stats/"+todaysFileName
+        with open(fname, 'a') as f:
+            f.write(timeStamp+","+log+"\n")
+        self.log("wrote "+fname)
+
+
 
 if __name__ == "__main__":
     qp = QrssPlus()
     qp.updateGrabberListFromGitHub()
     qp.downloadAll(True)
+    qp.saveLogFile()
+    qp.saveStatsFile()
     qp.deleteOld()
-    with open("data/status.txt", 'w') as f:
-        f.write("<br>\n".join(qp.logLines))
