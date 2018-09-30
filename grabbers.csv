@@ -17,7 +17,7 @@ G3VYZ2,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.holywell44.
 G3VYZ3,G3VYZ,Grabber 3,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_3.jpg
 G3YXM-600m,G3YXM,600m bandscope,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/472.jpg
 G3ZJO,G3ZJO,Various occasional,Eddie,"Northampton, England",http://www.qsl.net/g3zjo/qrssgrabber.html,http://www.qsl.net/g3zjo/HFgrab/hf1.jpg
-#G4HSK,G4HSK,2018 link,Steve,"Essex, England",https://radio.g4hsk.co.uk,https://drive.google.com/uc?export=download&id=0B8Z2hz2xFYhubGtzLUZaQk03azQ
+G4HSK,G4HSK,2018 link,Steve,"Essex, England",https://radio.g4hsk.co.uk,https://drive.google.com/uc?export=download&id=0B8Z2hz2xFYhubGtzLUZaQk03azQ
 G4IOG-1,G4IOG,7MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/qrsspig/hf5.jpg
 G4IOG-2,G4IOG,28MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/qrsspig/hf9.jpg
 G4JVF,G4JVF,Various bands,Philip,"North Derbyshire, UK",http://www.qsl.net/g/g4jvf/,http://www.qsl.net/g/g4jvf/hf4.jpg
@@ -26,8 +26,8 @@ G6NHU,G6NHU,Various bands,Keith,England,http://g6nhu.co.uk,http://g6nhu.co.uk/im
 #G8NXD1,G8NXD,1,Mike,"Truro, England",http://www.pencoys.org.uk/qrss.htm,http://www.pencoys.org.uk/g8nxd.jpg
 #G8NXD2,G8NXD,2,Mike,"Redruth, England",http://www.qsl.net/g8nxd/qrss/qrss.htm,http://www.qsl.net/g8nxd/g8nxd.jpg
 #GB0SNB,GB0SNB,QRT?,George,"Brentwood, England",http://www.gb0snb.com/wordpress/qrss-grabber,http://www.george-smart.co.uk/GB0SNB_QRSS/GB0SNB.jpg
-G7JEW,G7JEW, Test Cached,Steven,Buckinghamshore UK,https://www.qsl.net/g7jew/,https://www.qsl.net/g7jew/argo.jpg
-G7JEW-2,G7JEW,Mostly 40m uncached,Steven,Buckinghamshore UK,https://www.qsl.net/g7jew/,https://www.qsl.net/g7jew/hf1.jpg
+#G7JEW,G7JEW, Test Cached,Steven,Buckinghamshore UK,https://www.qsl.net/g7jew/,https://www.qsl.net/g7jew/argo.jpg
+G7JEW-2,G7JEW,Various testing,Steven,Buckinghamshore UK,https://www.qsl.net/g7jew/,https://www.qsl.net/g7jew/hf1.jpg
 GJ7RWT,GJ7RWT,Usually 40m,Andy,"Jersey, England",http://www.qsl.net/gj7rwt/gj7rwthomepage.html,http://www.qsl.net/gj7rwt/lopshot1.jpg
 #I2NDT,I2NDT,Usually 40m,Claudio,"Bergamo, Italia",http://digilander.libero.it/i2ndt/grabber/grabber.htm,http://digilander.libero.it/i2ndt/grabber/argo.jpg
 #IV3ONZ,IV3ONZ,Not seen since 2016,Andy,"Redipuglia, Italy",http://www.iv3onz.altervista.org/qrss_grabber.php,http://www.iv3onz.altervista.org/images/spectran.jpg
