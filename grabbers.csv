@@ -9,14 +9,15 @@ DL4DTL,DL4DTL,30m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.
 EA8BVP1,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
 EA8BVP2,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
 F6BAZ,F6BAZ,Part time,Henri,France,http://www.f6baz.com/qrss,http://www.f6baz.com/qrss/lopshot1.jpg
-G0FTD,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
+G0FTD-R&D,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
 G0MQW1,G0MQW,1 (30m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf1.jpg
 G0MQW2,G0MQW,2 (30m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf2.jpg
 G0MQW3,G0MQW,3 (10m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf3.jpg
 G3VYZ1,G3VYZ,Grabber 1,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_.jpg
 G3VYZ2,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_2.jpg
 G3VYZ3,G3VYZ,Grabber 3,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_3.jpg
-G3YXM-600m,G3YXM,600m bandscope,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/472.jpg
+G3YXM-136Khz,G3YXM,136Khz band,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/136.jpg
+G3YXM-472Khz,G3YXM,600m bandscope,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/472.jpg
 G3ZJO,G3ZJO,Various occasional,Eddie,"Northampton, England",http://www.qsl.net/g3zjo/qrssgrabber.html,http://www.qsl.net/g3zjo/HFgrab/hf1.jpg
 #G4HSK,G4HSK,2018 link,Steve,"Essex, England",https://radio.g4hsk.co.uk,https://drive.google.com/uc?export=download&id=0B8Z2hz2xFYhubGtzLUZaQk03azQ
 G4IOG-1,G4IOG,7MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/qrsspig/hf1.jpg
@@ -27,7 +28,7 @@ G6NHU,G6NHU,Various bands,Keith,England,http://g6nhu.co.uk,http://g6nhu.co.uk/im
 #G8NXD1,G8NXD,1,Mike,"Truro, England",http://www.pencoys.org.uk/qrss.htm,http://www.pencoys.org.uk/g8nxd.jpg
 #G8NXD2,G8NXD,2,Mike,"Redruth, England",http://www.qsl.net/g8nxd/qrss/qrss.htm,http://www.qsl.net/g8nxd/g8nxd.jpg
 #GB0SNB,GB0SNB,QRT?,George,"Brentwood, England",http://www.gb0snb.com/wordpress/qrss-grabber,http://www.george-smart.co.uk/GB0SNB_QRSS/GB0SNB.jpg
-G7JEW-2,G7JEW,Various testing,Steven,Buckinghamshire UK,https://www.qsl.net/g7jew/,https://www.qsl.net/g7jew/hf1.jpg
+#G7JEW-2,G7JEW,Various testing,Steven,Buckinghamshire UK,https://www.qsl.net/g7jew/,https://www.qsl.net/g7jew/hf1.jpg
 GJ7RWT,GJ7RWT,Usually 40m,Andy,"Jersey, England",http://www.qsl.net/gj7rwt/gj7rwthomepage.html,http://www.qsl.net/gj7rwt/lopshot1.jpg
 #I2NDT,I2NDT,Usually 40m,Claudio,"Bergamo, Italia",http://digilander.libero.it/i2ndt/grabber/grabber.htm,http://digilander.libero.it/i2ndt/grabber/argo.jpg
 #IV3ONZ,IV3ONZ,Not seen since 2016,Andy,"Redipuglia, Italy",http://www.iv3onz.altervista.org/qrss_grabber.php,http://www.iv3onz.altervista.org/images/spectran.jpg
@@ -60,7 +61,7 @@ VA3ROM,VA3ROM,Maybe QRT?,Robert,"Ontario, Canada",http://va3rom.com/QRSS/QRSS.ht
 VE1VDM,VE1VDM,Various bands,Vernon,"Nova Scotia, Canada",http://users.eastlink.ca/~ve1vdm/argocaptures/grabber.htm,http://users.eastlink.ca/~ve1vdm/argocaptures/argo.jpg
 VE3GTC,VE3GTC,Primary,Graham,"Ontario, Canada",http://users.aei.ca/~planophore/grabber,https://dl.dropboxusercontent.com/s/iz4s0yhwqvtge8p/picture.jpg
 VK3EDW,VK3EDW,Primary,John,Kallista - Victoria,http://www.qsl.net/vk3edw,http://www.qsl.net/vk3edw/QRSS/assets/images/hf1.jpg
-VK2DDI,VK2DDI,Maybe active again 2018,Dave,Berry Mountain NSW,http://www.users.on.net/~davroz/vk6di/,http://www.users.on.net/~davroz/vk6di/argocaptures/argo.jpg
+#VK2DDI,VK2DDI,Maybe active again 2018,Dave,Berry Mountain NSW,http://www.users.on.net/~davroz/vk6di/,http://www.users.on.net/~davroz/vk6di/argocaptures/argo.jpg
 VE7IGH,VE7IGH,10Mhz & attic antenna,Gregory,"British Columbia, Canada",http://www.qsl.net/ve7igh/Grabber.htm,http://www.qsl.net/ve7igh/capt.jpg
 WD4AH,WD4AH,Testing,Alfred,Florida,http://www.qsl.net/wd4ah,http://www.qsl.net/wd4ah/hf1.jpg
 WD4ELG-17,WD4ELG,17m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/ge1bu4t90w40lpn/WD4ELG%2017M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
