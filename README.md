@@ -21,8 +21,9 @@ This master grabber list is downloaded every 10 minutes by QRSS Plus, so updatin
 ### Request a Change
 **If you would like to update a grabber listing, take one of these actions:**
 
-* E-mail Andy (G0FTD) punkbiscuit@googlemail.com with information about the grabber
+* E-mail Andy (G0FTD) punkbiscuit@googlemail.com with information about the grabber [Working links ONLY please]
 * Post a message to the [Knights QRSS Mailing List](https://groups.io/g/qrssknights) requesting the change
+* For help establishing a grabber, please refer to the [Knights QRSS Mailing List] and request community assistance.
 
 ### A Note for DropBox Users
 Many people upload grabs automatically using a DropBox account. The URLs used to access these files require special attention. If the URL is incorrectly formatted, it will return a _web page_ displaying a file. When the URL is properly formatted, it will return the _file_ itself. It is critically important that the URL given to QRSS Plus is the URL for the file, not for the webpage. To do this, simply replace `www.dropbox.com` with `dl.dropboxusercontent.com` in the URL:
