@@ -176,7 +176,7 @@ class QrssPlus {
 					$bigPic=$filesOriginal[count($filesOriginal)-1];
 					$url="$this->folderGrabs/$bigPic";
 					$style='';
-					if (count($filesThumb)<2 || ($hashes[0]==$hashes[1])) $style='opacity: 0.3;';
+					if (count($filesThumb)<2 || ($hashes[0]==$hashes[1])) $style='';
 					echo "<td valign='top' style='padding-right: 50px;'><a target='_blank' href='$url'>";
 					echo "<img style='$style' class='grabLatest' width='600' src='$url'></a></td>";
 		
