@@ -176,18 +176,41 @@ class QrssPlus:
             process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
             process.wait()
 
+    def timestampToDatetime(self, timestamp):
+        """return a datetime from a string: YYMMDDHHmm"""
+        assert isinstance(timestamp, str)
+        assert len(timestamp)==10
+        year = int(timestamp[0:2])
+        month = int(timestamp[2:4])
+        day = int(timestamp[4:6])
+        hour = int(timestamp[6:8])
+        minute = int(timestamp[8:10])
+        dt = datetime.datetime(year, month, day, hour, minute)
+        return dt
+
+    def timestampAgeMinutes(self, stamp1, stamp2):
+        dt1 = self.timestampToDatetime(stamp1)
+        dt2 = self.timestampToDatetime(stamp2)
+        dtDiff = dt2 - dt1
+        return dtDiff.seconds/60.0
+
     def deleteOldFolder(self, folderPath, maxAgeMinutes):
         """Delete files older than a certain age."""
-        for fname in glob.glob(folderPath+"/*.jpg"):
+        folderPath = os.path.abspath(folderPath)
+        print("deleting old files in:", folderPath)
+        for fname in sorted(glob.glob(folderPath+"/*.jpg")):
             bn = os.path.basename(fname).split(".")
             if len(bn) < 4:
                 continue
-            age = int(self.timeCode())-int(bn[1])
-            if age > maxAgeMinutes:
+            stampNow = self.timeCode()
+            stampThen = bn[1]
+            #age = int(self.timeCode())-int(bn[1])
+            ageMinutes = self.timestampAgeMinutes(stampThen, stampNow)
+            if ageMinutes > maxAgeMinutes:
                 self.log("deleting old:"+fname)
                 os.remove(fname)
 
-    def deleteOld(self, maxAgeMinutes=60*4):
+    def deleteOld(self, maxAgeMinutes=60):
         """Delete all data files older than a certain age."""
         self.deleteOldFolder(self.downloadFolder, maxAgeMinutes)
         self.deleteOldFolder(self.thumbnailFolder, maxAgeMinutes)
@@ -250,5 +273,5 @@ if __name__ == "__main__":
         qp.downloadAll(True)
         qp.saveLogFile()
         qp.saveStatsFile()
-    qp.createAverageImages()
+        qp.createAverageImages()
     qp.deleteOld()
