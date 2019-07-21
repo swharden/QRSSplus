@@ -20,7 +20,7 @@ def getGrabberUptime(logLinesByGrabber, grabberID):
                 hashBefore = grabberLines[i-attempts][2]
                 if hashNow != hashBefore:
                     hashesSeen += 1
-                    continue
+                    break
 
     if hashesSeen == 1:
         uptimeFrac = 0
