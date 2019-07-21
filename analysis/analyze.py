@@ -13,6 +13,8 @@ def getGrabberUptime(logLinesByGrabber, grabberID):
     hashesSeen = 1
     for i in range(1, len(grabberLines)):
         hashNow = grabberLines[i][2]
+        if hashNow == "fail":
+            continue
 
         # call it active if the hash is different in the last hour
         for attempts in range(1, 7):
@@ -30,7 +32,7 @@ def getGrabberUptime(logLinesByGrabber, grabberID):
 
 
 def uptimesFromDayFile(statsFilePath):
-    print("calculating uptimes from", statsFilePath)
+    print("calculating daily uptimes from", statsFilePath)
     with open(statsFilePath) as f:
         raw = f.read().split("\n")
     logLinesByGrabber = []
@@ -112,7 +114,7 @@ def graphUptimesOverTime(uptimesByDay):
         plt.grid(alpha=.2, ls='--')
         plt.title(f"{grabberID} Grabber Uptime")
         plt.ylabel("Uptime (%)")
-        plt.bar(days, uptimes*100)
+        plt.bar(days, uptimes*100, width=1)
         plt.axis([None, None, 0, 105])
         #plt.xticks(range(len(days)), tickLabels, rotation='vertical')
         plt.gcf().autofmt_xdate()
@@ -149,14 +151,35 @@ def updateMarkdown(uptimesByDay):
         f.write(text)
     print("wrote", mdPath)
 
+
 def removeOldGraphs():
     print("deleting old graphs...")
     for imageFilePath in glob.glob(PATH_HERE+"/graphs/*.png"):
         os.remove(imageFilePath)
 
-if __name__ == "__main__":
+
+def analyzeLogsAndCreateGraphs():
     removeOldGraphs()
     uptimesByDay = getUptimesByDay()
     graphUptimesOverTime(uptimesByDay)
     updateMarkdown(uptimesByDay)
+
+
+def investigate(grabberID):
+    statsFilePaths = sorted(glob.glob(PATH_STATS+"/*.txt"))
+    for statsFilePath in statsFilePaths:
+        day = os.path.basename(statsFilePath).split(".")[0]
+        with open(statsFilePath) as f:
+            raw = f.read()
+        raw = raw.split(",")
+        matches = [x for x in raw if grabberID in x]
+        hashes = [x.split(" ")[1] for x in matches]
+        uniqueHashes = list(set(hashes))
+        print(day, ":", ", ".join(uniqueHashes))
+
+
+if __name__ == "__main__":
+    #analyzeLogsAndCreateGraphs()
+    investigate("G6AVK")
+    #investigate("AA7US")
     print("DONE")
