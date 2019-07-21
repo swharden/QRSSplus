@@ -50,6 +50,7 @@ class QrssPlus:
         self.configFile = configFile
         assert os.path.exists(downloadFolder)
         self.downloadFolder = downloadFolder
+        self.thumbnailFolder = downloadFolder+"/thumbs/"
 
         self.loadGrabbers()
         self.deleteOld()
@@ -163,10 +164,20 @@ class QrssPlus:
         for grabber in self.grabbers:
             self.downloadGrab(grabber["url"], grabber["ID"])+"\n"
 
-    def deleteOld(self, maxAgeMinutes=60*4):
-        """Download all data files older than a certain age."""
-        fnames = sorted(glob.glob(self.downloadFolder+"/*.*"))
-        for fname in fnames:
+    def createAverageImages(self):
+        """For every callsign average all images together."""
+        for grabber in self.grabbers:
+            callsign = grabber["ID"]
+            callMatch = "%s/%s*" % (self.downloadFolder, callsign)
+            fnameOut = "%s/averages/%s.jpg" % (self.downloadFolder, callsign)
+            cmd = "convert %s -evaluate-sequence Mean %s" %(callMatch, fnameOut)
+            print(cmd)
+            process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+            process.wait()
+
+    def deleteOldFolder(self, folderPath, maxAgeMinutes):
+        """Delete files older than a certain age."""
+        for fname in glob.glob(folderPath+"/*.jpg"):
             bn = os.path.basename(fname).split(".")
             if len(bn) < 4:
                 continue
@@ -175,12 +186,17 @@ class QrssPlus:
                 self.log("deleting old:"+fname)
                 os.remove(fname)
 
+    def deleteOld(self, maxAgeMinutes=60*4):
+        """Delete all data files older than a certain age."""
+        self.deleteOldFolder(self.downloadFolder, maxAgeMinutes)
+        self.deleteOldFolder(self.thumbnailFolder, maxAgeMinutes)
+
     def thumbnail(self, fnameIn, fnameOut):
         """given the filename of an original image, create its thumbnail."""
         cmd = "convert -define jpeg:size=500x150 "
         cmd += '"%s" ' % os.path.join(self.downloadFolder, fnameIn)
         cmd += "-auto-orient -thumbnail 250x150 "
-        cmd += '"%s" ' % os.path.join(self.downloadFolder, fnameOut)
+        cmd += '"%s" ' % os.path.join(self.thumbnailFolder, fnameOut)
         self.log("creating thumbnail ...")
         self.log(cmd)
         process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
@@ -227,8 +243,10 @@ class QrssPlus:
 
 if __name__ == "__main__":
     qp = QrssPlus()
-    qp.updateGrabberListFromGitHub()
-    qp.downloadAll(True)
-    qp.saveLogFile()
-    qp.saveStatsFile()
+    if not "test" in sys.argv:
+        qp.updateGrabberListFromGitHub()
+        qp.downloadAll(True)
+        qp.saveLogFile()
+        qp.saveStatsFile()
+    qp.createAverageImages()
     qp.deleteOld()
