@@ -16,7 +16,9 @@ class QrssPlus {
     // This standalone class provides all active QRSS Plus functionality.
 
     public $folderGrabs = 'data/';
+    public $folderThumbs = 'data/thumbs/';
     public $filesSeen = [];
+	public $filesSeenThumb = [];
     public $data = [];
     public $fileGrabber = 'grabbers.csv';
     public $dataCols = ['ID', 'call', 'title', 'name', 'loc', 'site', 'url'];
@@ -67,12 +69,21 @@ class QrssPlus {
     function scanFiles(){
         // update $this->filesSeen based on the contents of $this->folderGrabs
         $this->filesSeen = [];
+		$this->filesSeenThumb = [];
+		
         foreach (scandir($this->folderGrabs) as $fname){
             if (strpos($fname,".fail.")) continue;
             if (count(explode(".",$fname))<4) continue;
             $this->filesSeen[]=$fname;
         }
         sort($this->filesSeen);
+		
+        foreach (scandir($this->folderThumbs) as $fname){
+            if (strpos($fname,".fail.")) continue;
+            if (count(explode(".",$fname))<4) continue;
+            $this->filesSeenThumb[]=$fname;
+        }
+        sort($this->filesSeenThumb);
     }
 
     function dataLoad(){
@@ -124,7 +135,8 @@ class QrssPlus {
 
             // determine grabber state
             $filesWithID=$this->itemsMatching($this->filesSeen,$dataRow[0]);
-            $filesThumb=$this->itemsMatching($filesWithID,".thumb.");
+			$thumbsWithId=$this->itemsMatching($this->filesSeenThumb,$dataRow[0]);
+            $filesThumb=$this->itemsMatching($thumbsWithId,".thumb.");
             rsort($filesThumb);
             $filesOriginal=$this->itemsNotMatching($filesWithID,".thumb.");
             $hashes=[];
@@ -174,11 +186,16 @@ class QrssPlus {
                     // show latest pic large
 					echo "<table><tr>";
 					$bigPic=$filesOriginal[count($filesOriginal)-1];
-					$url="$this->folderGrabs/$bigPic";
+                    $urlLatest="$this->folderGrabs/$bigPic";
+                    $urlStack="$this->folderGrabs/averages/$grabberID.jpg";
 					$style='';
 					if (count($filesThumb)<2 || ($hashes[0]==$hashes[1])) $style='';
-					echo "<td valign='top' style='padding-right: 50px;'><a target='_blank' href='$url'>";
-					echo "<img style='$style' class='grabLatest' width='600' src='$url'></a></td>";
+                    echo "<td valign='top' style='padding-right: 50px;'>";
+                    echo "Latest grab:<br>";
+                    echo "<a target='_blank' href='$urlLatest'><img style='$style' class='grabLatest' width='600' src='$urlLatest'></a>";
+                    echo "<br><br>Stack (mean of all grabs):<br>";
+                    echo "<a target='_blank' href='$urlStack'><img style='$style' class='grabLatest' width='600' src='$urlStack'></a>";
+                    echo "</td>";
 		
 					// show all thumbnails
 					echo "<td valign='top'><br>";
@@ -186,7 +203,7 @@ class QrssPlus {
 						$fname=$filesThumb[$i];
 						$fnameOriginal=str_replace(".thumb","",$fname);
 						if (!in_array($fnameOriginal,$this->filesSeen)) continue;
-						$url="$this->folderGrabs/$fname";
+						$url="$this->folderThumbs/$fname";
 						$url2="$this->folderGrabs/$fnameOriginal";
 						$style='';
 						if (($i<count($filesThumb)-1) && ($hashes[$i]==$hashes[$i+1])) $style='opacity: 0.3;';
