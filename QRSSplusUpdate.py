@@ -51,6 +51,7 @@ class QrssPlus:
         assert os.path.exists(downloadFolder)
         self.downloadFolder = downloadFolder
         self.thumbnailFolder = downloadFolder+"/thumbs/"
+        self.averagesFolder = downloadFolder+"/averages/"
 
         self.loadGrabbers()
         self.deleteOld()
@@ -169,7 +170,7 @@ class QrssPlus:
         for grabber in self.grabbers:
             callsign = grabber["ID"]
             callMatch = "%s/%s*" % (self.downloadFolder, callsign)
-            fnameOut = "%s/averages/%s.jpg" % (self.downloadFolder, callsign)
+            fnameOut = "%s/%s.%s.jpg" % (self.averagesFolder, callsign, self.timeCode())
             cmd = "convert %s -evaluate-sequence Mean %s" %(callMatch, fnameOut)
             print(cmd)
             process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
@@ -190,6 +191,7 @@ class QrssPlus:
         """Delete all data files older than a certain age."""
         self.deleteOldFolder(self.downloadFolder, maxAgeMinutes)
         self.deleteOldFolder(self.thumbnailFolder, maxAgeMinutes)
+        self.deleteOldFolder(self.averagesFolder, maxAgeMinutes)
 
     def thumbnail(self, fnameIn, fnameOut):
         """given the filename of an original image, create its thumbnail."""

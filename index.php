@@ -187,18 +187,22 @@ class QrssPlus {
 					echo "<table><tr>";
 					$bigPic=$filesOriginal[count($filesOriginal)-1];
                     $urlLatest="$this->folderGrabs/$bigPic";
-                    $urlStack="$this->folderGrabs/averages/$grabberID.jpg";
+                    
+                    
+                    $stackFileNames = glob("$this->folderGrabs/averages/$grabberID*.jpg");
+                    $urlStack = $stackFileNames[0];
+
 					$style='';
 					if (count($filesThumb)<2 || ($hashes[0]==$hashes[1])) $style='';
                     echo "<td valign='top' style='padding-right: 50px;'>";
                     echo "Latest grab:<br>";
                     echo "<a target='_blank' href='$urlLatest'><img style='$style' class='grabLatest' width='600' src='$urlLatest'></a>";
-                    echo "<br><br>Stack (mean of all grabs):<br>";
+                    echo "<br><br>Stack (average of all grabs):<br>";
                     echo "<a target='_blank' href='$urlStack'><img style='$style' class='grabLatest' width='600' src='$urlStack'></a>";
                     echo "</td>";
 		
 					// show all thumbnails
-					echo "<td valign='top'><br>";
+					echo "<td valign='top'>Last several grabs:<br><br>";
 					for ($i=0; $i<count($filesThumb); $i++){
 						$fname=$filesThumb[$i];
 						$fnameOriginal=str_replace(".thumb","",$fname);
