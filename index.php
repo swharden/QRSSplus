@@ -190,6 +190,8 @@ class QrssPlus {
                     
                     
                     $stackFileNames = glob("$this->folderGrabs/averages/$grabberID*.jpg");
+                    rsort($stackFileNames);
+                    $grabCount = sizeof($stackFileNames);
                     $urlStack = $stackFileNames[0];
 
 					$style='';
@@ -197,7 +199,7 @@ class QrssPlus {
                     echo "<td valign='top' style='padding-right: 50px;'>";
                     echo "Latest grab:<br>";
                     echo "<a target='_blank' href='$urlLatest'><img style='$style' class='grabLatest' width='600' src='$urlLatest'></a>";
-                    echo "<br><br>Stack (average of all grabs):<br>";
+                    echo "<br><br>Stack (average of last $grabCount grabs):<br>";
                     echo "<a target='_blank' href='$urlStack'><img style='$style' class='grabLatest' width='600' src='$urlStack'></a>";
                     echo "</td>";
 		
