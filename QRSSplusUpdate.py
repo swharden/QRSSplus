@@ -200,17 +200,16 @@ class QrssPlus:
         print("deleting old files in:", folderPath)
         for fname in sorted(glob.glob(folderPath+"/*.jpg")):
             bn = os.path.basename(fname).split(".")
-            if len(bn) < 4:
+            if len(bn) < 2:
                 continue
             stampNow = self.timeCode()
             stampThen = bn[1]
-            #age = int(self.timeCode())-int(bn[1])
             ageMinutes = self.timestampAgeMinutes(stampThen, stampNow)
             if ageMinutes > maxAgeMinutes:
                 self.log("deleting old:"+fname)
                 os.remove(fname)
 
-    def deleteOld(self, maxAgeMinutes=60):
+    def deleteOld(self, maxAgeMinutes=60*2):
         """Delete all data files older than a certain age."""
         self.deleteOldFolder(self.downloadFolder, maxAgeMinutes)
         self.deleteOldFolder(self.thumbnailFolder, maxAgeMinutes)
