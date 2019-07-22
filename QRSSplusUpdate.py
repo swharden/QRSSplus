@@ -198,7 +198,10 @@ class QrssPlus:
         """Delete files older than a certain age."""
         folderPath = os.path.abspath(folderPath)
         print("deleting old files in:", folderPath)
-        for fname in sorted(glob.glob(folderPath+"/*.jpg")):
+        imageFiles = glob.glob(folderPath+"/*.jpg")
+        imageFiles += glob.glob(folderPath+"/*.png")
+        imageFiles += glob.glob(folderPath+"/*.gif")
+        for fname in sorted(imageFiles):
             bn = os.path.basename(fname).split(".")
             if len(bn) < 2:
                 continue
