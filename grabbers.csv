@@ -10,9 +10,9 @@ EA8BVP1,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.htm
 EA8BVP2,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
 G0FTD-RD,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
 G0MQW1,G0MQW,1 (10m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf1.jpg
-G0MQW2,G0MQW,2 (2m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf2.jpg
-G0MQW3,G0MQW,3 (6m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf3.jpg
-G0MQW4,G0MQW,4 (30m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf4.jpg
+G0MQW2,G0MQW,2 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf2.jpg
+G0MQW3,G0MQW,3 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf3.jpg
+G0MQW4,G0MQW,4 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf4.jpg
 G0UPL,G0UPL,Part time variable,Hans,"Turkey",http://www.hanssummers.com,http://www.hanssummers.com/images/stories/balloons/ve3kcl/s.jpg
 G3VYZ1,G3VYZ,Grabber 1,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_.jpg
 G3VYZ2,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_2.jpg
@@ -21,7 +21,7 @@ G3VYZ4,G3VYZ,Grabber 4,Les,"Holywell, Northumberland, UK",http://www.holywell44.
 G3VYZ5,G3VYZ,Grabber 5,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_5.jpg
 G3YXM-136Khz,G3YXM,136Khz band,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/136.jpg
 G3YXM-472Khz,G3YXM,600m bandscope,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/472.jpg
-G3ZJO,G3ZJO,Various occasional,Eddie,"Northampton, England",http://www.qsl.net/g3zjo/qrssgrabber.html,http://www.qsl.net/g3zjo/HFgrab/hf1.jpg
+#G3ZJO,G3ZJO,Various occasional,Eddie,"Northampton, England",http://www.qsl.net/g3zjo/qrssgrabber.html,http://www.qsl.net/g3zjo/HFgrab/hf1.jpg
 #G4HSK,G4HSK,2018 link,Steve,"Essex, England",https://radio.g4hsk.co.uk,https://drive.google.com/uc?export=download&id=0B8Z2hz2xFYhubGtzLUZaQk03azQ
 G4IOG-1,G4IOG,7MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/qrsspig/hf1.png
 G4IOG-2,G4IOG,28MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/qrsspig/hf9.png
