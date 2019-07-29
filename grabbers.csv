@@ -1,5 +1,4 @@
 #ID,callsign,title,name,location,website,file
-#2E0ILY-136Khz,2E0ILY,136Khz,Chris,UK,http://www.chriswilson.tv/grabs,http://www.chriswilson.tv/grabs/qrss.jpg
 7L1RLL,7L1RLL,136Khz,Rick,Japan,http://www1.u-netsurf.ne.jp/~7l1rll/Grabber_7L1RLL.html,http://www1.u-netsurf.ne.jp/~7l1rll/argo_capture.jpg
 AA7US,AA7US,Usually 30m,John,Seaview-Washington-CN76XH,http://www.qsl.net/aa7us/,http://www.qsl.net/aa7us/hf3.jpg
 CT2IWW,CT2IWW,Usually 10m seasonal,Paulo,Portugal,http://qsl.net/ct2iww/CT2IWW_QRSS.html,http://qsl.net/ct2iww/CT2IWW_QRSS_files/hf1.jpg
@@ -9,7 +8,6 @@ DK7FC2-475Khz,DK7FC,600m band,Stefan,Heidelberg University,http://www.iup.uni-he
 DL4DTL,DL4DTL,30m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
 EA8BVP1,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
 EA8BVP2,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
-#F6BAZ,F6BAZ,Part time,Henri,France,http://www.f6baz.com/qrss,http://www.f6baz.com/qrss/lopshot1.jpg
 G0FTD-RD,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
 G0MQW1,G0MQW,1 (10m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf1.jpg
 G0MQW2,G0MQW,2 (2m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf2.jpg
@@ -33,7 +31,6 @@ G6NHU,G6NHU,Various bands,Keith,England,http://g6nhu.co.uk,http://g6nhu.co.uk/im
 #G8NXD1,G8NXD,1,Mike,"Truro, England",http://www.pencoys.org.uk/qrss.htm,http://www.pencoys.org.uk/g8nxd.jpg
 #G8NXD2,G8NXD,2,Mike,"Redruth, England",http://www.qsl.net/g8nxd/qrss/qrss.htm,http://www.qsl.net/g8nxd/g8nxd.jpg
 #GB0SNB,GB0SNB,QRT?,George,"Brentwood, England",http://www.gb0snb.com/wordpress/qrss-grabber,http://www.george-smart.co.uk/GB0SNB_QRSS/GB0SNB.jpg
-#G7JEW-2,G7JEW,Various testing,Steven,Buckinghamshire UK,https://www.qsl.net/g7jew/,https://www.qsl.net/g7jew/hf1.jpg
 GJ7RWT,GJ7RWT,Usually 40m,Andy,"Jersey, England",http://www.qsl.net/gj7rwt/gj7rwthomepage.html,http://www.qsl.net/gj7rwt/lopshot1.jpg
 HB9FXX-1,HB9FXX,Testing,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf1.png
 HB9FXX-2,HB9FXX,Usually 10m,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf2.png
@@ -43,11 +40,9 @@ HB9FXX-4,HB9FXX,Usually 10m,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https
 #IV3ONZ,IV3ONZ,Not seen since 2016,Andy,"Redipuglia, Italy",http://www.iv3onz.altervista.org/qrss_grabber.php,http://www.iv3onz.altervista.org/images/spectran.jpg
 #IZ1KXQ,IZ1KXQ,Inactive,Paolo,Italy,http://www.qsl.net/iz1kxq,http://www.qsl.net/iz1kxq/SL1.jpg
 #IZ3NVR,IZ3NVR,Inactive,Stefano,"Roncade, Italy",http://www.qsl.net/iz3nvr/,http://www.qsl.net/iz3nvr/IZ3NVR_30m.jpg
-#KC4SIT,TESTING,Testing 600m,Ernie,"Hendersonville",https://hamsignal.com/,http://www.qsl.net/kc4sit/grabs/hf1.jpg
 KL7L,KL7L,Various bands,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/Alaska00000.jpg
 LA5GOA,LA5GOA,30m,Steen,Norway,http://la5goa.manglet.net/grabber,http://la5goa.manglet.net/grabber/lopshot1.jpg
 M0BMN,M0BMN,30m testing, Paul,Wolverhampton,http://www.m0bmn.co.uk,http://www.m0bmn.co.uk/qrss.jpg
-#MW0UZO,MW0UZO,30m,Daniel,Wales,http://mw0uzo.co.uk/,http://mw0uzo.co.uk/30mgrabber/hf1.jpg
 N2NXZ,N2NXZ,Band hopper & balloons,Jim,New York (USA),http://www.qsl.net/n2nxz/,http://www.qsl.net/n2nxz/hf1.jpg
 N8NJ,N8NJ,Various bands,Larry,Ohio,https://www.qsl.net/n8nj/index.html,https://www.qsl.net/n8nj/hf1.jpg
 #N9JL,N9JL,Currently inactive,John,"Shorewood, IL",http://qsl.net/n9jl/grabber.htm,http://qsl.net/n9jl/capt.jpg
@@ -70,9 +65,9 @@ S52AS,S52AS,30m Part time,Roman,"Novo Mesto, Slovenia",http://novomesto.zevs.si/
 SA6BSS1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf1.jpg
 SA6BSS2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
 SA6BSS3,SA6BSS,14 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf3.jpg
-VA3ROM,VA3ROM,Maybe QRT?,Robert,"Ontario, Canada",http://va3rom.com/QRSS/QRSS.html,http://va3rom.com/QRSS/image1.jpg
-VE1VDM,VE1VDM,Various bands,Vernon,"Nova Scotia, Canada",http://users.eastlink.ca/~ve1vdm/argocaptures/grabber.htm,http://users.eastlink.ca/~ve1vdm/argocaptures/argo.jpg
-VE3GTC,VE3GTC,Primary,Graham,"Ontario, Canada",http://users.aei.ca/~planophore/grabber,https://dl.dropboxusercontent.com/s/iz4s0yhwqvtge8p/picture.jpg
+VA3ROM,VA3ROM,30m,Robert,"Ontario, Canada",http://va3rom.com/QRSS/QRSS.html,http://va3rom.com/QRSS/image1.jpg
+VE1VDM,VE1VDM,Various,Vernon,"Nova Scotia, Canada",http://users.eastlink.ca/~ve1vdm/argocaptures/grabber.htm,http://users.eastlink.ca/~ve1vdm/argocaptures/argo.jpg
+VE3GTC,VE3GTC,40m,Graham,"Ontario, Canada",http://users.aei.ca/~planophore/grabber,https://dl.dropboxusercontent.com/s/iz4s0yhwqvtge8p/picture.jpg
 VK3EDW,VK3EDW,Primary,John,Kallista - Victoria,http://www.qsl.net/vk3edw,http://www.qsl.net/vk3edw/QRSS/assets/images/hf1.jpg
 #VK2DDI,VK2DDI,Maybe active again 2018,Dave,Berry Mountain NSW,http://www.users.on.net/~davroz/vk6di/,http://www.users.on.net/~davroz/vk6di/argocaptures/argo.jpg
 VE7IGH,VE7IGH,10Mhz & attic antenna,Gregory,"British Columbia, Canada",http://www.qsl.net/ve7igh/Grabber.htm,http://www.qsl.net/ve7igh/capt.jpg
