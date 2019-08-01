@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.checkbox {
+    transform: scale(2);
+    padding: 20px;
+}
+
+.logo1 {
+    color: #000;
+    font-size: 80px;
+    font-family: "Times New Roman", Georgia, Serif;
+    text-shadow: 3px 3px 10px #AAA;
+}
+
+.logo2 {
+    color: #000;
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+    top: -19px;
+    left: +60px;
+    font-family: "Times New Roman", Georgia, Serif;
+    text-shadow: 3px 3px 10px #AAA;
+}
+
+.grabberTitle {
+    margin-top: 50px;
+    font-size: 125%;
+    display: inline-block;
+}
+
+.title {
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.display {
+    display: inline-block;
+    padding: 20px;
+    font-size: 150%;
+    background-color: #FFFFDD;
+}
+
+.message {
+    padding: 10px;
+    margin: 10px;
+}
+
+.thumbnail {
+    height: 125 px;
+    width: 125 px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+
+.grab {
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+
+.displayMessage {
+    padding-top: 10px;
+    font-size: 16;
+}
