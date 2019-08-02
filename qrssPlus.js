@@ -109,7 +109,7 @@ function generateContent() {
                 html += "<div style='float: left; margin: 5px;'>";
                 html += `<a href='#${grabber.id}'><b>${grabber.callsign}</b><br></a>`;
                 imgCode = `<img class='thumbnail' src='data/thumbs/${grabber.latestThumbnail}' />`;
-                html += `<a href='data/${grabber.latestGrab}'>${imgCode}</a>`;
+                html += `<a href='#${grabber.id}'>${imgCode}</a>`;
                 html += "</div>";
             }
         }
