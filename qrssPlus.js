@@ -132,6 +132,8 @@ function generateContent() {
 
             if (showLatestStack)
                 html += `<a href='data/averages/${grabber.latestStack}'><img class='grab' src='data/averages/${grabber.latestStack}'></a>`
+            else
+                html += "<div style='padding: 5px;'><a onclick='showStack();'>show stack</a></div>";
 
             if (showAllGrabs) {
                 html += "<div>";
@@ -142,6 +144,8 @@ function generateContent() {
                     }
                 );
                 html += "</div>";
+            } else {
+                html += "<div style='padding: 5px;'><a onclick='showThumbs();'>show last several grabs</a></div>";
             }
 
             html += "</div>";
@@ -164,4 +168,14 @@ function generateContent() {
     }
 
     document.getElementById("content").innerHTML = html;
+}
+
+function showStack() {
+    document.getElementById("showLatestStack").checked = true;
+    generateContent();
+}
+
+function showThumbs() {
+    document.getElementById("showAllGrabs").checked = true;
+    generateContent();
 }
