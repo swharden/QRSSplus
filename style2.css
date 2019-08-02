@@ -34,12 +34,6 @@ a:hover {
     text-shadow: 3px 3px 10px #AAA;
 }
 
-.grabberTitle {
-    margin-top: 50px;
-    font-size: 125%;
-    display: inline-block;
-}
-
 .title {
     font-size: 200%;
     font-weight: bold;
@@ -61,7 +55,6 @@ a:hover {
 .thumbnail {
     height: 125 px;
     width: 125 px;
-    margin: 10px;
     border: 1px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
 }
@@ -75,4 +68,30 @@ a:hover {
 .displayMessage {
     padding-top: 10px;
     font-size: 16;
+    color: white;
+}
+
+.activeTitle {
+    font-size: 125%;
+    background-color: #4a8e6a;
+    padding: 10px;
+    color: white;
+}
+
+.inactiveTitle {
+    font-size: 125%;
+    background-color: #ba4a4a;
+    padding: 10px;
+}
+
+.activeBlock {
+    background-color: #c9e0d4;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
+    margin: 20px;
+}
+
+.inactiveBlock {
+    background-color: #e0c3c3;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
+    margin: 20px;
 }

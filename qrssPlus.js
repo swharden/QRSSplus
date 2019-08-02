@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
     generateContent();
 }
 
@@ -6,7 +6,7 @@ function getLatestFiles(grabberID, divSource) {
     fileNames = document.getElementById(divSource).innerHTML;
     fileNames = fileNames.split("\n");
     thisGrabberFiles = [];
-    fileNames.forEach(function (element) {
+    fileNames.forEach(function(element) {
         element = element.trim();
         if (element.startsWith(grabberID))
             thisGrabberFiles.push(element);
@@ -18,7 +18,7 @@ function getLatestFiles(grabberID, divSource) {
 
 function isActive(latestGrabs) {
     hashes = [];
-    latestGrabs.forEach(function (element) {
+    latestGrabs.forEach(function(element) {
         hashes.push(element.split(".")[2]);
     });
     uniqueHashes = new Set(hashes);
@@ -59,11 +59,11 @@ function Grabber(line) {
 
 }
 
-Grabber.prototype.toString = function () {
+Grabber.prototype.toString = function() {
     return `Grabber info for ${this.id}`;
 }
 
-Grabber.prototype.getHtml = function (showLatest, showStack, showThumbs) {
+Grabber.prototype.getHtml = function(showLatest, showStack, showThumbs) {
     grabberHtml = "";
     grabberHtml += "<div>";
     urlQRZ = "https://www.qrz.com/lookup/" + this.callsign;
@@ -105,9 +105,15 @@ function generateContent() {
         html += "<div class='title'>Active Grabber Summary</div>"
         for (var i = 0; i < grabbers.length; i++) {
             grabber = grabbers[i];
-            if (grabber.isActive)
-                html += `<a href='data/${grabber.latestGrab}'><img class='thumbnail' src='data/thumbs/${grabber.latestThumbnail}'></img></a>`;
+            if (grabber.isActive) {
+                html += "<div style='float: left; margin: 5px;'>";
+                html += `<a href='#${grabber.id}'><b>${grabber.callsign}</b><br></a>`;
+                imgCode = `<img class='thumbnail' src='data/thumbs/${grabber.latestThumbnail}' />`;
+                html += `<a href='data/${grabber.latestGrab}'>${imgCode}</a>`;
+                html += "</div>";
+            }
         }
+        html += "<div style='clear: left;'></div>";
     }
 
 
@@ -116,10 +122,10 @@ function generateContent() {
     for (var i = 0; i < grabbers.length; i++) {
         grabber = grabbers[i];
         if (grabber.isActive) {
-            html += "<div>";
+            html += "<div class='activeBlock' style='border: 1px solid black;'>";
 
             grabberInfo = grabber.getHtml();
-            html += `<div class='grabberTitle'>${grabberInfo}</div><br>`;
+            html += `<a name='${grabber.id}'></a><div class='activeTitle'>${grabberInfo}</div><br>`;
 
             if (showLatestGrab)
                 html += `<a href='data/${grabber.latestGrab}'><img class='grab' src='data/${grabber.latestGrab}'></a>`
@@ -130,7 +136,7 @@ function generateContent() {
             if (showAllGrabs) {
                 html += "<div>";
                 grabber.thumbnails.forEach(
-                    function (element) {
+                    function(element) {
                         originalFileName = element.replace(".thumb.", ".");
                         html += `<a href='data/${originalFileName}'><img class='thumbnail' src='data/thumbs/${element}' height='100'></a>`;
                     }
@@ -149,8 +155,10 @@ function generateContent() {
         for (var i = 0; i < grabbers.length; i++) {
             grabber = grabbers[i];
             if (!grabber.isActive) {
-                html += `<div class='grabberTitle'>${grabberInfo}</div>`;
-                html += `<div><a href=''><img class='grab' src='${grabber.urlGrab}' height='200'></a></div>`;
+                html += "<div class='inactiveBlock' style='border: 1px solid black;'>"
+                html += `<div class='inactiveTitle'>${grabberInfo}</div>`;
+                html += `<div><a href='${grabber.urlGrab}'><img class='grab' src='${grabber.urlGrab}' height='200'></a></div>`;
+                html += "</div>"
             }
         }
     }
