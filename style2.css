@@ -63,12 +63,13 @@ a:hover {
     margin: 10px;
     border: 1px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    /*width: 45%;*/
 }
 
 .displayMessage {
     padding-top: 10px;
     font-size: 16;
-    color: white;
+    color: black;
 }
 
 .activeTitle {
@@ -87,11 +88,11 @@ a:hover {
 .activeBlock {
     background-color: #c9e0d4;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
-    margin: 20px;
+    margin: 50px 10px 10px 10px;
 }
 
 .inactiveBlock {
     background-color: #e0c3c3;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
-    margin: 20px;
+    margin: 50px 10px 10px 10px;
 }
