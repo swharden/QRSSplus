@@ -158,6 +158,7 @@ function generateContent() {
         html += "<div class='title'>Inactive Grabbers</div>"
         for (var i = 0; i < grabbers.length; i++) {
             grabber = grabbers[i];
+            grabberInfo = grabber.getHtml();
             if (!grabber.isActive) {
                 html += "<div class='inactiveBlock' style='border: 1px solid black;'>"
                 html += `<div class='inactiveTitle'>${grabberInfo}</div>`;
