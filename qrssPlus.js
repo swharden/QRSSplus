@@ -140,7 +140,7 @@ function generateContent() {
                 grabber.thumbnails.forEach(
                     function(element) {
                         originalFileName = element.replace(".thumb.", ".");
-                        html += `<a href='data/${originalFileName}'><img class='thumbnail' src='data/thumbs/${element}' height='100'></a>`;
+                        html += `<a target='_blank' href='data/${originalFileName}'><img class='thumbnail' src='data/thumbs/${element}' height='100'></a>`;
                     }
                 );
                 html += "</div>";
