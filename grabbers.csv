@@ -28,17 +28,11 @@ G4IOG-4,G4IOG,3.5MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https:/
 G4JVF,G4JVF,Various bands,Philip,"North Derbyshire, UK",http://www.qsl.net/g/g4jvf/,http://www.qsl.net/g/g4jvf/hf4.jpg
 G6AVK,G6AVK,Various bands,Colin,"Essex, England",http://www.qsl.net/g6avk/,http://www.qsl.net/g6avk/hf6.jpg
 G6NHU,G6NHU,Various bands,Keith,England,http://g6nhu.co.uk,http://g6nhu.co.uk/images/capture.jpg
-#G8NXD1,G8NXD,1,Mike,"Truro, England",http://www.pencoys.org.uk/qrss.htm,http://www.pencoys.org.uk/g8nxd.jpg
-#G8NXD2,G8NXD,2,Mike,"Redruth, England",http://www.qsl.net/g8nxd/qrss/qrss.htm,http://www.qsl.net/g8nxd/g8nxd.jpg
-#GB0SNB,GB0SNB,QRT?,George,"Brentwood, England",http://www.gb0snb.com/wordpress/qrss-grabber,http://www.george-smart.co.uk/GB0SNB_QRSS/GB0SNB.jpg
 GJ7RWT,GJ7RWT,Usually 40m,Andy,"Jersey, England",http://www.qsl.net/gj7rwt/gj7rwthomepage.html,https://www.qsl.net/g/gj7rwt/hf1.jpg
 HB9FXX-1,HB9FXX,Testing,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf1.png
 HB9FXX-2,HB9FXX,Usually 10m,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf2.png
 HB9FXX-3,HB9FXX,Testing,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf3.png
 HB9FXX-4,HB9FXX,Usually 10m,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf4.png
-#I2NDT,I2NDT,Usually 40m,Claudio,"Bergamo, Italia",http://digilander.libero.it/i2ndt/grabber/grabber.htm,http://digilander.libero.it/i2ndt/grabber/argo.jpg
-#IV3ONZ,IV3ONZ,Not seen since 2016,Andy,"Redipuglia, Italy",http://www.iv3onz.altervista.org/qrss_grabber.php,http://www.iv3onz.altervista.org/images/spectran.jpg
-#IZ1KXQ,IZ1KXQ,Inactive,Paolo,Italy,http://www.qsl.net/iz1kxq,http://www.qsl.net/iz1kxq/SL1.jpg
 #KL7L,KL7L,Various bands,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/Alaska00000.jpg
 KL7L-1,KL7L,Band can vary,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/20Alaska00000.jpg
 KL7L-2,KL7L,Band can vary,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/30Alaska00000.jpg
@@ -49,8 +43,6 @@ M0BMN,M0BMN,30m testing, Paul,Wolverhampton,http://www.m0bmn.co.uk,http://www.m0
 M0GBZ,M0GBZ,Various part time,Euan,Southern UK,https://qsl.net/m0gbz/,https://qsl.net/m0gbz/hf1.jpg
 N2NXZ,N2NXZ,Band hopper & balloons,Jim,New York (USA),http://www.qsl.net/n2nxz/,http://www.qsl.net/n2nxz/hf1.jpg
 N8NJ,N8NJ,Various bands,Larry,Ohio,https://www.qsl.net/n8nj/index.html,https://www.qsl.net/n8nj/hf1.jpg
-#N9JL,N9JL,Currently inactive,John,"Shorewood, IL",http://qsl.net/n9jl/grabber.htm,http://qsl.net/n9jl/capt.jpg
-#NL9222,NL9222,Inactive FTP issue,NL9222,Netherlands,http://nl9222.home.xs4all.nl,http://nl9222.home.xs4all.nl/capt.jpg
 OK1FCX-1,OK1FCX,Usually 40m,Radovan,"Kamenny Privoz, Czech Republic",http://www.qsl.net/ok1fcx/,http://www.qsl.net/ok1fcx/hf1.jpg
 OK1FCX-2,OK1FCX,Experimental,Radovan,"Kamenny Privoz, Czech Republic",http://www.qsl.net/ok1fcx/,http://www.qsl.net/ok1fcx/hf2.jpg
 OK1FCX-3,OK1FCX,Experimental,Radovan,"Kamenny Privoz, Czech Republic",http://www.qsl.net/ok1fcx/,http://www.qsl.net/ok1fcx/hf3.jpg
@@ -63,8 +55,6 @@ PA2OHH-30m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grab
 PA2OHH-40m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,https://www.qsl.net/pa2ohh/grabber/hf2.jpg
 #PA2OHH-30m,PA2OHH,Homebrew RX,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,http://www.qsl.net/pa2ohh/hf1.jpg
 #PA2OHH-40m,PA2OHH,RTL dongle and wire,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,http://www.qsl.net/pa2ohh/hf2.jpg
-#PA3FYM,PA3FYM,Inactive,Remco,Netherlands,http://remco.org/grabber,http://www.qsl.net/pa3fym/grabber/lopshot1.jpg
-#PA9QV,PA9QV,Inactive,Jan,Netherlands,http://jgander.home.xs4all.nl/qrss/,http://jgander.home.xs4all.nl/qrss/qrss.jpg
 S52AS,S52AS,30m Part time,Roman,"Novo Mesto, Slovenia",http://novomesto.zevs.si/graber.htm,http://novomesto.zevs.si/podatki/test.gif
 SA6BSS1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf1.jpg
 SA6BSS2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
