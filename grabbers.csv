@@ -6,8 +6,8 @@ DF5SF-1,DF5SF,Variable bands part time 12m wire TS430,Uli,Germany JN39TE,https:/
 DK7FC1-475Khz,DK7FC,600m band,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_remote_RDF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/remote/RDF3.png
 DK7FC2-475Khz,DK7FC,600m band,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_MF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/MF/MFGrabber10.jpg
 DL4DTL,DL4DTL,30m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
-EA8BVP1,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
-EA8BVP2,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
+EA8BVP-1,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
+EA8BVP-2,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
 G0FTD-RD,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
 G0MQW1,G0MQW,1 (10m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf1.jpg
 G0MQW2,G0MQW,2 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf2.jpg
@@ -60,13 +60,13 @@ PA2OHH-40m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grab
 PA2OHH-80m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,https://www.qsl.net/pa2ohh/grabber/hf3.jpg
 PA3GNZ,PA3GNZ,New 2020,Tjeerd,Holland,http://www.pa3gnz.nl/qrss30m.htm,http://www.pa3gnz.nl/qrss30m.jpg
 S52AS,S52AS,30m Part time,Roman,"Novo Mesto, Slovenia",http://novomesto.zevs.si/graber.htm,http://novomesto.zevs.si/podatki/test.gif
-SA6BSS1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf1.jpg
-SA6BSS2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
-SA6BSS3,SA6BSS,14 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf3.jpg
-SA6BSS4,SA6BSS,Variable,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf4.jpg
+SA6BSS-1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf1.jpg
+SA6BSS-2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
+SA6BSS-3,SA6BSS,14 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf3.jpg
+SA6BSS-4,SA6BSS,Variable,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf4.jpg
 VA3ROM,VA3ROM,30m,Robert,"Ontario, Canada",http://va3rom.com/QRSS/QRSS.html,http://va3rom.com/QRSS/image1.jpg
-VE1VDM1,VE1VDM,Various,Vernon,"Nova Scotia, Canada",https://www.qsl.net/ve1vdm/,https://www.qsl.net/ve1vdm/argo.jpg
-VE1VDM2,VE1VDM,Various,Vernon,"Nova Scotia, Canada",https://www.qsl.net/ve1vdm/,https://www.qsl.net/ve1vdm/argo1.jpg
+VE1VDM-1,VE1VDM,Various,Vernon,"Nova Scotia, Canada",https://www.qsl.net/ve1vdm/,https://www.qsl.net/ve1vdm/argo.jpg
+VE1VDM-2,VE1VDM,Various,Vernon,"Nova Scotia, Canada",https://www.qsl.net/ve1vdm/,https://www.qsl.net/ve1vdm/argo1.jpg
 VE3GTC,VE3GTC,40m,Graham,"Ontario, Canada",http://users.aei.ca/~planophore/grabber,https://dl.dropboxusercontent.com/s/iz4s0yhwqvtge8p/picture.jpg
 VK3EDW,VK3EDW,Primary,John,Kallista - Victoria,http://www.qsl.net/vk3edw,http://www.qsl.net/vk3edw/QRSS/assets/images/hf1.jpg
 VE7IGH,VE7IGH,10Mhz & attic antenna,Gregory,"British Columbia, Canada",http://www.qsl.net/ve7igh/Grabber.htm,http://www.qsl.net/ve7igh/capt.jpg
@@ -81,9 +81,9 @@ WD4ELG-20-slow,WD4ELG,20m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.c
 WD4ELG-30-slow,WD4ELG,30m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/5tyln8l02oscbp6/WD4ELG%2030M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
 WD4ELG-40-slow,WD4ELG,40m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/5bllpsdcvd0iwqt/WD4ELG%2040M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
 WD4ELG-80-slow,WD4ELG,80m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/rrpil5x08v3e3s2/WD4ELG%2080M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-W4HBK1,W4HBK,10min,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf1.jpg
-W4HBK2,W4HBK,6hr,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf2.jpg
-W4HBK3,W4HBK,Auxillary grabber,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,https://www.qsl.net/w4hbk/aux1.jpg
+W4HBK-1,W4HBK,10min,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf1.jpg
+W4HBK-2,W4HBK,6hr,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf2.jpg
+W4HBK-3,W4HBK,Auxillary grabber,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,https://www.qsl.net/w4hbk/aux1.jpg
 W4HBK-Experimental,W4HBK,Experimental tests,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf3.jpg
 W6REK-20m,W6REK,20m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-20m.png
 W6REK-30m,W6REK,30m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-30m.png
