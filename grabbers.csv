@@ -3,23 +3,23 @@
 AA7US,AA7US,Variable band,John,QTH and state varies,http://www.qsl.net/aa7us/,http://www.qsl.net/aa7us/hf3.jpg
 CT2IWW,CT2IWW,Usually 10m seasonal,Paulo,Portugal,http://qsl.net/ct2iww/CT2IWW_QRSS.html,http://qsl.net/ct2iww/CT2IWW_QRSS_files/hf1.jpg
 DF5SF-1,DF5SF,Variable bands part time 12m wire TS430,Uli,Germany JN39TE,https://www.qsl.net/df5sf/,https://www.qsl.net/df5sf/grabber/hf1.jpg
-DK7FC1-475Khz,DK7FC,600m band,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_remote_RDF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/remote/RDF3.png
-DK7FC2-475Khz,DK7FC,600m band,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_MF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/MF/MFGrabber10.jpg
+DK7FC-1-475Khz,DK7FC,600m band,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_remote_RDF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/remote/RDF3.png
+DK7FC-2-475Khz,DK7FC,600m band,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_MF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/MF/MFGrabber10.jpg
 DL4DTL,DL4DTL,30m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
 EA8BVP-1,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
 EA8BVP-2,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
 G0FTD-RD,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
-G0MQW1,G0MQW,1 (10m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf1.jpg
-G0MQW2,G0MQW,2 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf2.jpg
-G0MQW3,G0MQW,3 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf3.jpg
-# G0MQW4,G0MQW,4 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf4.jpg
+G0MQW-1,G0MQW,1 (10m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf1.jpg
+G0MQW-2,G0MQW,2 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf2.jpg
+G0MQW-3,G0MQW,3 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf3.jpg
+# G0MQW-4,G0MQW,4 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf4.jpg
 # G0UPL,G0UPL,Part time variable,Hans,"Turkey",http://www.hanssummers.com,http://www.hanssummers.com/images/stories/balloons/ve3kcl/s.jpg
-G3VYZ1,G3VYZ,Grabber 1,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_.jpg
-G3VYZ2,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_2.jpg
-G3VYZ3,G3VYZ,Grabber 3,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_3.jpg
-G3VYZ4,G3VYZ,Grabber 4,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_4.jpg
-G3VYZ5,G3VYZ,Grabber 5,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_5.jpg
-G3VYZ6,G3VYZ,Grabber 6,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_6.jpg
+G3VYZ-1,G3VYZ,Grabber 1,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_.jpg
+G3VYZ-2,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_2.jpg
+G3VYZ-3,G3VYZ,Grabber 3,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_3.jpg
+G3VYZ-4,G3VYZ,Grabber 4,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_4.jpg
+G3VYZ-5,G3VYZ,Grabber 5,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_5.jpg
+G3VYZ-6,G3VYZ,Grabber 6,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_6.jpg
 G3YXM-136Khz,G3YXM,136Khz band,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/136.jpg
 G3YXM-472Khz,G3YXM,600m bandscope,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/472.jpg
 G4IOG-80,G4IOG,3.5MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/80mdir/80mpage.html,https://www.qsl.net/g4iog/80mdir/hf8.png
