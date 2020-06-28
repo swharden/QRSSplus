@@ -114,7 +114,7 @@ class QrssPlus:
         if os.path.exists("temp.dat"):
             os.remove("temp.dat")
         cmd = "wget -q -T 3 -t 1"  # 1 attempt (no retries)
-        cmd += " -O %s %s" % ("temp.dat", url)
+        cmd += " -O %s %s" % ("temp.dat", url+"?"+str(int(time.time())))
         self.log(cmd)
         process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
         process.wait()
