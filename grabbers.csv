@@ -71,16 +71,16 @@ VE3GTC,VE3GTC,40m,Graham,"Ontario, Canada",http://users.aei.ca/~planophore/grabb
 VK3EDW,VK3EDW,Primary,John,Kallista - Victoria,http://www.qsl.net/vk3edw,http://www.qsl.net/vk3edw/QRSS/assets/images/hf1.jpg
 VE7IGH,VE7IGH,10Mhz & attic antenna,Gregory,"British Columbia, Canada",http://www.qsl.net/ve7igh/Grabber.htm,http://www.qsl.net/ve7igh/capt.jpg
 WD4AH,WD4AH,Testing,Alfred,Florida,http://www.qsl.net/wd4ah,http://www.qsl.net/wd4ah/hf1.jpg
-WD4ELG-10,WD4ELG,10m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/qhmkogils6jly3a/WD4ELG%2010M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-20,WD4ELG,20m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/gba72cz0au66032/WD4ELG%2020M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-30,WD4ELG,30m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/7djby65cbfh6hv7/WD4ELG%2030M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-40,WD4ELG,40m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/ajhc4t640k7k67u/WD4ELG%2040M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-80,WD4ELG,80m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/59ktcp48iie5i1m/WD4ELG%2080M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-10-slow,WD4ELG,10m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/htkrgr1r41cgdcw/WD4ELG%2010M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-20-slow,WD4ELG,20m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/e0sysy2suwwnqbo/WD4ELG%2020M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-30-slow,WD4ELG,30m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/5tyln8l02oscbp6/WD4ELG%2030M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-40-slow,WD4ELG,40m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/5bllpsdcvd0iwqt/WD4ELG%2040M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
-WD4ELG-80-slow,WD4ELG,80m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/rrpil5x08v3e3s2/WD4ELG%2080M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-10-Fast,WD4ELG,10m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/qhmkogils6jly3a/WD4ELG%2010M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-20-Fast,WD4ELG,20m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/gba72cz0au66032/WD4ELG%2020M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-30-Fast,WD4ELG,30m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/7djby65cbfh6hv7/WD4ELG%2030M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-40-Fast,WD4ELG,40m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/ajhc4t640k7k67u/WD4ELG%2040M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-80-Fast,WD4ELG,80m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/59ktcp48iie5i1m/WD4ELG%2080M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-10-Slow,WD4ELG,10m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/htkrgr1r41cgdcw/WD4ELG%2010M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-20-Slow,WD4ELG,20m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/e0sysy2suwwnqbo/WD4ELG%2020M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-30-Slow,WD4ELG,30m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/5tyln8l02oscbp6/WD4ELG%2030M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-40-Slow,WD4ELG,40m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/5bllpsdcvd0iwqt/WD4ELG%2040M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
+WD4ELG-80-Slow,WD4ELG,80m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://www.dropbox.com/s/rrpil5x08v3e3s2/WD4ELG%2080M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
 W4HBK-1,W4HBK,10min,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf1.jpg
 W4HBK-2,W4HBK,6hr,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf2.jpg
 W4HBK-3,W4HBK,Auxillary grabber,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,https://www.qsl.net/w4hbk/aux1.jpg
