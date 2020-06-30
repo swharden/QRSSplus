@@ -1,33 +1,33 @@
 #ID,callsign,title,name,location,website,file
-7L1RLL,7L1RLL,136Khz,Rick,Japan,http://www1.u-netsurf.ne.jp/~7l1rll/Grabber_7L1RLL.html,http://www1.u-netsurf.ne.jp/~7l1rll/argo_capture.jpg
+7L1RLL-136Khz,7L1RLL,136Khz,Rick,Japan,http://www1.u-netsurf.ne.jp/~7l1rll/Grabber_7L1RLL.html,http://www1.u-netsurf.ne.jp/~7l1rll/argo_capture.jpg
 # AA7US,AA7US,Variable band,John,QTH and state varies,http://www.qsl.net/aa7us/,http://www.qsl.net/aa7us/hf3.jpg
 AJ4VD,AJ4VD,30m,Scott,"Gainesville, FL, USA",https://swharden.com/software/FSKview/,https://swharden.com/dev/grabber/latest.png
 CT2IWW,CT2IWW,Usually 10m seasonal,Paulo,Portugal,http://qsl.net/ct2iww/CT2IWW_QRSS.html,http://qsl.net/ct2iww/CT2IWW_QRSS_files/hf1.jpg
 DF5SF-1,DF5SF,Variable bands part time 12m wire TS430,Uli,Germany JN39TE,https://www.qsl.net/df5sf/,https://www.qsl.net/df5sf/grabber/hf1.jpg
 DK7FC-1-475Khz,DK7FC,600m band,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_remote_RDF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/remote/RDF3.png
 DK7FC-2-475Khz,DK7FC,600m band,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_MF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/MF/MFGrabber10.jpg
-DL4DTL,DL4DTL,30m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
-EA8BVP-1,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
-EA8BVP-2,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
+DL4DTL,DL4DTL,40m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
+EA8BVP-30m-Fast,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
+EA8BVP-30m-Slow,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
 G0FTD-RD,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
 G0MQW-1,G0MQW,1 (10m),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf1.jpg
 G0MQW-2,G0MQW,2 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf2.jpg
 G0MQW-3,G0MQW,3 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf3.jpg
 # G0MQW-4,G0MQW,4 (Variable),Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf4.jpg
 # G0UPL,G0UPL,Part time variable,Hans,"Turkey",http://www.hanssummers.com,http://www.hanssummers.com/images/stories/balloons/ve3kcl/s.jpg
-G3VYZ-1,G3VYZ,Grabber 1,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_.jpg
-G3VYZ-2,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_2.jpg
-G3VYZ-3,G3VYZ,Grabber 3,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_3.jpg
-G3VYZ-4,G3VYZ,Grabber 4,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_4.jpg
-G3VYZ-5,G3VYZ,Grabber 5,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_5.jpg
-G3VYZ-6,G3VYZ,Grabber 6,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_6.jpg
+G3VYZ-10m,G3VYZ,Grabber 1,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_.jpg
+G3VYZ-40m,G3VYZ,Grabber 3,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_3.jpg
+G3VYZ-80m,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_2.jpg
+G3VYZ-40m-Slow,G3VYZ,Grabber 4,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_4.jpg
+# G3VYZ-5,G3VYZ,Grabber 5,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_5.jpg
+G3VYZ-80m-Slow,G3VYZ,Grabber 6,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_6.jpg
 G3YXM-136Khz,G3YXM,136Khz band,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/136.jpg
 G3YXM-472Khz,G3YXM,600m bandscope,Dave,England,http://wireless.org.uk/,http://g3yxm.ddns.net/grabs/472.jpg
-G4IOG-80,G4IOG,3.5MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/80mdir/80mpage.html,https://www.qsl.net/g4iog/80mdir/hf8.png
-G4IOG-40,G4IOG,7MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://www.qsl.net/g4iog/40mdir/hf4.png
-G4IOG-30,G4IOG,10MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/30mdir/30mpage.html,https://www.qsl.net/g4iog/30mdir/hf3.png 
-G4IOG-20,G4IOG,14MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://www.qsl.net/g4iog/20mdir/hf2.png
-G4IOG-10,G4IOG,28MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/10mdir/hf1.png
+G4IOG-80m,G4IOG,3.5MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/80mdir/80mpage.html,https://www.qsl.net/g4iog/80mdir/hf8.png
+G4IOG-40m,G4IOG,7MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://www.qsl.net/g4iog/40mdir/hf4.png
+G4IOG-30m,G4IOG,10MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/30mdir/30mpage.html,https://www.qsl.net/g4iog/30mdir/hf3.png 
+G4IOG-20m,G4IOG,14MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://www.qsl.net/g4iog/20mdir/hf2.png
+G4IOG-10m,G4IOG,28MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/10mdir/hf1.png
 G4JVF,G4JVF,Various bands,Philip,"North Derbyshire, UK",http://www.qsl.net/g/g4jvf/,http://www.qsl.net/g/g4jvf/hf4.jpg
 # GW4SYI-1,GW4SYI,Part time,Lucien,Wales UK,https://qsl.net/gw4syi/grabs,https://qsl.net/gw4syi/hf1/hf1.jpg
 # GW4SYI-2,GW4SYI,Part time,Lucien,Wales UK,https://qsl.net/gw4syi/grabs,https://qsl.net/gw4syi/hf2/hf2.jpg
@@ -35,9 +35,9 @@ G6AVK,G6AVK,Various bands,Colin,"Essex, England",http://www.qsl.net/g6avk/,http:
 G6NHU,G6NHU,Various bands,Keith,England,http://g6nhu.co.uk,http://g6nhu.co.uk/images/capture.jpg
 GJ7RWT,GJ7RWT,Usually 40m,Andy,"Jersey, England",http://www.qsl.net/gj7rwt/gj7rwthomepage.html,https://www.qsl.net/g/gj7rwt/hf1.jpg
 # HB9FXX-1,HB9FXX,Testing,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf1.png
-HB9FXX-2,HB9FXX,Usually 10m,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf2.png
+HB9FXX-10m-EU,HB9FXX,Usually 10m,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf2.png
 # HB9FXX-3,HB9FXX,Testing,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf3.png
-HB9FXX-4,HB9FXX,Usually 10m,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf4.png
+HB9FXX-10m-Beacon,HB9FXX,Usually 10m,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf4.png
 K4RCG-1,K4RCG,Variable bands,Bob,Blue Rdg Mtns VA – FM08si,https://www.qsl.net/k4rcg/,https://www.qsl.net/k4rcg/hf1.jpg
 K4RCG-2,K4RCG,Variable bands,Bob,Blue Rdg Mtns VA – FM08si,https://www.qsl.net/k4rcg/,https://www.qsl.net/k4rcg/hf2.jpg
 K5MO-1,K5MO,QRSSPIG grabber,John, North Carolina,https://qsl.net/k5mo/,https://qsl.net/k5mo/hf3.jpg
@@ -45,7 +45,7 @@ KL7L-1,KL7L,Band can vary,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html
 KL7L-2,KL7L,Band can vary,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/30Alaska00000.jpg
 KL7L-3,KL7L,Band can vary,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/40Alaska00000.jpg
 KL7L-4,KL7L,136Khz,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/2LF00000.jpg
-LA5GOA,LA5GOA,30m,Steen,Norway,http://la5goa.manglet.net/grabber,http://la5goa.manglet.net/grabber/lopshot1.jpg
+LA5GOA-30,LA5GOA,30m,Steen,Norway,http://la5goa.manglet.net/grabber,http://la5goa.manglet.net/grabber/lopshot1.jpg
 M0BMN,M0BMN,Various, Paul,Wolverhampton,http://www.phoenixkitsonline.co.uk,http://www.phoenixkitsonline.co.uk/qrss.jpg
 M0GBZ,M0GBZ,Various part time,Euan,Southern UK,https://qsl.net/m0gbz/,https://qsl.net/m0gbz/hf1.jpg
 # N2NXZ,N2NXZ,Band hopper & balloons,Jim,New York (USA),http://www.qsl.net/n2nxz/,http://www.qsl.net/n2nxz/hf1.jpg
@@ -60,17 +60,17 @@ PA2OHH-30m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grab
 PA2OHH-40m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,https://www.qsl.net/pa2ohh/grabber/hf2.jpg
 PA2OHH-80m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,https://www.qsl.net/pa2ohh/grabber/hf3.jpg
 PA3GNZ,PA3GNZ,New 2020,Tjeerd,Holland,http://www.pa3gnz.nl/qrss30m.htm,http://www.pa3gnz.nl/qrss30m.jpg
-S52AS,S52AS,30m Part time,Roman,"Novo Mesto, Slovenia",http://novomesto.zevs.si/graber.htm,http://novomesto.zevs.si/podatki/test.gif
+S52AS-30m,S52AS,30m Part time,Roman,"Novo Mesto, Slovenia",http://novomesto.zevs.si/graber.htm,http://novomesto.zevs.si/podatki/test.gif
 SA6BSS-1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf1.jpg
 SA6BSS-2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
 SA6BSS-3,SA6BSS,14 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf3.jpg
 SA6BSS-4,SA6BSS,Variable,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf4.jpg
-VA3ROM,VA3ROM,30m,Robert,"Ontario, Canada",http://va3rom.com/QRSS/QRSS.html,http://va3rom.com/QRSS/image1.jpg
+VA3ROM-30m,VA3ROM,30m,Robert,"Ontario, Canada",http://va3rom.com/QRSS/QRSS.html,http://va3rom.com/QRSS/image1.jpg
 VE1VDM-1,VE1VDM,Various,Vernon,"Nova Scotia, Canada",https://www.qsl.net/ve1vdm/,https://www.qsl.net/ve1vdm/argo.jpg
 VE1VDM-2,VE1VDM,Various,Vernon,"Nova Scotia, Canada",https://www.qsl.net/ve1vdm/,https://www.qsl.net/ve1vdm/argo1.jpg
 VE3GTC,VE3GTC,40m,Graham,"Ontario, Canada",http://users.aei.ca/~planophore/grabber,https://dl.dropboxusercontent.com/s/iz4s0yhwqvtge8p/picture.jpg
 VK3EDW,VK3EDW,Primary,John,Kallista - Victoria,http://www.qsl.net/vk3edw,http://www.qsl.net/vk3edw/QRSS/assets/images/hf1.jpg
-VE7IGH,VE7IGH,10Mhz & attic antenna,Gregory,"British Columbia, Canada",http://www.qsl.net/ve7igh/Grabber.htm,http://www.qsl.net/ve7igh/capt.jpg
+VE7IGH-30m,VE7IGH,10Mhz & attic antenna,Gregory,"British Columbia, Canada",http://www.qsl.net/ve7igh/Grabber.htm,http://www.qsl.net/ve7igh/capt.jpg
 WD4AH,WD4AH,Testing,Alfred,Florida,http://www.qsl.net/wd4ah,http://www.qsl.net/wd4ah/hf1.jpg
 WD4ELG-10-Fast,WD4ELG,10m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/qhmkogils6jly3a/WD4ELG%2010M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
 WD4ELG-20-Fast,WD4ELG,20m grabber,Mark,"Greensboro, NC",http://wd4elg.blogspot.com,https://dl.dropboxusercontent.com/s/gba72cz0au66032/WD4ELG%2020M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg
