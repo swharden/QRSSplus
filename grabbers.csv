@@ -3,10 +3,10 @@
 # AA7US,AA7US,Variable band,John,QTH and state varies,http://www.qsl.net/aa7us/,http://www.qsl.net/aa7us/hf3.jpg
 AJ4VD,AJ4VD,30m,Scott,"Gainesville, FL, USA",https://swharden.com/software/FSKview/,https://swharden.com/dev/grabber/latest.png
 # CT2IWW,CT2IWW,Usually 10m seasonal,Paulo,Portugal,http://qsl.net/ct2iww/CT2IWW_QRSS.html,http://qsl.net/ct2iww/CT2IWW_QRSS_files/hf1.jpg
-#DF2JP-1,DF2JP,Variable bands,Joe,Germany,https://df2jp.000webhostapp.com/wsprgrabber.xhtml,https://df2jp.000webhostapp.com/latest.png
+# DF2JP-1,DF2JP,Variable bands,Joe,Germany,https://df2jp.000webhostapp.com/wsprgrabber.xhtml,https://df2jp.000webhostapp.com/latest.png
 # DF5SF-1,DF5SF,Variable bands part time 12m wire TS430,Uli,Germany JN39TE,https://www.qsl.net/df5sf/,https://www.qsl.net/df5sf/grabber/hf1.jpg
-DK7FC-1,DK7FC,600m band seasonal,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_remote_RDF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/remote/RDF3.png
-DK7FC-2,DK7FC,600m band seasonal,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_MF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/MF/MFGrabber10.jpg
+# DK7FC-1,DK7FC,600m band seasonal,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_remote_RDF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/remote/RDF3.png
+# DK7FC-2,DK7FC,600m band seasonal,Stefan,Heidelberg University,http://www.iup.uni-heidelberg.de/schaefer_vlf/DK7FC_MF_Grabber.html,http://www.iup.uni-heidelberg.de/schaefer_vlf/MF/MFGrabber10.jpg
 DL4DTL,DL4DTL,40m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
 EA8BVP-30m-Fast,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
 EA8BVP-30m-Slow,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
@@ -110,8 +110,8 @@ W6REK-20m,W6REK,20m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak
 W6REK-30m,W6REK,30m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-30m.png
 W6REK-40m,W6REK,40m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-40m.png
 W6REK-80j,W6REK,80j,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-80j.png
-W6REK-80x,W6REK,80x,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-80x.png
-W6REK-160m,W6REK,160m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-160m.png
+# W6REK-80x,W6REK,80x,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-80x.png
+# W6REK-160m,W6REK,160m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-160m.png
 WA5DJJ-6m,WA5DJJ,6m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/hf9.jpg
 WA5DJJ-10m,WA5DJJ,10m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/hf8.jpg
 WA5DJJ-Wide-10m,WA5DJJ,10m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,https://qsl.net/wa5djj/uhf7.jpg
