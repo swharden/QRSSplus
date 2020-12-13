@@ -4,3 +4,7 @@ data/*
 data/*.*
 data/status.txt
 data/*.jpg
+analysis/stats
+bin
+obj
+.vs
