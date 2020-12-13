@@ -10,62 +10,34 @@ namespace QPAnalyzer
         public readonly List<GrabRecord> Records = new List<GrabRecord>();
         public int RecordCount => Records.Count();
 
-        public readonly List<DateTime> DaysWithData = new List<DateTime>();
-        public int DaysWithDataCount => DaysWithData.Count();
-
-        public readonly List<string> IDs = new List<string>();
-        public int IdCount => IDs.Count();
-
         public GrabRecords()
         {
 
         }
 
-        /// <summary>
-        /// Return an array of all days for which data is available
-        /// </summary>
-        /// <returns></returns>
+        public string[] GetAllIDs() => Records.Select(x => x.ID).Distinct().ToArray();
+
         public DateTime[] GetAllDays()
         {
-            DaysWithData.Sort();
             List<DateTime> days = new List<DateTime>();
-
-            DateTime day = DaysWithData.First();
-            while (day <= DaysWithData.Last())
+            DateTime firstDay = Records.Select(x => x.DateTime).Min();
+            DateTime day = new DateTime(firstDay.Year, firstDay.Month, firstDay.Day);
+            while (day <= DateTime.Now)
             {
                 days.Add(day);
                 day = day.AddDays(1);
             }
-
             return days.ToArray();
         }
 
         public void Add(GrabRecord record)
         {
             Records.Add(record);
-
-            DateTime day = record.DateTime.Date;
-            if (!DaysWithData.Contains(day))
-                DaysWithData.Add(day);
-
-            if (!IDs.Contains(record.ID))
-                IDs.Add(record.ID);
         }
 
-        public void AddLogLine(string logLone)
+        public void AddLogLine(string logLine)
         {
-            string[] parts = logLone.Split(',');
-            if (parts.Length < 5)
-                throw new InvalidOperationException("line doesn't contain enough commas to make sense");
-
-            string timestamp = parts[0];
-            foreach (string grabLine in parts.Skip(1))
-            {
-                string[] grabLineParts = grabLine.Split(' ');
-                string id = grabLineParts[0];
-                string hash = grabLineParts[1];
-                Add(new GrabRecord(timestamp, id, hash));
-            }
+            throw new NotImplementedException();
         }
 
         public void AddLogFile(string filePath)
@@ -98,7 +70,7 @@ namespace QPAnalyzer
                     record.DateTime.Date.Day == day.Day)
                     hashes.Add(record.Hash);
 
-            return hashes.Count();
+            return hashes.Distinct().Count();
         }
     }
 }

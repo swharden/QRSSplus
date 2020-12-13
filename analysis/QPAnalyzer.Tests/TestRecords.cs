@@ -2,7 +2,7 @@ using NUnit.Framework;
 using System;
 using System.Linq;
 
-namespace QPAnalyzer
+namespace QPAnalyzer.Tests
 {
     public class TestRecords
     {
@@ -50,15 +50,10 @@ namespace QPAnalyzer
         private GrabRecords AnalyzeLogFiles(int dayLimit)
         {
             var grabs = new GrabRecords();
-
             string folder = "../../../../../analysis/stats";
-            foreach (string filePath in System.IO.Directory.GetFiles(folder, "*.txt"))
-            {
+            string[] filePaths = System.IO.Directory.GetFiles(folder, "*.txt");
+            foreach (string filePath in filePaths.Take(dayLimit))
                 grabs.AddLogFile(filePath);
-                if (grabs.DaysWithDataCount >= dayLimit)
-                    return grabs;
-            }
-
             return grabs;
         }
 
@@ -66,7 +61,7 @@ namespace QPAnalyzer
         public void Test_Records_ReadAllFiles()
         {
             var grabs = AnalyzeLogFiles(10);
-            Console.WriteLine($"Loaded {grabs.RecordCount:N0} records from {grabs.IdCount:N0} grabbers over {grabs.DaysWithDataCount:N0} days");
+            Console.WriteLine($"Loaded {grabs.RecordCount:N0} records from {grabs.GetAllIDs().Length:N0} grabbers over {grabs.GetAllDays().Length:N0} days");
         }
 
         [Test]
@@ -82,7 +77,7 @@ namespace QPAnalyzer
         public void Test_Records_AllIDs()
         {
             var grabs = AnalyzeLogFiles(10);
-            foreach (string id in grabs.IDs)
+            foreach (string id in grabs.GetAllIDs())
                 Console.WriteLine(id);
         }
     }
