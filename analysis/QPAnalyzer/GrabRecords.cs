@@ -3,22 +3,54 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace QPAnalayzer
+namespace QPAnalyzer
 {
     public class GrabRecords
     {
         public readonly List<GrabRecord> Records = new List<GrabRecord>();
+        public int RecordCount => Records.Count();
+
+        public readonly List<DateTime> DaysWithData = new List<DateTime>();
+        public int DaysWithDataCount => DaysWithData.Count();
+
+        public readonly List<string> IDs = new List<string>();
+        public int IdCount => IDs.Count();
 
         public GrabRecords()
         {
 
         }
 
-        public void Add(DateTime dt, string id, string hash) =>
-            Records.Add(new GrabRecord(dt, id, hash));
+        /// <summary>
+        /// Return an array of all days for which data is available
+        /// </summary>
+        /// <returns></returns>
+        public DateTime[] GetAllDays()
+        {
+            DaysWithData.Sort();
+            List<DateTime> days = new List<DateTime>();
 
-        public void Add(GrabRecord record) =>
+            DateTime day = DaysWithData.First();
+            while (day <= DaysWithData.Last())
+            {
+                days.Add(day);
+                day = day.AddDays(1);
+            }
+
+            return days.ToArray();
+        }
+
+        public void Add(GrabRecord record)
+        {
             Records.Add(record);
+
+            DateTime day = record.DateTime.Date;
+            if (!DaysWithData.Contains(day))
+                DaysWithData.Add(day);
+
+            if (!IDs.Contains(record.ID))
+                IDs.Add(record.ID);
+        }
 
         public void AddLogLine(string logLone)
         {
@@ -32,7 +64,7 @@ namespace QPAnalayzer
                 string[] grabLineParts = grabLine.Split(' ');
                 string id = grabLineParts[0];
                 string hash = grabLineParts[1];
-                Records.Add(new GrabRecord(timestamp, id, hash));
+                Add(new GrabRecord(timestamp, id, hash));
             }
         }
 
@@ -44,6 +76,29 @@ namespace QPAnalayzer
 
             foreach (string line in lines)
                 AddLogLine(line);
+        }
+
+        public double[] GetGrabCountByDay(string id)
+        {
+            DateTime[] days = GetAllDays();
+            double[] counts = new double[days.Count()];
+            for (int i = 0; i < days.Count(); i++)
+                counts[i] = GetUniqueGrabCount(id, days[i]);
+            return counts;
+        }
+
+        private int GetUniqueGrabCount(string id, DateTime day)
+        {
+            List<string> hashes = new List<string>();
+
+            foreach (var record in Records)
+                if (record.ID != id &&
+                    record.DateTime.Date.Year == day.Year &&
+                    record.DateTime.Date.Month == day.Month &&
+                    record.DateTime.Date.Day == day.Day)
+                    hashes.Add(record.Hash);
+
+            return hashes.Count();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace QPAnalayzer
+namespace QPAnalyzer
 {
     public class GrabRecord
     {
