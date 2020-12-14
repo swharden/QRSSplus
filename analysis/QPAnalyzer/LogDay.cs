@@ -9,7 +9,7 @@ namespace QPAnalyzer
     public class LogDay
     {
         public readonly DateTime DateTime;
-        readonly Dictionary<string, int> GrabsByID = new Dictionary<string, int>();
+        public readonly Dictionary<string, int> GrabsByID = new Dictionary<string, int>();
         public readonly int TotalIDs;
         public readonly int TotalGrabs;
         public string Day => $"{DateTime.Year}-{DateTime.Month}-{DateTime.Day}";

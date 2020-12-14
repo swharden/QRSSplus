@@ -8,8 +8,9 @@ namespace QPAnalyzer
 {
     public class LogLoader
     {
-        readonly List<LogDay> LogDays = new List<LogDay>();
+        public readonly List<LogDay> LogDays = new List<LogDay>();
         public readonly string[] IDs;
+        public readonly double[] Days;
 
         public LogLoader(string statsFolderPath)
         {
@@ -17,7 +18,7 @@ namespace QPAnalyzer
             string[] filePaths = System.IO.Directory.GetFiles(statsFolderPath, "*.txt");
             filePaths = filePaths.Select(x => System.IO.Path.GetFullPath(x)).ToArray();
 
-            DateTime firstDay = new DateTime(2018, 9, 8);
+            LogDay firstLogDay = new LogDay(filePaths[0]);
             for (int i = 0; i < filePaths.Length; i++)
             {
                 double frac = 100.0 * (i + 1) / filePaths.Length;
@@ -26,11 +27,12 @@ namespace QPAnalyzer
                 Console.WriteLine($"[{frac:N2}%] {day}");
 
                 // verify that no days were ever skipped
-                if (day.DateTime.Day != firstDay.AddDays(i).Day)
+                if (day.DateTime.Day != firstLogDay.DateTime.AddDays(i).Day)
                     throw new InvalidOperationException("missing data");
             }
 
             IDs = LogDays.SelectMany(x => x.GetIDs()).Distinct().ToArray();
+            Days = LogDays.Select(x => x.DateTime.ToOADate()).ToArray();
             Console.WriteLine($"Total IDs: {IDs.Length}");
         }
     }
