@@ -43,9 +43,17 @@ function getUpdateMessage($statusFile="data/status.txt"){
 
 <head>
     <title>QRSS Plus - Automatically Updating Active QRSS Grabbers List</title>
+	<link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="style2.css">
     <script src="papaparse.js"></script>
-    <script src="qrssPlus.js"></script>
+    <script src="qrssPlus.js?2020-12-18-05-36"></script>
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-560719-1'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-560719-1');
+    </script>
 </head>
 
 <body>
@@ -53,7 +61,7 @@ function getUpdateMessage($statusFile="data/status.txt"){
     <div>
         <span class='logo1'>QRSS Plus</span><br>
         <span class='logo2'>Automatically-Updating Active QRSS Grabber List
-            <span style='font-size: 50%;'>by <a target='_blank' href='http://www.SWHarden.com/'>Scott Harden</a></span>
+            <!--<span style='font-size: 50%;'>by <a target='_blank' href='http://www.SWHarden.com/'>Scott Harden</a></span>-->
         </span>
     </div>
 
@@ -64,14 +72,38 @@ function getUpdateMessage($statusFile="data/status.txt"){
         <input class='checkbox' type="checkbox" onchange='generateContent();' id="showLatestStack" > stacks,
         <input class='checkbox' type="checkbox" onchange='generateContent();' id="showAllGrabs"> history,
         <input class='checkbox' type="checkbox" onchange='generateContent();' id="showInactiveGrabbers"> inactive
-        <div class='displayMessage'>
+		<div class='displayMessage' id='grabbersMessage'>
+		Loading grabber data...
+		</div>
+		<div class='displayMessage'>
         Last grabber update: <?php echo getUpdateMessage(); ?>
         </div>
     </div>
 
-    <div class='message'>
-			<li />Check out <i><a href='https://github.com/swharden/QRSSplus/tree/master/newsletter'>74!, The Knights QRSS Winter Compendium Newsletter</a></i> that contains highlights from the last year in the QRSS community<br><br>
-            <li />Update grabber information by following instructions on the <a href="https://github.com/swharden/qrssplus/">QRSS Plus GitHub page</a>
+    <div class='message' style='line-height: 200%;'>
+	
+			<div>
+				QRSS Plus is maintained by <a href="https://swharden.com">Scott Harden (AJ4VD)</a> and <a href="https://sites.google.com/view/andy-g0ftd">Andy (G0FTD)</a>
+			</div>
+	
+			<div>
+				Those new to QRSS are encouraged to review <a href="https://swharden.com/blog/2020-10-03-new-age-of-qrss">The New Age of QRSS</a> 
+				and join the <a href="https://groups.io/g/qrssknights">Knights QRSS Mailing List</a>
+			</div>
+			
+			<div>
+				See <a href="https://swharden.com/blog/2020-10-03-new-age-of-qrss/#qrss-frequency-bands">QRSS Frequency Bands</a> 
+				and the <a href="https://groups.io/g/qrssknights/wiki">Knights QRSS WIKI</a> for the latest QRSS frequencies
+			</div>
+			
+			<div>
+				Check out <i><a href='https://github.com/swharden/QRSSplus/tree/master/newsletter'>74!, The Knights QRSS Newsletter</a></i> 
+				for highlights from the last year in the QRSS community
+            </div>
+						
+			<div>
+				Update grabber information by following instructions on the <a href="https://github.com/swharden/qrssplus/#updating-the-grabber-list">QRSS Plus GitHub page</a>
+			</div>
     </div>
 
     <hr>
