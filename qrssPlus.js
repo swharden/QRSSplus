@@ -22,10 +22,9 @@ function isActive(latestGrabs) {
         hashes.push(element.split(".")[2]);
     });
     uniqueHashes = new Set(hashes);
-    if (uniqueHashes.size > 1)
-        return true;
-    else
-        return false;
+	if (uniqueHashes.has("fail"))
+		uniqueHashes.delete("fail");
+    return (uniqueHashes.size > 1);
 }
 
 function Grabber(line) {
@@ -99,6 +98,18 @@ function generateContent() {
 
     html = "";
     grabbers = getGrabbers();
+
+	// show how many grabbers are active
+	var grabbersActive = 0;
+	var grabbersInactive = 0;
+	for (var i = 0; i < grabbers.length; i++){
+		if (grabbers[i].isActive)
+			grabbersActive += 1;
+		else
+			grabbersInactive += 1;
+	}
+	var grabbersTotal = grabbersActive + grabbersInactive;
+    document.getElementById("grabbersMessage").innerHTML = `QRSS Plus found that ${grabbersActive} of ${grabbersTotal} grabbers are currently active`;
 
     // show thumbnails for active grabbers
     if (showSummary) {
