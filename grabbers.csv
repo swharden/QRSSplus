@@ -48,7 +48,7 @@ KL7L-3,KL7L,Band can vary,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html
 KL7L-4,KL7L,136Khz,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/2LF00000.jpg
 KL7L-5,KL7L,Band can vary,Laurence,"Wasilla, Alaska",http://kl7l.com/Alaska.html,http://kl7l.com/30aAlaska00000.jpg
 LA5GOA-30m,LA5GOA,30m,Steen,Norway,http://la5goa.manglet.net/grabber,http://la5goa.manglet.net/grabber/lopshot1.jpg
-# M0BMN,M0BMN,Various, Paul,Wolverhampton,http://www.phoenixkitsonline.co.uk,http://www.phoenixkitsonline.co.uk/qrss.jpg
+M0BMN,M0BMN,Various, Paul,Wolverhampton,http://www.phoenixkitsonline.co.uk,http://www.phoenixkitsonline.co.uk/qrss.jpg
 M0GBZ,M0GBZ,Various part time,Euan,Southern UK,https://qsl.net/m0gbz/,https://qsl.net/m0gbz/hf1.jpg
 # M0RON,M0RON,Testing,Andy,Bishops Cleeve,https://www.qsl.net/m0ron/,https://www.qsl.net/m0ron/grabs/hf1.png
 N8NJ-1,N8NJ,Various bands,Larry,Ohio,https://www.qsl.net/n8nj/index.html,https://www.qsl.net/n8nj/hf1.jpg
@@ -66,7 +66,6 @@ PA2OHH-20m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grab
 PA2OHH-30m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,https://www.qsl.net/pa2ohh/grabber/hf1.jpg
 PA2OHH-40m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,https://www.qsl.net/pa2ohh/grabber/hf2.jpg
 PA2OHH-80m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,https://www.qsl.net/pa2ohh/grabber/hf3.jpg
-# PA3GNZ,PA3GNZ,New 2020,Tjeerd,Holland,http://www.pa3gnz.nl/qrss30m.htm,http://www.pa3gnz.nl/qrss30m.jpg
 S52AS-30m,S52AS,30m Part time,Roman,"Novo Mesto, Slovenia",http://novomesto.zevs.si/graber.htm,http://novomesto.zevs.si/podatki/test.gif
 SA6BSS-1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf1.jpg
 SA6BSS-2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
@@ -110,7 +109,6 @@ WA5DJJ-22m-Hifer1,WA5DJJ,22m HiFer,David,"Las Cruces, New Mexico",http://qsl.net
 WA5DJJ-22m-Hifer2,WA5DJJ,22m HiFer,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,https://qsl.net/wa5djj/vlf1.jpg
 WA5DJJ-30m,WA5DJJ,30m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/hf3.jpg
 WA5DJJ-40m,WA5DJJ,40m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/hf2.jpg
-# WA5DJJ-60m,WA5DJJ,60m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/hf1.jpg
 WA5DJJ-80m,WA5DJJ,80m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/mf3.jpg
 WA5DJJ-160m,WA5DJJ,160m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/mf2.jpg
 WA5DJJ-630m,WA5DJJ,630m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,https://qsl.net/wa5djj/mf1.jpg
