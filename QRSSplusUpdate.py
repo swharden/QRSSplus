@@ -113,7 +113,7 @@ class QrssPlus:
         """download a url to temp.dat using wget"""
         if os.path.exists("temp.dat"):
             os.remove("temp.dat")
-        cmd = "wget -q -N -T 3 -t 1"  # 1 attempt (no retries)
+        cmd = "wget -q -T 3 -t 1"  # 1 attempt (no retries)
         cmd += " -O %s %s" % ("temp.dat", url+"?"+str(int(time.time())))
         self.log(cmd)
         process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
@@ -232,11 +232,14 @@ class QrssPlus:
     def updateGrabberListFromGitHub(self):
         """Update the local grabbers.csv by getting the latest one from GitHub."""
         url = "https://raw.githubusercontent.com/swharden/QRSSplus/master/grabbers.csv"
-        headers = {'User-Agent': 'Wget/1.12 (linux-gnu)'}
-        req = urllib2.Request(url, headers=headers)
-        r = urllib2.urlopen(req, timeout=3)
-        raw = r.read()
-        raw = raw.split("\n")
+        #headers = {'User-Agent': 'request'}
+        #req = urllib2.Request(url, headers=headers)
+        #r = urllib2.urlopen(req, timeout=3)
+        #raw = r.read()
+        #raw = raw.split("\n")
+        os.system("wget " + url)
+        with open('grabbers.csv') as f:
+            raw = f.readlines()
         raw = [x.strip() for x in raw]
         raw = [x for x in raw if len(x)]
         raw = "\n".join(raw)
