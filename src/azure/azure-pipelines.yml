@@ -1,0 +1,31 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: 'src/azure/*.sln'
+
+steps:
+
+  - task: NuGetToolInstaller@1
+    displayName: "Install NuGet"
+
+  - task: NuGetCommand@2
+    displayName: "Restore"
+    inputs:
+      restoreSolution: '$(solution)'
+
+  - task: DotNetCoreCLI@2
+    displayName: "Build"
+    inputs:
+      command: "build"
+      projects: '$(solution)'
+      arguments: "--configuration release"
+
+  - task: DotNetCoreCLI@2
+    displayName: "Run Tests"
+    inputs:
+      command: test
+      projects: '$(solution)'
