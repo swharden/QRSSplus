@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrssPlus.Tests", "QrssPlus.Tests\QrssPlus.Tests.csproj", "{CA5CC9B7-9733-4F09-A4DB-5F8F183093B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QrssPlus", "QrssPlus\QrssPlus.csproj", "{4FAC9C35-0E08-4AED-84D3-21F3F258CA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA5CC9B7-9733-4F09-A4DB-5F8F183093B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5CC9B7-9733-4F09-A4DB-5F8F183093B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5CC9B7-9733-4F09-A4DB-5F8F183093B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5CC9B7-9733-4F09-A4DB-5F8F183093B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FAC9C35-0E08-4AED-84D3-21F3F258CA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAC9C35-0E08-4AED-84D3-21F3F258CA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAC9C35-0E08-4AED-84D3-21F3F258CA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAC9C35-0E08-4AED-84D3-21F3F258CA99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD0A8C95-DD0F-428E-B5A5-6849C3D457B0}
+	EndGlobalSection
+EndGlobal
