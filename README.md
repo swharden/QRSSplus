@@ -1,55 +1,50 @@
 
 # QRSS Plus
 
-**QRSS Plus is an automatically-updating QRSS grabber website designed to fully operate on a web server.** QRSS Plus watches a list of image URLs (stored in [grabbers.csv](grabbers.csv)), downloading them every 10 minutes, and marking them as "active" if their content changes regularly. QRSS Plus displays a list of active grabbers on a web page making them easy to browse at a glance. 
+**[QRSS Plus](https://www.swharden.com/qrss/plus) is an automatically-updating website that lists active QRSS grabbers around the world.** Every 10 minutes grabber URLs are read from [grabbers.csv](grabbers.csv), the latest grabs are downloaded and analyzed, and only grabbers whose spectrogram images changed recently are marked as "active" on the website.
 
-**View QRSS Plus in action:**\
-http://www.SWHarden.com/qrss/plus/
+**Launch QRSS Plus:** **https://www.swharden.com/qrss/plus**
 
-![](/misc/QRSSplus.png)
+[![](/misc/QRSSplus.png)](https://www.swharden.com/qrss/plus)
 
 
 ## QRSS Grabber List
 
-**The most recent list of active QRSS Grabbers used by QRSS Plus is here:**
-https://raw.githubusercontent.com/swharden/QRSSplus/master/grabbers.csv
+**This list of grabbers is actively maintained by Andy (G0FTD)** and serves as the primary source QRSS Plus uses to get information about grabbers. It is downloaded automatically every 10 minutes.
 
-This master grabber list is downloaded every 10 minutes by QRSS Plus, so updating this GitHub page immediately updates the live QRSS Plus webpage. If you design your own QRSS Grabber website or program, you are welcome to use (and automatically download) this master grabber list as well.
+* [**grabbers.csv**](grabbers.csv) ([raw](https://raw.githubusercontent.com/swharden/QRSSplus/master/grabbers.csv))
 
-## Updating the Grabber List
+## Request a Change
 
-### Request a Change
-**If you would like to update a grabber listing, take one of these actions:**
+**To submit or modify a grabber listing,** E-mail Andy (G0FTD) punkbiscuit@googlemail.com or post a message to the [Knights QRSS Mailing List](https://groups.io/g/qrssknights) and provide the latest grabber information:
 
-* E-mail Andy (G0FTD) punkbiscuit@googlemail.com with information about the grabber [Working links ONLY please]
-* Post a message to the [Knights QRSS Mailing List](https://groups.io/g/qrssknights) requesting the change
-* For help establishing a grabber, please refer to the Knights QRSS Mailing List and request community assistance.
+* Callsign
+* Location
+* URL to the grabber image
+* URL to a personal website (optional)
 
-Please note that the QRSS Plus pages has almost 1000 images to be shown. Please ensure that your grabber is working properly >before< requesting it's inclusion in order preserve bandwidth and it's QRSS Plus's own "signal to noise ratio" - thank you.
+⚠️ **Please do not submit non-functional URLs!** Test URLs on your own computer to ensure they function as expected before submitting them.
 
-### A Note for DropBox Users
-Many people upload grabs automatically using a DropBox account. The URLs used to access these files require special attention. If the URL is incorrectly formatted, it will return a _web page_ displaying a file. When the URL is properly formatted, it will return the _file_ itself. It is critically important that the URL given to QRSS Plus is the URL for the file, not for the webpage. To do this, simply replace `www.dropbox.com` with `dl.dropboxusercontent.com` in the URL:
+⚠️ **Dropbox users** must ensure their URL returns an _image file_, not a _web page_ that displays an image. To fix this, replace `www.dropbox.com` with `dl.dropboxusercontent.com` as shown here:
 
-* URLs must point to `dropboxusercontent.com`:
-  * `https://www.dropbox.com/s/35m4m8wn4w5hi7r/HF.jpg` **<- bad**
-  * `http://dl.dropboxusercontent.com/s/35m4m8wn4w5hi7r/HF.jpg` **<- good**
-* All text after and including the `?` should be deleted:
-  * `...latest%20grab%29.jpg?dl=0` **<- bad**
-  * `...latest%20grab%29.jpg` **<- good**
 
-### Become a Collaborator
-If you are a dedicated supporter of the QRSS community, consider becoming a collaborator so you can make direct changes to [grabbers.csv](grabbers.csv) which take effect immediately! You can then also make changes on behalf of others (e.g., monitoring a QRSS mailing lists and adding new grabbers as you learn of them). I encourage any tech-savvy QRSS enthusiast to consider becoming a QRSS Plus curator!
+```
+ Bad URL: https://www.dropbox.com/s/35m4m8wn4w5hi7r/HF.jpg
+Good URL: http://dl.dropboxusercontent.com/s/35m4m8wn4w5hi7r/HF.jpg
+```
 
-## Creating Your Own QRSS Plus Website
+If the URL contains a `?`, delete it and all characters following it:
 
-Although the author has run QRSS Plus on his website for several years and intends to continue doing so, **anybody can set-up their own QRSS Plus webpage** using the tools in this repository. Just copy this folder to your web server and call [QRSSplusUpdate.py](QRSSplusUpdate.py) every 10 minutes. Those who decide to independently set-up their own QRSS Plus page are encouraged to improve the code, add new features to the web interface, or incorporating new functionality, as these improvements enhance the QRSS community at large.
-
-A separate page is provided reviewing [technical details](/misc/technical.md) of operation,  configuration, and design considerations.
+```
+ Bad URL: https://www.dropbox.com/s/35m4m8wn4w5hi7r/HF.jpg?dl=0
+Good URL: https://www.dropbox.com/s/35m4m8wn4w5hi7r/HF.jpg
+```
 
 ## Additional Resources
 * [Knights QRSS Mailing List](https://groups.io/g/qrssknights) - The QRSS Knights is an extremely active community of QRSS enthusiasts. Join their mailing list to get in on discussions about new grabbers, radio spots, equipment, reception techniques, cosmic and atmospheric anomalies, and efforts in the QRSS world.
 * [74!
 The Knights QRSS Winter Newsletter](https://swharden.com/qrss/74) - Updated every December by Andy (G0FTD)
+* [The New Age of QRSS](https://swharden.com/blog/2020-10-03-new-age-of-qrss/) - A modern introduction to QRSS
 * [Knights QRSS Blog](http://knightsqrss.blogspot.com/) - Updated less frequently, but worth noting
 * [Getting Started with QRSS](http://knightsqrss.blogspot.com/2010/01/getting-started-with-qrss.html) - A good guide for those new to QRSS
 * [Carpe QRSS](https://github.com/strickyak/carpe-qrss) - A QRSS grabber built on the GO language
