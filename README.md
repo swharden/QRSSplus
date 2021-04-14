@@ -48,6 +48,8 @@ A separate page is provided reviewing [technical details](/misc/technical.md) of
 
 ## Additional Resources
 * [Knights QRSS Mailing List](https://groups.io/g/qrssknights) - The QRSS Knights is an extremely active community of QRSS enthusiasts. Join their mailing list to get in on discussions about new grabbers, radio spots, equipment, reception techniques, cosmic and atmospheric anomalies, and efforts in the QRSS world.
+* [74!
+The Knights QRSS Winter Newsletter](https://swharden.com/qrss/74) - Updated every December by Andy (G0FTD)
 * [Knights QRSS Blog](http://knightsqrss.blogspot.com/) - Updated less frequently, but worth noting
 * [Getting Started with QRSS](http://knightsqrss.blogspot.com/2010/01/getting-started-with-qrss.html) - A good guide for those new to QRSS
 * [Carpe QRSS](https://github.com/strickyak/carpe-qrss) - A QRSS grabber built on the GO language
