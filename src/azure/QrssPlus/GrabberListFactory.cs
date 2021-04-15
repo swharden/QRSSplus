@@ -1,16 +1,17 @@
-﻿using System;
+﻿using CsvHelper;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.IO;
-using CsvHelper;
-using System.Globalization;
+using System.Threading.Tasks;
 
 namespace QrssPlus
 {
-    public static class Csv
+    public static class GrabberListFactory
     {
-        public static GrabberList GetGrabbers(string csvFilePath)
+        public static GrabberList GetFromCSV(string csvFilePath)
         {
             using var reader = new StreamReader(csvFilePath);
 
@@ -25,7 +26,7 @@ namespace QrssPlus
                 if (csv.GetField("#ID").StartsWith("#"))
                     continue;
 
-                GrabberInfo grabber = new GrabberInfo
+                GrabberInfo grabber = new()
                 {
                     ID = csv.GetField("#ID"),
                     Callsign = csv.GetField("callsign"),

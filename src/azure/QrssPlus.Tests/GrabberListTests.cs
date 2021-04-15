@@ -17,7 +17,7 @@ namespace QrssPlus.Tests
         [Test]
         public void Test_GrabberList_ParseGrabberInfos()
         {
-            var grabbers = Csv.GetGrabbers(csvFilePath: SampleGrabbersCsvPath);
+            var grabbers = GrabberListFactory.GetFromCSV(SampleGrabbersCsvPath);
             Assert.Greater(grabbers.Count, 0);
 
             foreach (var info in grabbers.GetInfos())
