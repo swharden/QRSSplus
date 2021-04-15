@@ -1,6 +1,6 @@
 #ID,callsign,title,name,location,website,file
 7L1RLL-136Khz,7L1RLL,136Khz,Rick,Japan,http://www1.u-netsurf.ne.jp/~7l1rll/Grabber_7L1RLL.html,http://www1.u-netsurf.ne.jp/~7l1rll/argo_capture.jpg
-AA7US,AA7US,Variable band,John,QTH and state varies,http://www.qsl.net/aa7us/,http://www.qsl.net/aa7us/hf3.jpg
+# AA7US,AA7US,Variable band,John,QTH and state varies,http://www.qsl.net/aa7us/,http://www.qsl.net/aa7us/hf3.jpg
 AJ4VD,AJ4VD,30m,Scott,"Gainesville, FL, USA",https://swharden.com/software/FSKview/,https://swharden.com/dev/grabber/latest.png
 CT2IWW,CT2IWW,Usually 10m seasonal,Paulo,Portugal,http://qsl.net/ct2iww/CT2IWW_QRSS.html,http://qsl.net/ct2iww/CT2IWW_QRSS_files/hf1.jpg
 DL4DTL,DL4DTL,40m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
@@ -55,10 +55,10 @@ M0GBZ,M0GBZ,Various part time,Euan,Southern UK,https://qsl.net/m0gbz/,https://qs
 N9JL-1,N9JL,30m FSKVIEW,John,Shorewood IL,https://www.qsl.net/n9jl,https://www.qsl.net/n9jl/capt.jpg
 N8NJ-1,N8NJ,Various bands,Larry,Ohio,https://www.qsl.net/n8nj/index.html,https://www.qsl.net/n8nj/hf1.jpg
 N8NJ-2,N8NJ,Various bands,Larry,Ohio,https://www.qsl.net/n8nj/index.html,https://www.qsl.net/n8nj/hf2.jpg
-OH8GKP-0,OH8GKP,Experimental,Heikki,"Liminka,Finland",https://qsl.net/oh8gkp/wspr.html,https://qsl.net/oh8gkp/latest.png
-OH8GKP-1,OH8GKP,Experimental,Heikki,"Liminka,Finland",https://qsl.net/oh8gkp/wspr.html,https://qsl.net/oh8gkp/oh8gkp1.gif
-OH8GKP-2,OH8GKP,Experimental,Heikki,"Liminka,Finland",https://qsl.net/oh8gkp/qrss/wspr.html,https://qsl.net/oh8gkp/qrss/latest.png
-OH8GKP-3,OH8GKP,Experimental,Heikki,"Liminka,Finland",https://qsl.net/oh8gkp/qrss/wspr.html,https://qsl.net/oh8gkp/qrss/oh8gkp.gif
+# OH8GKP-0,OH8GKP,Experimental,Heikki,"Liminka,Finland",https://qsl.net/oh8gkp/wspr.html,https://qsl.net/oh8gkp/latest.png
+# OH8GKP-1,OH8GKP,Experimental,Heikki,"Liminka,Finland",https://qsl.net/oh8gkp/wspr.html,https://qsl.net/oh8gkp/oh8gkp1.gif
+# OH8GKP-2,OH8GKP,Experimental,Heikki,"Liminka,Finland",https://qsl.net/oh8gkp/qrss/wspr.html,https://qsl.net/oh8gkp/qrss/latest.png
+# OH8GKP-3,OH8GKP,Experimental,Heikki,"Liminka,Finland",https://qsl.net/oh8gkp/qrss/wspr.html,https://qsl.net/oh8gkp/qrss/oh8gkp.gif
 OK1FCX-1,OK1FCX,Experimental,Radovan,"Kamenny Privoz, Czech Republic",http://www.qsl.net/ok1fcx/,http://www.qsl.net/ok1fcx/hf1.jpg
 OK1FCX-2,OK1FCX,Experimental,Radovan,"Kamenny Privoz, Czech Republic",http://www.qsl.net/ok1fcx/,http://www.qsl.net/ok1fcx/hf2.jpg
 OK1FCX-3-80m-NVIS,OK1FCX,Experimental,Radovan,"Kamenny Privoz, Czech Republic",http://www.qsl.net/ok1fcx/,http://www.qsl.net/ok1fcx/hf3.jpg
