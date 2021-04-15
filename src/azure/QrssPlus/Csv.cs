@@ -25,15 +25,16 @@ namespace QrssPlus
                 if (csv.GetField("#ID").StartsWith("#"))
                     continue;
 
-                var grabber = new GrabberInfo(
-                    id: csv.GetField("#ID"),
-                    callsign: csv.GetField("callsign"),
-                    title: csv.GetField("title"),
-                    name: csv.GetField("name"),
-                    location: csv.GetField("location"),
-                    siteUrl: csv.GetField("website"),
-                    imageUrl: csv.GetField("file")
-                );
+                GrabberInfo grabber = new GrabberInfo
+                {
+                    ID = csv.GetField("#ID"),
+                    Callsign = csv.GetField("callsign"),
+                    Title = csv.GetField("title"),
+                    Name = csv.GetField("name"),
+                    Location = csv.GetField("location"),
+                    SiteUrl = csv.GetField("website"),
+                    ImageUrl = csv.GetField("file")
+                };
                 grabbers.Add(grabber);
             }
 

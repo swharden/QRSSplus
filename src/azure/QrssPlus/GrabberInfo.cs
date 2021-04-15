@@ -6,27 +6,15 @@ using System.Threading.Tasks;
 
 namespace QrssPlus
 {
-    public struct GrabberInfo
+    public record GrabberInfo
     {
-        public readonly string ID;
-        public readonly string Callsign;
-        public readonly string Title;
-        public readonly string Name;
-        public readonly string Location;
-        public readonly string SiteUrl;
-        public readonly string ImageUrl;
-
+        public string ID { get; init; }
+        public string Callsign { get; init; }
+        public string Title { get; init; }
+        public string Name { get; init; }
+        public string Location { get; init; }
+        public string SiteUrl { get; init; }
+        public string ImageUrl { get; init; }
         public override string ToString() => $"Grabber {ID} {ImageUrl}";
-
-        public GrabberInfo(string id, string callsign, string title, string name, string location, string siteUrl, string imageUrl)
-        {
-            ID = id;
-            Callsign = callsign;
-            Title = title;
-            Name = name;
-            Location = location;
-            SiteUrl = siteUrl;
-            ImageUrl = imageUrl;
-        }
     }
 }
