@@ -1,12 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QrssPlus
 {
-    public class GrabberList
+    public class GrabberList : IEnumerable<GrabberInfo>
     {
         private readonly List<GrabberInfo> Grabbers = new();
         public int Count => Grabbers.Count;
@@ -21,7 +20,12 @@ namespace QrssPlus
             Grabbers.Add(gi);
         }
 
-        // TODO: deep copy? Allow mutable? Record?
-        public GrabberInfo[] GetInfos() => Grabbers.ToArray();
+        public IEnumerator<GrabberInfo> GetEnumerator()
+        {
+            foreach (var grab in Grabbers)
+                yield return grab;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }
