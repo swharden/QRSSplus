@@ -3,7 +3,7 @@ using System;
 
 namespace QrssPlus.Tests
 {
-    public class Tests
+    public class GrabberListTests
     {
         [Test]
         public void Test_GrabberText_HasContent()
@@ -18,8 +18,16 @@ namespace QrssPlus.Tests
             var grabbers = GrabberListFactory.GetFromCSV(SampleData.GrabbersCsvPath);
             Assert.Greater(grabbers.Count, 0);
 
-            foreach (var info in grabbers)
-                Console.WriteLine(info);
+            foreach (var grabber in grabbers)
+                Console.WriteLine(grabber);
+        }
+
+        [Test]
+        public void Test_GrabberList_Filenames()
+        {
+            var grabbers = GrabberListFactory.GetFromCSV(SampleData.GrabbersCsvPath);
+            foreach (var grabber in grabbers)
+                Console.WriteLine(grabber.GetFilename());
         }
     }
 }
