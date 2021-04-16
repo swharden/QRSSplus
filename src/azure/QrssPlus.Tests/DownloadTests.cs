@@ -8,6 +8,7 @@ using System.IO;
 
 namespace QrssPlus.Tests
 {
+    [Ignore("Skip Local Download Tests")]
     class DownloadTests
     {
         [Test]
