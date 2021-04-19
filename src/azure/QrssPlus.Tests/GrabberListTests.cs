@@ -6,18 +6,23 @@ namespace QrssPlus.Tests
     public class GrabberListTests
     {
         [Test]
-        public void Test_GrabberText_HasContent()
+        public void Test_GrabberList_FromLocalFile()
         {
-            string grabberText = System.IO.File.ReadAllText(SampleData.GrabbersCsvPath);
-            Assert.IsNotNull(grabberText);
+            var grabbers = GrabberListFactory.CreateFromCsvFile(SampleData.GrabbersCsvPath);
+            Assert.Greater(grabbers.Count, 0);
+
+            Console.WriteLine(grabbers);
+            foreach (var grabber in grabbers)
+                Console.WriteLine(grabber);
         }
 
         [Test]
-        public void Test_GrabberList_ParseGrabberInfos()
+        public void Test_GrabberList_FromUrl()
         {
-            var grabbers = GrabberListFactory.GetFromCSV(SampleData.GrabbersCsvPath);
+            var grabbers = GrabberListFactory.CreateFromCsvUrl(SampleData.GrabbersCsvUrl);
             Assert.Greater(grabbers.Count, 0);
 
+            Console.WriteLine(grabbers);
             foreach (var grabber in grabbers)
                 Console.WriteLine(grabber);
         }
@@ -25,7 +30,9 @@ namespace QrssPlus.Tests
         [Test]
         public void Test_GrabberList_Filenames()
         {
-            var grabbers = GrabberListFactory.GetFromCSV(SampleData.GrabbersCsvPath);
+            var grabbers = GrabberListFactory.CreateFromCsvFile(SampleData.GrabbersCsvPath);
+
+            Console.WriteLine(grabbers);
             foreach (var grabber in grabbers)
                 Console.WriteLine(grabber.GetFilename());
         }

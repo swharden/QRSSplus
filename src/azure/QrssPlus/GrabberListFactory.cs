@@ -1,45 +1,74 @@
-﻿using CsvHelper;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace QrssPlus
 {
     public static class GrabberListFactory
     {
-        public static GrabberList GetFromCSV(string csvFilePath)
+        public static GrabberList CreateFromCsvFile(string csvFilePath)
         {
-            using var reader = new StreamReader(csvFilePath);
+            string csvText = File.ReadAllText(csvFilePath);
+            return FromCsvText(csvText);
+        }
 
-            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-            csv.Read();
-            csv.ReadHeader();
+        public static GrabberList CreateFromCsvUrl(string url)
+        {
+            using WebClient client = new();
+            string csvText = client.DownloadString(url);
+            return FromCsvText(csvText);
+        }
 
+        private static GrabberList FromCsvText(string csv)
+        {
             GrabberList grabbers = new();
 
-            while (csv.Read())
+            const int valuesPerLine = 5;
+
+            foreach (string rawLine in csv.Split("\n"))
             {
-                if (csv.GetField("#ID").StartsWith("#"))
+                string line = rawLine.Trim();
+                if (line.StartsWith("#"))
+                    continue;
+                if (line.Split(',').Length < valuesPerLine - 1)
                     continue;
 
-                GrabberInfo grabber = new()
-                {
-                    ID = csv.GetField("#ID"),
-                    Callsign = csv.GetField("callsign"),
-                    Title = csv.GetField("title"),
-                    Name = csv.GetField("name"),
-                    Location = csv.GetField("location"),
-                    SiteUrl = csv.GetField("website"),
-                    ImageUrl = csv.GetField("file")
-                };
+                var grabber = GrabberInfoFromCsvLine(line);
                 grabbers.Add(grabber);
             }
 
             return grabbers;
+        }
+
+        private static string[] ParseCsvLine(string line)
+        {
+            Regex CSVParser = new(",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
+            return CSVParser.Split(line);
+        }
+
+        private static GrabberInfo GrabberInfoFromCsvLine(string line)
+        {
+            string[] parts = ParseCsvLine(line);
+
+            if (parts.Length != 7)
+                throw new InvalidOperationException("Error parsing CSV line: " + line);
+
+            return new GrabberInfo()
+            {
+                ID = parts[0],
+                Callsign = parts[1],
+                Title = parts[2],
+                Name = parts[3],
+                Location = parts[4],
+                SiteUrl = parts[5],
+                ImageUrl = parts[6]
+            };
         }
     }
 }

@@ -14,7 +14,7 @@ namespace QrssPlus.Tests
         [Test]
         public void Test_Download_Locally()
         {
-            var grabbers = GrabberListFactory.GetFromCSV(SampleData.GrabbersCsvPath);
+            var grabbers = GrabberListFactory.CreateFromCsvFile(SampleData.GrabbersCsvPath);
             string localFolder = Path.GetFullPath("./downloads");
 
             Web.DownloadAllLocally(grabbers, localFolder, maxCount: 10);
