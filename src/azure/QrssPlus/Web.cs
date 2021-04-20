@@ -26,17 +26,15 @@ namespace QrssPlus
             Parallel.ForEach(
                 source: limitedGrabbers,
                 parallelOptions: new ParallelOptions { MaxDegreeOfParallelism = maxSimultaneous },
-                body: grabber => { Download(grabber); });
+                body: grabber => { DownloadFile(grabber); });
             Console.WriteLine($"Downloaded {limitedGrabbers.Count()} grabs in {sw.ElapsedMilliseconds} ms");
         }
 
-        public static void Download(GrabberInfo grabber)
+        public static void DownloadFile(GrabberInfo grabber)
         {
-            var sw = System.Diagnostics.Stopwatch.StartNew();
             using WebClient client = new();
             string saveAs = grabber.GetFilename();
             client.DownloadFile(grabber.ImageUrl, saveAs);
-            Console.WriteLine($"Downloaded {saveAs} in {sw.ElapsedMilliseconds} ms");
         }
     }
 }

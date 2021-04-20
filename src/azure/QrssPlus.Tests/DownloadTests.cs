@@ -9,18 +9,20 @@ using System.Net;
 
 namespace QrssPlus.Tests
 {
+    [Ignore("Ignore download tests")]
     class DownloadTests
     {
         [Test]
-        [Ignore("skip large download tests")]
-        public void Test_Download_ImageFiles()
+        public void Test_Hash_AllGrabs()
         {
             var grabbers = GrabberListFactory.CreateFromCsvFile(SampleData.GrabbersCsvPath);
-            string localFolder = Path.GetFullPath("./downloads");
 
-            Web.DownloadAllLocally(grabbers, localFolder, maxCount: 10);
-
-            Assert.NotZero(Directory.GetFiles(localFolder).Length);
+            foreach (var grabber in grabbers)
+            {
+                GrabResult grab = grabber.Download();
+                Console.WriteLine(grab);
+                break;
+            }
         }
 
         [Test]
