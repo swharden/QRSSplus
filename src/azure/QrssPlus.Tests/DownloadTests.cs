@@ -13,7 +13,7 @@ namespace QrssPlus.Tests
         [Test]
         public void Test_Update_All()
         {
-            Cloud.UpdateAll();
+            Cloud.UpdateAll(null);
         }
     }
 }

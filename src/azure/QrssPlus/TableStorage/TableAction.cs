@@ -9,9 +9,9 @@ namespace QrssPlus.TableStorage
 {
     public static class TableAction
     {
-        public static void UpdateGrabberHashes(GrabberList grabbers, int maxAgeMinutes)
+        public static void UpdateGrabberHashes(GrabberList grabbers, int maxAgeMinutes, string storageConnectionString)
         {
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(Cloud.GetStorageConnectionString());
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConnectionString);
             CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
             CloudTable table = tableClient.GetTableReference("GrabResults");
             table.CreateIfNotExists();
@@ -20,9 +20,9 @@ namespace QrssPlus.TableStorage
             DeleteOldGrabs(table, maxAgeMinutes).Wait();
         }
 
-        public static async Task AddRunLog(RunResult runResult)
+        public static async Task AddRunLog(RunResult runResult, string storageConnectionString)
         {
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(Cloud.GetStorageConnectionString());
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConnectionString);
             CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
             CloudTable table = tableClient.GetTableReference("RunLogs");
             table.CreateIfNotExists();

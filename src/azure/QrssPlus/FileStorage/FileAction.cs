@@ -11,9 +11,9 @@ namespace QrssPlus.FileStorage
 {
     public static class FileAction
     {
-        public static void UpdateFiles(GrabberList grabbers, int maxAgeMinutes)
+        public static void UpdateFiles(GrabberList grabbers, int maxAgeMinutes, string storageConnectionString)
         {
-            BlobContainerClient container = new(Cloud.GetStorageConnectionString(), "$web");
+            BlobContainerClient container = new(storageConnectionString, "$web");
 
             Grabber[] activeGrabbers = grabbers.Select(x => x).Where(x => x.Grab.Data != null).ToArray();
 

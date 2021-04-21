@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -10,29 +9,15 @@ namespace QrssPlus
 {
     public static class Cloud
     {
-        public static string GetStorageConnectionString()
-        {
-            var configuration = new ConfigurationBuilder()
-                .AddUserSecrets<GrabberInfo>()
-                .AddEnvironmentVariables()
-                .Build();
-
-            string connectionString = configuration["StorageConnectionString"];
-            if (string.IsNullOrEmpty(connectionString))
-                throw new InvalidOperationException("cannot find connection string");
-
-            return connectionString;
-        }
-
         /// <summary>
         /// This is called once every 10 minutes.
         /// </summary>
-        public static void UpdateAll()
+        public static void UpdateAll(string storageConnectionString)
         {
             const string GrabbersCsvUrl = "https://raw.githubusercontent.com/swharden/QRSSplus/master/grabbers.csv";
             const int maxAgeMinutes = 60;
 
-            if (string.IsNullOrEmpty(Cloud.GetStorageConnectionString()))
+            if (string.IsNullOrEmpty(storageConnectionString))
                 throw new InvalidOperationException("null connection string");
 
             Stopwatch sw = Stopwatch.StartNew();
@@ -43,10 +28,10 @@ namespace QrssPlus
             Parallel.ForEach(grabbers, grabber => { grabber.Grab.Download(); });
 
             // add results to table storage
-            TableStorage.TableAction.UpdateGrabberHashes(grabbers, maxAgeMinutes);
+            TableStorage.TableAction.UpdateGrabberHashes(grabbers, maxAgeMinutes, storageConnectionString);
 
             // upload images to blob storage
-            FileStorage.FileAction.UpdateFiles(grabbers, maxAgeMinutes);
+            FileStorage.FileAction.UpdateFiles(grabbers, maxAgeMinutes, storageConnectionString);
 
             // update the run log
             TableStorage.RunResult run = new()
@@ -55,7 +40,7 @@ namespace QrssPlus
                 Grabbers = grabbers.Count,
                 Errors = grabbers.Where(x => x.Grab.Hash.Contains(" ")).Count()
             };
-            TableStorage.TableAction.AddRunLog(run).Wait();
+            TableStorage.TableAction.AddRunLog(run, storageConnectionString).Wait();
         }
     }
 }
