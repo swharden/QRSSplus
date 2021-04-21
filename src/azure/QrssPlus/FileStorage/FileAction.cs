@@ -29,7 +29,7 @@ namespace QrssPlus.FileStorage
             foreach (var item in container.GetBlobs())
             {
                 var age = DateTime.UtcNow - item.Properties.LastModified;
-                if (age > TimeSpan.FromMilliseconds(maxAgeMinutes))
+                if (age > TimeSpan.FromMinutes(maxAgeMinutes))
                     container.DeleteBlob(item.Name);
             }
 
