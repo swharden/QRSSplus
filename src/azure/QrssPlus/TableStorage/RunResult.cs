@@ -9,9 +9,9 @@ namespace QrssPlus.TableStorage
 {
     public class RunResult : TableEntity
     {
-        public int Grabbers { get; init; }
-        public int Errors { get; init; }
-        public double RunTime { get; init; }
+        public int Grabbers { get; set; }
+        public int Errors { get; set; }
+        public double RunTime { get; set; }
 
         public RunResult()
         {

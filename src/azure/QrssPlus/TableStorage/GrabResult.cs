@@ -5,10 +5,10 @@ namespace QrssPlus.TableStorage
 {
     public class GrabResult : TableEntity
     {
-        public string GrabberID { get; init; }
-        public string Hash { get; init; }
-        public double DownloadDuration { get; init; }
-        public string DownloadTimeCode { get; init; }
+        public string GrabberID { get; set; }
+        public string Hash { get; set; }
+        public double DownloadDuration { get; set; }
+        public string DownloadTimeCode { get; set; }
 
         public GrabResult() { }
 

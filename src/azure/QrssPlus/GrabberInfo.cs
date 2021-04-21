@@ -12,12 +12,12 @@ namespace QrssPlus
     /// </summary>
     public class GrabberInfo
     {
-        public string ID { get; init; }
-        public string Callsign { get; init; }
-        public string Title { get; init; }
-        public string Name { get; init; }
-        public string Location { get; init; }
-        public string SiteUrl { get; init; }
-        public string ImageUrl { get; init; }
+        public string ID { get; set; }
+        public string Callsign { get; set; }
+        public string Title { get; set; }
+        public string Name { get; set; }
+        public string Location { get; set; }
+        public string SiteUrl { get; set; }
+        public string ImageUrl { get; set; }
     }
 }
