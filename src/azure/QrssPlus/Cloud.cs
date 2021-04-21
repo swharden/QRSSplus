@@ -32,6 +32,9 @@ namespace QrssPlus
             const string GrabbersCsvUrl = "https://raw.githubusercontent.com/swharden/QRSSplus/master/grabbers.csv";
             const int maxAgeMinutes = 60;
 
+            if (string.IsNullOrEmpty(Cloud.GetStorageConnectionString()))
+                throw new InvalidOperationException("null connection string");
+
             Stopwatch sw = Stopwatch.StartNew();
 
             GrabberList grabbers = GrabberListFactory.CreateFromCsvUrl(GrabbersCsvUrl);
