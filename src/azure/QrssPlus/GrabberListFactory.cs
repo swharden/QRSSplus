@@ -52,14 +52,14 @@ namespace QrssPlus
             return CSVParser.Split(line);
         }
 
-        private static GrabberInfo GrabberInfoFromCsvLine(string line)
+        private static Grabber GrabberInfoFromCsvLine(string line)
         {
             string[] parts = ParseCsvLine(line);
 
             if (parts.Length != 7)
                 throw new InvalidOperationException("Error parsing CSV line: " + line);
 
-            return new GrabberInfo()
+            var info = new GrabberInfo()
             {
                 ID = parts[0],
                 Callsign = parts[1],
@@ -69,6 +69,8 @@ namespace QrssPlus
                 SiteUrl = parts[5],
                 ImageUrl = parts[6]
             };
+
+            return new Grabber(info);
         }
     }
 }

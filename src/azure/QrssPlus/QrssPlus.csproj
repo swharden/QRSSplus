@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>1655b39a-1bcd-442f-ac27-24005eaed2f2</UserSecretsId>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
 
   <ItemGroup>

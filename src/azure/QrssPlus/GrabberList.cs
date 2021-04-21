@@ -5,22 +5,26 @@ using System.Linq;
 
 namespace QrssPlus
 {
-    public class GrabberList : IEnumerable<GrabberInfo>
+    /// <summary>
+    /// This list of grabbers contains every grabber's information and latest grab.
+    /// It performs error checking to ensure duplicates do not exist.
+    /// </summary>
+    public class GrabberList : IEnumerable<Grabber>
     {
-        private readonly List<GrabberInfo> Grabbers = new();
+        private readonly List<Grabber> Grabbers = new();
         public int Count => Grabbers.Count;
-        public string[] GrabberIDs => Grabbers.Select(x => x.ID).ToArray();
+        public string[] GrabberIDs => Grabbers.Select(x => x.Info.ID).ToArray();
         public override string ToString() => $"List of {Count} unique grabbers";
 
-        public void Add(GrabberInfo gi)
+        public void Add(Grabber gi)
         {
-            if (GrabberIDs.Contains(gi.ID))
+            if (GrabberIDs.Contains(gi.Info.ID))
                 throw new ArgumentException("Grabber IDs must be unique");
 
             Grabbers.Add(gi);
         }
 
-        public IEnumerator<GrabberInfo> GetEnumerator()
+        public IEnumerator<Grabber> GetEnumerator()
         {
             foreach (var grab in Grabbers)
                 yield return grab;
