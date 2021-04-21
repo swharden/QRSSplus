@@ -40,13 +40,10 @@ namespace QrssPlus
             Parallel.ForEach(grabbers, grabber => { grabber.Grab.Download(); });
 
             // add results to table storage
-            Task tableTask = TableStorage.TableAction.UpdateGrabberHashes(grabbers, maxAgeMinutes);
+            TableStorage.TableAction.UpdateGrabberHashes(grabbers, maxAgeMinutes);
 
             // upload images to blob storage
-            Task fileTask = FileStorage.FileAction.UpdateFiles(grabbers, maxAgeMinutes);
-
-            // wait for all upload tasks to finish
-            Task.WhenAll(tableTask, fileTask).Wait();
+            FileStorage.FileAction.UpdateFiles(grabbers, maxAgeMinutes);
 
             // update the run log
             TableStorage.RunResult run = new()

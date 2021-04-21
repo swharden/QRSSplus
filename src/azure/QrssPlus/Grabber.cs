@@ -18,5 +18,7 @@
             string.IsNullOrEmpty(Grab.Hash)
                 ? $"{Info.ID} [not downloaded]"
                 : $"{Info.ID} [{Grab.Hash}]";
+
+        public string GetFileName() => $"{Info.ID} {Grab.DownloadTimeCode} {Grab.Hash}{System.IO.Path.GetExtension(Info.ImageUrl)}";
     }
 }

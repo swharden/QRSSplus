@@ -9,15 +9,15 @@ namespace QrssPlus.TableStorage
 {
     public static class TableAction
     {
-        public static async Task UpdateGrabberHashes(GrabberList grabbers, int maxAgeMinutes)
+        public static void UpdateGrabberHashes(GrabberList grabbers, int maxAgeMinutes)
         {
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(Cloud.GetStorageConnectionString());
             CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
             CloudTable table = tableClient.GetTableReference("GrabResults");
             table.CreateIfNotExists();
 
-            await AddNewGrabs(table, grabbers);
-            await DeleteOldGrabs(table, maxAgeMinutes);
+            AddNewGrabs(table, grabbers).Wait();
+            DeleteOldGrabs(table, maxAgeMinutes).Wait();
         }
 
         public static async Task AddRunLog(RunResult runResult)
