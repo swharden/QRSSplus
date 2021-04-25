@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace QrssPlusFunctions
+namespace QrssPlusFunctions.TableEntities
 {
     class GrabberStatus : TableEntity
     {
