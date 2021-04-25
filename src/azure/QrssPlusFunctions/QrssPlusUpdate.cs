@@ -5,12 +5,13 @@ using Microsoft.Extensions.Logging;
 
 namespace QrssPlusFunctions
 {
-    public static class Function1
+    public static class QrssPlusUpdate
     {
-        [FunctionName("Function1")]
+        [FunctionName("QrssPlusUpdate")]
         public static void Run([TimerTrigger("0 2,12,22,32,42,52 * * * *")]TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+            Console.WriteLine("Starting");
         }
     }
 }

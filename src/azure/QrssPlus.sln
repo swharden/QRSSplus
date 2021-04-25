@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QrssPlusFunctions", "QrssPlusFunctions\QrssPlusFunctions.csproj", "{A73CF214-2CC5-4DF1-98E2-5A4A9D006222}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrssPlusTests", "QrssPlusTests\QrssPlusTests.csproj", "{513B91B0-3D86-4D8C-A573-9852C6E7A022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrssPlus", "QrssPlus\QrssPlus.csproj", "{81458CF2-0405-4970-9D3E-A47A726D606B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A73CF214-2CC5-4DF1-98E2-5A4A9D006222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A73CF214-2CC5-4DF1-98E2-5A4A9D006222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A73CF214-2CC5-4DF1-98E2-5A4A9D006222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513B91B0-3D86-4D8C-A573-9852C6E7A022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513B91B0-3D86-4D8C-A573-9852C6E7A022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513B91B0-3D86-4D8C-A573-9852C6E7A022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513B91B0-3D86-4D8C-A573-9852C6E7A022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81458CF2-0405-4970-9D3E-A47A726D606B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81458CF2-0405-4970-9D3E-A47A726D606B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81458CF2-0405-4970-9D3E-A47A726D606B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81458CF2-0405-4970-9D3E-A47A726D606B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
