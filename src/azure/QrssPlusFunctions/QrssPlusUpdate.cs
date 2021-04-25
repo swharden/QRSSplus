@@ -35,7 +35,7 @@ namespace QrssPlusFunctions
                     SaveNewGrab(grabber, storage);
             });
 
-            DeleteOldGrabs(storage, maxAgeMinutes: 60);
+            DeleteOldGrabs(storage, maxAgeMinutes: 120);
 
             SaveStatusJson(dl.GetGrabbers(), storage);
         }
