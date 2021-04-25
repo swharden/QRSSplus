@@ -25,7 +25,7 @@ namespace QrssPlusFunctions
             BlobContainerClient storage = ConnectToBlobStorage();
 
             var dl = new Downloader();
-            dl.DownloadGrabberList(maxGrabberCount: 10);
+            dl.DownloadGrabberList();
             dl.DownloadGrabberImages();
 
             Parallel.ForEach(dl.GetGrabbers(), grabber =>
