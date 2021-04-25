@@ -1,0 +1,69 @@
+﻿@page "/"
+@using System.Net.Http
+@inject HttpClient Http
+
+<h1>QRSS Plus</h1>
+
+@foreach (var grabber in GrabberStatuses)
+{
+    <div class="border my-4 p-2">
+        <h2>@grabber.ID</h2>
+
+        @if (grabber.IsActive)
+        {
+            @foreach (var imageUrl in grabber.GrabUrls)
+            {
+                <a href="@imageUrl">
+                    <img src="@imageUrl" height="200" class="p-2" />
+                </a>
+            }
+        }
+        else
+        {
+            <div>Inactive for at least @int(grabber.Age) minutes</div>
+        }
+    </div>
+}
+
+@code{
+    private readonly List<GrabberStatus> GrabberStatuses = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Update();
+    }
+
+    private async Task Update()
+    {
+        string url = "https://qrssplus.z20.web.core.windows.net/grabbers.json";
+        var client = new HttpClient();
+        var response = await client.GetAsync(url);
+        string json = response.Content.ReadAsStringAsync().Result;
+
+        var document = System.Text.Json.JsonDocument.Parse(json);
+
+        string dateTimeString = document.RootElement.GetProperty("DateTime").GetString();
+        DateTime dt = DateTime.Parse(dateTimeString);
+        Console.WriteLine(dt);
+
+        GrabberStatuses.Clear();
+        foreach (var grabber in document.RootElement.GetProperty("Grabbers").EnumerateObject())
+        {
+            GrabberStatus status = new()
+            {
+                ID = grabber.Value.GetProperty("ID").GetString(),
+                Name = grabber.Value.GetProperty("Name").GetString(),
+                Callsign = grabber.Value.GetProperty("Callsign").GetString(),
+                Location = grabber.Value.GetProperty("Location").GetString(),
+                ImageUrl = grabber.Value.GetProperty("ImageUrl").GetString(),
+                SiteUrl = grabber.Value.GetProperty("SiteUrl").GetString(),
+                Age = grabber.Value.GetProperty("Age").GetDouble(),
+                GrabUrls = grabber.Value.GetProperty("Filenames")
+                    .EnumerateArray()
+                    .Select(x => "https://qrssplus.z20.web.core.windows.net/grabs/" + x.GetString())
+                    .ToArray()
+            };
+            GrabberStatuses.Add(status);
+        }
+    }
+}
