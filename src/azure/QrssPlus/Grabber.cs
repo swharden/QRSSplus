@@ -22,6 +22,7 @@ namespace QrssPlus
         public string Hash;
         public DateTime DateTime;
         public string Response;
+        public double Age;
 
         public void DownloadLatestGrab()
         {
@@ -46,6 +47,15 @@ namespace QrssPlus
             byte[] hashBytes = md5.ComputeHash(data);
             string hashString = string.Join("", hashBytes.Select(x => x.ToString("x2")));
             return hashString;
+        }
+
+        public string GetFilename()
+        {
+            DateTime dt = DateTime;
+            string timestamp = $"{dt.Year:D2}.{dt.Month:D2}.{dt.Day:D2}.{dt.Hour:D2}.{dt.Minute:D2}.{dt.Second:D2}";
+            string ext = System.IO.Path.GetExtension(ImageUrl);
+            string filename = $"{ID} {timestamp} {Hash}{ext}";
+            return filename;
         }
     }
 }

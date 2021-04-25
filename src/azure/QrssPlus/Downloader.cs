@@ -42,7 +42,12 @@ namespace QrssPlus
 
         public void DownloadGrabberImages()
         {
-            Parallel.ForEach(Grabbers, grabber => { grabber.DownloadLatestGrab(); });
+            DateTime dt = DateTime.UtcNow;
+            Parallel.ForEach(Grabbers, grabber =>
+            {
+                grabber.DownloadLatestGrab();
+                grabber.DateTime = dt;
+            });
         }
 
         /// <summary>
