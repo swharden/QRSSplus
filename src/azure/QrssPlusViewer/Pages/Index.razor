@@ -4,6 +4,9 @@
 
 <h1>QRSS Plus</h1>
 
+<div><code>Last update: @LastUpdateMessage</code></div>
+<div><code>Next update: @NextUpdateMessage</code></div>
+
 @foreach (var grabber in GrabberStatuses)
 {
     <div class="border my-4 p-2">
@@ -27,14 +30,59 @@
 
 @code{
     private readonly List<GrabberStatus> GrabberStatuses = new();
+    private System.Threading.Timer Timer;
+    DateTime NextUpdate;
+    private string NextUpdateMessage = "initializing...";
+    DateTime LastUpdate;
+    private string LastUpdateMessage = "initializing...";
 
     protected override async Task OnInitializedAsync()
     {
-        await Update();
+        await base.OnInitializedAsync();
+
+        Timer = new System.Threading.Timer(
+            callback: async (object stateInfo) =>
+            {
+                await UpdateIfNeeded();
+                StateHasChanged();
+            },
+            state: new System.Threading.AutoResetEvent(false),
+            dueTime: 1000,
+            period: 1000);
+    }
+
+    private async Task UpdateIfNeeded()
+    {
+        if (DateTime.UtcNow < NextUpdate)
+        {
+            TimeSpan delta = NextUpdate - DateTime.UtcNow;
+            NextUpdateMessage = $"{delta.Minutes} minutes and {delta.Seconds} seconds";
+        }
+        else
+        {
+            NextUpdateMessage = "UPDATING!";
+            await Update();
+        }
     }
 
     private async Task Update()
     {
+        NextUpdateMessage = "updating...";
+
+        LastUpdate = DateTime.UtcNow;
+        var thisTenMinute = new DateTime(
+            year: DateTime.UtcNow.Year,
+            month: DateTime.UtcNow.Month,
+            day: DateTime.UtcNow.Day,
+            hour: DateTime.UtcNow.Hour,
+            minute: (DateTime.UtcNow.Minute / 10) * 10,
+            second: 0
+        );
+
+        if (NextUpdate.Year < 2000)
+            thisTenMinute -= TimeSpan.FromMinutes(10);
+        NextUpdate = thisTenMinute + TimeSpan.FromMinutes(15);
+
         string url = "https://qrssplus.z20.web.core.windows.net/grabbers.json";
         var client = new HttpClient();
         var response = await client.GetAsync(url);
@@ -65,5 +113,7 @@
             };
             GrabberStatuses.Add(status);
         }
+        NextUpdateMessage = "Update complete!";
+        LastUpdateMessage = $"{DateTime.UtcNow} UTC";
     }
 }
