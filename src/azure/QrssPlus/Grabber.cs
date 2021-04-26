@@ -9,7 +9,7 @@ namespace QrssPlus
     public class Grabber
     {
         // grabber details
-        public string ID;
+        public readonly string ID;
         public string Callsign;
         public string Title;
         public string Name;
@@ -22,7 +22,31 @@ namespace QrssPlus
         public string Hash;
         public DateTime DateTime;
         public string Response;
-        public double Age;
+
+        // historical grabs
+        public readonly List<string> RecentFilenames = new List<string>();
+        public DateTime LastUniqueDateTime;
+
+        public Grabber(string id)
+        {
+            ID = SanitizeID(id);
+        }
+
+        /// <summary>
+        /// Returns a valid grabber ID given any input string
+        /// </summary>
+        private static string SanitizeID(string id)
+        {
+            if (id is null)
+                throw new ArgumentException("ID cannot be null");
+
+            var validChars = id.ToUpper().ToCharArray().Where(c => char.IsLetterOrDigit(c) || c == '-');
+
+            if (validChars.Count() == 0)
+                throw new ArgumentException("ID contains no valid characters");
+
+            return string.Join("", validChars);
+        }
 
         public void DownloadLatestGrab()
         {
