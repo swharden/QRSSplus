@@ -12,8 +12,7 @@ namespace QrssPlusTests
         [Test]
         public void Test_GrabberList_FromCsvFile()
         {
-            string csvFilePath = Path.Combine(TestContext.CurrentContext.TestDirectory, "../../../data/grabbers.csv");
-            Grabber[] grabbers = GrabberFactory.GrabbersFromCsvFile(csvFilePath);
+            Grabber[] grabbers = SampleData.GetGrabbers();
             Assert.AreEqual(121, grabbers.Length);
         }
 
@@ -22,7 +21,7 @@ namespace QrssPlusTests
         public void Test_GrabberList_FromCsvUrl()
         {
             string url = "https://raw.githubusercontent.com/swharden/QRSSplus/master/grabbers.csv";
-            Grabber[] grabbers = GrabberFactory.GrabbersFromCsvUrl(url).Result;
+            Grabber[] grabbers = GrabberIO.GrabbersFromCsvUrl(url).Result;
             Assert.Greater(grabbers.Length, 20);
         }
     }
