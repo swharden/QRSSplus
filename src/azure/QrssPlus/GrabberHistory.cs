@@ -6,7 +6,8 @@ namespace QrssPlus
 {
     public class GrabberHistory
     {
-        public readonly List<string> RecentFilenames = new List<string>();
+        public string LastUniqueHash;
         public DateTime LastUniqueDateTime;
+        public int LastUniqueAgeMinutes = -1;
     }
 }

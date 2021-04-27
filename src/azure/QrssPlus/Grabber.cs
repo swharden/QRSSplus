@@ -17,6 +17,25 @@ namespace QrssPlus
             Info = info;
         }
 
-        public void DownloadLatestGrab(DateTime dt) => Data.Download(Info, dt);
+        public override string ToString()
+        {
+            if (Data.Hash is null)
+                return $"{Info.ID} error={Data.Response}";
+            else
+                return $"{Info.ID} hash={Data.Hash}";
+        }
+
+
+        public void DownloadLatestGrab(DateTime dt)
+        {
+            Data.Download(Info, dt);
+            bool isNewImage = Data.Hash != null && Data.Hash != History.LastUniqueHash;
+            if (isNewImage)
+            {
+                History.LastUniqueHash = Data.Hash;
+                History.LastUniqueDateTime = dt;
+            }
+            History.LastUniqueAgeMinutes = (dt - History.LastUniqueDateTime).Minutes;
+        }
     }
 }
