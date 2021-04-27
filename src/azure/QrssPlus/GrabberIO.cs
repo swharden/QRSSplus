@@ -91,18 +91,23 @@ namespace QrssPlus
             foreach (var grabber in grabbers)
             {
                 writer.WriteStartObject("Grabber");
+
+                // info
                 writer.WriteString("id", grabber.Info.ID);
                 writer.WriteString("name", grabber.Info.Name);
                 writer.WriteString("callsign", grabber.Info.Callsign);
                 writer.WriteString("location", grabber.Info.Location);
                 writer.WriteString("imageUrl", grabber.Info.ImageUrl);
                 writer.WriteString("siteUrl", grabber.Info.SiteUrl);
-                writer.WriteString("lastUniqueDateTime", grabber.History.LastUniqueDateTime);
-                writer.WriteNumber("lastUniqueAgeMinutes", (dt - grabber.History.LastUniqueDateTime).TotalMinutes);
 
+                // history
+                writer.WriteString("lastUniqueHash", grabber.History.LastUniqueHash);
+                writer.WriteString("lastUniqueDateTime", grabber.History.LastUniqueDateTime);
+                writer.WriteNumber("lastUniqueAgeMinutes", grabber.History.LastUniqueAgeMinutes);
+
+                // images
                 writer.WriteStartArray("filenames");
-                string[] grabberFilenames = { "a.jpg", "b.jpg", "c.jpg" };
-                foreach (string filename in grabberFilenames)
+                foreach (string filename in grabber.History.Filenames)
                     writer.WriteStringValue(filename);
                 writer.WriteEndArray();
 
@@ -115,6 +120,43 @@ namespace QrssPlus
             string json = Encoding.UTF8.GetString(stream.ToArray());
 
             return json;
+        }
+
+        public static Grabber[] GrabbersFromJson(string json)
+        {
+            const string EXPECTED_VERSION = "1.0";
+
+            using JsonDocument document = JsonDocument.Parse(json);
+
+            string version = document.RootElement.GetProperty("version").GetString();
+            if (version != EXPECTED_VERSION)
+                throw new InvalidOperationException("invalid JSON version");
+
+            List<Grabber> grabbers = new List<Grabber>();
+            foreach (var grabber in document.RootElement.GetProperty("grabbers").EnumerateObject())
+            {
+                GrabberInfo info = new GrabberInfo()
+                {
+                    ID = grabber.Value.GetProperty("id").GetString(),
+                    Name = grabber.Value.GetProperty("name").GetString(),
+                    Callsign = grabber.Value.GetProperty("callsign").GetString(),
+                    Location = grabber.Value.GetProperty("location").GetString(),
+                    ImageUrl = grabber.Value.GetProperty("imageUrl").GetString(),
+                    SiteUrl = grabber.Value.GetProperty("siteUrl").GetString(),
+                };
+
+                GrabberHistory history = new GrabberHistory()
+                {
+                    LastUniqueHash = grabber.Value.GetProperty("lastUniqueHash").GetString(),
+                    LastUniqueDateTime = grabber.Value.GetProperty("lastUniqueDateTime").GetDateTime(),
+                    LastUniqueAgeMinutes = grabber.Value.GetProperty("lastUniqueAgeMinutes").GetInt32(),
+                    Filenames = grabber.Value.GetProperty("filenames").EnumerateArray().Select(x => x.GetString()).ToArray()
+                };
+
+                grabbers.Add(new Grabber(info, history));
+            }
+
+            return grabbers.ToArray();
         }
     }
 }

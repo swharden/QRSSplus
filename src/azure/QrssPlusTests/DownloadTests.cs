@@ -2,6 +2,7 @@
 using QrssPlus;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,7 +14,7 @@ namespace QrssPlusTests
         [Test]
         public void Test_Download_ImageData()
         {
-            var grabbers = SampleData.GetGrabbers();
+            Grabber[] grabbers = GrabberIO.GrabbersFromCsvFile(SampleData.GRABBERS_CSV_PATH);
             DateTime dt = DateTime.UtcNow;
 
             Parallel.ForEach(grabbers, grabber =>
@@ -21,6 +22,9 @@ namespace QrssPlusTests
                 grabber.DownloadLatestGrab(dt);
                 Console.WriteLine(grabber);
             });
+
+            string json = GrabberIO.GrabbersToJson(grabbers);
+            File.WriteAllText("grabberStatus.json", json);
         }
 
         [Test]

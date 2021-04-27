@@ -9,12 +9,14 @@ namespace QrssPlus
     public class Grabber
     {
         public readonly GrabberInfo Info;
-        public readonly GrabberData Data = new GrabberData();
-        public readonly GrabberHistory History = new GrabberHistory();
+        public readonly GrabberHistory History;
+        public readonly GrabberData Data;
 
-        public Grabber(GrabberInfo info)
+        public Grabber(GrabberInfo info = null, GrabberHistory history = null)
         {
-            Info = info;
+            Info = info ?? new GrabberInfo();
+            History = history ?? new GrabberHistory();
+            Data = new GrabberData();
         }
 
         public override string ToString()
@@ -24,7 +26,6 @@ namespace QrssPlus
             else
                 return $"{Info.ID} hash={Data.Hash}";
         }
-
 
         public void DownloadLatestGrab(DateTime dt)
         {
