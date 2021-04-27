@@ -9,6 +9,14 @@ namespace QrssPlus
         public string LastUniqueHash;
         public DateTime LastUniqueDateTime;
         public int LastUniqueAgeMinutes = -1;
+
         public string[] Filenames = new string[] { };
+
+        public void Update(GrabberHistory oldHistory)
+        {
+            LastUniqueHash = oldHistory.LastUniqueHash;
+            LastUniqueDateTime = oldHistory.LastUniqueDateTime;
+            LastUniqueAgeMinutes = oldHistory.LastUniqueAgeMinutes;
+        }
     }
 }
