@@ -16,8 +16,8 @@ namespace QrssPlusFunctions
     public static class QrssPlusUpdate
     {
         private const string STATUS_FILENAME = "grabbers.json";
-        private const string GRAB_FOLDER_PATH = "grabs";
-        private const string GRAB_FOLDER_URL = "https://qrssplus.z20.web.core.windows.net/grabs";
+        private const string GRAB_FOLDER_PATH = "grabs/";
+        private const string GRAB_FOLDER_URL = "https://qrssplus.z20.web.core.windows.net/grabs/";
 
         [FunctionName("QrssPlusUpdate")]
         public static void Run([TimerTrigger("0 2,12,22,32,42,52 * * * *")] TimerInfo myTimer, ILogger log)
@@ -117,7 +117,7 @@ namespace QrssPlusFunctions
             foreach (Grabber grabber in grabbers)
                 grabber.History.URLs = allFilenames
                     .Where(x => x.StartsWith(grabber.Info.ID))
-                    .Select(x => Path.Combine(GRAB_FOLDER_URL, x))
+                    .Select(x => GRAB_FOLDER_URL + x)
                     .ToArray();
         }
 
