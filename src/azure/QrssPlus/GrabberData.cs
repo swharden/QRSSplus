@@ -24,7 +24,7 @@ namespace QrssPlus
             {
                 Bytes = client.DownloadData(info.ImageUrl);
                 if (Bytes[0] == '<')
-                    throw new InvalidOperationException("Image URL points to a HTML page, not an image file");
+                    throw new WebException("Image URL points to a HTML page, not an image file");
                 Hash = GetHash(Bytes);
                 Response = "success";
                 string timestamp = $"{dt.Year:D2}.{dt.Month:D2}.{dt.Day:D2}.{dt.Hour:D2}.{dt.Minute:D2}.{dt.Second:D2}";
