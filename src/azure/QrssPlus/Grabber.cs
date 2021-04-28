@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -30,8 +31,8 @@ namespace QrssPlus
         public void DownloadLatestGrab(DateTime dt)
         {
             Data.Download(Info, dt);
-            bool isNewImage = Data.Hash != null && Data.Hash != History.LastUniqueHash;
-            if (isNewImage)
+            Data.ContainsNewUniqueImage = Data.Hash != null && Data.Hash != History.LastUniqueHash;
+            if (Data.ContainsNewUniqueImage)
             {
                 History.LastUniqueHash = Data.Hash;
                 History.LastUniqueDateTime = dt;

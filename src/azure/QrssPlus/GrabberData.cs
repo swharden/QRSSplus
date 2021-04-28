@@ -8,14 +8,17 @@ namespace QrssPlus
 {
     public class GrabberData
     {
-        public byte[] Bytes;
-        public string Hash;
-        public DateTime DateTime;
-        public string Response;
-        public string Filename;
+        public byte[] Bytes { get; private set; }
+        public string Hash { get; private set; }
+        public DateTime DateTime { get; private set; }
+        public string Response { get; private set; }
+        public string Filename { get; private set; }
+        public bool HasImageData => Bytes != null && Bytes.Length > 0;
+        public bool ContainsNewUniqueImage = false;
 
         public void Download(GrabberInfo info, DateTime dt)
         {
+            DateTime = dt;
             using WebClient client = new WebClient();
             try
             {
@@ -24,7 +27,7 @@ namespace QrssPlus
                 Response = "success";
                 string timestamp = $"{dt.Year:D2}.{dt.Month:D2}.{dt.Day:D2}.{dt.Hour:D2}.{dt.Minute:D2}.{dt.Second:D2}";
                 string extension = System.IO.Path.GetExtension(info.ImageUrl);
-                Filename = $"{info.ID} {timestamp} {Hash}" + extension;
+                Filename = info.ID + " " + timestamp + extension;
             }
             catch (WebException ex)
             {
