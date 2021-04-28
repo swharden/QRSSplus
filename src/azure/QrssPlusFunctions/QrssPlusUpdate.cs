@@ -74,9 +74,17 @@ namespace QrssPlusFunctions
         /// </summary>
         private static void StoreImageData(Grabber grabber, BlobContainerClient container)
         {
-            BlobClient blob = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename));
-            using var stream = new MemoryStream(grabber.Data.Bytes);
-            blob.Upload(stream);
+            BlobClient blobOriginal = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename));
+            using var streamOriginal = new MemoryStream(grabber.Data.Bytes);
+            blobOriginal.Upload(streamOriginal);
+
+            BlobClient blobThumbSkinny = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename + "-thumb-skinny.jpg"));
+            using var streamThumbSkinny = new MemoryStream(ImageProcessing.GetThumbnailSkinny(grabber.Data.Bytes));
+            blobThumbSkinny.Upload(streamThumbSkinny);
+
+            BlobClient blobThumbAuto = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename + "-thumb-auto.jpg"));
+            using var streamThumbAuto = new MemoryStream(ImageProcessing.GetThumbnailAuto(grabber.Data.Bytes));
+            blobThumbAuto.Upload(streamThumbAuto);
         }
 
         /// <summary>
