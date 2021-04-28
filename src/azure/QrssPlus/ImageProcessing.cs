@@ -11,6 +11,9 @@ namespace QrssPlus
 {
     public static class ImageProcessing
     {
+        public static byte[] GetThumbnailSkinny(byte[] bytes) => GetThumbnailBytes(bytes, quality: 50, height: 500, width: 50);
+        public static byte[] GetThumbnailAuto(byte[] bytes) => GetThumbnailBytes(bytes, quality: 50, height: 250);
+
         public static byte[] GetThumbnailBytes(byte[] bytes, int quality, int height, int width = -1)
         {
             using MemoryStream msIn = new MemoryStream(bytes);
