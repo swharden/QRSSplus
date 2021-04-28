@@ -33,9 +33,6 @@ namespace QrssPlusFunctions
                 grabber.DownloadLatestGrab(dt);
                 if (grabber.Data.ContainsNewUniqueImage)
                     StoreImageData(grabber, container);
-
-                string newMessage = grabber.Data.ContainsNewUniqueImage ? "new" : "old";
-                log.LogInformation($" - {grabber.Info.ID} {grabber.Data.Response} ({newMessage})");
             });
             DeleteOldGrabs(60, container);
             UpdateGrabberURLs(grabbers, container);
