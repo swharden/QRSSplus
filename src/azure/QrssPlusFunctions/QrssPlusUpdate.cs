@@ -26,16 +26,8 @@ namespace QrssPlusFunctions
             BlobContainerClient container = new BlobContainerClient(storageConnectionString, "$web");
 
             DateTime dt = DateTime.UtcNow;
-            log.LogInformation($"Starting at {dt}");
-
-            log.LogInformation($"Downloading grabber list...");
             Grabber[] grabbers = GetGrabbers();
-            log.LogInformation($"Loaded {grabbers.Length} grabbers");
-
-            log.LogInformation($"Updating history from previous status file...");
             UpdateGrabberHistory(grabbers, container);
-
-            log.LogInformation($"Downloading grabber images...");
             Parallel.ForEach(grabbers, grabber =>
             {
                 grabber.DownloadLatestGrab(dt);
@@ -45,17 +37,9 @@ namespace QrssPlusFunctions
                 string newMessage = grabber.Data.ContainsNewUniqueImage ? "new" : "old";
                 log.LogInformation($" - {grabber.Info.ID} {grabber.Data.Response} ({newMessage})");
             });
-
-            log.LogInformation($"Deleting old grabber images...");
             DeleteOldGrabs(60, container);
-
-            log.LogInformation($"Updating grabber URLs...");
             UpdateGrabberURLs(grabbers, container);
-
-            log.LogInformation($"Saving status images...");
             SaveStatusFile(grabbers, container);
-
-            log.LogInformation($"Finished");
         }
 
         /// <summary>
@@ -88,6 +72,9 @@ namespace QrssPlusFunctions
                 grabber.History.Update(oldGrabberDictionary[grabber.Info.ID].History);
         }
 
+        /// <summary>
+        /// Save a grabber's image data as a new file in blob storage
+        /// </summary>
         private static void StoreImageData(Grabber grabber, BlobContainerClient container)
         {
             BlobClient blob = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename));
@@ -95,6 +82,9 @@ namespace QrssPlusFunctions
             blob.Upload(stream);
         }
 
+        /// <summary>
+        /// Delete blob files older than a given age
+        /// </summary>
         private static void DeleteOldGrabs(int maxAgeMinutes, BlobContainerClient container)
         {
             string[] oldBlobNames = container.GetBlobs()
@@ -106,6 +96,9 @@ namespace QrssPlusFunctions
                 container.DeleteBlob(bloboldBlobName);
         }
 
+        /// <summary>
+        /// Update the grab URLs for each grabber with those currently in blob storage
+        /// </summary>
         private static void UpdateGrabberURLs(Grabber[] grabbers, BlobContainerClient container)
         {
             string[] allFilenames = container
@@ -121,6 +114,9 @@ namespace QrssPlusFunctions
                     .ToArray();
         }
 
+        /// <summary>
+        /// Create a JSON summary of all grabbers and save it as a flat file in blob storage
+        /// </summary>
         private static void SaveStatusFile(Grabber[] grabbers, BlobContainerClient container)
         {
             string json = GrabberIO.GrabbersToJson(grabbers);
