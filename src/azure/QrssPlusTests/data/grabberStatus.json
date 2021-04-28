@@ -12,7 +12,7 @@
       "lastUniqueHash": "3c3e7acb06a2e20923ed9318e762853c",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "AJ4VD",
@@ -24,7 +24,7 @@
       "lastUniqueHash": "04807a5111b0ce7d39eb2a6f6c593018",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "CT2IWW",
@@ -36,7 +36,7 @@
       "lastUniqueHash": "c74068377f3ac5b6f093da98848f3056",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "DL4DTL",
@@ -48,7 +48,7 @@
       "lastUniqueHash": "656543daa1f986d4b8f4f15541fbc886",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "EA8BVP-30M-FAST",
@@ -60,7 +60,7 @@
       "lastUniqueHash": "00991855f609a96ef285538044f7e178",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "EA8BVP-30M-SLOW",
@@ -72,7 +72,7 @@
       "lastUniqueHash": "2c3ff0742523541e6899b481fa371a9e",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G0FTD-QRSS-KALEIDOSCOPE",
@@ -84,7 +84,7 @@
       "lastUniqueHash": "ffde85600782bdaf84ca1c283dd6e8f1",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G0MQW-1",
@@ -96,7 +96,7 @@
       "lastUniqueHash": "8cefbdfb396aa758fec35f648938579d",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G0MQW-2",
@@ -108,7 +108,7 @@
       "lastUniqueHash": "856eadf5813e718670ebf0abb8422ae8",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G0MQW-3",
@@ -120,7 +120,7 @@
       "lastUniqueHash": "0bf04b9d7fc063ee531367c3479b1f28",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G0MQW-4",
@@ -132,7 +132,7 @@
       "lastUniqueHash": "0ffbca7509ec8d2a7eca905246ab61b5",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G0UPL",
@@ -144,7 +144,7 @@
       "lastUniqueHash": "0f8c202a7e3b1cfd999efc729d076f80",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G3VYZ-FAST-10M",
@@ -156,7 +156,7 @@
       "lastUniqueHash": "66ef36baf678bf4d2b4f319e27b325e7",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G3VYZ-FAST-40M",
@@ -168,7 +168,7 @@
       "lastUniqueHash": "b8fa287f23580ee026eec3b8021b1487",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G3VYZ-FAST-80M",
@@ -180,7 +180,7 @@
       "lastUniqueHash": "9f23639e3c9701fcf76442ba6dd82e11",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G3VYZ-40M-SLOW",
@@ -192,7 +192,7 @@
       "lastUniqueHash": "5a1a593a5b01b7d1bdd8a912cbe7fea8",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G3VYZ-80M-SLOW",
@@ -204,7 +204,7 @@
       "lastUniqueHash": "52c932d4fa6f74782e45aa6551e2dca8",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G3YXM-136KHZ",
@@ -216,7 +216,7 @@
       "lastUniqueHash": "05adeb6e2823ef374c460ad66704b564",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G3YXM-472KHZ",
@@ -228,7 +228,7 @@
       "lastUniqueHash": "3c32e28d2686f031973e08beb503c233",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G4IOG-10M",
@@ -240,7 +240,7 @@
       "lastUniqueHash": "b098437508f4841bfafe04c841076bc5",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G4IOG-20M",
@@ -252,7 +252,7 @@
       "lastUniqueHash": "021a042c6c5778ba3b8f10b9ffece12b",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G4IOG-30M",
@@ -264,7 +264,7 @@
       "lastUniqueHash": "b5cac6307c8d4c57929bf793a9d450fd",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G4IOG-40M",
@@ -276,7 +276,7 @@
       "lastUniqueHash": "780a0e18dc545b20510cd27223752baa",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G4IOG-80M",
@@ -288,7 +288,7 @@
       "lastUniqueHash": "f08333028513fe552ae614324ffdb165",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G4JVF",
@@ -300,7 +300,7 @@
       "lastUniqueHash": "05880aeef1bbd026e84e8b9f3cdf841d",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "GM4SFW-0",
@@ -312,7 +312,7 @@
       "lastUniqueHash": "43993f58fb90aad3d85e740d23278540",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "GM4SFW-1",
@@ -324,7 +324,7 @@
       "lastUniqueHash": "20585f1ea9ac4805acf5e77555d98a91",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "GM4SFW-2",
@@ -336,7 +336,7 @@
       "lastUniqueHash": "258e0183b3338d7c885fe39e8e2ecaa8",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G6AVK",
@@ -348,7 +348,7 @@
       "lastUniqueHash": "84d914a024ee350ff5e55051804b0ca4",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "G6NHU",
@@ -360,7 +360,7 @@
       "lastUniqueHash": "8fd48bec387589f32aace7318e7d7ae8",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "GJ7RWT",
@@ -372,7 +372,7 @@
       "lastUniqueHash": "0bd8040eaa3a0bc0995a6f13d9f445bd",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "HB9FXX-A",
@@ -384,7 +384,7 @@
       "lastUniqueHash": "91ed77689be0b4c04235358389b20f5b",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "HB9FXX-B",
@@ -396,7 +396,7 @@
       "lastUniqueHash": "9432cc830899e7db64368d9c355e8895",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "HB9FXX-C",
@@ -408,7 +408,7 @@
       "lastUniqueHash": "182991a0eb458022c49a67e16bb525d0",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "HB9FXX-D",
@@ -420,7 +420,7 @@
       "lastUniqueHash": "325bf4800df9e477cfa386fd4f1a771f",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "K4RCG-1",
@@ -432,7 +432,7 @@
       "lastUniqueHash": "d41d8cd98f00b204e9800998ecf8427e",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "K4RCG-2",
@@ -444,7 +444,7 @@
       "lastUniqueHash": "de4839ff52501998a60d149092ec66e3",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "K4RCG-3",
@@ -456,7 +456,7 @@
       "lastUniqueHash": "bf1688b6a28960fad489820c4c64981c",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "K5MO-1",
@@ -468,7 +468,7 @@
       "lastUniqueHash": "f8094cb19ef285a5ea8d36e8d1e6a036",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "K5MO-HIFER",
@@ -480,7 +480,7 @@
       "lastUniqueHash": "93c6e5d9d5c2a1c54983fb9713e4c5b9",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "KL7L-0",
@@ -492,7 +492,7 @@
       "lastUniqueHash": "69612e9dae08d5bbe62a730ed6a2e39c",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "KL7L-1",
@@ -504,7 +504,7 @@
       "lastUniqueHash": "9da18ee377edc7aaf9707f6fa631707b",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "KL7L-2",
@@ -516,7 +516,7 @@
       "lastUniqueHash": "647269854323078d3ba52a4d402a65af",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "KL7L-3",
@@ -528,7 +528,7 @@
       "lastUniqueHash": "12f84bea569a2dd7d4e3847ff1962b23",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "KL7L-4",
@@ -540,7 +540,7 @@
       "lastUniqueHash": "2981f2156a4010643fb35e9bc2922544",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "KL7L-5",
@@ -552,7 +552,7 @@
       "lastUniqueHash": "221930ae8350415f94d02aed504941f9",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "LA5GOA-30M",
@@ -564,7 +564,7 @@
       "lastUniqueHash": "7bd1b5b3146318b1248e0d05b8bce5d7",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "M0BMN",
@@ -576,7 +576,7 @@
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
       "lastUniqueAgeMinutes": 59,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "M0HGU",
@@ -588,7 +588,7 @@
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
       "lastUniqueAgeMinutes": 59,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "M0GBZ",
@@ -600,7 +600,7 @@
       "lastUniqueHash": "83a5d2514784ca763abca2a7c130f681",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "N9JL-1",
@@ -612,7 +612,7 @@
       "lastUniqueHash": "3e0348455484fea126248eab34e7e6f8",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "N8NJ-1",
@@ -624,7 +624,7 @@
       "lastUniqueHash": "b8e173a4f3d092bb45303cd1eb87bc59",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "N8NJ-2",
@@ -636,7 +636,7 @@
       "lastUniqueHash": "b45e92b1138b09d83a64b6a37795c5a4",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "OK1FCX-1",
@@ -648,7 +648,7 @@
       "lastUniqueHash": "ccc689175e9dfe2bfab4c394caff435c",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "OK1FCX-2",
@@ -660,7 +660,7 @@
       "lastUniqueHash": "83473ca50af0737bc7872330fbf00006",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "OK1FCX-3-80M-NVIS",
@@ -672,7 +672,7 @@
       "lastUniqueHash": "ad075e2d2209c19e35460a811a1e6d36",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "ON4CDJ",
@@ -684,7 +684,7 @@
       "lastUniqueHash": "2ba236bd73db7a88db6d0b97db9515fa",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "PA2OHH-10M",
@@ -696,7 +696,7 @@
       "lastUniqueHash": "f4db9973e68e8ab2bb8bbe802c2b0fcd",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "PA2OHH-20M",
@@ -708,7 +708,7 @@
       "lastUniqueHash": "ec137c25c91e5cc7f05c996e67117f61",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "PA2OHH-30M",
@@ -720,7 +720,7 @@
       "lastUniqueHash": "2b837c8058c2662775fb05ce5cffb50f",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "PA2OHH-40M",
@@ -732,7 +732,7 @@
       "lastUniqueHash": "0aeeb8d6a2e396d12acb781e320b119e",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "PA2OHH-80M",
@@ -744,7 +744,7 @@
       "lastUniqueHash": "4c44003bbb0a321bc22e23af1409ca6a",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "S52AS-30M",
@@ -756,7 +756,7 @@
       "lastUniqueHash": "d41d8cd98f00b204e9800998ecf8427e",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "SA6BSS-1",
@@ -768,7 +768,7 @@
       "lastUniqueHash": "4679276e549e477bca62b702674f8f75",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "SA6BSS-2",
@@ -780,7 +780,7 @@
       "lastUniqueHash": "b080ccd4de448fcd9ac422b52e9bd6d6",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "SA6BSS-3",
@@ -792,7 +792,7 @@
       "lastUniqueHash": "54168658cb7a9c5a65ba91aeca19af05",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "SA6BSS-4",
@@ -804,7 +804,7 @@
       "lastUniqueHash": "abf7c95cc5c1b389888c5504212d8833",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "TF3HZ-1",
@@ -816,7 +816,7 @@
       "lastUniqueHash": "6757a93226ce6dace7b6d74ede5f8a3c",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "VA3ROM-30M",
@@ -828,7 +828,7 @@
       "lastUniqueHash": "3c6081c6ffeb794107a8aed722f28873",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "VE1VDM-1",
@@ -840,7 +840,7 @@
       "lastUniqueHash": "d20df515f6ca501d6c8e67fce2b0095d",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "VE1VDM-2",
@@ -852,7 +852,7 @@
       "lastUniqueHash": "27ab75045700020f5480132975483898",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "VE3GTC",
@@ -864,7 +864,7 @@
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
       "lastUniqueAgeMinutes": 59,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "VK3EDW",
@@ -876,7 +876,7 @@
       "lastUniqueHash": "d5994de95843257c339bc54bde5c2bad",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "VE7IGH-30M",
@@ -888,7 +888,7 @@
       "lastUniqueHash": "0363b150d8d5cc4dc624e035dd25891b",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W1BW-80M",
@@ -900,7 +900,7 @@
       "lastUniqueHash": "950298c3450b22651d4b356abb724c25",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W1BW-60M",
@@ -912,7 +912,7 @@
       "lastUniqueHash": "d95e78bc899a7ebbc29f8fe1ce47d7ad",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W1BW-40M",
@@ -924,7 +924,7 @@
       "lastUniqueHash": "37de28dcd2542e91dac9a77d0aa971b9",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W1BW-30M",
@@ -936,7 +936,7 @@
       "lastUniqueHash": "209e5ca21be6254a3edf4ff94941627a",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W1BW-20M",
@@ -948,7 +948,7 @@
       "lastUniqueHash": "b1ebf6717f8b6eefe34103100dddcffe",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W1BW-17M",
@@ -960,7 +960,7 @@
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
       "lastUniqueAgeMinutes": 59,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W1BW-15M",
@@ -972,7 +972,7 @@
       "lastUniqueHash": "9960fd0ce6df5506bc87cce1de99da00",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W1BW-12M",
@@ -984,7 +984,7 @@
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
       "lastUniqueAgeMinutes": 59,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W1BW-10M",
@@ -996,7 +996,7 @@
       "lastUniqueHash": "310580dac1de0d559a20e80687a35a7b",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4AH",
@@ -1008,7 +1008,7 @@
       "lastUniqueHash": "46ed36ca7a330b07d4d7da58f71840bd",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-10-FAST",
@@ -1020,7 +1020,7 @@
       "lastUniqueHash": "6838f50142bd4fcde27382469a7fc0e3",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-20-FAST",
@@ -1032,7 +1032,7 @@
       "lastUniqueHash": "c2ef74b1b43734f9fabf178d60a58c5d",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-30-FAST",
@@ -1044,7 +1044,7 @@
       "lastUniqueHash": "f3920550b8d5d1440905068dcf0f1c01",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-40-FAST",
@@ -1056,7 +1056,7 @@
       "lastUniqueHash": "df7695e7e34647d210178d3d23f94e01",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-80-FAST",
@@ -1068,7 +1068,7 @@
       "lastUniqueHash": "5e7e4948df2fd89aa3c72e898026b611",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-160-FAST",
@@ -1080,7 +1080,7 @@
       "lastUniqueHash": "16201a06cebfeb27902035cd707d3743",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-10-SLOW",
@@ -1092,7 +1092,7 @@
       "lastUniqueHash": "8f6dcd73e23ca731df905b6a426681d7",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-20-SLOW",
@@ -1104,7 +1104,7 @@
       "lastUniqueHash": "7ab8fc32e1eca0e68b26738c197e6ab8",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-30-SLOW",
@@ -1116,7 +1116,7 @@
       "lastUniqueHash": "5804e0f3cbb8899f8b421e292345b9e3",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-40-SLOW",
@@ -1128,7 +1128,7 @@
       "lastUniqueHash": "014c4fed5408e94a2a895e6ead66d728",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-80-SLOW",
@@ -1140,7 +1140,7 @@
       "lastUniqueHash": "d27b38e58d413cc98cba4b15f716a8dd",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WD4ELG-160-SLOW",
@@ -1152,7 +1152,7 @@
       "lastUniqueHash": "4232290b7c650eb2929d389557a62978",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WY7BUD-1",
@@ -1164,7 +1164,7 @@
       "lastUniqueHash": "e6cd2aa49a035f7bfd227bbed0d04a72",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W4HBK-1",
@@ -1176,7 +1176,7 @@
       "lastUniqueHash": "09a7887ac0dc12dca7958d6f8693f823",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W4HBK-3",
@@ -1188,7 +1188,7 @@
       "lastUniqueHash": "bc17a6dc03251a9d9ebaa673ee2d6483",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W4HBK-EXPERIMENTAL",
@@ -1200,7 +1200,7 @@
       "lastUniqueHash": "a706731cd0c1e47e021f06c8c88bd1d1",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W6REK-20M",
@@ -1212,7 +1212,7 @@
       "lastUniqueHash": "1735714c38388ed387d984b473a97b24",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W6REK-30M",
@@ -1224,7 +1224,7 @@
       "lastUniqueHash": "6cebc42122a16adfa55d271601db56ae",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W6REK-40M",
@@ -1236,7 +1236,7 @@
       "lastUniqueHash": "6c4e7590a9469ad17d00da2f5eceac3f",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "W6REK-80J",
@@ -1248,7 +1248,7 @@
       "lastUniqueHash": "f104b261c8f80ff3db44f346dc4d0c05",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-6M",
@@ -1260,7 +1260,7 @@
       "lastUniqueHash": "766f571f7e1e379be02ec01e904c6f78",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-10M",
@@ -1272,7 +1272,7 @@
       "lastUniqueHash": "ff89a16dc6f0fd835d373ce5f204065d",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-WIDE-10M",
@@ -1284,7 +1284,7 @@
       "lastUniqueHash": "2623cebd7f81bb447ae09cd54820fa16",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-12M",
@@ -1296,7 +1296,7 @@
       "lastUniqueHash": "89b8c449068c73517fd40c917d5c4195",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-15M",
@@ -1308,7 +1308,7 @@
       "lastUniqueHash": "2af72e4076811f1b0d191eb7839f18e7",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-17M",
@@ -1320,7 +1320,7 @@
       "lastUniqueHash": "07757f40d269e00d1138b4adea208c6f",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-20M",
@@ -1332,7 +1332,7 @@
       "lastUniqueHash": "990207734bd6d0f7adb5af1b43fe3eb5",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-22M-HIFER1",
@@ -1344,7 +1344,7 @@
       "lastUniqueHash": "58d7f9fb7028207d6e984a21efc50721",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-22M-HIFER2",
@@ -1356,7 +1356,7 @@
       "lastUniqueHash": "305252099ab40f113984ef746afebe7a",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-30M",
@@ -1368,7 +1368,7 @@
       "lastUniqueHash": "11e02e2eb6dbea48ca3118ed262cc70b",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-40M",
@@ -1380,7 +1380,7 @@
       "lastUniqueHash": "68b2bb5c02284043090aa547aa23dc75",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-80M",
@@ -1392,7 +1392,7 @@
       "lastUniqueHash": "04ded6eb1238b864873b065138a0d0b5",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-160M",
@@ -1404,7 +1404,7 @@
       "lastUniqueHash": "bd1ba004bfe66d1ef22f15bf0f2dd0af",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-630M",
@@ -1416,7 +1416,7 @@
       "lastUniqueHash": "9f80b4d5594bfe1e77fced5e07fea294",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "WA5DJJ-2200M",
@@ -1428,7 +1428,7 @@
       "lastUniqueHash": "a9bb1d515f7e7e0d221a65d4b33d191d",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "ZL2IK1",
@@ -1440,7 +1440,7 @@
       "lastUniqueHash": "2fa3ce32bb10f7a1dccb2431428f49b2",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     },
     "Grabber": {
       "id": "ZL2IK2",
@@ -1452,7 +1452,7 @@
       "lastUniqueHash": "bb03e3bc06dd893e2e96c4f4f0a5eb5f",
       "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
       "lastUniqueAgeMinutes": 0,
-      "filenames": []
+      "urls": []
     }
   }
 }

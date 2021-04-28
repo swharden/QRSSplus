@@ -10,7 +10,7 @@ namespace QrssPlus
         public DateTime LastUniqueDateTime;
         public int LastUniqueAgeMinutes = -1;
 
-        public string[] Filenames = new string[] { };
+        public string[] URLs = new string[] { };
 
         public void Update(GrabberHistory oldHistory)
         {

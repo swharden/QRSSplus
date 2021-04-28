@@ -15,8 +15,9 @@ namespace QrssPlusFunctions
 {
     public static class QrssPlusUpdate
     {
-        private const string PATH_JSON_STATUSES = "grabbers.json";
-        private const string PATH_GRAB_PREFIX = "grabs/";
+        private const string STATUS_FILENAME = "grabbers.json";
+        private const string GRAB_FOLDER_PATH = "grabs";
+        private const string GRAB_FOLDER_URL = "https://qrssplus.z20.web.core.windows.net/grabs";
 
         [FunctionName("QrssPlusUpdate")]
         public static void Run([TimerTrigger("0 2,12,22,32,42,52 * * * *")] TimerInfo myTimer, ILogger log)
@@ -48,6 +49,9 @@ namespace QrssPlusFunctions
             log.LogInformation($"Deleting old grabber images...");
             DeleteOldGrabs(60, container);
 
+            log.LogInformation($"Updating grabber URLs...");
+            UpdateGrabberURLs(grabbers, container);
+
             log.LogInformation($"Saving status images...");
             SaveStatusFile(grabbers, container);
 
@@ -69,7 +73,7 @@ namespace QrssPlusFunctions
         /// </summary>
         private static void UpdateGrabberHistory(Grabber[] grabbers, BlobContainerClient container)
         {
-            BlobClient blob = container.GetBlobClient(PATH_JSON_STATUSES);
+            BlobClient blob = container.GetBlobClient(STATUS_FILENAME);
             if (!blob.Exists())
                 return;
 
@@ -86,7 +90,7 @@ namespace QrssPlusFunctions
 
         private static void StoreImageData(Grabber grabber, BlobContainerClient container)
         {
-            BlobClient blob = container.GetBlobClient(Path.Combine(PATH_GRAB_PREFIX, grabber.Data.Filename));
+            BlobClient blob = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename));
             using var stream = new MemoryStream(grabber.Data.Bytes);
             blob.Upload(stream);
         }
@@ -102,12 +106,27 @@ namespace QrssPlusFunctions
                 container.DeleteBlob(bloboldBlobName);
         }
 
+        private static void UpdateGrabberURLs(Grabber[] grabbers, BlobContainerClient container)
+        {
+            string[] allFilenames = container
+                .GetBlobs()
+                .Where(x => x.Name.StartsWith(GRAB_FOLDER_PATH))
+                .Select(x => Path.GetFileName(x.Name))
+                .ToArray();
+
+            foreach (Grabber grabber in grabbers)
+                grabber.History.URLs = allFilenames
+                    .Where(x => x.StartsWith(grabber.Info.ID))
+                    .Select(x => Path.Combine(GRAB_FOLDER_URL, x))
+                    .ToArray();
+        }
+
         private static void SaveStatusFile(Grabber[] grabbers, BlobContainerClient container)
         {
             string json = GrabberIO.GrabbersToJson(grabbers);
             byte[] jsonBytes = Encoding.UTF8.GetBytes(json);
 
-            BlobClient blob = container.GetBlobClient(PATH_JSON_STATUSES);
+            BlobClient blob = container.GetBlobClient(STATUS_FILENAME);
             using var stream = new MemoryStream(jsonBytes, writable: false);
             blob.Upload(stream, overwrite: true);
         }

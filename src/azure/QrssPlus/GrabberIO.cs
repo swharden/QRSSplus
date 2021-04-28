@@ -106,9 +106,9 @@ namespace QrssPlus
                 writer.WriteNumber("lastUniqueAgeMinutes", grabber.History.LastUniqueAgeMinutes);
 
                 // images
-                writer.WriteStartArray("filenames");
-                foreach (string filename in grabber.History.Filenames)
-                    writer.WriteStringValue(filename);
+                writer.WriteStartArray("urls");
+                foreach (string url in grabber.History.URLs)
+                    writer.WriteStringValue(url);
                 writer.WriteEndArray();
 
                 writer.WriteEndObject();
@@ -150,7 +150,7 @@ namespace QrssPlus
                     LastUniqueHash = grabber.Value.GetProperty("lastUniqueHash").GetString(),
                     LastUniqueDateTime = grabber.Value.GetProperty("lastUniqueDateTime").GetDateTime(),
                     LastUniqueAgeMinutes = grabber.Value.GetProperty("lastUniqueAgeMinutes").GetInt32(),
-                    Filenames = grabber.Value.GetProperty("filenames").EnumerateArray().Select(x => x.GetString()).ToArray()
+                    URLs = grabber.Value.GetProperty("urls").EnumerateArray().Select(x => x.GetString()).ToArray()
                 };
 
                 grabbers.Add(new Grabber(info, history));
