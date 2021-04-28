@@ -1,20 +1,26 @@
 {
   "version": "1.0",
-  "created": "2021-04-27T01:59:17.0147416Z",
+  "created": "2021-04-28T02:32:23.0356577Z",
   "grabbers": {
-    "Grabber": {
+    "grabber": {
       "id": "7L1RLL-136KHZ",
       "name": "Rick",
       "callsign": "7L1RLL",
       "location": "Japan",
       "imageUrl": "http://www1.u-netsurf.ne.jp/~7l1rll/argo_capture.jpg",
       "siteUrl": "http://www1.u-netsurf.ne.jp/~7l1rll/Grabber_7L1RLL.html",
-      "lastUniqueHash": "3c3e7acb06a2e20923ed9318e762853c",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "6e123c01a2833f047e3294ce041bb586",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/7L1RLL-136KHZ 2021.04.28.01.54.49.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/7L1RLL-136KHZ 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/7L1RLL-136KHZ 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/7L1RLL-136KHZ 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/7L1RLL-136KHZ 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "AJ4VD",
       "name": "Scott",
       "callsign": "AJ4VD",
@@ -22,11 +28,13 @@
       "imageUrl": "https://swharden.com/dev/grabber/latest.png",
       "siteUrl": "https://swharden.com/software/FSKview/",
       "lastUniqueHash": "04807a5111b0ce7d39eb2a6f6c593018",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/AJ4VD 2021.04.28.02.12.56.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "CT2IWW",
       "name": "Paulo",
       "callsign": "CT2IWW",
@@ -34,47 +42,59 @@
       "imageUrl": "http://qsl.net/ct2iww/CT2IWW_QRSS_files/hf1.jpg",
       "siteUrl": "http://qsl.net/ct2iww/CT2IWW_QRSS.html",
       "lastUniqueHash": "c74068377f3ac5b6f093da98848f3056",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/CT2IWW 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "DL4DTL",
       "name": "Maik",
       "callsign": "DL4DTL",
       "location": "South Germany",
       "imageUrl": "http://qsl.net/dl4dtl/hf2.jpg",
       "siteUrl": "http://qsl.net/dl4dtl/index.htm",
-      "lastUniqueHash": "656543daa1f986d4b8f4f15541fbc886",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "b86444681b0cea5300d953860d9e1be7",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/DL4DTL 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/DL4DTL 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "EA8BVP-30M-FAST",
       "name": "Baltasar",
       "callsign": "EA8BVP",
       "location": "Canary Islands",
       "imageUrl": "http://www.qsl.net/ea8bvp/hf1.jpg",
       "siteUrl": "http://www.qsl.net/ea8bvp/grabber.html",
-      "lastUniqueHash": "00991855f609a96ef285538044f7e178",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "d4ce1bb009175932a2269f928fbb4e02",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/EA8BVP-30M-FAST 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/EA8BVP-30M-FAST 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "EA8BVP-30M-SLOW",
       "name": "Baltasar",
       "callsign": "EA8BVP",
       "location": "Canary Islands",
       "imageUrl": "http://www.qsl.net/ea8bvp/hf2.jpg",
       "siteUrl": "http://www.qsl.net/ea8bvp/grabber.html",
-      "lastUniqueHash": "2c3ff0742523541e6899b481fa371a9e",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "086921ec997315860004f13a03600735",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/EA8BVP-30M-SLOW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/EA8BVP-30M-SLOW 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/EA8BVP-30M-SLOW 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G0FTD-QRSS-KALEIDOSCOPE",
       "name": "Andy",
       "callsign": "G0FTD",
@@ -82,215 +102,289 @@
       "imageUrl": "http://www.qsl.net/g0ftd/hf1.jpg",
       "siteUrl": "http://www.qsl.net/g0ftd/grabber.htm",
       "lastUniqueHash": "ffde85600782bdaf84ca1c283dd6e8f1",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0FTD-QRSS-KALEIDOSCOPE 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0FTD-QRSS-KALEIDOSCOPE 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G0MQW-1",
       "name": "Chris",
       "callsign": "G0MQW",
       "location": "Reading, Berkshire, England",
       "imageUrl": "http://www.qsl.net/g0mqw/hf1.jpg",
       "siteUrl": "http://www.qsl.net/g0mqw/",
-      "lastUniqueHash": "8cefbdfb396aa758fec35f648938579d",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "7e0f17078ef5219196333eecbc04abfa",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-1 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-1 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-1 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G0MQW-2",
       "name": "Chris",
       "callsign": "G0MQW",
       "location": "Reading, Berkshire, England",
       "imageUrl": "http://www.qsl.net/g0mqw/hf2.jpg",
       "siteUrl": "http://www.qsl.net/g0mqw/",
-      "lastUniqueHash": "856eadf5813e718670ebf0abb8422ae8",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "027d32e4fc473a6f9442707de9095c86",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-2 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-2 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-2 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-2 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G0MQW-3",
       "name": "Chris",
       "callsign": "G0MQW",
       "location": "Reading, Berkshire, England",
       "imageUrl": "http://www.qsl.net/g0mqw/hf3.jpg",
       "siteUrl": "http://www.qsl.net/g0mqw/",
-      "lastUniqueHash": "0bf04b9d7fc063ee531367c3479b1f28",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "633f83f540c5914b5b8b4ec1bb394e23",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-3 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-3 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-3 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-3 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G0MQW-4",
       "name": "Chris",
       "callsign": "G0MQW",
       "location": "Reading, Berkshire, England",
       "imageUrl": "http://www.qsl.net/g0mqw/hf4.jpg",
       "siteUrl": "http://www.qsl.net/g0mqw/",
-      "lastUniqueHash": "0ffbca7509ec8d2a7eca905246ab61b5",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "f480b2cd7c0efa41a522758309768298",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-4 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-4 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0MQW-4 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G0UPL",
       "name": "Hans",
       "callsign": "G0UPL",
       "location": "Turkey",
       "imageUrl": "http://www.hanssummers.com/images/stories/balloons/ve3kcl/s.jpg",
       "siteUrl": "http://www.hanssummers.com",
-      "lastUniqueHash": "0f8c202a7e3b1cfd999efc729d076f80",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "c469daa8dedd2f388fadc8495a533bc6",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0UPL 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0UPL 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G0UPL 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G3VYZ-FAST-10M",
       "name": "Les",
       "callsign": "G3VYZ",
       "location": "Holywell, Northumberland, UK",
       "imageUrl": "http://www.holywell44.com/qrss/qrss_.jpg",
       "siteUrl": "http://www.holywell44.com/qrss/qrss.htm",
-      "lastUniqueHash": "66ef36baf678bf4d2b4f319e27b325e7",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "ef38595b9be7732523fcf75c23e0b3c9",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-FAST-10M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-FAST-10M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-FAST-10M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G3VYZ-FAST-40M",
       "name": "Les",
       "callsign": "G3VYZ",
       "location": "Holywell, Northumberland, UK",
       "imageUrl": "http://www.holywell44.com/qrss/qrss_3.jpg",
       "siteUrl": "http://www.holywell44.com/qrss/qrss.htm",
-      "lastUniqueHash": "b8fa287f23580ee026eec3b8021b1487",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "ca9698176124ca1d1b1efede995d0d03",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-FAST-40M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-FAST-40M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-FAST-40M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G3VYZ-FAST-80M",
       "name": "Les",
       "callsign": "G3VYZ",
       "location": "Holywell, Northumberland, UK",
       "imageUrl": "http://www.holywell44.com/qrss/qrss_2.jpg",
       "siteUrl": "http://www.holywell44.com/qrss/qrss.htm",
-      "lastUniqueHash": "9f23639e3c9701fcf76442ba6dd82e11",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "ef900b615851794abe7515a8bcfb5f15",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-FAST-80M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-FAST-80M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-FAST-80M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G3VYZ-40M-SLOW",
       "name": "Les",
       "callsign": "G3VYZ",
       "location": "Holywell, Northumberland, UK",
       "imageUrl": "http://www.holywell44.com/qrss/qrss_4.jpg",
       "siteUrl": "http://www.holywell44.com/qrss/qrss.htm",
-      "lastUniqueHash": "5a1a593a5b01b7d1bdd8a912cbe7fea8",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueHash": "199e4b64964e5df4fab0064be69fce63",
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-40M-SLOW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-40M-SLOW 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G3VYZ-80M-SLOW",
       "name": "Les",
       "callsign": "G3VYZ",
       "location": "Holywell, Northumberland, UK",
       "imageUrl": "http://www.holywell44.com/qrss/qrss_6.jpg",
       "siteUrl": "http://www.holywell44.com/qrss/qrss.htm",
-      "lastUniqueHash": "52c932d4fa6f74782e45aa6551e2dca8",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueHash": "35fc165aa9159244b3f2e025a1308c8c",
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-80M-SLOW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3VYZ-80M-SLOW 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G3YXM-136KHZ",
       "name": "Dave",
       "callsign": "G3YXM",
       "location": "England",
       "imageUrl": "http://g3yxm.ddns.net/grabs/136.jpg",
       "siteUrl": "http://wireless.org.uk/",
-      "lastUniqueHash": "05adeb6e2823ef374c460ad66704b564",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "d75020669a490b1e31ffe95cfa533df1",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3YXM-136KHZ 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3YXM-136KHZ 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3YXM-136KHZ 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3YXM-136KHZ 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G3YXM-472KHZ",
       "name": "Dave",
       "callsign": "G3YXM",
       "location": "England",
       "imageUrl": "http://g3yxm.ddns.net/grabs/472.jpg",
       "siteUrl": "http://wireless.org.uk/",
-      "lastUniqueHash": "3c32e28d2686f031973e08beb503c233",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "4d788ea380b744beffb353a78c4f7bfc",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3YXM-472KHZ 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3YXM-472KHZ 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3YXM-472KHZ 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G3YXM-472KHZ 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G4IOG-10M",
       "name": "Bob",
       "callsign": "G4IOG",
       "location": "Newington, Kent, England",
       "imageUrl": "http://qsl.net/g4iog/10mdir/hf1.png",
       "siteUrl": "http://qsl.net/g4iog",
-      "lastUniqueHash": "b098437508f4841bfafe04c841076bc5",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "209db03a5f030c8bb7ec4ef2dae17829",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-10M 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-10M 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-10M 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G4IOG-20M",
       "name": "Bob",
       "callsign": "G4IOG",
       "location": "Newington, Kent, England",
       "imageUrl": "https://www.qsl.net/g4iog/20mdir/hf2.png",
       "siteUrl": "http://qsl.net/g4iog",
-      "lastUniqueHash": "021a042c6c5778ba3b8f10b9ffece12b",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "9ae624f6496d258c279c30f916c98433",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-20M 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-20M 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-20M 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G4IOG-30M",
       "name": "Bob",
       "callsign": "G4IOG",
       "location": "Newington, Kent, England",
       "imageUrl": "https://www.qsl.net/g4iog/30mdir/hf3.png",
       "siteUrl": "https://www.qsl.net/g4iog/30mdir/30mpage.html",
-      "lastUniqueHash": "b5cac6307c8d4c57929bf793a9d450fd",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "5cdaeace70a89319f72761945ccf9a8f",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-30M 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-30M 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-30M 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G4IOG-40M",
       "name": "Bob",
       "callsign": "G4IOG",
       "location": "Newington, Kent, England",
       "imageUrl": "https://www.qsl.net/g4iog/40mdir/hf4.png",
       "siteUrl": "http://qsl.net/g4iog",
-      "lastUniqueHash": "780a0e18dc545b20510cd27223752baa",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "a0091181462f6b1630fea1b963ee0a1e",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-40M 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-40M 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-40M 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G4IOG-80M",
       "name": "Bob",
       "callsign": "G4IOG",
       "location": "Newington, Kent, England",
       "imageUrl": "https://www.qsl.net/g4iog/80mdir/hf8.png",
       "siteUrl": "https://www.qsl.net/g4iog/80mdir/80mpage.html",
-      "lastUniqueHash": "f08333028513fe552ae614324ffdb165",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "954cfc36f0818ae86e3a29bcdb77f7f9",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-80M 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-80M 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4IOG-80M 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G4JVF",
       "name": "Philip",
       "callsign": "G4JVF",
@@ -298,11 +392,14 @@
       "imageUrl": "http://www.qsl.net/g/g4jvf/hf4.jpg",
       "siteUrl": "http://www.qsl.net/g/g4jvf/",
       "lastUniqueHash": "05880aeef1bbd026e84e8b9f3cdf841d",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4JVF 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G4JVF 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "GM4SFW-0",
       "name": "Hamish",
       "callsign": "GM4SFW",
@@ -310,11 +407,14 @@
       "imageUrl": "https://www.qsl.net/gm4sfw/latest.png",
       "siteUrl": "https://www.qsl.net/gm4sfw/",
       "lastUniqueHash": "43993f58fb90aad3d85e740d23278540",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/GM4SFW-0 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/GM4SFW-0 2021.04.28.02.12.56.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "GM4SFW-1",
       "name": "Hamish",
       "callsign": "GM4SFW",
@@ -322,11 +422,14 @@
       "imageUrl": "https://www.qsl.net/gm4sfw/10_12metres.png",
       "siteUrl": "https://www.qsl.net/gm4sfw/",
       "lastUniqueHash": "20585f1ea9ac4805acf5e77555d98a91",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/GM4SFW-1 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/GM4SFW-1 2021.04.28.02.12.56.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "GM4SFW-2",
       "name": "Hamish",
       "callsign": "GM4SFW",
@@ -334,11 +437,14 @@
       "imageUrl": "https://www.qsl.net/gm4sfw/30metre.png",
       "siteUrl": "https://www.qsl.net/gm4sfw/",
       "lastUniqueHash": "258e0183b3338d7c885fe39e8e2ecaa8",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/GM4SFW-2 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/GM4SFW-2 2021.04.28.02.12.56.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G6AVK",
       "name": "Colin",
       "callsign": "G6AVK",
@@ -346,11 +452,14 @@
       "imageUrl": "http://www.qsl.net/g6avk/hf6.jpg",
       "siteUrl": "http://www.qsl.net/g6avk/",
       "lastUniqueHash": "84d914a024ee350ff5e55051804b0ca4",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G6AVK 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G6AVK 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "G6NHU",
       "name": "Keith",
       "callsign": "G6NHU",
@@ -358,11 +467,14 @@
       "imageUrl": "http://g6nhu.co.uk/images/capture.jpg",
       "siteUrl": "http://g6nhu.co.uk",
       "lastUniqueHash": "8fd48bec387589f32aace7318e7d7ae8",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/G6NHU 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/G6NHU 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "GJ7RWT",
       "name": "Andy",
       "callsign": "GJ7RWT",
@@ -370,11 +482,14 @@
       "imageUrl": "https://www.qsl.net/g/gj7rwt/hf1.jpg",
       "siteUrl": "http://www.qsl.net/gj7rwt/gj7rwthomepage.html",
       "lastUniqueHash": "0bd8040eaa3a0bc0995a6f13d9f445bd",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/GJ7RWT 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/GJ7RWT 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "HB9FXX-A",
       "name": "Martin",
       "callsign": "HB9FXX",
@@ -382,23 +497,30 @@
       "imageUrl": "https://www.qsl.net/hb9fxx/hf1.png",
       "siteUrl": "https://www.qsl.net/hb9fxx/",
       "lastUniqueHash": "91ed77689be0b4c04235358389b20f5b",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/HB9FXX-A 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/HB9FXX-A 2021.04.28.02.12.56.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "HB9FXX-B",
       "name": "Martin",
       "callsign": "HB9FXX",
       "location": "Switzerland",
       "imageUrl": "https://www.qsl.net/hb9fxx/hf2.png",
       "siteUrl": "https://www.qsl.net/hb9fxx/",
-      "lastUniqueHash": "9432cc830899e7db64368d9c355e8895",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "dd1ff40b8861c901a03e6295990e0310",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/HB9FXX-B 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/HB9FXX-B 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/HB9FXX-B 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "HB9FXX-C",
       "name": "Martin",
       "callsign": "HB9FXX",
@@ -406,11 +528,14 @@
       "imageUrl": "https://www.qsl.net/hb9fxx/hf3.png",
       "siteUrl": "https://www.qsl.net/hb9fxx/",
       "lastUniqueHash": "182991a0eb458022c49a67e16bb525d0",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/HB9FXX-C 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/HB9FXX-C 2021.04.28.02.12.56.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "HB9FXX-D",
       "name": "Martin",
       "callsign": "HB9FXX",
@@ -418,11 +543,14 @@
       "imageUrl": "https://www.qsl.net/hb9fxx/hf4.png",
       "siteUrl": "https://www.qsl.net/hb9fxx/",
       "lastUniqueHash": "325bf4800df9e477cfa386fd4f1a771f",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/HB9FXX-D 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/HB9FXX-D 2021.04.28.02.12.56.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "K4RCG-1",
       "name": "Bob",
       "callsign": "K4RCG",
@@ -430,11 +558,14 @@
       "imageUrl": "https://www.qsl.net/k4rcg/hf1.jpg",
       "siteUrl": "https://www.qsl.net/k4rcg/",
       "lastUniqueHash": "d41d8cd98f00b204e9800998ecf8427e",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/K4RCG-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/K4RCG-1 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "K4RCG-2",
       "name": "Bob",
       "callsign": "K4RCG",
@@ -442,11 +573,14 @@
       "imageUrl": "https://www.qsl.net/k4rcg/hf2.jpg",
       "siteUrl": "https://www.qsl.net/k4rcg/",
       "lastUniqueHash": "de4839ff52501998a60d149092ec66e3",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/K4RCG-2 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/K4RCG-2 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "K4RCG-3",
       "name": "Bob",
       "callsign": "K4RCG",
@@ -454,23 +588,29 @@
       "imageUrl": "https://www.qsl.net/k4rcg/latest.jpg",
       "siteUrl": "https://www.qsl.net/k4rcg/",
       "lastUniqueHash": "bf1688b6a28960fad489820c4c64981c",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/K4RCG-3 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/K4RCG-3 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "K5MO-1",
       "name": "John",
       "callsign": "K5MO",
       "location": "North Carolina",
       "imageUrl": "https://qsl.net/k5mo/hf3.jpg",
       "siteUrl": "https://qsl.net/k5mo/",
-      "lastUniqueHash": "f8094cb19ef285a5ea8d36e8d1e6a036",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueHash": "091baded45dc2b4c0d4f961d6c62fd5c",
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/K5MO-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/K5MO-1 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "K5MO-HIFER",
       "name": "John",
       "callsign": "K5MO",
@@ -478,59 +618,78 @@
       "imageUrl": "https://www.qsl.net/k5mo/hifer.jpg",
       "siteUrl": "https://qsl.net/k5mo/",
       "lastUniqueHash": "93c6e5d9d5c2a1c54983fb9713e4c5b9",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/K5MO-HIFER 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/K5MO-HIFER 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "KL7L-0",
       "name": "Laurence",
       "callsign": "KL7L",
       "location": "Wasilla, Alaska",
       "imageUrl": "http://kl7l.com/20aAlaska00000.jpg",
       "siteUrl": "http://kl7l.com/Alaska.html",
-      "lastUniqueHash": "69612e9dae08d5bbe62a730ed6a2e39c",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "3bbedfebb5fc4ff33947754608eda759",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-0 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-0 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-0 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "KL7L-1",
       "name": "Laurence",
       "callsign": "KL7L",
       "location": "Wasilla, Alaska",
       "imageUrl": "http://kl7l.com/20Alaska00000.jpg",
       "siteUrl": "http://kl7l.com/Alaska.html",
-      "lastUniqueHash": "9da18ee377edc7aaf9707f6fa631707b",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "b5fc6858559003483c55d5895f8949d3",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-1 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-1 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "KL7L-2",
       "name": "Laurence",
       "callsign": "KL7L",
       "location": "Wasilla, Alaska",
       "imageUrl": "http://kl7l.com/30Alaska00000.jpg",
       "siteUrl": "http://kl7l.com/Alaska.html",
-      "lastUniqueHash": "647269854323078d3ba52a4d402a65af",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "1d41eda0bf5ff6fc66de968fcc334b70",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-2 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-2 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-2 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "KL7L-3",
       "name": "Laurence",
       "callsign": "KL7L",
       "location": "Wasilla, Alaska",
       "imageUrl": "http://kl7l.com/40Alaska00000.jpg",
       "siteUrl": "http://kl7l.com/Alaska.html",
-      "lastUniqueHash": "12f84bea569a2dd7d4e3847ff1962b23",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "a486e50e67ec75808e695f63bb3e8938",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-3 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-3 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-3 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "KL7L-4",
       "name": "Laurence",
       "callsign": "KL7L",
@@ -538,11 +697,14 @@
       "imageUrl": "http://kl7l.com/2LF00000.jpg",
       "siteUrl": "http://kl7l.com/Alaska.html",
       "lastUniqueHash": "2981f2156a4010643fb35e9bc2922544",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-4 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-4 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "KL7L-5",
       "name": "Laurence",
       "callsign": "KL7L",
@@ -550,23 +712,30 @@
       "imageUrl": "http://kl7l.com/30aAlaska00000.jpg",
       "siteUrl": "http://kl7l.com/Alaska.html",
       "lastUniqueHash": "221930ae8350415f94d02aed504941f9",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-5 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/KL7L-5 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "LA5GOA-30M",
       "name": "Steen",
       "callsign": "LA5GOA",
       "location": "Norway",
       "imageUrl": "https://www.qsl.net/la5goa/lopshot1.jpg",
       "siteUrl": "http://la5goa.manglet.net/grabber",
-      "lastUniqueHash": "7bd1b5b3146318b1248e0d05b8bce5d7",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "e7c5abc6a2ca34106a03041ec61a364a",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/LA5GOA-30M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/LA5GOA-30M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/LA5GOA-30M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "M0BMN",
       "name": "Paul",
       "callsign": "M0BMN",
@@ -575,10 +744,10 @@
       "siteUrl": "http://www.phoenixkitsonline.co.uk",
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
-      "lastUniqueAgeMinutes": 59,
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "M0HGU",
       "name": "Nick",
       "callsign": "M0HGU",
@@ -587,10 +756,10 @@
       "siteUrl": "https://www.dctower.co.uk/",
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
-      "lastUniqueAgeMinutes": 59,
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "M0GBZ",
       "name": "Euan",
       "callsign": "M0GBZ",
@@ -598,35 +767,45 @@
       "imageUrl": "https://qsl.net/m0gbz/hf1.jpg",
       "siteUrl": "https://qsl.net/m0gbz/",
       "lastUniqueHash": "83a5d2514784ca763abca2a7c130f681",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/M0GBZ 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/M0GBZ 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "N9JL-1",
       "name": "John",
       "callsign": "N9JL",
       "location": "Shorewood IL",
       "imageUrl": "https://www.qsl.net/n9jl/capt.jpg",
       "siteUrl": "https://www.qsl.net/n9jl",
-      "lastUniqueHash": "3e0348455484fea126248eab34e7e6f8",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "427b1c2f222f35c9688e2b2ed632f26b",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/N9JL-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/N9JL-1 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/N9JL-1 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "N8NJ-1",
       "name": "Larry",
       "callsign": "N8NJ",
       "location": "Ohio",
       "imageUrl": "https://www.qsl.net/n8nj/hf1.jpg",
       "siteUrl": "https://www.qsl.net/n8nj/index.html",
-      "lastUniqueHash": "b8e173a4f3d092bb45303cd1eb87bc59",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueHash": "6c6089edab4a82d6004aae6b358c6de9",
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/N8NJ-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/N8NJ-1 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "N8NJ-2",
       "name": "Larry",
       "callsign": "N8NJ",
@@ -634,47 +813,61 @@
       "imageUrl": "https://www.qsl.net/n8nj/hf2.jpg",
       "siteUrl": "https://www.qsl.net/n8nj/index.html",
       "lastUniqueHash": "b45e92b1138b09d83a64b6a37795c5a4",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/N8NJ-2 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/N8NJ-2 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "OK1FCX-1",
       "name": "Radovan",
       "callsign": "OK1FCX",
       "location": "Kamenny Privoz, Czech Republic",
       "imageUrl": "http://www.qsl.net/ok1fcx/hf1.jpg",
       "siteUrl": "http://www.qsl.net/ok1fcx/",
-      "lastUniqueHash": "ccc689175e9dfe2bfab4c394caff435c",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "db48d2dda8a1650e12a1d9e3cb449236",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/OK1FCX-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/OK1FCX-1 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/OK1FCX-1 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "OK1FCX-2",
       "name": "Radovan",
       "callsign": "OK1FCX",
       "location": "Kamenny Privoz, Czech Republic",
       "imageUrl": "http://www.qsl.net/ok1fcx/hf2.jpg",
       "siteUrl": "http://www.qsl.net/ok1fcx/",
-      "lastUniqueHash": "83473ca50af0737bc7872330fbf00006",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "b46c4a589c60c7b56c94bf42c5eced24",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/OK1FCX-2 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/OK1FCX-2 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/OK1FCX-2 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "OK1FCX-3-80M-NVIS",
       "name": "Radovan",
       "callsign": "OK1FCX",
       "location": "Kamenny Privoz, Czech Republic",
       "imageUrl": "http://www.qsl.net/ok1fcx/hf3.jpg",
       "siteUrl": "http://www.qsl.net/ok1fcx/",
-      "lastUniqueHash": "ad075e2d2209c19e35460a811a1e6d36",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueHash": "fee496437d77abd50583680d774dbe0a",
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/OK1FCX-3-80M-NVIS 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/OK1FCX-3-80M-NVIS 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "ON4CDJ",
       "name": "Patrick",
       "callsign": "ON4CDJ",
@@ -682,11 +875,14 @@
       "imageUrl": "http://qsl.net/on4cdj/qrss/hf1.jpg",
       "siteUrl": "http://qsl.net/on4cdj/qrss",
       "lastUniqueHash": "2ba236bd73db7a88db6d0b97db9515fa",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/ON4CDJ 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/ON4CDJ 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "PA2OHH-10M",
       "name": "Onno",
       "callsign": "PA2OHH",
@@ -694,107 +890,141 @@
       "imageUrl": "https://www.qsl.net/pa2ohh/grabber/hf5.jpg",
       "siteUrl": "http://www.qsl.net/pa2ohh/grabber.htm",
       "lastUniqueHash": "f4db9973e68e8ab2bb8bbe802c2b0fcd",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-10M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-10M 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "PA2OHH-20M",
       "name": "Onno",
       "callsign": "PA2OHH",
       "location": "Spain",
       "imageUrl": "https://www.qsl.net/pa2ohh/grabber/hf4.jpg",
       "siteUrl": "http://www.qsl.net/pa2ohh/grabber.htm",
-      "lastUniqueHash": "ec137c25c91e5cc7f05c996e67117f61",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "9c7656490169d315ad79c63ced3e7dab",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-20M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-20M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-20M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "PA2OHH-30M",
       "name": "Onno",
       "callsign": "PA2OHH",
       "location": "Spain",
       "imageUrl": "https://www.qsl.net/pa2ohh/grabber/hf1.jpg",
       "siteUrl": "http://www.qsl.net/pa2ohh/grabber.htm",
-      "lastUniqueHash": "2b837c8058c2662775fb05ce5cffb50f",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "df6cb566fe21ca9387811f0a11559da9",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-30M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-30M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-30M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "PA2OHH-40M",
       "name": "Onno",
       "callsign": "PA2OHH",
       "location": "Spain",
       "imageUrl": "https://www.qsl.net/pa2ohh/grabber/hf2.jpg",
       "siteUrl": "http://www.qsl.net/pa2ohh/grabber.htm",
-      "lastUniqueHash": "0aeeb8d6a2e396d12acb781e320b119e",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "dff6afe95fa2c193700951f2f29b165f",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-40M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-40M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-40M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "PA2OHH-80M",
       "name": "Onno",
       "callsign": "PA2OHH",
       "location": "Spain",
       "imageUrl": "https://www.qsl.net/pa2ohh/grabber/hf3.jpg",
       "siteUrl": "http://www.qsl.net/pa2ohh/grabber.htm",
-      "lastUniqueHash": "4c44003bbb0a321bc22e23af1409ca6a",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "d454859299a3df43c15981f77084ef0e",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-80M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-80M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/PA2OHH-80M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "S52AS-30M",
       "name": "Roman",
       "callsign": "S52AS",
       "location": "Novo Mesto, Slovenia",
       "imageUrl": "http://novomesto.zevs.si/podatki/test.gif",
       "siteUrl": "http://novomesto.zevs.si/graber.htm",
-      "lastUniqueHash": "d41d8cd98f00b204e9800998ecf8427e",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueHash": "4cc93e8b31f3b9018509511fe0dfec42",
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/S52AS-30M 2021.04.28.01.55.43.gif",
+        "https://qrssplus.z20.web.core.windows.net/grabs/S52AS-30M 2021.04.28.02.12.56.gif"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "SA6BSS-1",
       "name": "Mikael",
       "callsign": "SA6BSS",
       "location": "Sweden",
       "imageUrl": "http://www.qsl.net/sa6bss/hf1.jpg",
       "siteUrl": "http://www.qsl.net/sa6bss",
-      "lastUniqueHash": "4679276e549e477bca62b702674f8f75",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "63c59efcd23f0a82d90b462d4b77878d",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-1 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-1 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "SA6BSS-2",
       "name": "Mikael",
       "callsign": "SA6BSS",
       "location": "Sweden",
       "imageUrl": "http://www.qsl.net/sa6bss/hf2.jpg",
       "siteUrl": "http://www.qsl.net/sa6bss",
-      "lastUniqueHash": "b080ccd4de448fcd9ac422b52e9bd6d6",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "7107d948006ff8a67dc4256c60b9f485",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-2 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-2 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-2 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "SA6BSS-3",
       "name": "Mikael",
       "callsign": "SA6BSS",
       "location": "Sweden",
       "imageUrl": "http://www.qsl.net/sa6bss/hf3.jpg",
       "siteUrl": "http://www.qsl.net/sa6bss",
-      "lastUniqueHash": "54168658cb7a9c5a65ba91aeca19af05",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "d01c13ea0cb475724620b0b56fa5b039",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-3 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-3 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-3 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "SA6BSS-4",
       "name": "Mikael",
       "callsign": "SA6BSS",
@@ -802,47 +1032,62 @@
       "imageUrl": "http://www.qsl.net/sa6bss/hf4.jpg",
       "siteUrl": "http://www.qsl.net/sa6bss",
       "lastUniqueHash": "abf7c95cc5c1b389888c5504212d8833",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-4 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/SA6BSS-4 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "TF3HZ-1",
       "name": "Haldor",
       "callsign": "TF3HZ",
       "location": "Iceland",
       "imageUrl": "https://dl.dropboxusercontent.com/s/ldztb0dsnatol3y/HF2%20grabber.jpg",
       "siteUrl": "https://halldorg.is/",
-      "lastUniqueHash": "6757a93226ce6dace7b6d74ede5f8a3c",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "e8b46f87d140deec2e268d8f2b49e4f9",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/TF3HZ-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/TF3HZ-1 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/TF3HZ-1 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/TF3HZ-1 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "VA3ROM-30M",
       "name": "Robert",
       "callsign": "VA3ROM",
       "location": "Ontario, Canada",
       "imageUrl": "http://va3rom.com/QRSS/image1.jpg",
       "siteUrl": "http://va3rom.com/QRSS/QRSS.html",
-      "lastUniqueHash": "3c6081c6ffeb794107a8aed722f28873",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "ee25a8e05cc0bd1421ae82e9d3146151",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/VA3ROM-30M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/VA3ROM-30M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/VA3ROM-30M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "VE1VDM-1",
       "name": "Vernon",
       "callsign": "VE1VDM",
       "location": "Nova Scotia, Canada",
       "imageUrl": "https://www.qsl.net/ve1vdm/argo.jpg",
       "siteUrl": "https://www.qsl.net/ve1vdm/",
-      "lastUniqueHash": "d20df515f6ca501d6c8e67fce2b0095d",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueHash": "04546916167bcc1a0df99abb297d1b47",
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/VE1VDM-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/VE1VDM-1 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "VE1VDM-2",
       "name": "Vernon",
       "callsign": "VE1VDM",
@@ -850,11 +1095,14 @@
       "imageUrl": "https://www.qsl.net/ve1vdm/argo1.jpg",
       "siteUrl": "https://www.qsl.net/ve1vdm/",
       "lastUniqueHash": "27ab75045700020f5480132975483898",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/VE1VDM-2 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/VE1VDM-2 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "VE3GTC",
       "name": "Graham",
       "callsign": "VE3GTC",
@@ -863,10 +1111,10 @@
       "siteUrl": "http://users.aei.ca/~planophore/grabber",
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
-      "lastUniqueAgeMinutes": 59,
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "VK3EDW",
       "name": "John",
       "callsign": "VK3EDW",
@@ -874,11 +1122,14 @@
       "imageUrl": "http://www.qsl.net/vk3edw/QRSS/assets/images/hf1.jpg",
       "siteUrl": "http://www.qsl.net/vk3edw",
       "lastUniqueHash": "d5994de95843257c339bc54bde5c2bad",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/VK3EDW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/VK3EDW 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "VE7IGH-30M",
       "name": "Gregory",
       "callsign": "VE7IGH",
@@ -886,71 +1137,74 @@
       "imageUrl": "http://www.qsl.net/ve7igh/capt.jpg",
       "siteUrl": "http://www.qsl.net/ve7igh/Grabber.htm",
       "lastUniqueHash": "0363b150d8d5cc4dc624e035dd25891b",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/VE7IGH-30M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/VE7IGH-30M 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "W1BW-80M",
       "name": "Bruce",
       "callsign": "W1BW",
       "location": "QTH Boston,Mass",
       "imageUrl": "http://w1bw.us/grabber/3/latest.jpg",
       "siteUrl": "http://w1bw.us/grabber/",
-      "lastUniqueHash": "950298c3450b22651d4b356abb724c25",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
+      "lastUniqueHash": null,
+      "lastUniqueDateTime": "0001-01-01T00:00:00",
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "W1BW-60M",
       "name": "Bruce",
       "callsign": "W1BW",
       "location": "QTH Boston,Mass",
       "imageUrl": "http://w1bw.us/grabber/5/latest.jpg",
       "siteUrl": "http://w1bw.us/grabber/",
-      "lastUniqueHash": "d95e78bc899a7ebbc29f8fe1ce47d7ad",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
+      "lastUniqueHash": null,
+      "lastUniqueDateTime": "0001-01-01T00:00:00",
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "W1BW-40M",
       "name": "Bruce",
       "callsign": "W1BW",
       "location": "QTH Boston,Mass",
       "imageUrl": "http://w1bw.us/grabber/7/latest.jpg",
       "siteUrl": "http://w1bw.us/grabber/",
-      "lastUniqueHash": "37de28dcd2542e91dac9a77d0aa971b9",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
+      "lastUniqueHash": null,
+      "lastUniqueDateTime": "0001-01-01T00:00:00",
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "W1BW-30M",
       "name": "Bruce",
       "callsign": "W1BW",
       "location": "QTH Boston,Mass",
       "imageUrl": "http://w1bw.us/grabber/10/latest.jpg",
       "siteUrl": "http://w1bw.us/grabber/",
-      "lastUniqueHash": "209e5ca21be6254a3edf4ff94941627a",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
+      "lastUniqueHash": null,
+      "lastUniqueDateTime": "0001-01-01T00:00:00",
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "W1BW-20M",
       "name": "Bruce",
       "callsign": "W1BW",
       "location": "QTH Boston,Mass",
       "imageUrl": "http://w1bw.us/grabber/14/latest.jpg",
       "siteUrl": "http://w1bw.us/grabber/",
-      "lastUniqueHash": "b1ebf6717f8b6eefe34103100dddcffe",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
+      "lastUniqueHash": null,
+      "lastUniqueDateTime": "0001-01-01T00:00:00",
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "W1BW-17M",
       "name": "Bruce",
       "callsign": "W1BW",
@@ -959,22 +1213,22 @@
       "siteUrl": "http://w1bw.us/grabber/",
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
-      "lastUniqueAgeMinutes": 59,
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "W1BW-15M",
       "name": "Bruce",
       "callsign": "W1BW",
       "location": "QTH Boston,Mass",
       "imageUrl": "http://w1bw.us/grabber/21/latest.jpg",
       "siteUrl": "http://w1bw.us/grabber/",
-      "lastUniqueHash": "9960fd0ce6df5506bc87cce1de99da00",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
+      "lastUniqueHash": null,
+      "lastUniqueDateTime": "0001-01-01T00:00:00",
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "W1BW-12M",
       "name": "Bruce",
       "callsign": "W1BW",
@@ -983,178 +1237,237 @@
       "siteUrl": "http://w1bw.us/grabber/",
       "lastUniqueHash": null,
       "lastUniqueDateTime": "0001-01-01T00:00:00",
-      "lastUniqueAgeMinutes": 59,
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "W1BW-10M",
       "name": "Bruce",
       "callsign": "W1BW",
       "location": "QTH Boston,Mass",
       "imageUrl": "http://w1bw.us/grabber/28/latest.jpg",
       "siteUrl": "http://w1bw.us/grabber/",
-      "lastUniqueHash": "310580dac1de0d559a20e80687a35a7b",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
+      "lastUniqueHash": null,
+      "lastUniqueDateTime": "0001-01-01T00:00:00",
+      "lastUniqueAgeMinutes": 32,
       "urls": []
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4AH",
       "name": "Alfred",
       "callsign": "WD4AH",
       "location": "Florida",
       "imageUrl": "http://www.qsl.net/wd4ah/hf1.jpg",
       "siteUrl": "http://www.qsl.net/wd4ah",
-      "lastUniqueHash": "46ed36ca7a330b07d4d7da58f71840bd",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "29da1e8cd19c7f55e57ce6b5c6c54f83",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4AH 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4AH 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4AH 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-10-FAST",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://dl.dropboxusercontent.com/s/qhmkogils6jly3a/WD4ELG%2010M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "6838f50142bd4fcde27382469a7fc0e3",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "441da78e699f5a18bd7577efb9044d0e",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-10-FAST 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-10-FAST 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-10-FAST 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-20-FAST",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://dl.dropboxusercontent.com/s/gba72cz0au66032/WD4ELG%2020M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "c2ef74b1b43734f9fabf178d60a58c5d",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "9d7d00f81d2d882e54887bbed459bcb9",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-20-FAST 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-20-FAST 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-20-FAST 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-30-FAST",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://dl.dropboxusercontent.com/s/7djby65cbfh6hv7/WD4ELG%2030M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "f3920550b8d5d1440905068dcf0f1c01",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "0463ff99d9fe49f86c4b4b2cf935b53d",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-30-FAST 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-30-FAST 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-30-FAST 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-40-FAST",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://dl.dropboxusercontent.com/s/ajhc4t640k7k67u/WD4ELG%2040M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "df7695e7e34647d210178d3d23f94e01",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "cbf2afc8483ac36c55eaff47e37785c0",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-40-FAST 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-40-FAST 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-40-FAST 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-80-FAST",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://dl.dropboxusercontent.com/s/59ktcp48iie5i1m/WD4ELG%2080M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "5e7e4948df2fd89aa3c72e898026b611",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "dbe449be46ef2722ac95621e78823703",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-80-FAST 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-80-FAST 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-80-FAST 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-160-FAST",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://www.dropbox.com/s/qi6jp3ictzqd0iq/WD4ELG%20160M%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "16201a06cebfeb27902035cd707d3743",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "6e8a69fdb16c432f2e6538e81ac44666",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-160-FAST 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-160-FAST 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-160-FAST 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-160-FAST 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-10-SLOW",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://www.dropbox.com/s/htkrgr1r41cgdcw/WD4ELG%2010M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "8f6dcd73e23ca731df905b6a426681d7",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "5712241c41a6d0d3869dfd535a4fe0a5",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-10-SLOW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-10-SLOW 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-10-SLOW 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-10-SLOW 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-20-SLOW",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://www.dropbox.com/s/e0sysy2suwwnqbo/WD4ELG%2020M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "7ab8fc32e1eca0e68b26738c197e6ab8",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "158cb30642c22575e20fc84bb582781c",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-20-SLOW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-20-SLOW 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-20-SLOW 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-20-SLOW 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-30-SLOW",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://www.dropbox.com/s/5tyln8l02oscbp6/WD4ELG%2030M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "5804e0f3cbb8899f8b421e292345b9e3",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "60a2d8b09553b1fd9bfe9edc1bab6d13",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-30-SLOW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-30-SLOW 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-30-SLOW 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-30-SLOW 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-40-SLOW",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://www.dropbox.com/s/5bllpsdcvd0iwqt/WD4ELG%2040M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "014c4fed5408e94a2a895e6ead66d728",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "6c38b68aa78429ae0cb8e95b504a4122",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-40-SLOW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-40-SLOW 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-40-SLOW 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-40-SLOW 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-80-SLOW",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://www.dropbox.com/s/rrpil5x08v3e3s2/WD4ELG%2080M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "d27b38e58d413cc98cba4b15f716a8dd",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "e41b789e265d520d020440d942f5eedd",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-80-SLOW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-80-SLOW 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-80-SLOW 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-80-SLOW 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WD4ELG-160-SLOW",
       "name": "Mark",
       "callsign": "WD4ELG",
       "location": "Greensboro, NC",
       "imageUrl": "https://www.dropbox.com/s/b6mr1461h9ym0uq/WD4ELG%20160M%206%20Hour%20grabber%20%28REFRESH%20for%20latest%20grab%29.jpg",
       "siteUrl": "http://wd4elg.blogspot.com",
-      "lastUniqueHash": "4232290b7c650eb2929d389557a62978",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "4770a857f2bca08442bfaa5bacbf24d3",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-160-SLOW 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-160-SLOW 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-160-SLOW 2021.04.28.02.15.36.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WD4ELG-160-SLOW 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WY7BUD-1",
       "name": "Dave",
       "callsign": "WY7BUD",
@@ -1162,11 +1475,14 @@
       "imageUrl": "https://www.qsl.net/wy7bud/hf1.jpg",
       "siteUrl": "https://www.qsl.net/wy7bud/",
       "lastUniqueHash": "e6cd2aa49a035f7bfd227bbed0d04a72",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WY7BUD-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WY7BUD-1 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "W4HBK-1",
       "name": "Bill",
       "callsign": "W4HBK",
@@ -1174,11 +1490,14 @@
       "imageUrl": "http://www.qsl.net/w4hbk/hf1.jpg",
       "siteUrl": "http://www.qsl.net/w4hbk/",
       "lastUniqueHash": "09a7887ac0dc12dca7958d6f8693f823",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/W4HBK-1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W4HBK-1 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "W4HBK-3",
       "name": "Bill",
       "callsign": "W4HBK",
@@ -1186,11 +1505,14 @@
       "imageUrl": "https://www.qsl.net/w4hbk/aux1.jpg",
       "siteUrl": "http://www.qsl.net/w4hbk/",
       "lastUniqueHash": "bc17a6dc03251a9d9ebaa673ee2d6483",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/W4HBK-3 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W4HBK-3 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "W4HBK-EXPERIMENTAL",
       "name": "Bill",
       "callsign": "W4HBK",
@@ -1198,59 +1520,78 @@
       "imageUrl": "http://www.qsl.net/w4hbk/hf3.jpg",
       "siteUrl": "http://www.qsl.net/w4hbk/",
       "lastUniqueHash": "a706731cd0c1e47e021f06c8c88bd1d1",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/W4HBK-EXPERIMENTAL 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W4HBK-EXPERIMENTAL 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "W6REK-20M",
       "name": "Henry",
       "callsign": "W6REK",
       "location": "San Jose, California",
       "imageUrl": "http://yak.net/qrss/W6REK-20m.png",
       "siteUrl": "http://yak.net/qrss/",
-      "lastUniqueHash": "1735714c38388ed387d984b473a97b24",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "0e8e4d5b179a6d45a7fb6e7d583d18c3",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-20M 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-20M 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-20M 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "W6REK-30M",
       "name": "Henry",
       "callsign": "W6REK",
       "location": "San Jose, California",
       "imageUrl": "http://yak.net/qrss/W6REK-30m.png",
       "siteUrl": "http://yak.net/qrss/",
-      "lastUniqueHash": "6cebc42122a16adfa55d271601db56ae",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "39de39a1705b9264dac8ca731a51d026",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-30M 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-30M 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-30M 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "W6REK-40M",
       "name": "Henry",
       "callsign": "W6REK",
       "location": "San Jose, California",
       "imageUrl": "http://yak.net/qrss/W6REK-40m.png",
       "siteUrl": "http://yak.net/qrss/",
-      "lastUniqueHash": "6c4e7590a9469ad17d00da2f5eceac3f",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "f409d547f5cd13c5eab77bb0e99240ce",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-40M 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-40M 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-40M 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "W6REK-80J",
       "name": "Henry",
       "callsign": "W6REK",
       "location": "San Jose, California",
       "imageUrl": "http://yak.net/qrss/W6REK-80j.png",
       "siteUrl": "http://yak.net/qrss/",
-      "lastUniqueHash": "f104b261c8f80ff3db44f346dc4d0c05",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "50b5e21f47aec1b76303f388e18f58d4",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-80J 2021.04.28.01.55.43.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-80J 2021.04.28.02.12.56.png",
+        "https://qrssplus.z20.web.core.windows.net/grabs/W6REK-80J 2021.04.28.02.32.00.png"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-6M",
       "name": "David",
       "callsign": "WA5DJJ",
@@ -1258,179 +1599,238 @@
       "imageUrl": "http://qsl.net/wa5djj/hf9.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
       "lastUniqueHash": "766f571f7e1e379be02ec01e904c6f78",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-6M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-6M 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-10M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "http://qsl.net/wa5djj/hf8.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "ff89a16dc6f0fd835d373ce5f204065d",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "94557956c1097b48a9906312e47d9d00",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-10M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-10M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-10M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-WIDE-10M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "https://qsl.net/wa5djj/uhf7.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "2623cebd7f81bb447ae09cd54820fa16",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "24a5cc94901dc48137012745aa2aad1a",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-WIDE-10M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-WIDE-10M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-WIDE-10M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-12M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "http://qsl.net/wa5djj/hf7.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "89b8c449068c73517fd40c917d5c4195",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "43d24da3ed7fe8b59a33d0eff439d8f3",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-12M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-12M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-12M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-15M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "http://qsl.net/wa5djj/hf6.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "2af72e4076811f1b0d191eb7839f18e7",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "930dcd773ac4a8518e692e0ce3cbe8fc",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-15M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-15M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-15M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-17M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "http://qsl.net/wa5djj/hf5.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "07757f40d269e00d1138b4adea208c6f",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "37ef262e07f89393b6fd260715a73d53",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-17M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-17M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-17M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-20M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "http://qsl.net/wa5djj/hf4.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "990207734bd6d0f7adb5af1b43fe3eb5",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "8c8f2db65231a216ceed046ecd832213",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-20M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-20M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-20M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-22M-HIFER1",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "https://qsl.net/wa5djj/uhf4.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "58d7f9fb7028207d6e984a21efc50721",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "7e89d52925f1ec351c4dd8b1eeaa137f",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-22M-HIFER1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-22M-HIFER1 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-22M-HIFER1 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-22M-HIFER2",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "https://qsl.net/wa5djj/vlf1.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "305252099ab40f113984ef746afebe7a",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "882ac8eaebdc8e9c946a331554d397af",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-22M-HIFER2 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-22M-HIFER2 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-22M-HIFER2 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-30M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "http://qsl.net/wa5djj/hf3.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "11e02e2eb6dbea48ca3118ed262cc70b",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "5d87a78d4f86cf65aa9782fb09480412",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-30M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-30M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-30M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-40M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "http://qsl.net/wa5djj/hf2.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "68b2bb5c02284043090aa547aa23dc75",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "1e21c73f74ad8d64ed54971ff817b2d0",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-40M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-40M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-40M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-80M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "http://qsl.net/wa5djj/mf3.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "04ded6eb1238b864873b065138a0d0b5",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "d2d8d23e2623701ab57bea7fce835f77",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-80M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-80M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-80M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-160M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "http://qsl.net/wa5djj/mf2.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "bd1ba004bfe66d1ef22f15bf0f2dd0af",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "b56837a58129c1e3289485819b103ebf",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-160M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-160M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-160M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-630M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "https://qsl.net/wa5djj/mf1.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "9f80b4d5594bfe1e77fced5e07fea294",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "a4fd4c4aea8f14f5fe60725aabe5a020",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-630M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-630M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-630M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "WA5DJJ-2200M",
       "name": "David",
       "callsign": "WA5DJJ",
       "location": "Las Cruces, New Mexico",
       "imageUrl": "https://qsl.net/wa5djj/mf4.jpg",
       "siteUrl": "http://qsl.net/wa5djj/",
-      "lastUniqueHash": "a9bb1d515f7e7e0d221a65d4b33d191d",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
+      "lastUniqueHash": "b5aa29906fd15eafa926e9f78b0d4424",
+      "lastUniqueDateTime": "2021-04-28T02:32:00.0875598Z",
       "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-2200M 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-2200M 2021.04.28.02.12.56.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/WA5DJJ-2200M 2021.04.28.02.32.00.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "ZL2IK1",
       "name": "Pete",
       "callsign": "ZL2IK",
@@ -1438,11 +1838,14 @@
       "imageUrl": "http://zl2ik.com/Argo.jpg",
       "siteUrl": "http://zl2ik.com/Grabber.html",
       "lastUniqueHash": "2fa3ce32bb10f7a1dccb2431428f49b2",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/ZL2IK1 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/ZL2IK1 2021.04.28.02.12.56.jpg"
+      ]
     },
-    "Grabber": {
+    "grabber": {
       "id": "ZL2IK2",
       "name": "Pete",
       "callsign": "ZL2IK",
@@ -1450,9 +1853,12 @@
       "imageUrl": "http://zl2ik.com/Brgo.jpg",
       "siteUrl": "http://zl2ik.com/Grabber4Hr.html",
       "lastUniqueHash": "bb03e3bc06dd893e2e96c4f4f0a5eb5f",
-      "lastUniqueDateTime": "2021-04-27T01:59:04.7924787Z",
-      "lastUniqueAgeMinutes": 0,
-      "urls": []
+      "lastUniqueDateTime": "2021-04-28T02:12:56.5989209Z",
+      "lastUniqueAgeMinutes": 19,
+      "urls": [
+        "https://qrssplus.z20.web.core.windows.net/grabs/ZL2IK2 2021.04.28.01.55.43.jpg",
+        "https://qrssplus.z20.web.core.windows.net/grabs/ZL2IK2 2021.04.28.02.12.56.jpg"
+      ]
     }
   }
 }
