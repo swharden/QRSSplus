@@ -34,7 +34,7 @@ namespace QrssPlusFunctions
                 if (grabber.Data.ContainsNewUniqueImage)
                     StoreImageData(grabber, container);
             });
-            DeleteOldGrabs(60, container);
+            DeleteOldGrabs(maxAge: TimeSpan.FromHours(8), container);
             UpdateGrabberURLs(grabbers, container);
             SaveStatusFile(grabbers, container);
         }
@@ -82,10 +82,10 @@ namespace QrssPlusFunctions
         /// <summary>
         /// Delete blob files older than a given age
         /// </summary>
-        private static void DeleteOldGrabs(int maxAgeMinutes, BlobContainerClient container)
+        private static void DeleteOldGrabs(TimeSpan maxAge, BlobContainerClient container)
         {
             string[] oldBlobNames = container.GetBlobs()
-                .Where(x => (DateTime.UtcNow - x.Properties.LastModified) > TimeSpan.FromMinutes(maxAgeMinutes))
+                .Where(x => (DateTime.UtcNow - x.Properties.LastModified) > maxAge)
                 .Select(x => x.Name)
                 .ToArray();
 
