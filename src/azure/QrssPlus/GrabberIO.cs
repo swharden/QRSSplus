@@ -101,6 +101,7 @@ namespace QrssPlus
                 writer.WriteString("siteUrl", grabber.Info.SiteUrl);
 
                 // history
+                writer.WriteString("lastResponse", grabber.Data.Response);
                 writer.WriteString("lastUniqueHash", grabber.History.LastUniqueHash);
                 writer.WriteString("lastUniqueDateTime", grabber.History.LastUniqueDateTime);
                 writer.WriteNumber("lastUniqueAgeMinutes", grabber.History.LastUniqueAgeMinutes);
