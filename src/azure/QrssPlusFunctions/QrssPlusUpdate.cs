@@ -115,6 +115,7 @@ namespace QrssPlusFunctions
             foreach (Grabber grabber in grabbers)
                 grabber.History.URLs = allFilenames
                     .Where(x => x.StartsWith(grabber.Info.ID))
+                    .Where(x => !x.Contains("-thumb-"))
                     .Select(x => GRAB_FOLDER_URL + x)
                     .ToArray();
         }
