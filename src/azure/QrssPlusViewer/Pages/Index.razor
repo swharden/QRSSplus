@@ -12,14 +12,29 @@
     <div class="border my-4 p-2">
         <h2>@grabber.ID</h2>
 
-        @if (grabber.IsActive)
+        @if (grabber.Age <= 30 & grabber.GrabUrls.Length > 0)
         {
-            @foreach (var imageUrl in grabber.GrabUrls)
-            {
-                <a href="@imageUrl">
-                    <img src="@imageUrl" height="200" class="p-2" />
-                </a>
-            }
+            <div class="text-center m-4">
+                <img src="@grabber.GrabUrls.Last()" class="shadow border img-fluid" />
+            </div>
+
+            <div>
+                @foreach (var imageUrl in grabber.GrabUrls.Reverse().Take(20))
+                {
+                    <a href="@imageUrl">
+                        <img src="@imageUrl-thumb-auto.jpg" height="150" class="p-2" />
+                    </a>
+                }
+            </div>
+
+            <div>
+                @foreach (var imageUrl in grabber.GrabUrls.Reverse().Take(20))
+                {
+                    <a href="@imageUrl">
+                        <img src="@imageUrl-thumb-skinny.jpg" />
+                    </a>
+                }
+            </div>
         }
         else
         {
@@ -90,26 +105,22 @@
 
         var document = System.Text.Json.JsonDocument.Parse(json);
 
-        string dateTimeString = document.RootElement.GetProperty("DateTime").GetString();
+        string dateTimeString = document.RootElement.GetProperty("created").GetString();
         DateTime dt = DateTime.Parse(dateTimeString);
-        Console.WriteLine(dt);
 
         GrabberStatuses.Clear();
-        foreach (var grabber in document.RootElement.GetProperty("Grabbers").EnumerateObject())
+        foreach (var grabber in document.RootElement.GetProperty("grabbers").EnumerateObject())
         {
             GrabberStatus status = new()
             {
-                ID = grabber.Value.GetProperty("ID").GetString(),
-                Name = grabber.Value.GetProperty("Name").GetString(),
-                Callsign = grabber.Value.GetProperty("Callsign").GetString(),
-                Location = grabber.Value.GetProperty("Location").GetString(),
-                ImageUrl = grabber.Value.GetProperty("ImageUrl").GetString(),
-                SiteUrl = grabber.Value.GetProperty("SiteUrl").GetString(),
-                Age = grabber.Value.GetProperty("Age").GetDouble(),
-                GrabUrls = grabber.Value.GetProperty("Filenames")
-                    .EnumerateArray()
-                    .Select(x => "https://qrssplus.z20.web.core.windows.net/grabs/" + x.GetString())
-                    .ToArray()
+                ID = grabber.Value.GetProperty("id").GetString(),
+                Name = grabber.Value.GetProperty("name").GetString(),
+                Callsign = grabber.Value.GetProperty("callsign").GetString(),
+                Location = grabber.Value.GetProperty("location").GetString(),
+                ImageUrl = grabber.Value.GetProperty("imageUrl").GetString(),
+                SiteUrl = grabber.Value.GetProperty("siteUrl").GetString(),
+                Age = grabber.Value.GetProperty("lastUniqueAgeMinutes").GetDouble(),
+                GrabUrls = grabber.Value.GetProperty("urls").EnumerateArray().Select(x => x.GetString()).ToArray()
             };
             GrabberStatuses.Add(status);
         }
