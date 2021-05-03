@@ -37,7 +37,7 @@ namespace QrssPlus
                 History.LastUniqueHash = Data.Hash;
                 History.LastUniqueDateTime = dt;
             }
-            History.LastUniqueAgeMinutes = (dt - History.LastUniqueDateTime).Minutes;
+            History.LastUniqueAgeMinutes = (int)(dt - History.LastUniqueDateTime).TotalMinutes;
         }
     }
 }
