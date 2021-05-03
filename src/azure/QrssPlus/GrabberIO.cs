@@ -105,6 +105,7 @@ namespace QrssPlus
                 writer.WriteString("lastUniqueHash", grabber.History.LastUniqueHash);
                 writer.WriteString("lastUniqueDateTime", grabber.History.LastUniqueDateTime);
                 writer.WriteNumber("lastUniqueAgeMinutes", grabber.History.LastUniqueAgeMinutes);
+                writer.WriteNumber("lastUniqueAgeDays", grabber.History.LastUniqueAgeMinutes / (60 * 24));
 
                 // images
                 writer.WriteStartArray("urls");
