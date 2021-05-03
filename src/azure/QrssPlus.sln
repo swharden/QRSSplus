@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QrssPlus", "QrssPlus\QrssPl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QrssPlusViewer", "QrssPlusViewer\QrssPlusViewer.csproj", "{7973FD31-6880-437E-AEE1-55EB43E9F518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrssPlusFunctions", "QrssPlusFunctions\QrssPlusFunctions.csproj", "{B04C24A8-14D9-40D2-B10E-89DEFA4F81EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QrssPlusFunctions", "QrssPlusFunctions\QrssPlusFunctions.csproj", "{B04C24A8-14D9-40D2-B10E-89DEFA4F81EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
