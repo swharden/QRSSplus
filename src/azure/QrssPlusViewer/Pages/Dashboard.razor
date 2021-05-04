@@ -8,26 +8,28 @@
 
 <button @onclick="UpdateAsync" disabled="@Tracker.IsUpdating">Update</button>
 
-<table>
-    <tr>
-        <th>Grabber ID</th>
-        <th>Callsign</th>
-        <th>Location</th>
-        <th>Image</th>
-        <th>Site</th>
-        <th>Active Grabs</th>
-        <th>Last Grab (days)</th>
-    </tr>
+<table class="table my-5 table-striped table-bordered table-hover shadow">
+    <thead class="thead-dark">
+        <tr>
+            <th>Grabber ID</th>
+            <th>Callsign</th>
+            <th>Location</th>
+            <th>Image</th>
+            <th>Site</th>
+            <th>Active Grabs</th>
+            <th>Last Grab (days)</th>
+        </tr>
+    </thead>
     @foreach (GrabberStatus grabber in Tracker.Grabbers)
     {
-        <tr>
+        <tr class="@(grabber.GrabUrls.Length == 0 ? "table-danger" : "table-success")">
             <td><code>@grabber.ID</code></td>
             <td>@grabber.Callsign</td>
             <td>@grabber.Location</td>
             <td><a href="@grabber.ImageUrl">link</a></td>
             <td><a href="@grabber.SiteUrl">link</a></td>
             <td>@grabber.GrabUrls.Length</td>
-            <td>@(Math.Round(grabber.AgeMinutes / (24 * 60), 1))</td>
+            <td>@(grabber.AgeDays>1 ? Math.Round(grabber.AgeDays, 1) : "")</td>
         </tr>
     }
 </table>

@@ -14,6 +14,7 @@ namespace QrssPlusViewer
         public string ImageUrl;
         public string SiteUrl;
         public double AgeMinutes;
+        public double AgeDays => AgeMinutes / (60 * 24);
         public string[] GrabUrls;
         public bool IsActive => GrabUrls.Length > 0;
     }
