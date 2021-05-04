@@ -12,7 +12,7 @@
     <div class="border my-4 p-2">
         <h2>@grabber.ID</h2>
 
-        @if (grabber.Age <= 30 & grabber.GrabUrls.Length > 0)
+        @if (grabber.AgeMinutes <= 30 & grabber.GrabUrls.Length > 0)
         {
             <div class="text-center m-4">
                 <img src="@grabber.GrabUrls.Last()" class="shadow border img-fluid" />
@@ -38,7 +38,7 @@
         }
         else
         {
-            <div>Inactive for at least @Math.Round(grabber.Age) minutes</div>
+            <div>Inactive for at least @Math.Round(grabber.AgeMinutes) minutes</div>
         }
     </div>
 }
@@ -119,7 +119,7 @@
                 Location = grabber.Value.GetProperty("location").GetString(),
                 ImageUrl = grabber.Value.GetProperty("imageUrl").GetString(),
                 SiteUrl = grabber.Value.GetProperty("siteUrl").GetString(),
-                Age = grabber.Value.GetProperty("lastUniqueAgeMinutes").GetDouble(),
+                AgeMinutes = grabber.Value.GetProperty("lastUniqueAgeMinutes").GetDouble(),
                 GrabUrls = grabber.Value.GetProperty("urls").EnumerateArray().Select(x => x.GetString()).ToArray()
             };
             GrabberStatuses.Add(status);

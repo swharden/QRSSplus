@@ -13,7 +13,7 @@ namespace QrssPlusViewer
         public string Location;
         public string ImageUrl;
         public string SiteUrl;
-        public double Age;
+        public double AgeMinutes;
         public string[] GrabUrls;
         public bool IsActive => GrabUrls.Length > 0;
     }
