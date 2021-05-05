@@ -9,6 +9,9 @@ namespace QrssPlusViewer
     public class GrabberTracker
     {
         public readonly List<GrabberStatus> Grabbers = new();
+        public GrabberStatus[] ActiveGrabbers => Grabbers.Where(x => x.IsActive).ToArray();
+        public GrabberStatus[] InactiveGrabbers => Grabbers.Where(x => !x.IsActive).ToArray();
+
         public string BaseUrl = "https://qrssplus.z20.web.core.windows.net";
         public bool IsUpdating { get; private set; } = false;
 
