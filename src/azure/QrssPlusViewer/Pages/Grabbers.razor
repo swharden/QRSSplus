@@ -4,127 +4,52 @@
 
 <h1>QRSS Plus</h1>
 
-<div><code>Last update: @LastUpdateMessage</code></div>
-<div><code>Next update: @NextUpdateMessage</code></div>
+<div><code>Updating: @Tracker.IsUpdating</code></div>
+<div><code>Next update: </code></div>
 
-@foreach (var grabber in GrabberStatuses)
+<h1>Active Grabbers</h1>
+
+@foreach (var grabber in Tracker.ActiveGrabbers)
 {
-    <div class="border my-4 p-2">
-        <h2>@grabber.ID</h2>
+    <img src="@grabber.ThumbUrls.Last()" width="150" height="100" class="border shadow m-2" />
+}
 
-        @if (grabber.AgeMinutes <= 30 & grabber.GrabUrls.Length > 0)
+<h1>Active Grabbers</h1>
+
+@foreach (var grabber in Tracker.ActiveGrabbers)
+{
+    <div class="mb-5">
+        <h1>
+            @grabber.ID
+        </h1>
+        <div>
+            @grabber.Name in @grabber.Location (<a href="@grabber.SiteUrl">website</a>)
+        </div>
+
+        @if (grabber.GrabUrls.Length > 0)
         {
-            <div class="text-center m-4">
-                <img src="@grabber.GrabUrls.Last()" class="shadow border img-fluid" />
+            <div>Latest grab (@(grabber.AgeMinutes < 20 ? "<20" : $"{grabber.AgeMinutes:N2}") minutes ago)</div>
+            <div>
+                <img src="@grabber.GrabUrls.Last()" class="border shadow m-2 img-fluid" />
             </div>
 
-            <div>
-                @foreach (var imageUrl in grabber.GrabUrls.Reverse().Take(20))
-                {
-                    <a href="@imageUrl">
-                        <img src="@imageUrl-thumb-auto.jpg" height="150" class="p-2" />
-                    </a>
-                }
-            </div>
-
-            <div>
-                @foreach (var imageUrl in grabber.GrabUrls.Reverse().Take(20))
-                {
-                    <a href="@imageUrl">
-                        <img src="@imageUrl-thumb-skinny.jpg" />
-                    </a>
-                }
-            </div>
+            @foreach (string imageUrl in grabber.ThumbUrls.Reverse())
+            {
+                <img src="@imageUrl" width="150" height="100" class="border shadow m-2" />
+            }
         }
         else
         {
-            <div>Inactive for at least @Math.Round(grabber.AgeMinutes) minutes</div>
+            <div>Inactive for @grabber.AgeDays days</div>
         }
     </div>
 }
 
 @code{
-    private readonly List<GrabberStatus> GrabberStatuses = new();
-    private System.Threading.Timer Timer;
-    DateTime NextUpdate;
-    private string NextUpdateMessage = "initializing...";
-    DateTime LastUpdate;
-    private string LastUpdateMessage = "initializing...";
+    private readonly GrabberTracker Tracker = new GrabberTracker();
 
-    protected override async Task OnInitializedAsync()
+    protected async override Task OnInitializedAsync()
     {
-        await base.OnInitializedAsync();
-
-        Timer = new System.Threading.Timer(
-            callback: async (object stateInfo) =>
-            {
-                await UpdateIfNeeded();
-                StateHasChanged();
-            },
-            state: new System.Threading.AutoResetEvent(false),
-            dueTime: 1000,
-            period: 1000);
-    }
-
-    private async Task UpdateIfNeeded()
-    {
-        if (DateTime.UtcNow < NextUpdate)
-        {
-            TimeSpan delta = NextUpdate - DateTime.UtcNow;
-            NextUpdateMessage = $"{delta.Minutes} minutes and {delta.Seconds} seconds";
-        }
-        else
-        {
-            NextUpdateMessage = "UPDATING!";
-            await Update();
-        }
-    }
-
-    private async Task Update()
-    {
-        NextUpdateMessage = "updating...";
-
-        LastUpdate = DateTime.UtcNow;
-        var thisTenMinute = new DateTime(
-            year: DateTime.UtcNow.Year,
-            month: DateTime.UtcNow.Month,
-            day: DateTime.UtcNow.Day,
-            hour: DateTime.UtcNow.Hour,
-            minute: (DateTime.UtcNow.Minute / 10) * 10,
-            second: 0
-        );
-
-        if (NextUpdate.Year < 2000)
-            thisTenMinute -= TimeSpan.FromMinutes(10);
-        NextUpdate = thisTenMinute + TimeSpan.FromMinutes(15);
-
-        string url = "https://qrssplus.z20.web.core.windows.net/grabbers.json";
-        var client = new HttpClient();
-        var response = await client.GetAsync(url);
-        string json = response.Content.ReadAsStringAsync().Result;
-
-        var document = System.Text.Json.JsonDocument.Parse(json);
-
-        string dateTimeString = document.RootElement.GetProperty("created").GetString();
-        DateTime dt = DateTime.Parse(dateTimeString);
-
-        GrabberStatuses.Clear();
-        foreach (var grabber in document.RootElement.GetProperty("grabbers").EnumerateObject())
-        {
-            GrabberStatus status = new()
-            {
-                ID = grabber.Value.GetProperty("id").GetString(),
-                Name = grabber.Value.GetProperty("name").GetString(),
-                Callsign = grabber.Value.GetProperty("callsign").GetString(),
-                Location = grabber.Value.GetProperty("location").GetString(),
-                ImageUrl = grabber.Value.GetProperty("imageUrl").GetString(),
-                SiteUrl = grabber.Value.GetProperty("siteUrl").GetString(),
-                AgeMinutes = grabber.Value.GetProperty("lastUniqueAgeMinutes").GetDouble(),
-                GrabUrls = grabber.Value.GetProperty("urls").EnumerateArray().Select(x => x.GetString()).ToArray()
-            };
-            GrabberStatuses.Add(status);
-        }
-        NextUpdateMessage = "Update complete!";
-        LastUpdateMessage = $"{DateTime.UtcNow} UTC";
+        await Tracker.UpdateAsync();
     }
 }
