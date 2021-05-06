@@ -2,48 +2,119 @@
 @using System.Net.Http
 @inject HttpClient Http
 
-<h1>QRSS Plus</h1>
+<section>
+    <div class="border bg-light rounded p-2">
 
-<div><code>Updating: @Tracker.IsUpdating</code></div>
-<div><code>Next update: </code></div>
-
-<h1>Active Grabbers</h1>
-
-@foreach (var grabber in Tracker.ActiveGrabbers)
-{
-    <img src="@grabber.ThumbUrls.Last()" width="150" height="100" class="border shadow m-2" />
-}
-
-<h1>Active Grabbers</h1>
-
-@foreach (var grabber in Tracker.ActiveGrabbers)
-{
-    <div class="mb-5">
-        <h1>
-            @grabber.ID
-        </h1>
-        <div>
-            @grabber.Name in @grabber.Location (<a href="@grabber.SiteUrl">website</a>)
+        <div class="mb-2">
+            QRSS Plus is maintained by
+            <a href="https://swharden.com">Scott Harden (AJ4VD)</a> and
+            <a href="https://sites.google.com/view/andy-g0ftd">Andy (G0FTD)</a>
         </div>
 
-        @if (grabber.GrabUrls.Length > 0)
-        {
-            <div>Latest grab (@(grabber.AgeMinutes < 20 ? "<20" : $"{grabber.AgeMinutes:N2}") minutes ago)</div>
-            <div>
-                <img src="@grabber.GrabUrls.Last()" class="border shadow m-2 img-fluid" />
+        <div class="row">
+            <div class="col-md">
+                News and Updates
+                <ul>
+                    <li><a href="https://groups.io/g/qrssknights">Knights QRSS Mailing List</a></li>
+                    <li><a href='https://swharden.com/qrss/74/'>74!, The Knights QRSS Newsletter</a></li>
+                </ul>
             </div>
+            <div class="col-md">
+                Resources
+                <ul>
+                    <li>
+                        <a href="https://swharden.com/blog/2020-10-03-new-age-of-qrss">
+                            The
+                            New Age of QRSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://swharden.com/blog/2020-10-03-new-age-of-qrss/#qrss-frequency-bands">
+                            QRSS Frequency
+                            Bands
+                        </a>
+                    </li>
+                    <li><a href="https://groups.io/g/qrssknights/wiki">Knights QRSS WIKI</a></li>
+                </ul>
+            </div>
+            <div class="col-md">
+                QRSS Plus
+                <ul>
+                    <li><a href="https://github.com/swharden/qrssplus/#request-a-change">Suggest a Grabber</a></li>
+                    <li><a href="https://github.com/swharden/qrssplus/#request-a-change">Request a Modification</a></li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Update Automatically
+                    </label>
+                </div>
+                <div><code>Current Time: 6:17:23 UTC</code></div>
+                <div><code>&nbsp;Next Update: 6:25:00 UTC (1:23)</code></div>
+                <div><code>&nbsp;Last Update: 6:17:23 UTC</code></div>
+            </div>
+        </div>
 
-            @foreach (string imageUrl in grabber.ThumbUrls.Reverse())
-            {
-                <img src="@imageUrl" width="150" height="100" class="border shadow m-2" />
-            }
-        }
-        else
+    </div>
+</section>
+
+<section>
+    <h2 class="mt-5 mb-0 display-4 my-0 fw-normal">Active Grabbers</h2>
+
+    @foreach (var grabber in Tracker.ActiveGrabbers)
+    {
+        <div class="d-inline-block m-2">
+            <a onclick="document.getElementById('@grabber.ID').scrollIntoView({behavior:'smooth'})">
+                <div class="text-muted">@grabber.ID</div>
+                <div>
+                    <img src="@grabber.ThumbUrls.Last()" width="150" height="100" class="border border-dark shadow">
+                </div>
+            </a>
+        </div>
+    }
+</section>
+
+<section>
+    <div>
+        @foreach (var grabber in Tracker.ActiveGrabbers)
         {
-            <div>Inactive for @grabber.AgeDays days</div>
+            <div id="@grabber.ID">
+                <h2 class="mt-5 mb-0 display-4 my-0 fw-normal">
+                    @grabber.ID
+                </h2>
+
+                <div class="fs-5 my-0">
+                    @grabber.Name (<a href="">@grabber.Callsign</a>) in @grabber.Location (<a href="@grabber.SiteUrl">website</a>)
+
+                    @if (grabber.AgeMinutes <= 20)
+                    {
+                        <span class="badge bg-success">Active</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning">Inactive (@grabber.AgeMinutes minutes)</span>
+                    }
+                </div>
+
+                <figure class="mt-1 mb-1">
+                    <img src="@grabber.GrabUrls.Last()" width="600" height="400" class="border border-dark shadow figure-img img-fluid w-100">
+                </figure>
+
+                @foreach (var thumbUrl in grabber.ThumbUrls)
+                {
+                    <div class="d-inline-block m-2">
+                        <div class="text-muted">12:34</div>
+                        <div>
+                            <img src="@thumbUrl" width="150" height="100" class="border border-dark shadow">
+                        </div>
+                    </div>
+                }
+            </div>
         }
     </div>
-}
+</section>
 
 @code{
     private readonly GrabberTracker Tracker = new GrabberTracker();

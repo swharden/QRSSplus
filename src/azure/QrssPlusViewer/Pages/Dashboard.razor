@@ -8,8 +8,8 @@
 
 <button @onclick="UpdateAsync" disabled="@Tracker.IsUpdating">Update</button>
 
-<table class="table table-bordered">
-    <thead class="table-dark">
+<table class="table shadow">
+    <thead class="table-dark border">
         <tr>
             <th>Grabber ID</th>
             <th>Callsign</th>
@@ -22,7 +22,7 @@
     </thead>
     @foreach (GrabberStatus grabber in Tracker.Grabbers)
     {
-        <tr class="@(grabber.GrabUrls.Length == 0 ? "table-danger" : "")">
+        <tr class="border @(grabber.GrabUrls.Length == 0 ? "bg-warning" : "")">
             <td><code>@grabber.ID</code></td>
             <td>@grabber.Callsign</td>
             <td>@grabber.Location</td>
