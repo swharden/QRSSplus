@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -13,6 +15,8 @@ namespace QrssPlus
         public DateTime DateTime { get; private set; }
         public string Response { get; private set; }
         public string Filename { get; private set; }
+        public int ImageWidth { get; private set; } = 0;
+        public int ImageHeight { get; private set; } = 0;
         public bool HasImageData => Bytes != null && Bytes.Length > 0;
         public bool ContainsNewUniqueImage = false;
 
@@ -30,11 +34,16 @@ namespace QrssPlus
                 if (Bytes[0] == '<')
                     throw new WebException("Image URL contains HTML (not an image)");
 
+                using MemoryStream msIn = new MemoryStream(Bytes);
+                using Image originalImage = Bitmap.FromStream(msIn);
+                ImageWidth = originalImage.Width;
+                ImageHeight = originalImage.Height;
+
+                string timestamp = $"{dt.Year:D2}.{dt.Month:D2}.{dt.Day:D2}.{dt.Hour:D2}.{dt.Minute:D2}.{dt.Second:D2}";
+                Filename = $"{info.ID} {timestamp} {ImageWidth}x{ImageHeight}" + Path.GetExtension(info.ImageUrl);
+
                 Hash = GetHash(Bytes);
                 Response = "success";
-                string timestamp = $"{dt.Year:D2}.{dt.Month:D2}.{dt.Day:D2}.{dt.Hour:D2}.{dt.Minute:D2}.{dt.Second:D2}";
-                string extension = System.IO.Path.GetExtension(info.ImageUrl);
-                Filename = info.ID + " " + timestamp + extension;
             }
             catch (WebException ex)
             {
