@@ -90,7 +90,7 @@ namespace QrssPlus
             writer.WriteStartObject("grabbers");
             foreach (var grabber in grabbers)
             {
-                writer.WriteStartObject("grabber");
+                writer.WriteStartObject(grabber.Info.ID);
 
                 // info
                 writer.WriteString("id", grabber.Info.ID);
