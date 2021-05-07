@@ -75,7 +75,7 @@ namespace QrssPlusFunctions
         /// </summary>
         private static void StoreImageData(Grabber grabber, BlobContainerClient container)
         {
-            BlobHttpHeaders headers = new BlobHttpHeaders { ContentType = "image/jpg", ContentLanguage = "en-us", };
+            BlobHttpHeaders headers = new BlobHttpHeaders { ContentType = "image/jpeg", ContentLanguage = "en-us", };
 
             BlobClient blobOriginal = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename));
             using var streamOriginal = new MemoryStream(grabber.Data.Bytes);
