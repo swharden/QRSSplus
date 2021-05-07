@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
@@ -74,17 +75,22 @@ namespace QrssPlusFunctions
         /// </summary>
         private static void StoreImageData(Grabber grabber, BlobContainerClient container)
         {
+            BlobHttpHeaders headers = new BlobHttpHeaders { ContentType = "image/jpg", ContentLanguage = "en-us", };
+
             BlobClient blobOriginal = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename));
             using var streamOriginal = new MemoryStream(grabber.Data.Bytes);
             blobOriginal.Upload(streamOriginal);
+            blobOriginal.SetHttpHeaders(headers);
 
             BlobClient blobThumbSkinny = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename + "-thumb-skinny.jpg"));
             using var streamThumbSkinny = new MemoryStream(ImageProcessing.GetThumbnailSkinny(grabber.Data.Bytes));
             blobThumbSkinny.Upload(streamThumbSkinny);
+            blobOriginal.SetHttpHeaders(headers);
 
             BlobClient blobThumbAuto = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename + "-thumb-auto.jpg"));
             using var streamThumbAuto = new MemoryStream(ImageProcessing.GetThumbnailAuto(grabber.Data.Bytes));
             blobThumbAuto.Upload(streamThumbAuto);
+            blobOriginal.SetHttpHeaders(headers);
         }
 
         /// <summary>
@@ -131,6 +137,9 @@ namespace QrssPlusFunctions
             BlobClient blob = container.GetBlobClient(STATUS_FILENAME);
             using var stream = new MemoryStream(jsonBytes, writable: false);
             blob.Upload(stream, overwrite: true);
+
+            BlobHttpHeaders headers = new BlobHttpHeaders { ContentType = "text/plain", ContentLanguage = "en-us" };
+            blob.SetHttpHeaders(headers);
         }
     }
 }
