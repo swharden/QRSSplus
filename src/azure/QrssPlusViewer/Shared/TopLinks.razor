@@ -70,14 +70,17 @@
 
         var timer = new Timer(new TimerCallback(_ =>
         {
-            Tick();
-            InvokeAsync(() => { StateHasChanged(); });
+            InvokeAsync(async () =>
+            {
+                await TickAsync();
+                StateHasChanged();
+            });
         }), null, 1000, 1000);
     }
 
     private string FormatDateTime(DateTime dt) => $"{dt.Hour:D2}:{dt.Minute:D2}:{dt.Second:D2}";
 
-    private void Tick()
+    private async Task TickAsync()
     {
         var now = DateTime.UtcNow;
         TimeNow = FormatDateTime(now);
@@ -93,6 +96,6 @@
         Countdown = $"{timeLeft.Minutes:D2}:{timeLeft.Seconds:D2}";
 
         if (Countdown == "00:00")
-            Tracker.UpdateAsync().Wait();
+            await Tracker.UpdateAsync();
     }
 }
