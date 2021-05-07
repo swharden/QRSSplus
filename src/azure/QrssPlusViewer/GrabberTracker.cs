@@ -17,6 +17,10 @@ namespace QrssPlusViewer
 
         public DateTime LastUpdate { get; private set; }
 
+        public event Action OnChange;
+
+        private void NotifyDataChanged() => OnChange?.Invoke();
+
         public GrabberTracker()
         {
         }
@@ -24,6 +28,7 @@ namespace QrssPlusViewer
         public async Task UpdateAsync()
         {
             IsUpdating = true;
+            NotifyDataChanged();
 
             string GrabbersUsonUrl = BaseUrl + "/grabbers.json";
             var client = new HttpClient();
@@ -55,6 +60,7 @@ namespace QrssPlusViewer
             Grabbers.Clear();
             Grabbers.AddRange(NewStatuses);
             IsUpdating = false;
+            NotifyDataChanged();
         }
     }
 }

@@ -1,8 +1,4 @@
-﻿@page "/grabbers"
-@using System.Net.Http
-@inject HttpClient Http
-
-<section>
+﻿<section>
     <div class="border bg-light rounded p-2">
 
         <div class="mb-2">
@@ -59,68 +55,3 @@
 
     </div>
 </section>
-
-<section>
-    <h2 class="mt-5 mb-0 display-4 my-0 fw-normal">Active Grabbers</h2>
-
-    @foreach (var grabber in Tracker.ActiveGrabbers)
-    {
-        <div class="d-inline-block m-2">
-            <a onclick="document.getElementById('@grabber.ID').scrollIntoView({behavior:'smooth'})">
-                <div class="text-muted">@grabber.ID</div>
-                <div>
-                    <img src="@grabber.ThumbUrls.Last()" width="150" height="100" class="border border-dark shadow">
-                </div>
-            </a>
-        </div>
-    }
-</section>
-
-<section>
-    <div>
-        @foreach (var grabber in Tracker.ActiveGrabbers)
-        {
-            <div id="@grabber.ID">
-                <h2 class="mt-5 mb-0 display-4 my-0 fw-normal">
-                    @grabber.ID
-                </h2>
-
-                <div class="fs-5 my-0">
-                    @grabber.Name (<a href="">@grabber.Callsign</a>) in @grabber.Location (<a href="@grabber.SiteUrl">website</a>)
-
-                    @if (grabber.AgeMinutes <= 20)
-                    {
-                        <span class="badge bg-success">Active</span>
-                    }
-                    else
-                    {
-                        <span class="badge bg-warning">Inactive (@grabber.AgeMinutes minutes)</span>
-                    }
-                </div>
-
-                <figure class="mt-1 mb-1">
-                    <img src="@grabber.GrabUrls.Last()" width="600" height="400" class="border border-dark shadow figure-img img-fluid w-100">
-                </figure>
-
-                @foreach (var thumbUrl in grabber.ThumbUrls)
-                {
-                    <div class="d-inline-block m-2">
-                        <div class="text-muted">12:34</div>
-                        <div>
-                            <img src="@thumbUrl" width="150" height="100" class="border border-dark shadow">
-                        </div>
-                    </div>
-                }
-            </div>
-        }
-    </div>
-</section>
-
-@code{
-    private readonly GrabberTracker Tracker = new GrabberTracker();
-
-    protected async override Task OnInitializedAsync()
-    {
-        await Tracker.UpdateAsync();
-    }
-}

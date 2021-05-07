@@ -1,0 +1,14 @@
+﻿@page "/grabbers"
+@inject GrabberTracker Tracker
+
+<TopLinks />
+<GrabberThumbnails />
+<GrabberDetails />
+<DashboardComponent />
+
+@code{
+    protected async override Task OnInitializedAsync()
+    {
+        await Tracker.UpdateAsync();
+    }
+}

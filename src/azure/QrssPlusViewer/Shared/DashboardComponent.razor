@@ -1,0 +1,52 @@
+﻿@inject GrabberTracker Tracker
+
+<section>
+    <h2 class="mt-5 mb-0 display-4 my-0 fw-normal">Dashboard</h2>
+    <!--<button @onclick="UpdateAsync" disabled="@Tracker.IsUpdating">Update</button>-->
+    <table class="table shadow">
+        <thead class="table-dark border">
+            <tr>
+                <th>Grabber ID</th>
+                <th>Callsign</th>
+                <th>Location</th>
+                <th>Image</th>
+                <th>Site</th>
+                <th>Active Grabs</th>
+                <th>Last Grab</th>
+            </tr>
+        </thead>
+        @foreach (GrabberStatus grabber in Tracker.Grabbers)
+        {
+            <tr class="border" style="background-color: @GetRowColor(grabber)">
+                <td><code>@grabber.ID</code></td>
+                <td>@grabber.Callsign</td>
+                <td>@grabber.Location</td>
+                <td><a href="@grabber.ImageUrl">link</a></td>
+                <td><a href="@grabber.SiteUrl">link</a></td>
+                <td>@grabber.GrabUrls.Length</td>
+                <td>@grabber.LastGrabMessage</td>
+            </tr>
+        }
+    </table>
+</section>
+
+@code {
+    protected async override Task OnInitializedAsync()
+    {
+        Tracker.OnChange += StateHasChanged;
+    }
+
+    private static string GetRowColor(GrabberStatus grabber)
+    {
+        if (grabber.GrabUrls.Length > 0)
+            return "";
+
+        if (grabber.AgeDays < 1)
+            return "";
+
+        if (grabber.AgeDays < 7)
+            return "#00000011";
+
+        return "#ffff0011";
+    }
+}

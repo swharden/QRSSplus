@@ -1,0 +1,78 @@
+﻿@inject GrabberTracker Tracker
+
+<section>
+    <div>
+        @foreach (GrabberStatus grabber in Tracker.ActiveGrabbers)
+        {
+            <div id="@grabber.ID">
+                <h2 class="mt-5 mb-0 display-4 my-0 fw-normal">
+                    @grabber.ID
+                </h2>
+
+                <div class="fs-5 my-0">
+                    @grabber.Name (<a href="">@grabber.Callsign</a>) in @grabber.Location (<a href="@grabber.SiteUrl">website</a>)
+
+                    @if (grabber.AgeMinutes <= 20)
+                    {
+                        <span class="badge bg-success">Active</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning">Inactive (@grabber.AgeMinutes minutes)</span>
+                    }
+                </div>
+
+                <figure class="mt-1 mb-1">
+                    <a href="@grabber.GrabUrls.Last()">
+                        <img src="@grabber.GrabUrls.Last()" width="600" height="400" class="border border-dark shadow figure-img img-fluid w-100">
+                    </a>
+                </figure>
+
+                @foreach (var thumbUrl in grabber.ThumbUrls.Reverse())
+                {
+                    <div class="d-inline-block m-2">
+                        <div class="text-muted">@ThumbnailTime(thumbUrl)</div>
+                        <div>
+                            <a href="@FullUrl(grabber, thumbUrl)">
+                                <img src="@thumbUrl" width="150" height="100" class="border border-dark shadow">
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>
+
+@code {
+    protected override void OnInitialized()
+    {
+        Tracker.OnChange += StateHasChanged;
+    }
+
+    private string FullUrl(GrabberStatus grabber, string thumbUrl) =>
+        grabber.GrabUrls.Where(x => thumbUrl.StartsWith(x)).First();
+
+    private string ThumbnailTime(string url)
+    {
+        //url = "7L1RLL-136KHZ 2021.05.07.00.52.00 618x439.jpg-thumb-auto.jpg";
+        url = System.IO.Path.GetFileName(url);
+        string[] parts = url.Split(" ");
+        string id = parts[0];
+
+        string timecode = parts[1];
+        string[] timeParts = timecode.Split(".");
+        int year = int.Parse(timeParts[0]);
+        int month = int.Parse(timeParts[1]);
+        int day = int.Parse(timeParts[2]);
+        int hour = int.Parse(timeParts[3]);
+        int minute = int.Parse(timeParts[4]);
+        int second = int.Parse(timeParts[5]);
+
+        //string resolution = parts[2].Split(".")[0];
+        //int width = int.Parse(resolution.Split("x")[0]);
+        //int height = int.Parse(resolution.Split("x")[1]);
+
+        return $"{hour}:{minute}";
+    }
+}
