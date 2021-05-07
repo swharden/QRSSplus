@@ -42,7 +42,7 @@
             </div>
             <div class="col-md">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" disabled>
                     <label class="form-check-label" for="flexCheckChecked">
                         Update Automatically
                     </label>
@@ -70,9 +70,9 @@
 
         var timer = new Timer(new TimerCallback(_ =>
         {
+            Tick();
             InvokeAsync(async () =>
             {
-                await TickAsync();
                 StateHasChanged();
             });
         }), null, 1000, 1000);
@@ -80,7 +80,7 @@
 
     private string FormatDateTime(DateTime dt) => $"{dt.Hour:D2}:{dt.Minute:D2}:{dt.Second:D2}";
 
-    private async Task TickAsync()
+    private void Tick()
     {
         var now = DateTime.UtcNow;
         TimeNow = FormatDateTime(now);
@@ -95,7 +95,7 @@
         var timeLeft = nextUpdate - now;
         Countdown = $"{timeLeft.Minutes:D2}:{timeLeft.Seconds:D2}";
 
-        if (Countdown == "00:00")
-            await Tracker.UpdateAsync();
+        //if (Countdown == "00:00")
+            //await Tracker.UpdateAsync();
     }
 }
