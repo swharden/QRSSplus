@@ -40,7 +40,7 @@ namespace QrssPlus
                 ImageHeight = originalImage.Height;
 
                 string timestamp = $"{dt.Year:D2}.{dt.Month:D2}.{dt.Day:D2}.{dt.Hour:D2}.{dt.Minute:D2}.{dt.Second:D2}";
-                Filename = $"{info.ID} {timestamp} {ImageWidth}x{ImageHeight}" + Path.GetExtension(info.ImageUrl);
+                Filename = $"{info.ID} {timestamp} {ImageWidth}x{ImageHeight} " + Path.GetExtension(info.ImageUrl);
 
                 Hash = GetHash(Bytes);
                 Response = "success";
