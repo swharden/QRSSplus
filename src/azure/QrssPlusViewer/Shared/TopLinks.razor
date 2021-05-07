@@ -47,11 +47,52 @@
                         Update Automatically
                     </label>
                 </div>
-                <div><code>Current Time: 6:17:23 UTC</code></div>
-                <div><code>&nbsp;Next Update: 6:25:00 UTC (1:23)</code></div>
-                <div><code>&nbsp;Last Update: 6:17:23 UTC</code></div>
+                <div><code>Current Time: @TimeNow UTC</code></div>
+                <div><code>&nbsp;Next Update: @TimeNext UTC (@Countdown)</code></div>
+                <div><code>&nbsp;Last Update: @FormatDateTime(Tracker.LastUpdate) UTC</code></div>
             </div>
         </div>
 
     </div>
 </section>
+
+@inject GrabberTracker Tracker
+@using System.Threading;
+
+@code{
+    private string TimeNow;
+    private string TimeNext;
+    private string Countdown;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        var timer = new Timer(new TimerCallback(_ =>
+        {
+            Tick();
+            InvokeAsync(() => { StateHasChanged(); });
+        }), null, 1000, 1000);
+    }
+
+    private string FormatDateTime(DateTime dt) => $"{dt.Hour:D2}:{dt.Minute:D2}:{dt.Second:D2}";
+
+    private void Tick()
+    {
+        var now = DateTime.UtcNow;
+        TimeNow = FormatDateTime(now);
+
+        var nowRoundedMinute = now - TimeSpan.FromSeconds(now.Second);
+        var nowRounded = nowRoundedMinute - TimeSpan.FromMinutes(nowRoundedMinute.Minute % 10);
+        var nextUpdate = nowRounded + TimeSpan.FromMinutes(5);
+        if (nextUpdate < now)
+            nextUpdate += TimeSpan.FromMinutes(10);
+
+        TimeNext = FormatDateTime(nextUpdate);
+        var timeLeft = nextUpdate - now;
+        Countdown = $"{timeLeft.Minutes:D2}:{timeLeft.Seconds:D2}";
+
+        if (Countdown == "00:00")
+            Tracker.UpdateAsync().Wait();
+    }
+}

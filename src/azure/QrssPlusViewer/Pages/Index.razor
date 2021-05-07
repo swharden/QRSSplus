@@ -1,14 +1,14 @@
 ﻿@page "/"
-@using System.Net.Http
-@inject HttpClient Http
+@inject GrabberTracker Tracker
 
-<h1>QRSS Plus</h1>
+<TopLinks />
+<GrabberThumbnails />
+<GrabberDetails />
+<DashboardComponent />
 
-<ul>
-    <li><a href="dashboard">Dashboard</a></li>
-    <li><a href="grabbers">View All Grabbers</a></li>
-</ul>
-
-@code {
-
+@code{
+    protected async override Task OnInitializedAsync()
+    {
+        await Tracker.UpdateAsync();
+    }
 }

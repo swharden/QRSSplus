@@ -59,6 +59,7 @@ namespace QrssPlusViewer
 
             Grabbers.Clear();
             Grabbers.AddRange(NewStatuses);
+            LastUpdate = DateTime.UtcNow;
             IsUpdating = false;
             NotifyDataChanged();
         }
