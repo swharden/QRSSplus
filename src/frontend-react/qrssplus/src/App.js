@@ -1,5 +1,6 @@
 import React from 'react';
 import GrabberThumbnail from './GrabberThumbnail'
+import GrabberDetails from './GrabberDetails'
 
 class App extends React.Component {
 
@@ -12,30 +13,49 @@ class App extends React.Component {
     this.onUpdateGrabbers();
   }
 
-  onUpdateGrabbers() {
+  onUpdateGrabbers(maxCount = 999) {
     this.setState({ grabbersJson: "downloading..." });
     fetch('https://qrssplus.z20.web.core.windows.net/grabbers.json')
       .then(response => response.json())
       .then(obj => {
         this.setState({ grabbersJson: obj });
-        this.setState({ grabbers: obj.grabbers });
+        this.setState({ grabbers: Object.keys(obj.grabbers).slice(0, maxCount).map(x => (obj.grabbers[x])) });
       });
+  }
+
+  renderSummary() {
+    return (
+      <div>
+        Displaying {Object.keys(this.state.grabbers).length} active grabbers
+      </div>
+    )
   }
 
   renderThumbnails() {
     return (
-      <div className="m-5 p-3">
-        <h1>Active Grabbers ({Object.keys(this.state.grabbers).length})</h1>
-        <div>
-          {
-            Object.keys(this.state.grabbers)
-              .filter(id => this.state.grabbers[id].urls.length > 0)
-              .map(id => (
-                <GrabberThumbnail key={id} grabber={this.state.grabbers[id]} />
-              ))
-          }
-        </div>
+      <div className="my-5">
+        {
+          Object.keys(this.state.grabbers)
+            .filter(id => this.state.grabbers[id].urls.length > 0)
+            .map(id => (
+              <GrabberThumbnail key={id} grabber={this.state.grabbers[id]} />
+            ))
+        }
       </div>
+    )
+  }
+
+  renderDetails() {
+    return (
+      <section>
+        {
+          Object.keys(this.state.grabbers)
+            .filter(id => this.state.grabbers[id].urls.length > 0)
+            .map(id => (
+              <GrabberDetails key={id} grabber={this.state.grabbers[id]} />
+            ))
+        }
+      </section>
     )
   }
 
@@ -85,12 +105,10 @@ class App extends React.Component {
         <h1>QRSS Plus</h1>
         <h3>Automatically Updating Active QRSS Grabbers List</h3>
 
-        <div>
-          <button onClick={this.onUpdateGrabbers.bind(this)}>update</button>
-        </div>
-
         {this.renderThumbnails()}
+        {this.renderDetails()}
         {this.renderDashboard()}
+
 
       </div>
     );
