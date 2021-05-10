@@ -3,12 +3,14 @@ import React from 'react';
 class GrabberDetails extends React.Component {
     constructor(props) {
         super(props);
-        const urls = props.grabber.urls.reverse();
-        const latestUrl = urls[0]
+        const urls = props.grabber.urls;
+        const latestUrl = urls[urls.length - 1];
         this.state = {
+            id: props.grabber.id,
             grabber: props.grabber,
             urls: urls,
-            latestUrl: latestUrl
+            latestUrl: latestUrl,
+            limitThumbnails: 6
         }
     }
 
@@ -20,13 +22,31 @@ class GrabberDetails extends React.Component {
         return (<span className="badge bg-danger">Offline ({this.state.grabber.lastUniqueAgeDays} days)</span>)
     }
 
-    renderDatedThumbnail(url) {
-        const basename = url.substr(url.lastIndexOf('/') + 1);
-        const parts = basename.split(" ")[1].split('.');
+    basename(url) {
+        return url.substr(url.lastIndexOf('/') + 1);
+    }
+
+    timestampFromUrl(url) {
+        const parts = this.basename(url).split(" ")[1].split('.');
         const timestamp = parts[3] + ":" + parts[4];
+        return timestamp;
+    }
+
+    /*
+    urlAgeMinutes(url) {
+        console.log("url:" + url);
+        const parts = this.basename(url).split(" ")[1].split('.');
+        const dt = new Date(new Date(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5]) + " UTC");
+        const age = (new Date() - dt) / 1000 / 60;
+        console.log("AGE:" + age);
+        return age;
+    }
+    */
+
+    renderDatedThumbnail(url) {
         return (
-            <div className="d-inline-block m-2" key={basename}>
-                <div className="text-muted">{timestamp}</div>
+            <div className="d-inline-block m-2" key={this.basename(url)}>
+                <div className="text-muted">{this.timestampFromUrl(url)}</div>
                 <div>
                     <a href={url}>
                         <img
@@ -41,6 +61,10 @@ class GrabberDetails extends React.Component {
         )
     }
 
+    showAll() {
+        this.setState({ limitThumbnails: 999 })
+    }
+
     render() {
         return (
             <div id={this.state.grabber.id}>
@@ -53,24 +77,39 @@ class GrabberDetails extends React.Component {
                     {this.renderActivityIcon()}
                 </div>
 
-                <figure className="mt-1 mb-1">
-                    <a href={this.state.latestUrl}>
-                        <img
-                            className="border border-dark shadow figure-img img-fluid"
-                            src={this.state.latestUrl}
-                            alt={this.state.grabber.id}
-                            width="600"
-                            height="400"
-                        />
-                    </a>
-                </figure>
+                <div>
+                    <div className="text-muted">{this.timestampFromUrl(this.state.latestUrl)}</div>
+                    <div className="mt-1 mb-1">
+                        <a href={this.state.latestUrl}>
+                            <img
+                                className="border border-dark shadow figure-img img-fluid"
+                                src={this.state.latestUrl}
+                                alt={this.state.grabber.id}
+                                width="600"
+                                height="400"
+                            />
+                        </a>
+                    </div>
+                </div>
 
                 {
-                    Object.keys(this.state.urls)
+                    Object.keys(this.state.grabber.urls)
+                        .map(x => this.state.grabber.urls[x])
                         .reverse()
-                        .map(x => this.renderDatedThumbnail(this.state.urls[x]))
+                        .slice(0, this.state.limitThumbnails) // TODO: replace this with an age filter
+                        .map(x => this.renderDatedThumbnail(x))
                 }
 
+                {
+                    this.state.limitThumbnails === 999 ? "" :
+                        (
+                            <div>
+                                <button className="btn btn-primary m-2" type="button" onClick={this.showAll.bind(this)}>
+                                    Show more from {this.state.id} ({Object.keys(this.state.urls).length})
+                            </button>
+                            </div>
+                        )
+                }
 
             </div>
         );
