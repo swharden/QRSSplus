@@ -44,7 +44,7 @@ class GrabberDetails extends React.Component {
     render() {
         return (
             <div id={this.state.grabber.id}>
-                <h2 className="mt-5 mb-0 display-4 my-0 fw-normal">{this.state.grabber.id}</h2>
+                <h2 className="my-5 mb-0 display-4 my-0 fw-normal">{this.state.grabber.id}</h2>
 
                 <div className="fs-5 my-0">
                     {this.state.grabber.name} (<a href={"https://www.qrz.com/lookup/" + this.state.grabber.callsign}>{this.state.grabber.callsign}</a>)
@@ -66,7 +66,9 @@ class GrabberDetails extends React.Component {
                 </figure>
 
                 {
-                    Object.keys(this.state.urls).map(x => this.renderDatedThumbnail(this.state.urls[x]))
+                    Object.keys(this.state.urls)
+                        .reverse()
+                        .map(x => this.renderDatedThumbnail(this.state.urls[x]))
                 }
 
 
