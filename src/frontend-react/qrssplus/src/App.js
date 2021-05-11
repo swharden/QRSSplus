@@ -1,6 +1,4 @@
 import React from 'react';
-import GrabberThumbnail from './GrabberThumbnail'
-import GrabberDetails from './GrabberDetails'
 
 class App extends React.Component {
 
@@ -22,7 +20,7 @@ class App extends React.Component {
   tick() {
     const dt = new Date();
 
-    if (dt > this.state.nextUpdate) {
+    if (dt >= this.state.nextUpdate) {
       this.onUpdateGrabbers();
     }
 
@@ -34,41 +32,189 @@ class App extends React.Component {
     this.setState({ timeNow: dt, nextUpdate: nextUpdate });
   }
 
-  onUpdateGrabbers(maxCount = 999) {
+  onUpdateGrabbers() {
     console.log("UPDATING " + new Date().toISOString());
-    fetch('https://qrssplus.z20.web.core.windows.net/grabbers.json')
+    fetch(
+      'https://qrssplus.z20.web.core.windows.net/grabbers.json?nocache=' + (new Date()).getTime(),
+      { 'cache': 'no-store', 'Cache-Control': 'no-cache' }
+    )
       .then(response => response.json())
       .then(obj => {
-        this.setState({ grabbersJson: obj });
-        this.setState({ grabbers: Object.keys(obj.grabbers).slice(0, maxCount).map(x => (obj.grabbers[x])) });
-        this.setState({ lastUpdate: new Date() });
+        this.setState({ grabbersJson: obj, grabbers: obj.grabbers, lastUpdate: new Date() });
         console.log(`read ${Object.keys(obj.grabbers).length} grabbers at ${obj.created}`);
       });
   }
 
-  renderThumbnails() {
+  renderActivityIcon(ageMinutes) {
+    if (ageMinutes < 35)
+      return (<span className="badge bg-success">Active</span>)
+    if (ageMinutes < (60 * 24))
+      return (<span className="badge bg-warning">Inactive ({ageMinutes} minutes)</span>)
+    return (<span className="badge bg-danger">Offline ({ageMinutes / 60 / 24} days)</span>)
+  }
+
+  basename(url) {
+    return url.substr(url.lastIndexOf('/') + 1);
+  }
+
+  timestampFromUrl(url) {
+    const parts = this.basename(url).split(" ")[1].split('.');
+    const timestamp = parts[3] + ":" + parts[4];
+    return timestamp;
+  }
+
+  widthFromUrl(url) {
+    return this.basename(url).split(" ")[2].split('x')[0];
+  }
+
+  heightFromUrl(url) {
+    return this.basename(url).split(" ")[2].split('x')[1];
+  }
+
+  leftPad(num, size = 2, padChar = "0") {
+    num = num.toString();
+    while (num.length < size)
+      num = padChar + num;
+    return num;
+  }
+
+  getTimestamp(dt) {
+    if (!dt)
+      return "updating...";
+    return this.leftPad(dt.getUTCHours()) + ":"
+      + this.leftPad(dt.getUTCMinutes()) + ":"
+      + this.leftPad(dt.getUTCSeconds()) + " UTC";
+  }
+
+  /**
+   * section at the top of the page
+   */
+  renderTimer() {
+    return (
+      <div className="d-inline-block bg-light border rounded p-2 m-3">
+        <div>Current Time: <code>{this.getTimestamp(this.state.timeNow)}</code></div>
+        <div>Last Update: <code>{this.getTimestamp(this.state.lastUpdate)}</code></div>
+        <div>Next Update: <code>{this.getTimestamp(this.state.nextUpdate)}</code></div>
+      </div>
+    )
+  }
+
+  /**
+   * section at the top of the page
+   */
+  renderMainThumbnails() {
     return (
       <div className="">
         {
           Object.keys(this.state.grabbers)
             .filter(id => this.state.grabbers[id].urls.length > 0)
-            .map(id => (
-              <GrabberThumbnail key={id} grabber={this.state.grabbers[id]} />
-            ))
+            .map(id => this.renderMainThumbnail(this.state.grabbers[id]))
         }
       </div>
     )
   }
 
-  renderDetails() {
+  /**
+   * thumbnail at the top of the page that shows a grabber's name
+   */
+  renderMainThumbnail(grabber) {
+    return (
+      <div className="d-inline-block m-2" key={grabber.id}>
+        <div>{grabber.id}</div>
+        <div>{this.timestampFromUrl(grabber.urls[grabber.urls.length - 1])}</div>
+        <div>
+          <a href={"#" + grabber.id}>
+            <img
+              src={grabber.urls[grabber.urls.length - 1]}
+              alt={grabber.id}
+              width="150"
+              height="100"
+              className="shadow border" />
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  /**
+   * thumbnail below a grabber that just shows the time
+   */
+  renderDatedThumbnail(url) {
+    return (
+      <div className="d-inline-block m-2" key={this.basename(url)}>
+        <div className="text-muted">{this.timestampFromUrl(url)}</div>
+        <div>
+          <a href={url}>
+            <img
+              className="border border-dark shadow"
+              alt="alt"
+              src={url + "-thumb-auto.jpg"}
+              width="150"
+              height="100" />
+          </a>
+        </div>
+      </div>
+    )
+  }
+
+  renderDetailsForGrabber(grabber) {
+    const latestUrl = grabber.urls[grabber.urls.length - 1];
+    return (
+      <div id={grabber.id} key={latestUrl}>
+        <h2 className="my-5 mb-0 display-4 my-0 fw-normal">{grabber.id}</h2>
+
+        <div className="fs-5 my-0">
+          {grabber.name} (<a href={"https://www.qrz.com/lookup/" + grabber.callsign}>{grabber.callsign}</a>)
+                in {grabber.location} (<a href={grabber.siteUrl}>website</a>)
+                &nbsp;
+                {this.renderActivityIcon(grabber.lastUniqueAgeMinutes)}
+        </div>
+
+        <div>
+          <div className="text-muted">{this.timestampFromUrl(latestUrl)}</div>
+          <div className="mt-1 mb-1">
+            <a href={latestUrl}>
+              <img
+                className="border border-dark shadow figure-img img-fluid"
+                src={latestUrl}
+                alt={grabber.id}
+                width={this.widthFromUrl(latestUrl)}
+                height={this.heightFromUrl(latestUrl)}
+              />
+            </a>
+          </div>
+        </div>
+
+        {
+          Object.keys(grabber.urls)
+            .map(x => grabber.urls[x])
+            .reverse()
+            .map(x => this.renderDatedThumbnail(x))
+        }
+
+        <div className="text-nowrap overflow-scroll m-2 bg-light border shadow" >
+          {
+            Object.keys(grabber.urls)
+              .map(x => grabber.urls[x])
+              .map(url => (
+                <a href={url} key={url}>
+                  <img src={url + "-thumb-skinny.jpg"} alt={url} width="50" height="500" />
+                </a>
+              ))
+          }
+        </div>
+
+      </div>
+    );
+  }
+
+  renderDetailsForAllGrabbers() {
     return (
       <section>
         {
           Object.keys(this.state.grabbers)
             .filter(id => this.state.grabbers[id].urls.length > 0)
-            .map(id => (
-              <GrabberDetails key={id} grabber={this.state.grabbers[id]} />
-            ))
+            .map(id => this.renderDetailsForGrabber(this.state.grabbers[id]))
         }
       </section>
     )
@@ -118,37 +264,12 @@ class App extends React.Component {
     )
   }
 
-  leftPad(num, size = 2, padChar = "0") {
-    num = num.toString();
-    while (num.length < size)
-      num = padChar + num;
-    return num;
-  }
-
-  getTimestamp(dt) {
-    if (!dt)
-      return "updating...";
-    return this.leftPad(dt.getUTCHours()) + ":"
-      + this.leftPad(dt.getUTCMinutes()) + ":"
-      + this.leftPad(dt.getUTCSeconds()) + " UTC";
-  }
-
-  renderTimer() {
-    return (
-      <div className="d-inline-block bg-light border rounded p-2 m-3">
-        <div>Current Time: <code>{this.getTimestamp(this.state.timeNow)}</code></div>
-        <div>Last Update: <code>{this.getTimestamp(this.state.lastUpdate)}</code></div>
-        <div>Next Update: <code>{this.getTimestamp(this.state.nextUpdate)}</code></div>
-      </div>
-    )
-  }
-
   render() {
     return (
       <div>
         {this.renderTimer()}
-        {this.renderThumbnails()}
-        {this.renderDetails()}
+        {this.renderMainThumbnails()}
+        {this.renderDetailsForAllGrabbers()}
         {this.renderDashboard()}
       </div>
     );
