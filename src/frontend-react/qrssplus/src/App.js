@@ -42,7 +42,7 @@ class App extends React.Component {
         this.setState({ grabbersJson: obj });
         this.setState({ grabbers: Object.keys(obj.grabbers).slice(0, maxCount).map(x => (obj.grabbers[x])) });
         this.setState({ lastUpdate: new Date() });
-        console.log(`read ${Object.keys(obj.grabbers).length} grabbers`);
+        console.log(`read ${Object.keys(obj.grabbers).length} grabbers at ${obj.created}`);
       });
   }
 
