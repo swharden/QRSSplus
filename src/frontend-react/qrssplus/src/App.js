@@ -121,7 +121,6 @@ class App extends React.Component {
     return (
       <div className="d-inline-block m-2" key={grabber.id}>
         <div>{grabber.id}</div>
-        <div>{this.timestampFromUrl(grabber.urls[grabber.urls.length - 1])}</div>
         <div>
           <a href={"#" + grabber.id}>
             <img
