@@ -31,6 +31,14 @@ class GrabberDetails extends React.Component {
         return timestamp;
     }
 
+    widthFromUrl(url) {
+        return this.basename(url).split(" ")[2].split('x')[0];
+    }
+
+    heightFromUrl(url) {
+        return this.basename(url).split(" ")[2].split('x')[1];
+    }
+
     /*
     urlAgeMinutes(url) {
         console.log("url:" + url);
@@ -84,8 +92,8 @@ class GrabberDetails extends React.Component {
                                 className="border border-dark shadow figure-img img-fluid"
                                 src={this.state.latestUrl}
                                 alt={this.state.grabber.id}
-                                width="600"
-                                height="400"
+                                width={this.widthFromUrl(this.state.latestUrl)}
+                                height={this.heightFromUrl(this.state.latestUrl)} 
                             />
                         </a>
                     </div>
