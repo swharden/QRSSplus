@@ -10,7 +10,6 @@ class GrabberDetails extends React.Component {
             grabber: props.grabber,
             urls: urls,
             latestUrl: latestUrl,
-            limitThumbnails: 6
         }
     }
 
@@ -96,20 +95,20 @@ class GrabberDetails extends React.Component {
                     Object.keys(this.state.grabber.urls)
                         .map(x => this.state.grabber.urls[x])
                         .reverse()
-                        .slice(0, this.state.limitThumbnails) // TODO: replace this with an age filter
                         .map(x => this.renderDatedThumbnail(x))
                 }
 
-                {
-                    this.state.limitThumbnails === 999 ? "" :
-                        (
-                            <div>
-                                <button className="btn btn-primary m-2" type="button" onClick={this.showAll.bind(this)}>
-                                    Show more from {this.state.id} ({Object.keys(this.state.urls).length})
-                            </button>
-                            </div>
-                        )
-                }
+                <div className="text-nowrap overflow-scroll m-2 bg-light border shadow" >
+                    {
+                        Object.keys(this.state.grabber.urls)
+                            .map(x => this.state.grabber.urls[x])
+                            .map(url => (
+                                <a href={url} key={url}>
+                                    <img src={url + "-thumb-skinny.jpg"} alt={url} width="50" height="500" />
+                                </a>
+                            ))
+                    }
+                </div>
 
             </div>
         );
