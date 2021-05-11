@@ -109,10 +109,16 @@ class App extends React.Component {
    * section at the top of the page
    */
   renderTimer() {
+
+    const grabbers = Object.keys(this.state.grabbers).map(x => this.state.grabbers[x]);
+    const grabberTotalCount = grabbers.length;
+    const grabberActiveCount = grabbers.filter(x => x.urls.length > 0).length;
+    const grabberActivePercentage = grabberActiveCount / grabberTotalCount * 100;
+
     return (
       <div className="my-4">
 
-        <div className="d-inline-block bg-light border rounded p-2 m-3 align-top">
+        <div className="d-inline-block bg-light border rounded p-2 m-2 align-top">
           <div>Current Time: <code>{this.getTimestamp(this.state.timeNow)}</code></div>
           <div>Last Update: <code>{this.getTimestamp(this.state.lastUpdate)}</code></div>
           <div>Next Update: <code>{this.state.isAutoUpdateEnabled ? this.getTimestamp(this.state.nextUpdate) : "disabled"}</code></div>
@@ -129,7 +135,7 @@ class App extends React.Component {
           </div>
         </div>
 
-        <div className="d-inline-block bg-light border rounded p-2 m-3 align-top">
+        <div className="d-inline-block bg-light border rounded p-2 m-2 align-top">
 
           <div className="">
             Thumbnails:
@@ -147,7 +153,7 @@ class App extends React.Component {
           </div>
         </div>
 
-        <div className="d-inline-block bg-light border rounded p-2 m-3 align-top">
+        <div className="d-inline-block p-2 m-2 align-top">
           <div className="mb-2">
             QRSS Plus:
         </div>
@@ -159,7 +165,7 @@ class App extends React.Component {
           </ul>
         </div>
 
-        <div className="d-inline-block bg-light border rounded p-2 m-3 align-top">
+        <div className="d-inline-block p-2 m-2 align-top">
           <div className="mb-2">
             Additional Resources:
         </div>
@@ -170,6 +176,16 @@ class App extends React.Component {
             <li><a href="https://swharden.com/blog/2020-10-03-new-age-of-qrss">The
               New Age of QRSS</a></li>
           </ul>
+        </div>
+
+        <div className="mx-2">
+          <code>
+            {
+              grabberActivePercentage
+                ? `${grabberActiveCount} of ${grabberTotalCount} grabs are active (${Math.round(grabberActivePercentage)}%)`
+                : `loading...`
+            }
+          </code>
         </div>
 
       </div>
@@ -311,7 +327,7 @@ class App extends React.Component {
 
   renderDashboard() {
     if (!this.state.lastUpdate)
-      return (<h1>Loading...</h1>)
+      return (<h1></h1>)
 
     return (
       <div className="my-5">
