@@ -10,7 +10,7 @@ class App extends React.Component {
       timeNow: new Date(),
       lastUpdate: null,
       nextUpdate: null,
-      isAutoUpdateEnabled: true,
+      isAutoUpdateEnabled: false,
       thumbnailHistory: "2hr",
       isStichVisible: false,
     };
