@@ -24,6 +24,61 @@
     </header>
 
     <section>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              WWV Geophysical Alert Message
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div><b>2021 May 12 2105 UTC</b></div>
+              <pre><code>Solar-terrestrial indices for 12 May follow.
+Solar flux 75 and estimated planetary A-index 42.
+The estimated planetary K-index at 2100 UTC on 12 May was 3.
+
+Space weather for the past 24 hours has been strong.
+Geomagnetic storms reaching the G3 level occurred.
+
+Space weather for the next 24 hours is predicted to be strong.
+Geomagnetic storms reaching the G3 level are expected.</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              NOAA Auroral Forecasts
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg"
+                      class="img-fluid" />
+                  </div>
+                  <div class="col-6">
+                    <img src="https://services.swpc.noaa.gov/images/aurora-forecast-southern-hemisphere.jpg"
+                      class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
       <div class="d-inline-block bg-light border rounded p-2 m-3 align-top">
         <div>Current Time: <code>22:40:13 UTC</code></div>
         <div>Last Update: <code>22:40:13 UTC</code></div>
