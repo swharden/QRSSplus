@@ -356,8 +356,8 @@ class App extends React.Component {
                     <td>{grabber.name}</td>
                     <td>{grabber.callsign}</td>
                     <td>{grabber.location}</td>
-                    <td><a href={grabber.imageUrl}>image</a></td>
-                    <td><a href={grabber.siteUrl}>site</a></td>
+                    <td><a href={grabber.imageUrl} target="_blank">image</a></td>
+                    <td><a href={grabber.siteUrl} target="_blank">site</a></td>
                     <td>{grabber.urls.length > 0 ? grabber.urls.length : "--"}</td>
                     <td>{grabber.lastUniqueAgeDays >= 1 ? grabber.lastUniqueAgeDays + " days" : ""}</td>
                   </tr>
