@@ -13,12 +13,15 @@ class App extends React.Component {
       isAutoUpdateEnabled: false,
       thumbnailHistory: "2hr",
       isStichVisible: false,
+      wwvAlertMessage: "Loading...",
+      wwvAlertDate: "Loading..."
     };
     this.handleInputChange = this.handleInputChange.bind(this);
   }
 
   componentDidMount() {
     this.timerID = setInterval(() => this.tick(), 1000);
+    this.onUpdateMessages();
     this.onUpdateGrabbers();
   }
 
@@ -42,8 +45,21 @@ class App extends React.Component {
     this.setState({ timeNow: dt, nextUpdate: nextUpdate });
   }
 
+  onUpdateMessages() {
+    console.log("UPDATING MESSAGES " + new Date().toISOString());
+    fetch('https://services.swpc.noaa.gov/text/wwv.txt')
+      .then(response => response.text())
+      .then(text => {
+        const lines = text.split("\n");
+        const dt = lines[1].replace(":Issued: ", "");
+        const goodLines = lines.filter(x => !x.startsWith(":")).filter(x => !x.startsWith("#"));
+        const goodMessage = goodLines.join("\n");
+        this.setState({ wwvAlertMessage: goodMessage, wwvAlertDate: dt });
+      });
+  }
+
   onUpdateGrabbers() {
-    console.log("UPDATING " + new Date().toISOString());
+    console.log("UPDATING GRABBERS " + new Date().toISOString());
     fetch(
       'https://qrssplus.z20.web.core.windows.net/grabbers.json?nocache=' + (new Date()).getTime(),
       { 'cache': 'no-store', 'Cache-Control': 'no-cache' }
@@ -398,14 +414,13 @@ class App extends React.Component {
             <h2 className="accordion-header" id="headingWwvMessage">
               <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseWwvMessage" aria-expanded="false" aria-controls="collapseWwvMessage">
-                WWV Geophysical Alert Message
+                WWV Geophysical Alert ({this.state.wwvAlertDate})
             </button>
             </h2>
             <div id="collapseWwvMessage" className="accordion-collapse collapse" aria-labelledby="headingWwvMessage"
               data-bs-parent="#accordionExample">
               <div className="accordion-body">
-                <div><b>2021 May 12 2105 UTC</b></div>
-                <pre><code>MESSAGE</code></pre>
+                <pre><code>{this.state.wwvAlertMessage}</code></pre>
               </div>
             </div>
           </div>
