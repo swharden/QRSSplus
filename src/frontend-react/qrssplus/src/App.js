@@ -19,6 +19,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.timerID = setInterval(() => this.tick(), 1000);
+    this.onUpdateGrabbers();
   }
 
   tick() {
@@ -116,7 +117,7 @@ class App extends React.Component {
     const grabberActivePercentage = grabberActiveCount / grabberTotalCount * 100;
 
     return (
-      <div className="my-4">
+      <div className="">
 
         <div className="d-inline-block bg-light border rounded p-2 m-2 align-top">
           <div>Current Time: <code>{this.getTimestamp(this.state.timeNow)}</code></div>
@@ -325,57 +326,141 @@ class App extends React.Component {
     )
   }
 
+  grabberRowClass(grabber) {
+    if (grabber.urls.length > 0)
+      return ""
+    if (grabber.lastUniqueAgeDays >= 7)
+      return "table-danger"
+    else return "table-warning"
+  }
+
   renderDashboard() {
     if (!this.state.lastUpdate)
-      return (<h1></h1>)
+      return (<code>Loading...</code>)
 
     return (
-      <div className="my-5">
-        <h1>Dashboard</h1>
-        <div>Last Update: <code>{this.getTimestamp(this.state.lastUpdate)} UTC</code></div>
-        <table className="table table-hover border shadow">
-          <thead className="bg-dark text-light">
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Callsign</th>
-              <th>Location</th>
-              <th>Image URL</th>
-              <th>Website URL</th>
-              <th>Unique Grabs</th>
-              <th>Last Update</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              Object.keys(this.state.grabbers)
-                .map(id => (this.state.grabbers[id]))
-                .map(grabber => (
-                  <tr key={grabber.id} className={grabber.lastUniqueAgeDays > 7 ? "table-danger" : ""}>
-                    <td><code>{grabber.id}</code></td>
-                    <td>{grabber.name}</td>
-                    <td>{grabber.callsign}</td>
-                    <td>{grabber.location}</td>
-                    <td><a href={grabber.imageUrl} target="_blank">image</a></td>
-                    <td><a href={grabber.siteUrl} target="_blank">site</a></td>
-                    <td>{grabber.urls.length > 0 ? grabber.urls.length : "--"}</td>
-                    <td>{grabber.lastUniqueAgeDays >= 1 ? grabber.lastUniqueAgeDays + " days" : ""}</td>
-                  </tr>
-                ))
-            }
-          </tbody>
-        </table>
-      </div>
+      <table className="table table-hover">
+        <thead className="bg-dark text-light">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Callsign</th>
+            <th>Location</th>
+            <th>Image URL</th>
+            <th>Website URL</th>
+            <th>Unique Grabs</th>
+            <th>Last Update</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            Object.keys(this.state.grabbers)
+              .map(id => (this.state.grabbers[id]))
+              .map(grabber => (
+                <tr key={grabber.id} className={this.grabberRowClass(grabber)}>
+                  <td><code>{grabber.id}</code></td>
+                  <td>{grabber.name}</td>
+                  <td>{grabber.callsign}</td>
+                  <td>{grabber.location}</td>
+                  <td><a href={grabber.imageUrl} target="_blank" rel="noreferrer">image</a></td>
+                  <td><a href={grabber.siteUrl} target="_blank" rel="noreferrer">site</a></td>
+                  <td>{grabber.urls.length > 0 ? grabber.urls.length : "--"}</td>
+                  <td>{grabber.lastUniqueAgeDays >= 1 ? grabber.lastUniqueAgeDays + " days" : ""}</td>
+                </tr>
+              ))
+          }
+        </tbody>
+      </table>
     )
+  }
+
+  renderAccordion() {
+    return (
+      <section>
+        <div className="accordion my-5 shadow" id="accordionExample">
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingConfig">
+              <button className="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseConfig" aria-expanded="true" aria-controls="collapseConfig">
+                Configuration
+            </button>
+            </h2>
+            <div id="collapseConfig" className="accordion-collapse collapse show" aria-labelledby="headingConfig"
+              data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                {this.renderTimer()}
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingWwvMessage">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWwvMessage" aria-expanded="false" aria-controls="collapseWwvMessage">
+                WWV Geophysical Alert Message
+            </button>
+            </h2>
+            <div id="collapseWwvMessage" className="accordion-collapse collapse" aria-labelledby="headingWwvMessage"
+              data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <div><b>2021 May 12 2105 UTC</b></div>
+                <pre><code>MESSAGE</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingForecastImages">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseForecastImages" aria-expanded="false" aria-controls="collapseForecastImages">
+                NOAA Auroral Forecasts
+            </button>
+            </h2>
+            <div id="collapseForecastImages" className="accordion-collapse collapse" aria-labelledby="headingForecastImages"
+              data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-6">
+                      <img src="https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg"
+                        className="img-fluid" alt="northern-hemisphere" />
+                    </div>
+                    <div className="col-6">
+                      <img src="https://services.swpc.noaa.gov/images/aurora-forecast-southern-hemisphere.jpg"
+                        className="img-fluid" alt="southern-hemisphere" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingDashboard">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseDashboard" aria-expanded="false" aria-controls="collapseDashboard">
+                Grabber Dashboard
+            </button>
+            </h2>
+            <div id="collapseDashboard" className="accordion-collapse collapse" aria-labelledby="headingDashboard"
+              data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                {this.renderDashboard()}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>)
   }
 
   render() {
     return (
       <div>
-        {this.renderTimer()}
+        {this.renderAccordion()}
         {this.renderMainThumbnails()}
         {this.renderDetailsForAllGrabbers()}
-        {this.renderDashboard()}
       </div>
     );
   }
