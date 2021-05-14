@@ -1,5 +1,6 @@
 import React from 'react';
 import Dashboard from './components/Dashboard';
+import GrabberList from './components/GrabberList';
 
 class App extends React.Component {
 
@@ -70,32 +71,6 @@ class App extends React.Component {
         this.setState({ grabbersJson: obj, grabbers: obj.grabbers, lastUpdate: new Date() });
         console.log(`read ${Object.keys(obj.grabbers).length} grabbers at ${obj.created}`);
       });
-  }
-
-  renderActivityIcon(ageMinutes) {
-    if (ageMinutes < 35)
-      return (<span className="badge bg-success">Active</span>)
-    if (ageMinutes < (60 * 24))
-      return (<span className="badge bg-warning">Inactive ({ageMinutes} minutes)</span>)
-    return (<span className="badge bg-danger">Offline ({ageMinutes / 60 / 24} days)</span>)
-  }
-
-  basename(url) {
-    return url.substr(url.lastIndexOf('/') + 1);
-  }
-
-  timestampFromUrl(url) {
-    const parts = this.basename(url).split(" ")[1].split('.');
-    const timestamp = parts[3] + ":" + parts[4];
-    return timestamp;
-  }
-
-  widthFromUrl(url) {
-    return this.basename(url).split(" ")[2].split('x')[0];
-  }
-
-  heightFromUrl(url) {
-    return this.basename(url).split(" ")[2].split('x')[1];
   }
 
   leftPad(num, size = 2, padChar = "0") {
@@ -246,83 +221,6 @@ class App extends React.Component {
     );
   }
 
-  /**
-   * thumbnail below a grabber that just shows the time
-   */
-  renderDatedThumbnail(url) {
-    return (
-      <div className="d-inline-block m-2" key={this.basename(url)}>
-        <div className="text-muted">{this.timestampFromUrl(url)}</div>
-        <div>
-          <a href={url}>
-            <img
-              className="border border-dark shadow"
-              alt="alt"
-              src={url + "-thumb-auto.jpg"}
-              width="150"
-              height="100" />
-          </a>
-        </div>
-      </div>
-    )
-  }
-
-  renderDetailsForGrabber(grabber, maxThumbnailCount, showStitch) {
-    const latestUrl = grabber.urls[grabber.urls.length - 1];
-    return (
-      <div id={grabber.id} key={latestUrl}>
-        <h2 className="my-5 mb-0 display-4 my-0 fw-normal">{grabber.id}</h2>
-
-        <div className="fs-5 my-0">
-          {grabber.name} (<a href={"https://www.qrz.com/lookup/" + grabber.callsign}>{grabber.callsign}</a>)
-                in {grabber.location} (<a href={grabber.siteUrl}>website</a>)
-                &nbsp;
-                {this.renderActivityIcon(grabber.lastUniqueAgeMinutes)}
-        </div>
-
-        <div>
-          <div className="text-muted">{this.timestampFromUrl(latestUrl)}</div>
-          <div className="mt-1 mb-1">
-            <a href={latestUrl}>
-              <img
-                className="border border-dark shadow figure-img img-fluid"
-                src={latestUrl}
-                alt={grabber.id}
-                width={this.widthFromUrl(latestUrl)}
-                height={this.heightFromUrl(latestUrl)}
-              />
-            </a>
-          </div>
-        </div>
-
-        {
-          Object.keys(grabber.urls)
-            .map(x => grabber.urls[x])
-            .reverse()
-            .slice(0, maxThumbnailCount)
-            .map(x => this.renderDatedThumbnail(x))
-        }
-
-        {
-          showStitch ? (
-            <div className="text-nowrap overflow-scroll m-2 bg-light border shadow" >
-              {
-                Object.keys(grabber.urls)
-                  .map(x => grabber.urls[x])
-                  .map(url => (
-                    <a href={url} key={url}>
-                      <img src={url + "-thumb-skinny.jpg"} alt={url} width="50" height="500" />
-                    </a>
-                  ))
-              }
-            </div>
-          ) : ""
-        }
-
-      </div>
-    );
-  }
-
   getThumbnailCount() {
     if (this.state.thumbnailHistory === "8hr")
       return 6 * 8;
@@ -411,9 +309,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {this.renderAccordion()}
+        {/*this.renderAccordion()*/}
         {/*this.renderMainThumbnails()*/}
         {/*this.renderDetailsForAllGrabbers()*/}
+        <GrabberList grabberStats={this.state.grabbersJson} maxGrabberCount={5} />
         <Dashboard grabberStats={this.state.grabbersJson} />
       </div>
     );
