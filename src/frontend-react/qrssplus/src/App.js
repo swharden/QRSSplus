@@ -1,4 +1,5 @@
 import React from 'react';
+import Dashboard from './components/Dashboard';
 
 class App extends React.Component {
 
@@ -342,54 +343,6 @@ class App extends React.Component {
     )
   }
 
-  grabberRowClass(grabber) {
-    if (grabber.urls.length > 0)
-      return ""
-    if (grabber.lastUniqueAgeDays >= 7)
-      return "table-danger"
-    else return "table-warning"
-  }
-
-  renderDashboard() {
-    if (!this.state.lastUpdate)
-      return (<code>Loading...</code>)
-
-    return (
-      <table className="table table-hover">
-        <thead className="bg-dark text-light">
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Callsign</th>
-            <th>Location</th>
-            <th>Image URL</th>
-            <th>Website URL</th>
-            <th>Unique Grabs</th>
-            <th>Last Update</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            Object.keys(this.state.grabbers)
-              .map(id => (this.state.grabbers[id]))
-              .map(grabber => (
-                <tr key={grabber.id} className={this.grabberRowClass(grabber)}>
-                  <td><code>{grabber.id}</code></td>
-                  <td>{grabber.name}</td>
-                  <td>{grabber.callsign}</td>
-                  <td>{grabber.location}</td>
-                  <td><a href={grabber.imageUrl} target="_blank" rel="noreferrer">image</a></td>
-                  <td><a href={grabber.siteUrl} target="_blank" rel="noreferrer">site</a></td>
-                  <td>{grabber.urls.length > 0 ? grabber.urls.length : "--"}</td>
-                  <td>{grabber.lastUniqueAgeDays >= 1 ? grabber.lastUniqueAgeDays + " days" : ""}</td>
-                </tr>
-              ))
-          }
-        </tbody>
-      </table>
-    )
-  }
-
   renderAccordion() {
     return (
       <section>
@@ -451,21 +404,6 @@ class App extends React.Component {
             </div>
           </div>
 
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingDashboard">
-              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseDashboard" aria-expanded="false" aria-controls="collapseDashboard">
-                Grabber Dashboard
-            </button>
-            </h2>
-            <div id="collapseDashboard" className="accordion-collapse collapse" aria-labelledby="headingDashboard"
-              data-bs-parent="#accordionExample">
-              <div className="accordion-body">
-                {this.renderDashboard()}
-              </div>
-            </div>
-          </div>
-
         </div>
       </section>)
   }
@@ -474,8 +412,9 @@ class App extends React.Component {
     return (
       <div>
         {this.renderAccordion()}
-        {this.renderMainThumbnails()}
-        {this.renderDetailsForAllGrabbers()}
+        {/*this.renderMainThumbnails()*/}
+        {/*this.renderDetailsForAllGrabbers()*/}
+        <Dashboard grabberStats={this.state.grabbersJson} />
       </div>
     );
   }
