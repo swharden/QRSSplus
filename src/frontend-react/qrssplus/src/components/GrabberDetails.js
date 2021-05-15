@@ -94,7 +94,7 @@ const GrabberDetails = (props) => {
                                 .map(x => grabber.urls[x])
                                 .map(url => (
                                     <a href={url} key={url}>
-                                        <img src={url + "-thumb-skinny.jpg"} alt={url} width="50" height="500" />
+                                        <img src={url + "-thumb-skinny.jpg"} alt={url} width="25" height="500" />
                                     </a>
                                 ))
                         }
