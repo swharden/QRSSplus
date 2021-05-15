@@ -63,7 +63,7 @@ const GrabberDetails = (props) => {
                 {renderActivityIcon(grabber.lastUniqueAgeMinutes)}
             </div>
 
-            <div>
+            <div className="m-2">
                 <div className="text-muted">{timestampFromUrl(latestUrl)}</div>
                 <div className="mt-1 mb-1">
                     <a href={latestUrl}>
