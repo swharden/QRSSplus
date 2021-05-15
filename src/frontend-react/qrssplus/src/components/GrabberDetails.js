@@ -1,5 +1,6 @@
 
 import React from 'react';
+import ModalImage from "react-modal-image";
 
 const GrabberDetails = (props) => {
 
@@ -21,19 +22,34 @@ const GrabberDetails = (props) => {
         return (
             <div className="d-inline-block m-2" key={basename(url)}>
                 <div className="text-muted">{timestampFromUrl(url)}</div>
-                <div>
-                    <a href={url}>
-                        <img
-                            className="border border-dark shadow"
-                            alt="alt"
-                            src={url + "-thumb-auto.jpg"}
-                            width="150"
-                            height="100" />
-                    </a>
+                <div className="border shadow" style={{ width: "150px", height: "100px" }}>
+                    <ModalImage
+                        small={url + "-thumb-auto.jpg"}
+                        large={url}
+                        alt={basename(url) + "-thumb-auto"}
+                    />
                 </div>
-            </div>
+            </div >
         )
     }
+
+    const renderPrimaryImage = (latestUrl) => {
+        return (
+            <div className="m-2">
+                <div className="text-muted">{timestampFromUrl(latestUrl)}</div>
+                <div className="mt-1 mb-1">
+                    <div className="border border-dark shadow figure-img d-inline-block">
+                        <ModalImage
+                            small={latestUrl}
+                            large={latestUrl}
+                            alt={basename(latestUrl) + "-primary"}
+                        />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     const basename = (url) => {
         return url.substr(url.lastIndexOf('/') + 1);
     }
@@ -63,20 +79,9 @@ const GrabberDetails = (props) => {
                 {renderActivityIcon(grabber.lastUniqueAgeMinutes)}
             </div>
 
-            <div className="m-2">
-                <div className="text-muted">{timestampFromUrl(latestUrl)}</div>
-                <div className="mt-1 mb-1">
-                    <a href={latestUrl}>
-                        <img
-                            className="border border-dark shadow figure-img img-fluid"
-                            src={latestUrl}
-                            alt={grabber.id}
-                            width={widthFromUrl(latestUrl)}
-                            height={heightFromUrl(latestUrl)}
-                        />
-                    </a>
-                </div>
-            </div>
+            {
+                renderPrimaryImage(latestUrl)
+            }
 
             {
                 Object.keys(grabber.urls)

@@ -51,6 +51,16 @@ function News(props) {
                     className="btn btn-secondary my-2 me-3"
                     type="button"
                     data-bs-toggle="collapse"
+                    data-bs-target="#collapseSunspot"
+                    aria-expanded="false"
+                    aria-controls="collapseSunspot">
+                    SILSO Sunspot Report
+                    </button>
+
+                <button
+                    className="btn btn-secondary my-2 me-3"
+                    type="button"
+                    data-bs-toggle="collapse"
                     data-bs-target="#collapseDashboard"
                     aria-expanded="false"
                     aria-controls="collapseDashboard">
@@ -86,6 +96,28 @@ function News(props) {
                                 <a href="https://services.swpc.noaa.gov/images/aurora-forecast-southern-hemisphere.jpg" target="_blank">
                                     <img src="https://services.swpc.noaa.gov/images/aurora-forecast-southern-hemisphere.jpg"
                                         className="img-fluid" alt="southern-hemisphere" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="collapse" id="collapseSunspot">
+                    <div className="card my-3 d-inline-block">
+                        <div className="card-header">
+                            <strong>SILSO Sunspot Report</strong>
+                        </div>
+                        <div className="row p-3">
+                            <div className="col-6">
+                                <a href="http://www.sidc.be/silso/ssngraphics" target="_blank">
+                                    <img src="http://www.sidc.be/images/wolfjmms.png"
+                                        className="img-fluid" alt="historical-sunspots" />
+                                </a>
+                            </div>
+                            <div className="col-6">
+                                <a href="http://www.sidc.be/silso/ssngraphics" target="_blank">
+                                    <img src="http://www.sidc.be/silso/DATA/EISN/EISNcurrent.png"
+                                        className="img-fluid" alt="current-sunspots" />
                                 </a>
                             </div>
                         </div>
