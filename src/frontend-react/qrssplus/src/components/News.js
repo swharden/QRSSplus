@@ -28,7 +28,7 @@ function News(props) {
 
             <section>
                 <button
-                    className="btn btn-secondary me-2"
+                    className="btn btn-secondary my-2 me-3"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseGeophysical"
@@ -38,7 +38,7 @@ function News(props) {
                     </button>
 
                 <button
-                    className="btn btn-secondary me-2"
+                    className="btn btn-secondary my-2 me-3"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseAurora"
@@ -48,7 +48,7 @@ function News(props) {
                     </button>
 
                 <button
-                    className="btn btn-secondary me-2"
+                    className="btn btn-secondary my-2 me-3"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseDashboard"
