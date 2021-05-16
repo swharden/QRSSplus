@@ -75,7 +75,7 @@ function News(props) {
                     role="button">
                     Mobile View
                     </a>
-                    
+
             </section>
 
             <section>
@@ -97,13 +97,15 @@ function News(props) {
                         </div>
                         <div className="row p-3">
                             <div className="col-6">
-                                <a href="https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg" target="_blank">
+                                <a href="https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg"
+                                    target="_blank" rel="noreferrer" >
                                     <img src="https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg"
                                         className="img-fluid" alt="northern-hemisphere" />
                                 </a>
                             </div>
                             <div className="col-6">
-                                <a href="https://services.swpc.noaa.gov/images/aurora-forecast-southern-hemisphere.jpg" target="_blank">
+                                <a href="https://services.swpc.noaa.gov/images/aurora-forecast-southern-hemisphere.jpg"
+                                    target="_blank" rel="noreferrer" >
                                     <img src="https://services.swpc.noaa.gov/images/aurora-forecast-southern-hemisphere.jpg"
                                         className="img-fluid" alt="southern-hemisphere" />
                                 </a>
