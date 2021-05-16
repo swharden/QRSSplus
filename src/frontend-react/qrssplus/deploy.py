@@ -1,89 +1,69 @@
-from ftplib import FTP_TLS
-from pathlib import Path
-from os.path import basename, dirname, abspath, join
-from os import walk
-
-#TODO: replace os calls with pathlib calls
-
-def getCredentials(defaultUser):
-    """Ask the user for user/pass using a asterisked textboxes."""
-    import tkinter
-    root = tkinter.Tk()
-    root.eval('tk::PlaceWindow . center')
-    root.title('Login')
-    uv = tkinter.StringVar(root, value=defaultUser)
-    pv = tkinter.StringVar(root, value='')
-    userEntry = tkinter.Entry(root, bd=3, width=35, textvariable=uv)
-    passEntry = tkinter.Entry(root, bd=3, width=35, show="*", textvariable=pv)
-    btnClose = tkinter.Button(root, text="OK", command=root.destroy)
-    userEntry.pack(padx=10, pady=5)
-    passEntry.pack(padx=10, pady=5)
-    btnClose.pack(padx=10, pady=5, side=tkinter.TOP, anchor=tkinter.NE)
-    root.mainloop()
-    return [uv.get(), pv.get()]
+import ftplib
+import keyring
+import pathlib
 
 
-def removeRecursively(ftp, path):
-    """recursively remove the ftp target path"""
-    for (name, properties) in ftp.mlsd(path=path):
-        if name in ['.', '..']:
+def removeRecursively(ftp: ftplib.FTP, remotePath: pathlib.PurePath):
+    """
+    Remove a folder and all its contents from a FTP server
+    """
+
+    def removeFile(remoteFile):
+        print(f"DELETING FILE {remoteFile}")
+        ftp.delete(str(remoteFile))
+
+    def removeFolder(remoteFolder):
+        print(f"DELETING FOLDER {remoteFolder}/")
+        ftp.rmd(str(remoteFolder))
+
+    for (name, properties) in ftp.mlsd(remotePath):
+        fullpath = remotePath.joinpath(name)
+        if name == '.' or name == '..':
             continue
         elif properties['type'] == 'file':
-            filePath = f"{path}/{name}"
-            print(f"DELETING {filePath}")
-            ftp.delete(filePath)
+            removeFile(fullpath)
         elif properties['type'] == 'dir':
-            removeRecursively(ftp, f"{path}/{name}")
+            removeRecursively(ftp, fullpath)
 
-    print(f"DELETING {path}/")
-    ftp.rmd(path)
+    removeFolder(remotePath)
 
 
-def uploadRecursively(ftp, localFolderPath, remoteFolderPath, overwrite=True):
-    """Copy a local folder tree to a remote target path."""
+def uploadRecursively(ftp: ftplib.FTP, remoteBase: pathlib.PurePath, localBase: pathlib.PurePath):
+    """
+    Upload a local folder to a remote path on a FTP server
+    """
 
-    # ensure the target doesn't exist (or delete it)
-    if remoteFolderPath in ftp.nlst(dirname(remoteFolderPath)):
-        if overwrite:
-            print()
-            print("### DELETING OLD FOLDER ###")
-            removeRecursively(ftp, targetFolder)
-        else:
-            raise Exception("target already exists")
+    def remoteFromLocal(localPath: pathlib.PurePath):
+        pathParts = localPath.parts[len(localBase.parts):]
+        return remoteBase.joinpath(*pathParts)
 
-    print()
-    print("### UPLOADING LOCAL FOLDER ###")
-    ftp.mkd(remoteFolderPath)
-    for root, dirs, files in walk(localFolderPath):
-        for dir in dirs:
-            localPath = join(root, dir)
-            remotePath = remoteFolderPath + \
-                localPath.replace(localFolderPath, "").replace("\\", "/")
-            print("CREATE " + remotePath)
-            ftp.mkd(remotePath)
-        for filename in files:
-            localPath = join(root, filename)
-            remotePath = remoteFolderPath + \
-                localPath.replace(localFolderPath, "").replace("\\", "/")
-            ftpCommand = f'STOR {remotePath}'
-            print(ftpCommand)
-            with open(localPath, 'rb') as localBinary:
-                ftp.storbinary(ftpCommand, localBinary)
+    def uploadFile(localFile: pathlib.PurePath):
+        remoteFilePath = remoteFromLocal(localFile)
+        print(f"UPLOADING FILE {remoteFilePath}")
+        with open(localFile, 'rb') as localBinary:
+            ftp.storbinary(f"STOR {remoteFilePath}", localBinary)
+
+    def createFolder(localFolder: pathlib.PurePath):
+        remoteFolderPath = remoteFromLocal(localFolder)
+        print(f"CREATING FOLDER {remoteFolderPath}/")
+        ftp.mkd(str(remoteFolderPath))
+
+    createFolder(localBase)
+    for localFolder in [x for x in localBase.glob("**/*") if x.is_dir()]:
+        createFolder(localFolder)
+    for localFile in [x for x in localBase.glob("**/*") if not x.is_dir()]:
+        uploadFile(localFile)
 
 
 if __name__ == "__main__":
-    username, password = getCredentials("swhftp@swharden.com")
+
     hostname = "swharden.com"
+    username = "swhftp@swharden.com"
+    password = keyring.get_password("system", username)
 
-    # predetermine paths (local and remote)
-    targetFolder = '/qrss/plus-experimental'
-    thisFolder = dirname(__file__)
-    relativeLocalTarget = './build'
-    localTarget = join(thisFolder, relativeLocalTarget)
-    localTarget = abspath(localTarget)
+    remotePath = pathlib.PurePosixPath('/qrss/plus-experimental')
+    localPath = pathlib.Path(__file__).parent.joinpath("build")
 
-    # connect and upload
-    with FTP_TLS(hostname, username, password) as ftp:
-        uploadRecursively(ftp, localTarget, targetFolder)
-
-    print("DONE")
+    with ftplib.FTP_TLS(hostname, username, password) as ftps:
+        removeRecursively(ftps, remotePath)
+        uploadRecursively(ftps, remotePath, localPath)
