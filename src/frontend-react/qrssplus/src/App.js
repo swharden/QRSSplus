@@ -4,6 +4,7 @@ import Config from './components/Config';
 import News from './components/News';
 import Thumbnails from './components/Thumbnails';
 import MobileView from './components/MobileView';
+import Banner from './components/Banner';
 
 function App() {
 
@@ -32,11 +33,15 @@ function App() {
   switch (view) {
     case "mobile":
       return (
-        <MobileView grabberStats={grabberStats} />
+        <>
+          <Banner mobile={true} />
+          <MobileView grabberStats={grabberStats} />
+        </>
       )
     default:
       return (
         <>
+          <Banner mobile={false} />
           <Config setThumbnailCount={setThumbnailCount} setIsStichVisible={setIsStichVisible} />
           <News grabberStats={grabberStats} />
           <Thumbnails grabberStats={grabberStats} />

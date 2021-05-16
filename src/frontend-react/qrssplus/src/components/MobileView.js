@@ -24,21 +24,13 @@ function MobileView(props) {
     }
 
     return (
-        <div>
-            <a
-                className="btn btn-primary m-1 shadow-sm"
-                href="./"
-                role="button">
-                Desktop View
-            </a>
-            <div>
-                {
-                    Object.keys(grabbers)
-                        .filter(id => grabbers[id].urls.length > 0)
-                        .map(id => getImage(grabbers[id]))
-                }
-            </div>
-        </div>
+        <>
+            {
+                Object.keys(grabbers)
+                    .filter(id => grabbers[id].urls.length > 0)
+                    .map(id => getImage(grabbers[id]))
+            }
+        </>
     )
 }
 
