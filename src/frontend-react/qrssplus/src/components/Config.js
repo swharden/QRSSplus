@@ -22,25 +22,24 @@ function Config(props) {
     }
 
     useEffect(() => {
+
+        const updateTimestamp = () => {
+            const dt = new Date();
+            const ts = leftPad(dt.getUTCHours()) + ":" + leftPad(dt.getUTCMinutes()) + ":" + leftPad(dt.getUTCSeconds());
+            setTimestamp(ts);
+        }
+
         updateTimestamp();
         const interval = setInterval(() => { updateTimestamp(); }, 1000);
         return () => clearInterval(interval);
     }, []);
 
-    const updateTimestamp = () => { setTimestamp(getFormattedTimestamp()); }
 
     const leftPad = (num, size = 2, padChar = "0") => {
         num = num.toString();
         while (num.length < size)
             num = padChar + num;
         return num;
-    };
-
-    const getFormattedTimestamp = () => {
-        const dt = new Date();
-        return leftPad(dt.getUTCHours()) + ":"
-            + leftPad(dt.getUTCMinutes()) + ":"
-            + leftPad(dt.getUTCSeconds());
     };
 
     return (
