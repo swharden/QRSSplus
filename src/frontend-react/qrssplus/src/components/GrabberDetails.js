@@ -60,14 +60,6 @@ const GrabberDetails = (props) => {
         return timestamp;
     }
 
-    const widthFromUrl = (url) => {
-        return basename(url).split(" ")[2].split('x')[0];
-    }
-
-    const heightFromUrl = (url) => {
-        return basename(url).split(" ")[2].split('x')[1];
-    }
-
     return (
         <div id={grabber.id} key={latestUrl}>
             <h2 className="my-5 mb-0 display-4 my-0 fw-normal">{grabber.id}</h2>
@@ -93,14 +85,18 @@ const GrabberDetails = (props) => {
 
             {
                 showStitch ? (
-                    <div className="text-nowrap overflow-scroll m-2 bg-light border shadow" >
+                    <div className="text-nowrap overflow-scroll m-2" >
                         {
                             Object.keys(grabber.urls)
                                 .map(x => grabber.urls[x])
                                 .map(url => (
-                                    <a href={url} key={url}>
-                                        <img src={url + "-thumb-skinny.jpg"} alt={url} width="25" height="500" />
-                                    </a>
+                                    <div className="d-inline-block" style={{ width: "25px", height: "500px" }}>
+                                        <ModalImage
+                                            small={url + "-thumb-skinny.jpg"}
+                                            large={url}
+                                            alt={grabber.id}
+                                        />
+                                    </div>
                                 ))
                         }
                     </div>
