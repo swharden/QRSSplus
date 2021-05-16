@@ -13,18 +13,27 @@ function MobileView(props) {
         const latestUrl = grabber.urls[grabber.urls.length - 1];
         const basename = latestUrl.substr(latestUrl.lastIndexOf('/') + 1);
         return (
-            <div className="d-inline-block m-1 border shadow-sm" key={basename}>
-                <ModalImage
-                    small={latestUrl + "-thumb-auto.jpg"}
-                    large={latestUrl}
-                    alt={basename}
-                />
+            <div className="d-inline-block m-2 ">
+                <div className="text-muted">
+                    {grabber.id}
+                </div>
+                <div className="border shadow-sm" key={basename}>
+                    <ModalImage
+                        small={latestUrl + "-thumb-auto.jpg"}
+                        large={latestUrl}
+                        alt={basename}
+                    />
+                </div>
             </div>
         )
     }
 
+    const activeGrabbers = Object.keys(grabbers).filter(id => grabbers[id].urls.length > 0)
+    const totalGrabberCount = Object.keys(grabbers).length;
+
     return (
         <>
+            <div className="fs-5 mt-4">Active Grabbers ({activeGrabbers.length} of {totalGrabberCount})</div>
             {
                 Object.keys(grabbers)
                     .filter(id => grabbers[id].urls.length > 0)

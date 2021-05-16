@@ -1,11 +1,19 @@
 function Banner(props) {
 
+    const switchToDesktop = () => {
+        window.open("./");
+    }
+
     const mobile = () => {
         return (
             <header>
-                <h1 className="display-3 fw-normal mb-0">QRSS Plus <i>mobile</i></h1>
-                <h3 className="fw-lighter ms-1">Low-Bandwidth View of Active Grabbers</h3>
-                <div className="ms-1"><a href="./">switch to desktop mode</a></div>
+                <div className="display-1 fw-normal mt-4">QRSS Plus</div>
+                <div class="form-check d-inline-block my-1">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked={true} onChange={switchToDesktop} />
+                    <label class="form-check-label fw-lighter" for="flexCheckChecked">
+                        Low-Bandwidth View
+                    </label>
+                </div>
             </header>
         )
     }
