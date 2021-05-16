@@ -30,7 +30,7 @@ const Thumbnails = (props) => {
     const activeGrabbers = Object.keys(grabbers).filter(id => grabbers[id].urls.length > 0);
 
     return (
-        <div className="my-5">
+        <div className="my-3">
             <h1>Active Grabbers ({activeGrabbers.length} of {Object.keys(grabbers).length})</h1>
             {activeGrabbers.map(id => getThumbnail(grabbers[id]))}
         </div>
