@@ -70,7 +70,7 @@ function News(props) {
                     </button>
 
                 <a
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     href="?view=mobile"
                     role="button">
                     Mobile View
