@@ -61,7 +61,7 @@ if __name__ == "__main__":
     username = "swhftp@swharden.com"
     password = keyring.get_password("system", username)
 
-    remotePath = pathlib.PurePosixPath('/qrss/plus-experimental')
+    remotePath = pathlib.PurePosixPath('/qrss/plus')
     localPath = pathlib.Path(__file__).parent.joinpath("build")
 
     with ftplib.FTP_TLS(hostname, username, password) as ftps:
