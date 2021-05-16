@@ -3,6 +3,7 @@ import GrabberList from './components/GrabberList';
 import Config from './components/Config';
 import News from './components/News';
 import Thumbnails from './components/Thumbnails';
+import MobileView from './components/MobileView';
 
 function App() {
 
@@ -26,18 +27,27 @@ function App() {
       });
   }
 
-  return (
-    <>
-      <Config setThumbnailCount={setThumbnailCount} setIsStichVisible={setIsStichVisible} />
-      <News grabberStats={grabberStats} />
-      <Thumbnails grabberStats={grabberStats} />
-      <GrabberList
-        grabberStats={grabberStats}
-        thumbnailCount={thumbnailCount}
-        isStichVisible={isStichVisible}
-      />
-    </>
-  );
+  const urlParams = new URLSearchParams(window.location.search);
+  const view = urlParams.get('view');
+  switch (view) {
+    case "mobile":
+      return (
+        <MobileView grabberStats={grabberStats} />
+      )
+    default:
+      return (
+        <>
+          <Config setThumbnailCount={setThumbnailCount} setIsStichVisible={setIsStichVisible} />
+          <News grabberStats={grabberStats} />
+          <Thumbnails grabberStats={grabberStats} />
+          <GrabberList
+            grabberStats={grabberStats}
+            thumbnailCount={thumbnailCount}
+            isStichVisible={isStichVisible}
+          />
+        </>
+      );
+  }
 }
 
 export default App;

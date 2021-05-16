@@ -68,6 +68,14 @@ function News(props) {
                     aria-controls="collapseDashboard">
                     Grabber Dashboard
                     </button>
+
+                <a
+                    class="btn btn-secondary"
+                    href="?view=mobile"
+                    role="button">
+                    Mobile View
+                    </a>
+                    
             </section>
 
             <section>
