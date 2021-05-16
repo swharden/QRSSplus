@@ -47,6 +47,7 @@ function News(props) {
                     NOAA Aurora Forcast
                     </button>
 
+                {/*
                 <button
                     className="btn btn-secondary my-2 me-3"
                     type="button"
@@ -56,6 +57,7 @@ function News(props) {
                     aria-controls="collapseSunspot">
                     SILSO Sunspot Report
                     </button>
+                */}
 
                 <button
                     className="btn btn-secondary my-2 me-3"
@@ -102,6 +104,7 @@ function News(props) {
                     </div>
                 </div>
 
+                {/*
                 <div className="collapse" id="collapseSunspot">
                     <div className="card my-3 d-inline-block">
                         <div className="card-header">
@@ -123,6 +126,7 @@ function News(props) {
                         </div>
                     </div>
                 </div>
+                */}
 
                 <div className="collapse" id="collapseDashboard">
                     <div className="card my-3 d-inline-block">
