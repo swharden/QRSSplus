@@ -85,7 +85,7 @@ const GrabberDetails = (props) => {
 
             {
                 showStitch ? (
-                    <div className="text-nowrap overflow-scroll m-2" >
+                    <div className="text-nowrap overflow-scroll m-2" style={{ height: "520px" }} >
                         {
                             Object.keys(grabber.urls)
                                 .map(x => grabber.urls[x])
