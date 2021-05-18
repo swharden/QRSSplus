@@ -17,6 +17,21 @@ const Dashboard = (props) => {
         else return "table-warning"
     }
 
+    const grabberAgeMessage = (grabber) => {
+        if (grabber.lastUniqueAgeDays < 1){
+            return "today";
+        } else if (grabber.lastUniqueAgeDays < 999) {
+            return grabber.lastUniqueAgeDays + " days ago";
+        } else {
+            return "never";
+        }
+    }
+
+    const grabCountMessage = (grabber) => 
+        (grabber.urls.length > 0) 
+            ? grabber.urls.length 
+            : (<span className="text-muted">--</span>);
+
     return (
         <table className="table table-hover border shadow">
             <thead className="bg-dark text-light">
@@ -25,10 +40,10 @@ const Dashboard = (props) => {
                     <th>Name</th>
                     <th>Callsign</th>
                     <th>Location</th>
-                    <th>Image URL</th>
-                    <th>Website URL</th>
-                    <th>Unique Grabs</th>
-                    <th>Last Update</th>
+                    <th>Image</th>
+                    <th>Website</th>
+                    <th>Grabs</th>
+                    <th>Last Upload</th>
                 </tr>
             </thead>
             <tbody>
@@ -42,9 +57,9 @@ const Dashboard = (props) => {
                                 <td>{grabber.callsign}</td>
                                 <td>{grabber.location}</td>
                                 <td><a href={grabber.imageUrl} target="_blank" rel="noreferrer">image</a></td>
-                                <td><a href={grabber.siteUrl} target="_blank" rel="noreferrer">site</a></td>
-                                <td>{grabber.urls.length > 0 ? grabber.urls.length : "--"}</td>
-                                <td>{grabber.lastUniqueAgeDays >= 1 ? grabber.lastUniqueAgeDays + " days" : ""}</td>
+                                <td><a href={grabber.siteUrl} target="_blank" rel="noreferrer">website</a></td>
+                                <td>{grabCountMessage(grabber)}</td>
+                                <td>{grabberAgeMessage(grabber)}</td>
                             </tr>
                         ))
                 }
