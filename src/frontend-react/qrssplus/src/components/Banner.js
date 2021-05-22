@@ -8,9 +8,9 @@ function Banner(props) {
         return (
             <header>
                 <div className="display-1 fw-normal mt-4">QRSS Plus</div>
-                <div class="form-check d-inline-block my-1">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked={true} onChange={switchToDesktop} />
-                    <label class="form-check-label fw-lighter" for="flexCheckChecked">
+                <div className="form-check d-inline-block my-1">
+                    <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked={true} onChange={switchToDesktop} />
+                    <label className="form-check-label fw-lighter" for="flexCheckChecked">
                         Low-Bandwidth View
                     </label>
                 </div>

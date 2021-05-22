@@ -33,14 +33,14 @@ function App() {
   switch (view) {
     case "mobile":
       return (
-        <div class="container-fluid text-center">
+        <div className="container-fluid text-center">
           <Banner mobile={true} />
           <MobileView grabberStats={grabberStats} />
         </div>
       )
     default:
       return (
-        <div class="container">
+        <div className="container">
           <Banner mobile={false} />
           <Config setThumbnailCount={setThumbnailCount} setIsStichVisible={setIsStichVisible} />
           <News grabberStats={grabberStats} />
