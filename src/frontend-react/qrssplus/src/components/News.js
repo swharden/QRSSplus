@@ -5,7 +5,6 @@ function News(props) {
 
     const [alertMessage, setAlertMessage] = useState();
     const [alertDate, setAlertDate] = useState();
-    //const [grabberStats, setGrabberStats] = useState(props.grabberStats);
 
     useEffect(() => {
         console.log("fetching NOAA alert message...")
@@ -34,7 +33,7 @@ function News(props) {
                     data-bs-target="#collapseGeophysical"
                     aria-expanded="false"
                     aria-controls="collapseGeophysical">
-                    WWV Geophysical Alert
+                    Geophysical Alert
                     </button>
 
                 <button
@@ -44,20 +43,18 @@ function News(props) {
                     data-bs-target="#collapseAurora"
                     aria-expanded="false"
                     aria-controls="collapseAurora">
-                    NOAA Aurora Forcast
+                    Aurora Forcast
                     </button>
 
-                {/*
                 <button
                     className="btn btn-secondary my-2 me-3"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseSunspot"
+                    data-bs-target="#collapseSunlitMap"
                     aria-expanded="false"
-                    aria-controls="collapseSunspot">
-                    SILSO Sunspot Report
+                    aria-controls="collapseSunlitMap">
+                    Sunlit Map
                     </button>
-                */}
 
                 <button
                     className="btn btn-secondary my-2 me-3"
@@ -114,29 +111,17 @@ function News(props) {
                     </div>
                 </div>
 
-                {/*
-                <div className="collapse" id="collapseSunspot">
+                <div className="collapse" id="collapseSunlitMap">
                     <div className="card my-3 d-inline-block">
                         <div className="card-header">
-                            <strong>SILSO Sunspot Report</strong>
+                            <strong>Sunlit Map with MUF Data</strong>
                         </div>
-                        <div className="row p-3">
-                            <div className="col-6">
-                                <a href="http://www.sidc.be/silso/ssngraphics" target="_blank">
-                                    <img src="http://www.sidc.be/images/wolfjmms.png"
-                                        className="img-fluid" alt="historical-sunspots" />
-                                </a>
-                            </div>
-                            <div className="col-6">
-                                <a href="http://www.sidc.be/silso/ssngraphics" target="_blank">
-                                    <img src="http://www.sidc.be/silso/DATA/EISN/EISNcurrent.png"
-                                        className="img-fluid" alt="current-sunspots" />
-                                </a>
-                            </div>
-                        </div>
+                        <a href="http://www.hamqsl.com/solar.html">
+                            <img src="http://www.hamqsl.com/solarmuf.php" alt="sunlit map"
+                                className="img-fluid m-3 border-dark shadow-sm" />
+                        </a>
                     </div>
                 </div>
-                */}
 
                 <div className="collapse" id="collapseDashboard">
                     <div className="card my-3 d-inline-block">
