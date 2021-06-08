@@ -118,7 +118,7 @@ function News(props) {
                         </div>
                         <a href="http://www.hamqsl.com/solar.html">
                             <img src="http://www.hamqsl.com/solarmuf.php" alt="sunlit map"
-                                className="img-fluid m-3 border-dark shadow-sm" />
+                                className="img-fluid p-3 border-dark shadow-sm" width="600" height="300" />
                         </a>
                     </div>
                 </div>
