@@ -20,12 +20,12 @@ G3VYZ-Fast-60m,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",http://www.hol
 G3VYZ-40m-Slow,G3VYZ,Grabber 4,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_4.jpg
 G3VYZ-5,G3VYZ,Grabber 5,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_5.jpg
 G3VYZ-60m-Slow,G3VYZ,Grabber 6,Les,"Holywell, Northumberland, UK",http://www.holywell44.com/qrss/qrss.htm,http://www.holywell44.com/qrss/qrss_6.jpg
-G4IOG-80m,G4IOG,3.5MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/80mdir/80mpage.html,https://www.qsl.net/g4iog/80mdir/hf8.png
 G4IOG-10m,G4IOG,28MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http://qsl.net/g4iog/10mdir/hf1.png
 G4IOG-20m,G4IOG,14MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://www.qsl.net/g4iog/20mdir/hf2.png
 G4IOG-30m,G4IOG,10MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/30mdir/30mpage.html,https://www.qsl.net/g4iog/30mdir/hf3.png 
-G4IOG-40M,G4IOG,7MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://www.qsl.net/g4iog/40mdir/hf4.png
-G4IOG-160M,G4IOG,1.8MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://qsl.net/g4iog/160mdir/hf160.png
+G4IOG-40m,G4IOG,7MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://www.qsl.net/g4iog/40mdir/hf4.png
+G4IOG-80m,G4IOG,3.5MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/80mdir/80mpage.html,https://www.qsl.net/g4iog/80mdir/hf8.png
+G4IOG-160m,G4IOG,1.8MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://qsl.net/g4iog/160mdir/hf160.png
 GM4SFW-0,GM4SFW,Testing,Hamish,Scotland,https://www.qsl.net/gm4sfw/,https://www.qsl.net/gm4sfw/latest.png
 GM4SFW-1,GM4SFW,Testing,Hamish,Scotland,https://www.qsl.net/gm4sfw/,https://www.qsl.net/gm4sfw/10_12metres.png
 GM4SFW-2,GM4SFW,Testing,Hamish,Scotland,https://www.qsl.net/gm4sfw/,https://www.qsl.net/gm4sfw/30metre.png
