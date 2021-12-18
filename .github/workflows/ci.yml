@@ -1,5 +1,5 @@
 on: push
-name: ⚙️ Build
+name: ⚙️ CI
 jobs:
   frontend:
     name: Frontend
@@ -7,16 +7,20 @@ jobs:
     steps:
       - name: 🚚 Checkout
         uses: actions/checkout@v2
-      - name: Use Node 16
+      - name: ⚙️ Setup Node
         uses: actions/setup-node@v2
         with:
           node-version: "16"
+      - name: ⚙️ Install NPM
+        working-directory: ./src/fronend
+        run: npm install
       - name: 🔨 Build
         working-directory: ./src/fronend
-        run: |
-          npm install
-          npm run build
-      - name: 🚀 FTP Upload
+        run: npm run build
+      - name: 🧪 Test
+        working-directory: ./src/fronend
+        run: npm test
+      - name: 🚀 Deploy
         uses: SamKirkland/FTP-Deploy-Action@a9644610a0efe63542b1887c9317ce8628f56521 # 4.2.0
         with:
           server: ftp.swharden.com
