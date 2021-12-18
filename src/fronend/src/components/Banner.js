@@ -11,7 +11,7 @@ function Banner(props) {
                 <div className="form-check d-inline-block my-1">
                     <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked={true} onChange={switchToDesktop} />
                     <label className="form-check-label fw-lighter" for="flexCheckChecked">
-                        Low-Bandwidth View
+                        Mobile View
                     </label>
                 </div>
             </header>
