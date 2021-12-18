@@ -25,5 +25,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./src/fronend/build/
-          server-dir: /qrss/plus/
+          server-dir: /qrss/plus2021/
           log-level: minimal
