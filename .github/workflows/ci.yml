@@ -22,10 +22,10 @@ jobs:
     steps:
       - name: 🚚 Checkout
         uses: actions/checkout@v2
-      - name: ✨ Set up .NET 5.0
+      - name: ✨ Use .NET Core 3.1
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: "5.0.x"
+          dotnet-version: "3.1.x"
       - name: 🚚 Restore
         run: dotnet restore ./src/backend
       - name: 🛠️ Build
