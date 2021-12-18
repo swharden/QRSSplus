@@ -5,10 +5,7 @@
 
 **[QRSS Plus](https://www.swharden.com/qrss/plus) is an automatically-updating website that lists active QRSS grabbers around the world.** Every 10 minutes grabber URLs are read from [grabbers.csv](grabbers.csv), the latest grabs are downloaded and analyzed, and only grabbers whose spectrogram images changed recently are marked as "active" on the website.
 
-**Launch QRSS Plus:** **https://www.swharden.com/qrss/plus**
-
-[![](/misc/QRSSplus.png)](https://www.swharden.com/qrss/plus)
-
+* **Launch QRSS Plus:** **https://www.swharden.com/qrss/plus**
 
 ## QRSS Grabber List
 
