@@ -1,4 +1,4 @@
-on: push
+on: workflow_dispatch
 name: 🚀 Deploy
 jobs:
   web-deploy:
@@ -25,5 +25,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./src/fronend/build/
-          server-dir: /qrss/plus2021/
+          server-dir: /qrss/plus/
           log-level: minimal
