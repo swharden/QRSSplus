@@ -1,3 +1,4 @@
+* Setup: `npm install`
 * Run locally: `npm run start`
 * Build: `npm run build`
-* Upgrade pacakges: `npm update`
+* Upgrade packages: `npm update`
