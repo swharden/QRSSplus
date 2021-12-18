@@ -1,8 +1,8 @@
 on: workflow_dispatch
 name: 🚀 Deploy
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  frontend:
+    name: Frontend
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Checkout
