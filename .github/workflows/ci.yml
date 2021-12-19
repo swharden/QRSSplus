@@ -7,19 +7,19 @@ jobs:
     steps:
       - name: 🚚 Checkout
         uses: actions/checkout@v2
-      - name: ⚙️ Setup Node
+      - name: ⚙️ Setup Node 16
         uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - name: ⚙️ Install NPM
+      - name: ⚙️ Install dependencies
         working-directory: ./src/fronend
-        run: npm install
-      - name: 🔨 Build
-        working-directory: ./src/fronend
-        run: npm run build
+        run: yarn
       - name: 🧪 Test
         working-directory: ./src/fronend
-        run: npm test
+        run: yarn test --watchAll=false
+      - name: 🔨 Build
+        working-directory: ./src/fronend
+        run: yarn build
       - name: 🚀 Deploy
         uses: SamKirkland/FTP-Deploy-Action@a9644610a0efe63542b1887c9317ce8628f56521 # 4.2.0
         with:
