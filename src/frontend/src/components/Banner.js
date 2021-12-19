@@ -23,7 +23,8 @@ function Banner(props) {
             <header>
                 <h1 className="display-1 fw-normal mb-0">QRSS Plus</h1>
                 <h2 className="fw-lighter mt-0">Automatically Updating Active QRSS Grabbers List</h2>
-                <div className="">by <a href="https://swharden.com">Scott Harden (AJ4VD)</a> and <a href="https://sites.google.com/view/andy-g0ftd">Andy (G0FTD)</a>
+                <div className="">
+                    by <a href="https://swharden.com">Scott Harden (AJ4VD)</a> and <a href="https://sites.google.com/view/andy-g0ftd">Andy (G0FTD)</a>
                 </div>
             </header>
         )
