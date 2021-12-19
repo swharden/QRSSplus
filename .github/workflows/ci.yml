@@ -5,26 +5,18 @@ jobs:
     name: Frontend
     runs-on: ubuntu-latest
     steps:
-      - name: 🚚 Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      - name: ⚙️ Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16"
-      - name: ⚙️ Install yarn
-        run: npm install -g yarn
-      - name: ⚙️ Setup Node with Yarn
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16"
-          cache: yarn
-      - name: ⚙️ Install dependencies
+      - name: Install dependencies
         working-directory: ./src/fronend
         run: yarn
-      - name: 🧪 Test
+      - name: Build
+        working-directory: ./src/fronend
+        run: yarn build
+      - name: Test
         working-directory: ./src/fronend
         run: yarn test --watchAll=false
-      - name: 🔨 Build
+      - name: Build
         working-directory: ./src/fronend
         run: yarn build
       - name: 🚀 Deploy
