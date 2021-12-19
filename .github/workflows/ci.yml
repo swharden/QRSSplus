@@ -7,12 +7,17 @@ jobs:
     steps:
       - name: 🚚 Checkout
         uses: actions/checkout@v2
-      - name: ⚙️ Setup Node 16
+      - name: ⚙️ Setup Node
         uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - name: ⚙️ Setup yarn
+      - name: ⚙️ Install yarn
         run: npm install -g yarn
+      - name: ⚙️ Setup Node with Yarn
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          cache: yarn
       - name: ⚙️ Install dependencies
         working-directory: ./src/fronend
         run: yarn
