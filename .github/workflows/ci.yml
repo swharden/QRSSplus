@@ -5,20 +5,21 @@ jobs:
     name: Frontend
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 🚚 Checkout
         uses: actions/checkout@v2
-      - name: Install dependencies
+      - name: ⚙️ Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - name: ⚙️ Install NPM
         working-directory: ./src/fronend
-        run: yarn
-      - name: Build
+        run: npm install
+      - name: 🔨 Build
         working-directory: ./src/fronend
-        run: yarn build
-      - name: Test
+        run: npm run build
+      - name: 🧪 Test
         working-directory: ./src/fronend
-        run: yarn test --watchAll=false
-      - name: Build
-        working-directory: ./src/fronend
-        run: yarn build
+        run: npm test
       - name: 🚀 Deploy
         uses: SamKirkland/FTP-Deploy-Action@a9644610a0efe63542b1887c9317ce8628f56521 # 4.2.0
         with:
