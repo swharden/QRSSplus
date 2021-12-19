@@ -40,17 +40,30 @@ function App() {
       )
     default:
       return (
-        <div className="container">
-          <Banner mobile={false} />
-          <Config setThumbnailCount={setThumbnailCount} setIsStichVisible={setIsStichVisible} />
-          <News grabberStats={grabberStats} />
-          <Thumbnails grabberStats={grabberStats} />
-          <GrabberList
-            grabberStats={grabberStats}
-            thumbnailCount={thumbnailCount}
-            isStichVisible={isStichVisible}
-          />
-        </div>
+        <div>
+          <div className="container">
+            <Banner mobile={false} />
+            <Config setThumbnailCount={setThumbnailCount} setIsStichVisible={setIsStichVisible} />
+            <News grabberStats={grabberStats} />
+            <Thumbnails grabberStats={grabberStats} />
+            <GrabberList
+              grabberStats={grabberStats}
+              thumbnailCount={thumbnailCount}
+              isStichVisible={isStichVisible}
+            />
+          </div>
+          <footer className='text-center bg-light p-3 mt-5 text-muted'>
+            <div>
+              QRSS Plus
+            </div>
+            <div>
+              by Scott Harden (AJ4VD)
+            </div>
+            <div>
+              <a href='https://github.com/swharden/QRSSplus' className='text-muted'>view source on GitHub</a>
+            </div>
+          </footer>
+        </div >
       );
   }
 }
