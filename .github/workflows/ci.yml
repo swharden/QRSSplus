@@ -13,18 +13,18 @@ jobs:
         with:
           node-version: "16"
           cache: "yarn"
-          working-directory: ./src/fronend
+          cache-dependency-path: ./src/frontend/yarn.lock
 
       - name: 📦 Install packages
-        working-directory: ./src/fronend
+        working-directory: ./src/frontend
         run: yarn install
 
       - name: 🧪 Test
-        working-directory: ./src/fronend
+        working-directory: ./src/frontend
         run: yarn test
 
       - name: 🛠️ Build
-        working-directory: ./src/fronend
+        working-directory: ./src/frontend
         run: yarn build
 
       - name: 🚀 Deploy
@@ -33,7 +33,7 @@ jobs:
           server: ftp.swharden.com
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./src/fronend/build/
+          local-dir: ./src/frontend/build/
           server-dir: /qrss/plus/
           log-level: minimal
 
