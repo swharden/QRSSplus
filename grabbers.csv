@@ -27,9 +27,9 @@ G4IOG-30m,G4IOG,10MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/3
 G4IOG-40m,G4IOG,7MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://www.qsl.net/g4iog/40mdir/hf4.png
 G4IOG-80m,G4IOG,3.5MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/80mdir/80mpage.html,https://www.qsl.net/g4iog/80mdir/hf8.png
 G4IOG-160m,G4IOG,1.8MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://qsl.net/g4iog/160mdir/hf160.png
-GM4SFW-0,GM4SFW,Testing,Hamish,Scotland,https://www.qsl.net/gm4sfw/,https://www.qsl.net/gm4sfw/latest.png
-GM4SFW-1,GM4SFW,Testing,Hamish,Scotland,https://www.qsl.net/gm4sfw/,https://www.qsl.net/gm4sfw/10_12metres.png
-GM4SFW-2,GM4SFW,Testing,Hamish,Scotland,https://www.qsl.net/gm4sfw/,https://www.qsl.net/gm4sfw/30metre.png
+#GM4SFW-0,GM4SFW,Testing,Hamish,Scotland,https://www.qsl.net/gm4sfw/,https://www.qsl.net/gm4sfw/latest.png
+#GM4SFW-1,GM4SFW,Testing,Hamish,Scotland,https://www.qsl.net/gm4sfw/,https://www.qsl.net/gm4sfw/10_12metres.png
+#GM4SFW-2,GM4SFW,Testing,Hamish,Scotland,https://www.qsl.net/gm4sfw/,https://www.qsl.net/gm4sfw/30metre.png
 G6AVK,G6AVK,Various bands,Colin,"Essex, England",http://www.qsl.net/g6avk/,http://www.qsl.net/g6avk/hf6.jpg
 G6NHU,G6NHU,Various bands,Keith,England,http://g6nhu.co.uk,http://g6nhu.co.uk/images/capture.jpg
 GJ7RWT,GJ7RWT,Usually 40m,Andy,"Jersey, England",http://www.qsl.net/gj7rwt/gj7rwthomepage.html,https://www.qsl.net/g/gj7rwt/hf1.jpg
@@ -76,10 +76,10 @@ PA2OHH-30m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grab
 PA2OHH-40m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,https://www.qsl.net/pa2ohh/grabber/hf2.jpg
 PA2OHH-80m,PA2OHH,Backup system Lopora,Onno,Spain,http://www.qsl.net/pa2ohh/grabber.htm,https://www.qsl.net/pa2ohh/grabber/hf3.jpg
 PA2ST-10m,PA2ST,Remote grabber,Ben,Holland,http://images.1k2.nl/qrss/latest.png,http://images.1k2.nl/qrss/latest.png
-PA2ST-22m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/index.html,https://images.1k2.nl/qrss/latest-22m.png
-PA2ST-30m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/index.html,https://images.1k2.nl/qrss/latest-maasbree-30m.png
-PA2ST-80m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/index.html,https://images.1k2.nl/qrss/latest-twente-80m.png
-PA2ST-80m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/index.html,https://images.1k2.nl/qrss/latest-twente-160m.png
+PA2ST-22m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/index.html,http://images.1k2.nl/qrss/latest-22m.png
+PA2ST-30m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/index.html,http://images.1k2.nl/qrss/latest-maasbree-30m.png
+PA2ST-80m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/index.html,http://images.1k2.nl/qrss/latest-twente-80m.png
+PA2ST-80m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/index.html,http://images.1k2.nl/qrss/latest-twente-160m.png
 S52AS-30m,S52AS,30m Part time,Roman,"Novo Mesto, Slovenia",http://novomesto.zevs.si/graber.htm,http://novomesto.zevs.si/podatki/test.gif
 SA6BSS-1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf1.jpg
 SA6BSS-2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
