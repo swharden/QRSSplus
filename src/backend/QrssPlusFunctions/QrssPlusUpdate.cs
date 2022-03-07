@@ -89,17 +89,17 @@ namespace QrssPlusFunctions
 
             BlobClient blobOriginal = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename));
             using var streamOriginal = new MemoryStream(grabber.Data.Bytes);
-            blobOriginal.Upload(streamOriginal);
+            blobOriginal.Upload(streamOriginal, overwrite: true);
             blobOriginal.SetHttpHeaders(headers);
 
             BlobClient blobThumbSkinny = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename + "-thumb-skinny.jpg"));
             using var streamThumbSkinny = new MemoryStream(ImageProcessing.GetThumbnailSkinny(grabber.Data.Bytes));
-            blobThumbSkinny.Upload(streamThumbSkinny);
+            blobThumbSkinny.Upload(streamThumbSkinny, overwrite: true);
             blobOriginal.SetHttpHeaders(headers);
 
             BlobClient blobThumbAuto = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename + "-thumb-auto.jpg"));
             using var streamThumbAuto = new MemoryStream(ImageProcessing.GetThumbnailAuto(grabber.Data.Bytes));
-            blobThumbAuto.Upload(streamThumbAuto);
+            blobThumbAuto.Upload(streamThumbAuto, overwrite: true);
             blobOriginal.SetHttpHeaders(headers);
         }
 
