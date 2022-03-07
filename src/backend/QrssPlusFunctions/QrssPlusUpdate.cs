@@ -26,7 +26,7 @@ namespace QrssPlusFunctions
             DateTime dt = DateTime.UtcNow;
             log.LogInformation($"Starting update at {dt}");
 
-            BlobContainerClient webBlobClient = new(
+            BlobContainerClient webBlobClient = new BlobContainerClient(
                 connectionString: Environment.GetEnvironmentVariable("AzureWebJobsStorage", EnvironmentVariableTarget.Process),
                 blobContainerName: "$web");
 
@@ -65,7 +65,7 @@ namespace QrssPlusFunctions
             if (!blob.Exists())
                 return;
 
-            using MemoryStream stream = new();
+            using MemoryStream stream = new MemoryStream();
             blob.DownloadTo(stream);
             string json = Encoding.UTF8.GetString(stream.ToArray());
 
@@ -85,7 +85,7 @@ namespace QrssPlusFunctions
         {
             log.LogInformation($"storing image for {grabber}");
 
-            BlobHttpHeaders headers = new() { ContentType = "image/jpeg", ContentLanguage = "en-us", };
+            BlobHttpHeaders headers = new BlobHttpHeaders() { ContentType = "image/jpeg", ContentLanguage = "en-us", };
 
             BlobClient blobOriginal = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename));
             using var streamOriginal = new MemoryStream(grabber.Data.Bytes);
