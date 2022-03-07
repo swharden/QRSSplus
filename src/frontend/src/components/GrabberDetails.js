@@ -21,7 +21,7 @@ const GrabberDetails = (props) => {
     const renderDatedThumbnail = (url) => {
         return (
             <div className="d-inline-block m-2" key={basename(url)}>
-                <div className="text-muted">{timestampFromUrl(url)}</div>
+                <div className="text-muted">{timestampFromUrl(url)} ({timestampAgeFromUrl(url)})</div>
                 <div className="border shadow" style={{ width: "150px", height: "100px" }}>
                     <ModalImage
                         small={url + "-thumb-auto.jpg"}
@@ -36,7 +36,7 @@ const GrabberDetails = (props) => {
     const renderPrimaryImage = (latestUrl) => {
         return (
             <div className="m-2">
-                <div className="text-muted">{timestampFromUrl(latestUrl)}</div>
+                <div className="text-muted">{timestampFromUrl(latestUrl)} ({timestampAgeFromUrl(latestUrl)})</div>
                 <div className="mt-1 mb-1">
                     <div className="border border-dark shadow figure-img d-inline-block">
                         <ModalImage
@@ -58,6 +58,21 @@ const GrabberDetails = (props) => {
         const parts = basename(url).split(" ")[1].split('.');
         const timestamp = parts[3] + ":" + parts[4];
         return timestamp;
+    }
+
+    const timestampAgeFromUrl = (url) => {
+        const parts = basename(url).split(" ")[1].split('.');
+        const urlDate = new Date(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]);
+        const urlLinuxTime = urlDate.getTime() / 1000 - urlDate.getTimezoneOffset() * 60;
+        const nowDate = new Date();
+        const nowLinuxTime = nowDate.getTime() / 1000;
+        const urlAgeMin = (nowLinuxTime - urlLinuxTime) / 60;
+        console.log("");
+        console.log(url);
+        console.log(urlDate);
+        console.log(nowDate);
+        console.log(urlAgeMin);
+        return `${Math.round(urlAgeMin)} min`;
     }
 
     return (
