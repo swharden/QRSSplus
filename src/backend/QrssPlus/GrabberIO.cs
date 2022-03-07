@@ -36,7 +36,7 @@ namespace QrssPlus
             return grabbers;
         }
 
-        private static Grabber[] GrabbersFromCsvText(string csv) =>
+        public static Grabber[] GrabbersFromCsvText(string csv) =>
             csv
             .Split("\n")
             .Select(line => GrabberFromCsvLine(line))
