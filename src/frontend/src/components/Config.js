@@ -57,7 +57,7 @@ function Config(props) {
                 <div><strong>Resources</strong></div>
                 <div><a href="https://swharden.com/blog/2020-10-03-new-age-of-qrss">Introduction to QRSS</a></div>
                 <div><a href="https://groups.io/g/qrssknights">Knights QRSS Mailing List</a></div>
-                <div><a href='https://swharden.com/qrss/74/'>QRSS Newsletter ✨ Dec 2021</a></div>
+                <div><a href='https://swharden.com/qrss/74/'>74! QRSS Newsletter</a></div>
             </div>
 
             <div className="d-inline-block m-2 align-top">
