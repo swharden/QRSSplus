@@ -67,11 +67,6 @@ const GrabberDetails = (props) => {
         const nowDate = new Date();
         const nowLinuxTime = nowDate.getTime() / 1000;
         const urlAgeMin = (nowLinuxTime - urlLinuxTime) / 60;
-        console.log("");
-        console.log(url);
-        console.log(urlDate);
-        console.log(nowDate);
-        console.log(urlAgeMin);
         return `${Math.round(urlAgeMin)} min`;
     }
 
