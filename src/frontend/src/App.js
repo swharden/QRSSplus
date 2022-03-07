@@ -43,7 +43,7 @@ function App() {
         <div>
           <div className="container">
             <Banner mobile={false} />
-            <Config setThumbnailCount={setThumbnailCount} setIsStichVisible={setIsStichVisible} />
+            <Config setThumbnailCount={setThumbnailCount} setIsStichVisible={setIsStichVisible} grabberStats={grabberStats} />
             <News grabberStats={grabberStats} />
             <Thumbnails grabberStats={grabberStats} />
             <GrabberList

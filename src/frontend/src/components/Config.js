@@ -6,6 +6,7 @@ function Config(props) {
 
     const setThumbnailCount = props.setThumbnailCount;
     const setIsStichVisible = props.setIsStichVisible;
+    const grabberStats = props.grabberStats;
 
     const handleThumbChange = (event) => {
         const value = event.target.value;
@@ -42,10 +43,23 @@ function Config(props) {
         return num;
     };
 
-    return (
-        <div className="my-2 border bg-light rounded d-inline-block">
+    const grabberDataAgeMessage = () => {
+        if (!grabberStats)
+            return;
+        const updatedDate = new Date(grabberStats.created);
+        const updatedLinuxTime = updatedDate.getTime() / 1000;
+        const nowDate = new Date();
+        const nowLinuxTime = nowDate.getTime() / 1000;
+        const urlAgeMin = (nowLinuxTime - updatedLinuxTime) / 60;
+        return `Last updated on ${updatedDate.toLocaleDateString()} ` +
+            `at ${updatedDate.toLocaleTimeString()} ` +
+            `(${Math.round(urlAgeMin)} min ago)`;
+    }
 
-            <div className="d-inline-block m-2 align-top">
+    return (
+        <div className="my-2 border bg-light rounded d-inline-block py-2">
+
+            <div className="d-inline-block mx-2 align-top">
                 <div><strong>QRSS Plus</strong></div>
                 <div><a href="https://swharden.com/blog/2020-10-03-new-age-of-qrss/#qrss-frequency-bands">
                     QRSS Frequencies</a></div>
@@ -53,14 +67,14 @@ function Config(props) {
                 <div><a href="https://github.com/swharden/qrssplus/#request-a-change">Request a Modification</a></div>
             </div>
 
-            <div className="d-inline-block m-2 align-top">
+            <div className="d-inline-block mx-2 align-top">
                 <div><strong>Resources</strong></div>
                 <div><a href="https://swharden.com/blog/2020-10-03-new-age-of-qrss">Introduction to QRSS</a></div>
                 <div><a href="https://groups.io/g/qrssknights">Knights QRSS Mailing List</a></div>
                 <div><a href='https://swharden.com/qrss/74/'>74! QRSS Newsletter</a></div>
             </div>
 
-            <div className="d-inline-block m-2 align-top">
+            <div className="d-inline-block mx-2 align-top">
                 <div><strong>Settings</strong></div>
 
                 <div className="d-inline-block align-top mx-2">
@@ -68,7 +82,7 @@ function Config(props) {
                     <div><code>{timestamp}</code></div>
                 </div>
 
-                <div className="d-inline-block mx-2">
+                <div className="d-inline-block mx-2 align-top">
                     <div>Thumbnails:</div>
                     <select className="form-select" defaultValue={'2hr'} name="thumbnailHistory" onChange={handleThumbChange}>
                         <option value="none">None</option>
@@ -83,6 +97,9 @@ function Config(props) {
                 </div>
             </div>
 
+            <div className="mx-2 text-muted">
+                <code>{grabberDataAgeMessage()}</code>
+            </div>
 
         </div>
     );
