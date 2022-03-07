@@ -1,0 +1,15 @@
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+# variables defined in the `.env` file (same directory as this script) 
+
+### Execute locally
+POST http://localhost:7071/admin/functions/QrssPlusUpdate/
+Content-Type: application/json
+
+{}
+
+### Execute remotely in the cloud
+POST https://qrssplusfunctions20210427223607.azurewebsites.net/admin/functions/QrssPlusUpdate
+x-functions-key: {{$dotenv FUNCTIONSKEY}}
+Content-Type: application/json
+
+{}
