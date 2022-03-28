@@ -70,9 +70,16 @@ namespace QrssPlusFunctions
             using MemoryStream stream = new MemoryStream();
             blob.DownloadTo(stream);
             string json = Encoding.UTF8.GetString(stream.ToArray());
-
             Grabber[] oldGrabbers = GrabberIO.GrabbersFromJson(json);
-            Dictionary<string, Grabber> oldGrabberDictionary = oldGrabbers.ToDictionary(x => x.Info.ID);
+
+            Dictionary<string, Grabber> oldGrabberDictionary = new Dictionary<string, Grabber>();
+            foreach (Grabber oldGrabber in oldGrabbers)
+            {
+                if (oldGrabberDictionary.ContainsKey(oldGrabber.Info.ID))
+                    oldGrabberDictionary.Remove(oldGrabber.Info.ID);
+
+                oldGrabberDictionary.Add(oldGrabber.Info.ID, oldGrabber);
+            }
 
             foreach (Grabber grabber in grabbers.Where(x => oldGrabberDictionary.ContainsKey(x.Info.ID)))
                 grabber.History.Update(oldGrabberDictionary[grabber.Info.ID].History);
