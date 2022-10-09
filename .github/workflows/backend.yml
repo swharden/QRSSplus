@@ -14,10 +14,11 @@ jobs:
       - name: 🚚 Checkout
         uses: actions/checkout@v2
 
-      - name: ✨ Use .NET Core 3.1
-        uses: actions/setup-dotnet@v1
+      - name: ✨ Use .NET Core 6
+        uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: "3.1.x"
+          dotnet-version: "6.x"
+          
       - name: 🚚 Restore
         run: dotnet restore ./src/backend
 
