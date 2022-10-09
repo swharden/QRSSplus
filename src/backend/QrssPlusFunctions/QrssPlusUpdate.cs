@@ -154,8 +154,7 @@ namespace QrssPlusFunctions
         /// </summary>
         private static void SaveStatusFile(Grabber[] grabbers, BlobContainerClient container, ILogger log)
         {
-            log.LogInformation($"UTCNOW: {DateTime.UtcNow}");
-            log.LogInformation($"saving {GRABBERS_JSON_FILENAME}");
+            log.LogInformation($"saving {GRABBERS_JSON_FILENAME} at UTC {DateTime.UtcNow}");
 
             string json = GrabberIO.GrabbersToJson(grabbers);
 
@@ -163,7 +162,7 @@ namespace QrssPlusFunctions
             string[] jsonLines = json.Split("\n");
             foreach (string line in jsonLines.Take(5))
             {
-                Console.WriteLine(line);
+                log.LogInformation(line);
             }
 
             byte[] jsonBytes = Encoding.UTF8.GetBytes(json);
