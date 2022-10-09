@@ -50,7 +50,7 @@ namespace QrssPlusFunctions
         private static Grabber[] GetGrabbers(ILogger log, int maximumCount = 999)
         {
             string grabberCsvUrl = "https://raw.githubusercontent.com/swharden/QRSSplus/master/grabbers.csv";
-            int linuxTime = (int)DateTime.Now.Subtract(new DateTime(1970,1,1,0,0,0)).TotalSeconds;
+            int linuxTime = (int)DateTime.Now.Subtract(new DateTime(1970, 1, 1, 0, 0, 0)).TotalSeconds;
             grabberCsvUrl += $"?v={linuxTime}";
             log.LogInformation($"getting list of grabbers from: {grabberCsvUrl}");
             Grabber[] grabbers = GrabberIO.GrabbersFromCsvUrl(grabberCsvUrl).Result;
