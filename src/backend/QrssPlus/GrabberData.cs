@@ -39,7 +39,10 @@ namespace QrssPlus
                 try {
                     originalImage = Bitmap.FromStream(msIn);
                 } catch (Exception e) {
-                    throw new InvalidOperationException($"image creation from downloaded bytes fail {info.ImageUrl}");
+                    string errorMessage = $"image creation from downloaded bytes fail {info.ImageUrl}";
+                    //throw new InvalidOperationException(errorMessage);
+                    Response = "fail";
+                    return;
                 }
                 ImageWidth = originalImage.Width;
                 ImageHeight = originalImage.Height;
