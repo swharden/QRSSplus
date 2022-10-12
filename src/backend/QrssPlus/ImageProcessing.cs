@@ -27,8 +27,9 @@ namespace QrssPlus
 
             using MemoryStream msOut = new MemoryStream();
             
+            EncoderParameters encoderParams;
             try {
-                EncoderParameters encoderParams = new EncoderParameters(1);
+                encoderParams = new EncoderParameters(1);
             } catch (Exception e) {
                 throw new InvalidOperationException("EncoderParameters construction fail", e);
             }
@@ -38,9 +39,10 @@ namespace QrssPlus
             } catch (Exception e) {
                 throw new InvalidOperationException("EncoderParameter construction fail", e);
             }
-                        
+                      
+            ImageCodecInfo myImageCodecInfo;  
             try {
-                ImageCodecInfo myImageCodecInfo = ImageCodecInfo.GetImageEncoders().Where(x => x.MimeType == "image/jpeg").First();
+                myImageCodecInfo = ImageCodecInfo.GetImageEncoders().Where(x => x.MimeType == "image/jpeg").First();
             } catch (Exception e) {
                 throw new InvalidOperationException("ImageCodecInfo fail", e);
             }
