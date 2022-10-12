@@ -26,10 +26,31 @@ namespace QrssPlus
             Image thumbnailImage = Resize(originalImage, width, height);
 
             using MemoryStream msOut = new MemoryStream();
-            EncoderParameters encoderParams = new EncoderParameters(1);
-            encoderParams.Param[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, quality);
-            ImageCodecInfo myImageCodecInfo = ImageCodecInfo.GetImageEncoders().Where(x => x.MimeType == "image/jpeg").First();
-            thumbnailImage.Save(msOut, myImageCodecInfo, encoderParams);
+            
+            try {
+                EncoderParameters encoderParams = new EncoderParameters(1);
+            } catch (Exception e) {
+                throw new InvalidOperationException("EncoderParameters construction fail", e);
+            }
+            
+            try {
+                encoderParams.Param[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, quality);
+            } catch (Exception e) {
+                throw new InvalidOperationException("EncoderParameter construction fail", e);
+            }
+                        
+            try {
+                ImageCodecInfo myImageCodecInfo = ImageCodecInfo.GetImageEncoders().Where(x => x.MimeType == "image/jpeg").First();
+            } catch (Exception e) {
+                throw new InvalidOperationException("ImageCodecInfo fail", e);
+            }
+                        
+            try {
+                thumbnailImage.Save(msOut, myImageCodecInfo, encoderParams);
+            } catch (Exception e) {
+                throw new InvalidOperationException("thumbnail save fail", e);
+            }
+            
             return msOut.ToArray();
         }
 
