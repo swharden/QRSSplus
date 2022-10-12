@@ -35,8 +35,9 @@ namespace QrssPlus
                     throw new WebException("Image URL contains HTML (not an image)");
 
                 using MemoryStream msIn = new MemoryStream(Bytes);
+                Image originalImage;
                 try {
-                    using Image originalImage = Bitmap.FromStream(msIn);
+                    originalImage = Bitmap.FromStream(msIn);
                 } catch (Exception e) {
                     throw new InvalidOperationException($"image creation from downloaded bytes fail {info.ImageUrl}");
                 }
