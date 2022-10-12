@@ -92,20 +92,22 @@ namespace QrssPlusFunctions
         /// </summary>
         private static void StoreImageData(Grabber grabber, BlobContainerClient container, ILogger log)
         {
-            log.LogInformation($"storing image for {grabber}");
-
+            log.LogInformation($"{grabber}: prepare blob header");
             BlobHttpHeaders headers = new BlobHttpHeaders() { ContentType = "image/jpeg", ContentLanguage = "en-us", };
 
+            log.LogInformation($"{grabber}: set blob header");
             BlobClient blobOriginal = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename));
             using var streamOriginal = new MemoryStream(grabber.Data.Bytes);
             blobOriginal.Upload(streamOriginal, overwrite: true);
             blobOriginal.SetHttpHeaders(headers);
 
+            log.LogInformation($"{grabber}: set skinny blob header");
             BlobClient blobThumbSkinny = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename + "-thumb-skinny.jpg"));
             using var streamThumbSkinny = new MemoryStream(ImageProcessing.GetThumbnailSkinny(grabber.Data.Bytes));
             blobThumbSkinny.Upload(streamThumbSkinny, overwrite: true);
             blobOriginal.SetHttpHeaders(headers);
 
+            log.LogInformation($"{grabber}: set thumb blob header");
             BlobClient blobThumbAuto = container.GetBlobClient(Path.Combine(GRAB_FOLDER_PATH, grabber.Data.Filename + "-thumb-auto.jpg"));
             using var streamThumbAuto = new MemoryStream(ImageProcessing.GetThumbnailAuto(grabber.Data.Bytes));
             blobThumbAuto.Upload(streamThumbAuto, overwrite: true);
@@ -117,6 +119,8 @@ namespace QrssPlusFunctions
         /// </summary>
         private static void DeleteOldGrabs(TimeSpan maxAge, BlobContainerClient container, ILogger log)
         {
+            log.LogInformation($"Identifying old grab images...");
+            
             string[] oldBlobNames = container.GetBlobs()
                 .Where(x => (DateTime.UtcNow - x.Properties.LastModified) > maxAge)
                 .Select(x => x.Name)
