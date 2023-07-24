@@ -73,7 +73,7 @@ M0PWX-30m,M0PWX,30m part time,Pete,Isle of Sheppey,https://qsl.net/m0pwx/grabber
 M0PWX-40m,M0PWX,40m part time,Pete,Isle of Sheppey,https://qsl.net/m0pwx/grabbers.htm,https://qsl.net/m0pwx/grabs/40m/40mhf1.jpg
 M0PWX-60m,M0PWX,60m part time,Pete,Isle of Sheppey,https://qsl.net/m0pwx/grabbers.htm,https://qsl.net/m0pwx/grabs/60m/60mhf1.jpg
 M0PWX-80m,M0PWX,80m part time,Peter,Isle of Sheppey,https://www.qsl.net/m/m0pwx/,https://www.qsl.net/m/m0pwx/grabs/80m/80mhf1.jpg
-# M0RON,M0RON,Testing,Andy,Bishops Cleeve,https://www.qsl.net/m0ron/,https://www.qsl.net/m0ron/grabs/hf1.png
+M0RON,M0RON,Testing,Andy,Bishops Cleeve,https://www.qsl.net/m0ron/,https://www.qsl.net/m0ron/grabs/hf1.png
 N9JL-1,N9JL,30m FSKVIEW,John,Shorewood IL,https://www.qsl.net/n9jl,https://www.qsl.net/n9jl/capt.jpg
 N8NJ-1,N8NJ,Various bands,Larry,Ohio,https://www.qsl.net/n8nj/index.html,https://www.qsl.net/n8nj/hf1.jpg
 N8NJ-2,N8NJ,Various bands,Larry,Ohio,https://www.qsl.net/n8nj/index.html,https://www.qsl.net/n8nj/hf2.jpg
@@ -109,7 +109,7 @@ SA6BSS-3,SA6BSS,14 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.ne
 SA6BSS-4,SA6BSS,Variable,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf4.jpg
 SQ4MIK-1,SQ4MIK,Variable,Piotr,Poland,https://www.qsl.net/sq4mik,https://www.qsl.net/sq4mik/hf1.jpg
 #TF3HZ-1,TF3HZ,Band varies,Haldor,Iceland,https://halldorg.is/,https://dl.dropboxusercontent.com/s/jlpski02u5k2vhf/HF2%20grabber.jpg
-TF3HZ-1,TF3HZ,Band varies,Haldor,Iceland,https://www.qsl.net/tf3hz/,https://www.qsl.net/tf3hz/tf3hzgrabb.jpg
+TF3HZ-1,TF3HZ,Band varies,Haldor,Iceland,http://halldorg.is/,https://www.qsl.net/tf3hz/tf3hzgrabb.jpg
 VA3VF-1,VA3VF,Testing,Vince,Canada,https://www.qsl.net/va3vf/,https://www.qsl.net/va3vf/latest.jpg
 VA3ROM-22m,VA3ROM,30m,Robert,"Ontario, Canada",http://va3rom.com/QRSS/QRSS.html,http://va3rom.com/QRSS/image1.jpg
 VA3RYV,VA3RYV,MISC BANDS,Wes,"Ontario,Canada",https://qsl.net/va3ryv/,http://www.qsl.net/va3ryv/grabber/hf1.jpg
