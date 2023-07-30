@@ -2,7 +2,7 @@
 AA7US,AA7US,Variable band,John,QTH and state varies,http://www.qsl.net/aa7us/,http://www.qsl.net/aa7us/hf3.jpg
 # AJ4VD,AJ4VD,30m,Scott,"Gainesville, FL, USA",https://swharden.com/software/FSKview/,https://swharden.com/dev/grabber/latest.png
 CT2IWW,CT2IWW,Usually 10m seasonal,Paulo,Portugal,https://www.qsl.net/c/ct2iww//CT2IWW_QRSS.html,https://www.qsl.net/ct2iww/grabber/hf1.jpg
-DL4DTL,DL4DTL,40m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
+# DL4DTL,DL4DTL,40m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
 EA8BVP-30m-Fast,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
 EA8BVP-30m-Slow,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
 G0FTD-NOMADIC,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
@@ -41,9 +41,9 @@ G4IOG-160m,G4IOG,1.8MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,http
 G6AVK,G6AVK,Various bands,Colin,"Essex, England",http://www.qsl.net/g6avk/,http://www.qsl.net/g6avk/hf6.jpg
 GJ7RWT,GJ7RWT,Usually 40m,Andy,"Jersey, England",http://www.qsl.net/gj7rwt/gj7rwthomepage.html,https://www.qsl.net/g/gj7rwt/hf1.jpg
 HB9FXX-A,HB9FXX,Variable check band,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf1.png
-HB9FXX-B,HB9FXX,Variable check band,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf2.png
-HB9FXX-C,HB9FXX,Variable check band,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf3.png
-HB9FXX-D,HB9FXX,Variable check band,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf4.png
+# HB9FXX-B,HB9FXX,Variable check band,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf2.png
+# HB9FXX-C,HB9FXX,Variable check band,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf3.png
+# HB9FXX-D,HB9FXX,Variable check band,Martin,Switzerland,https://www.qsl.net/hb9fxx/,https://www.qsl.net/hb9fxx/hf4.png
 JA1NGA-20m,JA1NGA,Experimenting,Kenji,Japan,https://qsl.net/ja1nga/hf1.jpg,https://qsl.net/ja1nga/hf1.jpg
 K5MO-10m,K5MO,10m band,John,North Carolina,https://qsl.net/k5mo/,https://qsl.net/k5mo/hf3.jpg
 K5MO-HIFER,K5MO,22M band,John,North Carolina,https://qsl.net/k5mo/,https://www.qsl.net/k5mo/hifer.jpg
