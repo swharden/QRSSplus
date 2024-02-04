@@ -102,7 +102,7 @@ PA2ST-40m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/,https://i
 PA2ST-60m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/,https://images.1k2.nl/qrss/latest-twente-60m.png
 PA2ST-80m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/,https://images.1k2.nl/qrss/latest-twente-80m.png
 PA2ST-160m,PA2ST,Remote grabber,Ben,Holland,https://images.1k2.nl/qrss/,https://images.1k2.nl/qrss/latest-twente-160m.png
-PA3GNZ-30m,PA3GNZ,30m,Tjeerd,Holland,https://www.pa3gnz.nl/qrss30m.htm,https://www.pa3gnz.nl/qrss30m.jpg
+# PA3GNZ-30m,PA3GNZ,30m,Tjeerd,Holland,https://www.pa3gnz.nl/qrss30m.htm,https://www.pa3gnz.nl/qrss30m.jpg
 S52AS-30m,S52AS,30m Part time,Roman,"Novo Mesto, Slovenia",http://novomesto.zevs.si/graber.htm,http://novomesto.zevs.si/podatki/test.gif
 SA6BSS-1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf1.jpg
 SA6BSS-2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
@@ -144,7 +144,7 @@ WD4ELG-30-Slow,WD4ELG,30m grabber,Mark,"Greensboro, NC",https://qsl.net/wd4elg/,
 WD4ELG-40-Slow,WD4ELG,40m grabber,Mark,"Greensboro, NC",https://qsl.net/wd4elg/,https://qsl.net/wd4elg/WD4ELG_40M_grabber_slow.jpg
 WD4ELG-80-Slow,WD4ELG,80m grabber,Mark,"Greensboro, NC",https://qsl.net/wd4elg/,https://qsl.net/wd4elg/WD4ELG_80M_grabber_slow.jpg
 WD4ELG-160-Slow,WD4ELG,80m grabber,Mark,"Greensboro, NC",https://qsl.net/wd4elg/,https://qsl.net/wd4elg/WD4ELG_160M_grabber_slow.jpg
-W4HBK-1,W4HBK,10min,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf1.jpg
+# W4HBK-1,W4HBK,10min,Bill,"Pensacola, Florida",http://www.qsl.net/w4hbk/,http://www.qsl.net/w4hbk/hf1.jpg
 W6REK-20m,W6REK,20m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-20m.png
 W6REK-30m,W6REK,30m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-30m.png
 W6REK-40m,W6REK,40m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-40m.png
