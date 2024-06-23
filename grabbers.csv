@@ -3,7 +3,6 @@ AA7US,AA7US,Variable band,John,QTH and state varies,http://www.qsl.net/aa7us/,ht
 # AJ4VD,AJ4VD,30m,Scott,"Gainesville, FL, USA",https://swharden.com/software/FSKview/,https://swharden.com/dev/grabber/latest.png
 CT2IWW,CT2IWW,Usually 10m seasonal,Paulo,Portugal,https://www.qsl.net/c/ct2iww//CT2IWW_QRSS.html,https://www.qsl.net/ct2iww/grabber/hf1.jpg
 # DL4DTL,DL4DTL,40m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
-SO5CW-30m,DJ5CW,Experimental,Fabian,near Warsaw,Poland KO01MW,https://fkurz.net/ham/qrss/,https://fkurz.net/ham/qrss/30m.png
 EA8BVP-30m-Fast,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
 EA8BVP-30m-Slow,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
 G0FTD-NOMADIC,G0FTD,R&D only,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
@@ -109,6 +108,7 @@ SA6BSS-1,SA6BSS,10 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.ne
 SA6BSS-2,SA6BSS,7 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf2.jpg
 SA6BSS-3,SA6BSS,14 MHz,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf3.jpg
 SA6BSS-4,SA6BSS,Variable,Mikael,Sweden,http://www.qsl.net/sa6bss,http://www.qsl.net/sa6bss/hf4.jpg
+SO5CW-30m,DJ5CW,Experimental,Fabian,near Warsaw in Poland KO01MW,https://fkurz.net/ham/qrss/,https://fkurz.net/ham/qrss/30m.png
 SQ4MIK-1,SQ4MIK,Variable,Piotr,Poland,https://www.qsl.net/sq4mik,https://www.qsl.net/sq4mik/hf1.jpg
 TF3HZ-1,TF3HZ,Band varies,Haldor,Iceland,http://halldorg.is/,https://www.qsl.net/tf3hz/tf3hzgrabb.jpg
 VA3VF-1,VA3VF,Testing,Vince,Canada,https://www.qsl.net/va3vf/,https://www.qsl.net/va3vf/latest.jpg
