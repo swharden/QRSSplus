@@ -1,6 +1,6 @@
 #ID,callsign,title,name,location,website,file
 AA7US,AA7US,Variable band,John,QTH and state varies,http://www.qsl.net/aa7us/,http://www.qsl.net/aa7us/hf3.jpg
-# AJ4VD,AJ4VD,30m,Scott,"Gainesville, FL, USA",https://swharden.com/software/FSKview/,https://swharden.com/dev/grabber/latest.png
+# AJ4VD,AJ4VD,30m,Scott,"Gainesville, FL, USA",https://swharden.com/software/Fhttps://github.com/swharden/QRSSplus/edit/master/grabbers.csvSKview/,https://swharden.com/dev/grabber/latest.png
 CT2IWW,CT2IWW,Usually 10m seasonal,Paulo,Portugal,https://www.qsl.net/c/ct2iww//CT2IWW_QRSS.html,https://www.qsl.net/ct2iww/grabber/hf1.jpg
 # DL4DTL,DL4DTL,40m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
 EA8BVP-30m-Fast,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
@@ -137,7 +137,8 @@ VK4AAN-10m,VK4AAN,10m,Alan,Queensland,https://www.qsl.net/v/vk4aan/,https://www.
 VK4AAN-24hr-10m,VK4AAN,10m,Alan,Queensland,https://www.qsl.net/v/vk4aan/,https://www.qsl.net/v//vk4aan/lopora/lst24h10.jpg
 VK4AAN-30m,VK4AAN,30m,Alan,Queensland,https://www.qsl.net/v/vk4aan/,https://www.qsl.net/v/vk4aan/lopora/lst20m30.jpg
 VK4AAN-24hr-30m,VK4AAN,30m,Alan,Queensland,https://www.qsl.net/v/vk4aan/,https://www.qsl.net/v//vk4aan/lopora/lst24h30.jpg
-VK4BAP,VK4BAP,Testing,Brian,Queensland Australia,https://www.qsl.net/vk4bap/,https://www.qsl.net/vk4bap/10m/hf1.png
+VK4BAP-10m,VK4BAP,Testing,Brian,Queensland Australia,https://www.qsl.net/vk4bap/,https://www.qsl.net/vk4bap/10m/hf1.png
+VK4BAP-40m,VK4BAP,Testing,Brian,Queensland Australia,https://www.qsl.net/vk4bap/,https://www.qsl.net/vk4bap/40m/hf2.png
 VE7IGH-30m,VE7IGH,10Mhz & attic antenna,Gregory,"British Columbia,Canada",http://www.qsl.net/ve7igh/Grabber.htm,http://www.qsl.net/ve7igh/capt.jpg
 W1BW-WIDESHORT,W1BW,0-38MHZ WIDEVIEW SHORT,Bruce,"QTH Boston,Mass",https://grabber.w1bw.us,https://grabber.w1bw.us/0/latest.jpg
 W1BW-WIDELONG,W1BW,0-38MHZ WIDEVIEW LONG,Bruce,"QTH Boston,Mass",https://grabber.w1bw.us,https://grabber.w1bw.us/0/slow.jpg
