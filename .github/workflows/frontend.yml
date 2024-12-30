@@ -2,9 +2,6 @@ name: Frontend CI/CD
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "src/frontend/**"
 
 jobs:
   frontend:
@@ -32,13 +29,3 @@ jobs:
       - name: 🛠️ Build
         working-directory: ./src/frontend
         run: yarn build
-
-      - name: 🚀 Deploy
-        uses: SamKirkland/FTP-Deploy-Action@a9644610a0efe63542b1887c9317ce8628f56521 # 4.2.0
-        with:
-          server: ftp.swharden.com
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./src/frontend/build/
-          server-dir: /qrss/plus/
-          log-level: minimal
