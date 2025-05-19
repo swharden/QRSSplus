@@ -1,8 +1,6 @@
 #ID,callsign,title,name,location,website,file
 AA7US,AA7US,Variable band,John,QTH and state varies,http://www.qsl.net/aa7us/,http://www.qsl.net/aa7us/hf3.jpg
 # AJ4VD,AJ4VD,30m,Scott,"Gainesville, FL, USA",https://swharden.com/software/Fhttps://github.com/swharden/QRSSplus/edit/master/grabbers.csvSKview/,https://swharden.com/dev/grabber/latest.png
-CT2IWW,CT2IWW,Usually 10m seasonal,Paulo,Portugal,https://www.qsl.net/c/ct2iww//CT2IWW_QRSS.html,https://www.qsl.net/ct2iww/grabber/hf1.jpg
-# DL4DTL,DL4DTL,40m,Maik,South Germany,http://qsl.net/dl4dtl/index.htm,http://qsl.net/dl4dtl/hf2.jpg
 EA8BVP-30m-Fast,EA8BVP,30m,Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf1.jpg
 EA8BVP-30m-Slow,EA8BVP,30m (4hr),Baltasar,Canary Islands,http://www.qsl.net/ea8bvp/grabber.html,http://www.qsl.net/ea8bvp/hf2.jpg
 G0FTD-NOMADIC,G0FTD,Tests,Andy,Kent,http://www.qsl.net/g0ftd/grabber.htm,http://www.qsl.net/g0ftd/hf1.jpg
@@ -12,18 +10,6 @@ G0MQW-6m,G0MQW,6m band,Chris,"Reading, Berkshire, England",http://www.qsl.net/g0
 G0MQW-30m,G0MQW,30m,Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/hf4.jpg
 G0MQW-E,G0MQW,Variable,Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,https://www.qsl.net/g0mqw/hf5.jpg
 G0MQW-X,G0MQW,Experiments,Chris,"Reading, Berkshire, England",http://www.qsl.net/g0mqw/,http://www.qsl.net/g0mqw/vhf5.jpg
-G0PYB-6m,G0PYB,6m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/6m/6mhf1.jpg
-G0PYB-10m,G0PYB,10m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/10m/10mhf1.jpg
-G0PYB-15m,G0PYB,15m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/15mhf1
-G0PYB-20m,G0PYB,20m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/20m/20mhf1.jpg
-G0PYB-30m,G0PYB,30m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/30m/30mhf1.jpg
-G0PYB-40m,G0PYB,40m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/40m/40mhf1.jpg
-G0PYB-60m,G0PYB,60m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/60m/60mhf1.jpg
-G0PYB-80m,G0PYB,80m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/60m/60mhf1.jpg
-G0PYB-160m,G0PYB,160m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/160m/160mhf1.jpg
-G0PYB-630m,G0PYB,630m,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/630m/630mhf1.jpg
-G0PYB-MISC,G0PYB,Variable,Martin,"Gainsborough UK",https://www.qsl.net/g0pyb,https://www.qsl.net/g0pyb/latest.png
-# G0UPL,G0UPL,Usually 20m,Hans,"Turkey",http://www.hanssummers.com,http://www.hanssummers.com/images/stories/balloons/ve3kcl/s.jpg
 G3VYZ-Fast-10m,G3VYZ,Grabber 1,Les,"Holywell, Northumberland, UK",https://www.holywell44.com/qrss/qrss.htm,https://www.holywell44.com/qrss/qrss_.jpg
 G3VYZ-Fast-40m,G3VYZ,Grabber 3,Les,"Holywell, Northumberland, UK",https://www.holywell44.com/qrss/qrss.htm,https://www.holywell44.com/qrss/qrss_3.jpg
 G3VYZ-Fast-60m,G3VYZ,Grabber 2,Les,"Holywell, Northumberland, UK",https://www.holywell44.com/qrss/qrss.htm,https://www.holywell44.com/qrss/qrss_2.jpg
@@ -42,7 +28,6 @@ G4IOG-60m,G4IOG,5.3MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https
 G4IOG-80m,G4IOG,3.5MHz,Bob,"Newington, Kent, England",https://www.qsl.net/g4iog/80mdir/80mpage.html,https://www.qsl.net/g4iog/80mdir/hf80.png
 G4IOG-160m,G4IOG,1.8MHz,Bob,"Newington, Kent, England",http://qsl.net/g4iog,https://qsl.net/g4iog/160mdir/hf160.png
 G6AVK,G6AVK,Various bands,Colin,"Essex, England",http://www.qsl.net/g6avk/,http://www.qsl.net/g6avk/hf6.jpg
-GJ7RWT,GJ7RWT,Usually 40m,Andy,"Jersey, England",http://www.qsl.net/gj7rwt/gj7rwthomepage.html,https://www.qsl.net/g/gj7rwt/hf1.jpg
 HB9FXX-10m,HB9FXX,28MHz,Martin,Poland,https://hb9fxx.ch/qrss/,https://hb9fxx.ch/qrss/uploads/hf1.png
 JA1NGA-20m,JA1NGA,Experimenting,Kenji,Japan,https://qsl.net/ja1nga/hf1.jpg,https://qsl.net/ja1nga/hf1.jpg
 K4BYN-1,K4BYN,EXPERIMENTAL,Louis,North Carolina,https://www.qsl.net/k4byn/hf1,https://www.qsl.net/k4byn/hf1.jpg
