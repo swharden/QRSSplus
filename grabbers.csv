@@ -146,8 +146,9 @@ WD4ELG-30-Slow,WD4ELG,30m grabber,Mark,"Greensboro, NC",https://qsl.net/wd4elg/,
 WD4ELG-40-Slow,WD4ELG,40m grabber,Mark,"Greensboro, NC",https://qsl.net/wd4elg/,https://qsl.net/wd4elg/WD4ELG_40M_grabber_slow.jpg
 WD4ELG-80-Slow,WD4ELG,80m grabber,Mark,"Greensboro, NC",https://qsl.net/wd4elg/,https://qsl.net/wd4elg/WD4ELG_80M_grabber_slow.jpg
 WD4ELG-160-Slow,WD4ELG,80m grabber,Mark,"Greensboro, NC",https://qsl.net/wd4elg/,https://qsl.net/wd4elg/WD4ELG_160M_grabber_slow.jpg
-WM9C-1,WM9C,New May 2025,Matt,"Illinois",https://wm9c.telegraphy.de,https://wm9c.telegraphy.de/WM9C30m.png
-WM9C-LONG,WM9C,24HR JAN 2026,Matt,"Illinois",https://wm9c.telegraphy.de,https://wm9c.telegraphy.de/WM9C30mday.png
+WM9C-1,WM9C,10 minute grabs,Matt,"Illinois",https://wm9c.telegraphy.de,https://wm9c.telegraphy.de/WM9C30m.png
+WM9C-1-STACKED,WM9C,Last 6 images stacked,Matt,"Illinois",https://wm9c.telegraphy.de,https://wm9c.telegraphy.de/pstack30m.png
+WM9C-1-24HR,WM9C,24HR long grab,Matt,"Illinois",https://wm9c.telegraphy.de,https://wm9c.telegraphy.de/WM9C30mday.png
 W6REK-20m,W6REK,20m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-20m.png
 W6REK-30m,W6REK,30m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-30m.png
 W6REK-40m,W6REK,40m,Henry,"San Jose, California",http://yak.net/qrss/,http://yak.net/qrss/W6REK-40m.png
@@ -165,5 +166,6 @@ WA5DJJ-30m,WA5DJJ,30m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http
 WA5DJJ-40m,WA5DJJ,40m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/hf2.jpg
 WA5DJJ-80m,WA5DJJ,80m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/mf3.jpg
 WA5DJJ-160m,WA5DJJ,160m,David,"Las Cruces, New Mexico",http://qsl.net/wa5djj/,http://qsl.net/wa5djj/mf2.jpg
+
 
 
